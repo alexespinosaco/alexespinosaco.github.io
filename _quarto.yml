@@ -3,18 +3,42 @@ project:
   output-dir: docs
 
 website:
-  title: "alexespinosaco.github.io"
+  title: "Álex Espinosa-Corea"
+  description: "Website personal de Álex Espinosa-Correa"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: home
+      - href: about.qmd
+        text: about
+      - href: https://github.com/alexespinosaco
+        icon: github
+      - href: https://www.linkedin.com/in/alexespinosaco/
+        icon: linkedin
+      - href: https://twitter.com/alexespinosaco
+        icon: twitter
+  page-footer: 
+    background: dark
+    left: 
+      - href: https://creativecommons.org/licenses/by-nc-sa/4.0/
+        text: CC BY-NC-SA 4.0
+    right: 
+      - href: https://github.com/alexespinosaco
+        icon: github
+      - href: https://www.linkedin.com/in/alexespinosaco/
+        icon: linkedin
+      - href: https://twitter.com/alexespinosaco
+        icon: twitter
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      dark: darkly
+      light: flaty
     css: styles.css
     toc: true
+    toc-location: left
+    code-link: true
 
 
 
