@@ -1,0 +1,18 @@
+---
+title: "Aerovagante"
+listing: 
+  contents: posts
+  feed: true
+  type: default
+  sort: "date desc"
+  fields: [image, title, description, date, reading-time]
+  categories: true
+  date-format: "YYYY-MM-DD"
+  page-size: 9
+---
+
+::: {.callout-caution}
+## Estamos en obras
+
+Aún estamos trabajando… 
+:::
