@@ -4,9 +4,9 @@ project:
 
 website:
   title: "Álex Espinosa-Corea"
-  description: "Website personal de Álex Espinosa-Correa"
+  description: "website personal de Álex Espinosa-Correa"
   navbar:
-    left:
+    right: 
       - href: index.qmd
         text: home
       - href: about.qmd
@@ -37,7 +37,6 @@ format:
       light: flaty
     css: styles.css
     toc: true
-    toc-location: left
     code-link: true
 
 

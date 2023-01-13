@@ -1,9 +1,32 @@
 ---
-title: "Álex Espinosa Correa"
+#title: "Álex Espinosa-Correa"
+image: images/profile.png
+about: 
+  template: trestles
+  image-width: 16em
+  image-shape: rounded
+  links: 
+    - href: https://github.com/alexespinosaco
+      icon: github
+      text: GitHub
+    - href: https://www.linkedin.com/in/alexespinosaco/
+      icon: linkedin
+      text: LinkedIn
+    - href: https://twitter.com/alexespinosaco
+      icon: twitter
+      text: Twitter
 ---
+
+# Álex Espinosa-Correa
+
+¡Hola! Soy Álex y soy biólogo. Actualmente estoy terminando mi doctorado en biología en la [Universidad de Antioquia](http://udea.edu.co/). Mi investigación trata sobre el polen y esporas que se encuentran en la atmósfera (aerobiología) de la ciudad de Medellín, Colombia.
+
+Soy un apasionado de la botánica, la palinología, la educación, GIS, R, la visualización de datos y recientemente *Open and reproducible science*.
+
+Este website es para aprender y compartir lo aprendido. ¡Bienvenidos!
 
 ::: {.callout-caution}
 ## Estamos en obras
 
-Este website está en sus primeros paso, aún estamos trabajando en el. 
+Aún estamos trabajando… 
 :::
