@@ -4,9 +4,14 @@ project:
 
 website:
   title: "Álex Espinosa-Correa"
+  image: images/banner-AEC.png
   description: "website personal de Álex Espinosa-Correa"
+  favicon: images/icon-AEC.png
   site-url: https://alexespinosaco.github.io
+  repo-url: https://github.com/alexespinosaco/alexespinosaco.github.io
   navbar:
+    logo: images/icon-AEC.png
+    background: secondary
     right: 
       - href: index.qmd
         text: home
@@ -21,7 +26,7 @@ website:
       - href: https://twitter.com/alexespinosaco
         icon: twitter
   page-footer: 
-    background: dark
+    background: secondary
     left: 
       - href: https://creativecommons.org/licenses/by-nc-sa/4.0/
         text: CC BY-NC-SA 4.0
@@ -36,9 +41,7 @@ website:
 format:
   html:
     lang: es
-    theme: 
-      dark: darkly
-      light: flaty
+    theme: darkly
     css: styles.css
     toc: true
     code-link: true

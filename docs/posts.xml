@@ -9,7 +9,14 @@
 <link>https://alexespinosaco.github.io/posts.html</link>
 <atom:link href="https://alexespinosaco.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>website personal de Álex Espinosa-Correa</description>
-<generator>quarto-1.2.269</generator>
-<lastBuildDate>Fri, 13 Jan 2023 08:10:53 GMT</lastBuildDate>
+<image>
+<url>https://alexespinosaco.github.io/images/banner-AEC.png</url>
+<title>Álex Espinosa-Correa</title>
+<link>https://alexespinosaco.github.io/posts.html</link>
+<height>65</height>
+<width>144</width>
+</image>
+<generator>quarto-1.2.313</generator>
+<lastBuildDate>Wed, 18 Jan 2023 07:50:06 GMT</lastBuildDate>
 </channel>
 </rss>
