@@ -9,6 +9,16 @@ website:
   favicon: images/icon-AEC.png
   site-url: https://alexespinosaco.github.io
   repo-url: https://github.com/alexespinosaco/alexespinosaco.github.io
+  cookie-consent: 
+    type: express
+    style: simple
+    palette: dark
+  google-analytics:
+    tracking-id: "G-RN5H7WV1DJ"
+    anonymize-ip: true
+  twitter-card: 
+    creator: "@alexespinosaco"
+    card-style: summary_large_image
   navbar:
     logo: images/icon-AEC.png
     background: secondary
@@ -25,6 +35,8 @@ website:
         icon: linkedin
       - href: https://twitter.com/alexespinosaco
         icon: twitter
+      - href: posts.xml
+        icon: rss
   page-footer: 
     background: secondary
     left: 
