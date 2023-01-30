@@ -27,7 +27,7 @@ website:
         text: home
       - href: about.qmd
         text: about
-      - href: posts.qmd
+      - href: aerovagante.qmd
         text: blog
       - href: https://github.com/alexespinosaco
         icon: github
@@ -35,7 +35,7 @@ website:
         icon: linkedin
       - href: https://twitter.com/alexespinosaco
         icon: twitter
-      - href: posts.xml
+      - href: aerovagante.xml
         icon: rss
   page-footer: 
     background: secondary

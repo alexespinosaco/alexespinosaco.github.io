@@ -6,6 +6,9 @@ freeze: true
 # enable banner style title blocks (see https://quarto.org/docs/authoring/title-blocks.html)
 title-block-banner: true
 
+# Author name of all blog posts
+author: "Álex Espinosa-Correa"
+
 comments: 
   utterances: 
     repo: alexespinosaco/blog-comments

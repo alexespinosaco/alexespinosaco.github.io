@@ -1,0 +1,19 @@
+---
+title: "Bienvenida: Otro intento"
+description: "Bienvenida y razones de este blog"
+date: 2023-01-31
+image: preview.png
+categories:
+  - personal
+  - quarto
+citation: 
+  url: http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/
+execute: 
+  message: false
+  warning: false
+draft: true
+---
+
+> «Después de todo, cuando estás enamorado, quieres contarlo a todo el mundo…»
+>
+> Carl Sagan

@@ -1,7 +1,7 @@
 ---
 title: "Aerovagante"
 listing: 
-  contents: posts
+  contents: aerovagante
   feed: true
   type: default
   sort: "date desc"
