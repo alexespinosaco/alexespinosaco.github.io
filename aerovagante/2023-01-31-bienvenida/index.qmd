@@ -1,10 +1,12 @@
 ---
-title: "Bienvenida: Otro intento"
+title: "Bienvenida: otro intento"
 description: "Bienvenida y razones de este blog"
 date: 2023-01-31
 image: preview.png
 categories:
+  - aerobiología
   - personal
+  - R
   - quarto
 citation: 
   url: http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/
@@ -14,6 +16,30 @@ execute:
 draft: true
 ---
 
-> «Después de todo, cuando estás enamorado, quieres contarlo a todo el mundo…»
+> «Después de todo, cuando estás enamorado, quieres contarlo a todo el mundo...»
 >
 > Carl Sagan
+
+¿Cómo comenzar? Esa siempre es una buena pregunta, aunque no sé sí sea una buena forma de comenzar. Aunque en este caso, el cómo es este, y quizá sea más interesante ver ¿por qué tener este blog? ¿por qué hacerlo ahora? y ¿de qué va este blog?
+
+Sobre las razones para comenzar un blog, he [encontrado](https://ivelasq.quarto.pub/building-a-blog-with-quarto/intro/why-blog/) [variadas](http://varianceexplained.org/r/start-blog/) e [interesantes](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045) [razones](https://blogs.shmuhammad.com/blog/whyblog/whyblog.html#fn2). Entre ellas podemos destacar:
+
+-   Aprender y practicar
+-   Ayudar(me)
+-   Compartir y recibir feedback
+-   Tener un porfolio o repositorio personal
+
+En parte esas son las razones para comenzar este blog. Con ello he aprendido y practicado (y espero seguir haciendolo) sobre Git, Github, Quarto y R. Con el pretendo ayudarme, tanto en el presente como en el futuro, a practicar (¿obligarme?) escribir y mejorar en ello, además de servir como un sitio donde tener, compartir, enseñar y quizá recibir feedback de cosas que aprenda, pueda enseñar, me sean útiles o interesantes. Siendo muy consciente que este es un ejercicio para [uno mismo](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#writing-tips).
+
+El porqué hacerlo ahora (¿y por qué no?), tiene que ver con las razones pero también tiene que ver con la frase de Sagan que hay al inicio. Durante los últimos meses (¿años?) en el desarrollo de mi tesis y como una [procrastinación ¿productiva?](http://www.structuredprocrastination.com) he aprendido sobre R, sobre como usarlo e integrarlo en mi tesis más allá de sólo realizar los análisis y obtener los gráficos, en ese proceso llegué a probar [R Markdown](https://rmarkdown.rstudio.com) y su ecosistema, a pesar de entender las bases, profundizar en ello se me hizo un poco complicado (Bookdown y los demás paquetes), en eso aparece [Quarto](https://quarto.org)… y fue amor a primera vista. Quarto es la nueva generación de R Markdown, siendo multilenguaje e integrando en sí mismo [muchas características](https://quarto.org/docs/gallery/) del ecosistema de R Markdown, haciendo mucho más sencillo muchas de las actividades que se me hacían complicadas con los paquetes de R Markdown. No puedo dejar de mencionar que no es la primera vez que intento mantener un blog, al final termino siendo un [«liquidado de blogs»](https://perezp44.github.io/taller.primer.blog/taller/slides.html#/sobre-mi-pedro-j.-pérez), ojalá este tenga mejor suerte y un poco más de vida.
+
+Teniendo ese amor por Quarto, por R, por mi tesis, por lo que he aprendido en el camino, por compartir, además de un recién redescubierto amor por el *Open Science* y de eso mismo va este blog. Este es un espacio personal para aprender, aprender-haciendo y compartir lo aprendido, así como cosas relacionadas a mi tesis o mis otras pasiones. 
+
+Creo que es apropiado cerrar este primer post explicando el nombre del blog. El nombre lo tomo de la ciencia donde desarrollo mi tesis, la aerobiología[^1] estudia las partículas de origen biológico suspendidas en la atmósfera que son aerotransportado[^2] de forma pasiva por el viento, así como su diversidad, modos de vida, dependencia y, al mismo tiempo, repercusión en el entorno.
+[Aerovagante](https://alexespinosaco.github.io/aerovagante.html) es ser transportado pasivamente por el aire sin capacidad de autopropulsión[^3]. Aunque en este caso, sí tiene que haber capacidad de autopropulsión.
+
+Bienvenidos a este viaje.
+
+[^1]: [La Aerobiología](https://www.uco.es/aerobiologia/aerobiologia/aerobiologia.html)
+[^2]: [¿Qué es la Aerobiología?](https://aerobiologia.cat/pia/es/introduction)
+[^3]: [Aerovagante](https://www.plantasyhongos.es/glosario/aerovagante.htm)
