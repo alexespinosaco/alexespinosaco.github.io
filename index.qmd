@@ -24,9 +24,3 @@ about:
 Soy un apasionado de la botánica, la palinología, la educación, GIS, R, la visualización de datos y recientemente *Open and reproducible science*.
 
 Este website es para aprender y compartir lo aprendido. ¡Bienvenidos!
-
-::: {.callout-caution}
-## Estamos en obras
-
-Aún estamos trabajando… 
-:::

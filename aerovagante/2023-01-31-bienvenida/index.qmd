@@ -6,14 +6,14 @@ image: preview.png
 categories:
   - aerobiología
   - personal
-  - R
   - quarto
+  - R
 citation: 
   url: http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/
 execute: 
   message: false
   warning: false
-draft: true
+draft: false
 ---
 
 > «Después de todo, cuando estás enamorado, quieres contarlo a todo el mundo...»
@@ -29,7 +29,7 @@ Sobre las razones para comenzar un blog, he [encontrado](https://ivelasq.quarto.
 -   Compartir y recibir feedback
 -   Tener un porfolio o repositorio personal
 
-En parte esas son las razones para comenzar este blog. Con ello he aprendido y practicado (y espero seguir haciendolo) sobre Git, Github, Quarto y R. Con el pretendo ayudarme, tanto en el presente como en el futuro, a practicar (¿obligarme?) escribir y mejorar en ello, además de servir como un sitio donde tener, compartir, enseñar y quizá recibir feedback de cosas que aprenda, pueda enseñar, me sean útiles o interesantes. Siendo muy consciente que este es un ejercicio para [uno mismo](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#writing-tips).
+En parte esas son las razones para comenzar este blog. Con ello he aprendido y practicado (y espero seguir haciéndolo) sobre Git, Github, Quarto y R. Con el pretendo ayudarme, tanto en el presente como en el futuro, a practicar (¿obligarme?) escribir y mejorar en ello, además de servir como un sitio donde tener, compartir, enseñar y quizá recibir feedback de cosas que aprenda, pueda enseñar, me sean útiles o interesantes. Siendo muy consciente que este es [un ejercicio](https://jozef.io/r914-one-year-r-blogging/) para [uno mismo](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#writing-tips).
 
 El porqué hacerlo ahora (¿y por qué no?), tiene que ver con las razones pero también tiene que ver con la frase de Sagan que hay al inicio. Durante los últimos meses (¿años?) en el desarrollo de mi tesis y como una [procrastinación ¿productiva?](http://www.structuredprocrastination.com) he aprendido sobre R, sobre como usarlo e integrarlo en mi tesis más allá de sólo realizar los análisis y obtener los gráficos, en ese proceso llegué a probar [R Markdown](https://rmarkdown.rstudio.com) y su ecosistema, a pesar de entender las bases, profundizar en ello se me hizo un poco complicado (Bookdown y los demás paquetes), en eso aparece [Quarto](https://quarto.org)… y fue amor a primera vista. Quarto es la nueva generación de R Markdown, siendo multilenguaje e integrando en sí mismo [muchas características](https://quarto.org/docs/gallery/) del ecosistema de R Markdown, haciendo mucho más sencillo muchas de las actividades que se me hacían complicadas con los paquetes de R Markdown. No puedo dejar de mencionar que no es la primera vez que intento mantener un blog, al final termino siendo un [«liquidado de blogs»](https://perezp44.github.io/taller.primer.blog/taller/slides.html#/sobre-mi-pedro-j.-pérez), ojalá este tenga mejor suerte y un poco más de vida.
 

@@ -9,6 +9,9 @@ title-block-banner: true
 # Author name of all blog posts
 author: "Álex Espinosa-Correa"
 
+# date format
+date-format: iso
+
 comments: 
   utterances: 
     repo: alexespinosaco/blog-comments

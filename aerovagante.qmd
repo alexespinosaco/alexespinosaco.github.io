@@ -7,12 +7,6 @@ listing:
   sort: "date desc"
   fields: [image, title, description, date, reading-time]
   categories: true
-  date-format: "YYYY-MM-DD"
+  date-format: iso
   page-size: 9
 ---
-
-::: {.callout-caution}
-## Estamos en obras
-
-Aún estamos trabajando… 
-:::

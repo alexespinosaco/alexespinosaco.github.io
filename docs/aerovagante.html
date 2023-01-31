@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -122,8 +122,11 @@ cookieconsent.run({
 
 <link rel="stylesheet" href="styles.css">
 <link rel="alternate" type="application/rss+xml" title="Álex Espinosa-Correa" href="aerovagante.xml"><meta name="twitter:title" content="Álex Espinosa-Correa - Aerovagante">
+<meta name="twitter:image" content="https://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/preview.png">
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="200">
+<meta name="twitter:image-width" content="800">
 </head>
 
 <body class="nav-fixed">
@@ -189,7 +192,7 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aerobiología">aerobiología <span class="quarto-category-count">(1)</span></div><div class="category" data-category="personal">personal <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quarto">quarto <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -210,26 +213,40 @@ cookieconsent.run({
 
 </header>
 
-<div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Estamos en obras
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Aún estamos trabajando…</p>
-</div>
-</div>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="aerobiología,personal,quarto,R" data-listing-date-sort="1675141200000" data-listing-file-modified-sort="1675174994671" data-listing-reading-time-sort="2.575">
+<div class="thumbnail">
+<p><a href="./aerovagante/2023-01-31-bienvenida/index.html"> <img src="./aerovagante/2023-01-31-bienvenida/preview.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./aerovagante/2023-01-31-bienvenida/index.html">
+<h3 class="no-anchor listing-title">
+Bienvenida: otro intento
+</h3>
+<div class="listing-subtitle">
 
+</div>
+<div class="listing-description">
+<p>Bienvenida y razones de este blog</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./aerovagante/2023-01-31-bienvenida/index.html">
+<div class="listing-date">
+2023-01-31
+</div>
+<div class="listing-reading-time">
+2 minutos
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No hay resultados
