@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs
 
 lang: es
 date-format: iso
@@ -35,8 +34,8 @@ website:
     right: 
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
+      # - href: about.qmd
+      #   text: About
       - href: aerovagante.qmd
         text: Blog
       - href: https://github.com/alexespinosaco
