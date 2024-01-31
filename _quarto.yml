@@ -2,61 +2,68 @@ project:
   type: website
   output-dir: docs
 
+lang: es
+date-format: iso
+
+execute:
+    freeze: auto
+
 website:
   title: "Álex Espinosa-Correa"
   image: images/banner-AEC.png
   description: "website personal de Álex Espinosa-Correa"
   favicon: images/icon-AEC.png
   site-url: https://alexespinosaco.github.io
-  repo-url: https://github.com/alexespinosaco/alexespinosaco.github.io
+
   cookie-consent: 
     type: express
     style: simple
     palette: dark
+
   google-analytics:
     tracking-id: "G-RN5H7WV1DJ"
     anonymize-ip: true
+
   twitter-card: 
     creator: "@alexespinosaco"
     card-style: summary_large_image
+
   navbar:
     logo: images/icon-AEC.png
-    background: secondary
+    search: true
+    # background: secondary
     right: 
       - href: index.qmd
-        text: home
+        text: Home
       - href: about.qmd
-        text: about
+        text: About
       - href: aerovagante.qmd
-        text: blog
+        text: Blog
       - href: https://github.com/alexespinosaco
         icon: github
       - href: https://www.linkedin.com/in/alexespinosaco/
         icon: linkedin
-      - href: https://twitter.com/alexespinosaco
-        icon: twitter
+      - href: https://mstdn.social/@alexespinosaco
+        icon: mastodon
       - href: aerovagante.xml
         icon: rss
+
   page-footer: 
-    background: secondary
+    # background: secondary
     left: 
-      - href: https://creativecommons.org/licenses/by-nc-sa/4.0/
-        text: CC BY-NC-SA 4.0
+      - href: https://creativecommons.org/licenses/by/4.0/
+        text: CC BY 4.0
     right: 
       - href: https://github.com/alexespinosaco
         icon: github
       - href: https://www.linkedin.com/in/alexespinosaco/
         icon: linkedin
-      - href: https://twitter.com/alexespinosaco
-        icon: twitter
+      - href: https://mstdn.social/@alexespinosaco
+        icon: mastodon
 
 format:
   html:
-    lang: es
-    theme: darkly
+    theme: litera
     css: styles.css
-    toc: true
+    toc: false
     code-link: true
-
-
-
