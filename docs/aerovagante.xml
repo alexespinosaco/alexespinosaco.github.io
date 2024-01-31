@@ -16,13 +16,14 @@
 <height>65</height>
 <width>144</width>
 </image>
-<generator>quarto-1.2.313</generator>
+<generator>quarto-1.4.549</generator>
 <lastBuildDate>Tue, 31 Jan 2023 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Bienvenida: otro intento</title>
   <dc:creator>Álex Espinosa-Correa</dc:creator>
-  <link>https://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/index.html</link>
+  <link>https://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -55,21 +56,22 @@
 <li id="fn2"><p><a href="https://aerobiologia.cat/pia/es/introduction">¿Qué es la Aerobiología?</a>↩︎</p></li>
 <li id="fn3"><p><a href="https://www.plantasyhongos.es/glosario/aerovagante.htm">Aerovagante</a>↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa,
-  author = {Álex Espinosa-Correa},
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2023,
+  author = {Espinosa-Correa, Álex},
   title = {Bienvenida: otro intento},
-  date = {},
+  date = {2023-01-31},
   url = {http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/},
   langid = {es}
 }
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa" class="csl-entry quarto-appendix-citeas">
-Álex Espinosa-Correa. n.d. <span>“Bienvenida: otro intento.”</span> <a href="http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/">http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/</a>.
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2023" class="csl-entry quarto-appendix-citeas">
+Espinosa-Correa, Álex. 2023. <span>“Bienvenida: otro intento.”</span>
+January 31, 2023. <a href="http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/">http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/</a>.
 </div></div></section></div> ]]></description>
   <category>aerobiología</category>
   <category>personal</category>
   <category>quarto</category>
   <category>R</category>
-  <guid>https://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/index.html</guid>
+  <guid>https://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/</guid>
   <pubDate>Tue, 31 Jan 2023 05:00:00 GMT</pubDate>
   <media:content url="https://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/preview.png" medium="image" type="image/png" height="36" width="144"/>
 </item>
