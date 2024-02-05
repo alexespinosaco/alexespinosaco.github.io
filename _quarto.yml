@@ -14,10 +14,10 @@ website:
   favicon: images/icon-AEC.png
   site-url: https://alexespinosaco.github.io
 
-  cookie-consent: 
-    type: express
-    style: simple
-    palette: dark
+  # cookie-consent: 
+  #   type: express
+  #   style: simple
+  #   palette: dark
 
   google-analytics:
     tracking-id: "G-RN5H7WV1DJ"
@@ -49,9 +49,7 @@ website:
 
   page-footer: 
     # background: secondary
-    left: 
-      - href: https://creativecommons.org/licenses/by/4.0/
-        text: CC BY 4.0
+    left: Álex Espinosa-Correa 2024, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
     right: 
       - href: https://github.com/alexespinosaco
         icon: github
