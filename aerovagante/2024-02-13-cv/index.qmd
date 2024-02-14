@@ -1,0 +1,221 @@
+---
+title: "Cómo hacer un curriculum vitae en Quarto"
+description: "Formas de hacer una hoja de vida o CV hay tantas como currículos pueda haber, acá se presenta como realizar un cv útlizando Quarto."
+
+date: 2024-04-14
+image: preview.png
+
+categories:
+  - LaTeX
+  - personal
+  - quarto
+  - RStudio
+
+citation: 
+  url: http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/
+
+execute: 
+  message: false
+  warning: false
+  eval: false
+
+lang: es
+
+toc: true
+
+draft: true
+---
+
+## TL;DR
+
+Explicación de cómo hacer un CV en HTML y PDF utilizando Quarto y RStudio, más las plantilla `quarto-cv` de Quarto y la extensión `multibib` de Pandoc.
+
+## Proposito
+
+Actualizar nuestro CV puede ser una actividad constante y que demanda cierta cantidad de tiempo. Quizá la mayoría de nosotros lo hacemos en un documento de Word o Docs. Yo la tenía en Pages, donde me sentía más cómodo y donde la había realizado por primera vez hace ya muchísimos años. Hace poco, en la última actualización, pensé «debería hacerla en Quarto», dicho y hecho... o bueno, más o menos. Desde ese momento, hasta tener una versión con la que me siento a gusto, que se puede ver acá mismo, ha pasado tiempo y varios aprendizajes de por medio para poderla hacer, desde por fin enfrentarme a aprender LaTeX hasta comenzar a entender cómo funcionan las plantillas y extensiones de Quarto.
+
+## Opciones disponibles
+
+## Paso a paso
+
+### Requisitos
+
+-   [RStudio](https://posit.co/download/rstudio-desktop/)
+-   [Quarto](http://quarto.org) (versión 1.4 o superior)
+
+### Crear un proyecto
+
+Antes de comenzar cualquier trabajo que implique Quarto o RStudio, es muy recomendable crear un proyecto de RStudio o de Quarto[^1]. Yo creé mi proyecto con el muy original nombre de **cv**.
+
+[^1]: [Qué son los proyectos de RStudio y cómo crearlos.](https://es.r4ds.hadley.nz/08-workflow-projects.html)
+
+Después de crear el proyecto y abrir nuestro proyecto, utilizaremos la Terminal integrada en RStudio[^2] para instalar la plantilla `quarto-cv` y la extensión `multibib`.
+
+[^2]: [Ubicación de la Terminal en RStudio.](https://support.posit.co/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE)\
+También se puede utilizar la Terminal por defecto del sistema operativo, estando el la carpeta donde está nuestro proyecto.
+
+### Instalar `quarto-cv`
+
+`quarto-cv` lo instalamos utilizando el siguiente comando:
+
+``` {.bash filename="Terminal"}
+quarto install extension mps9506/quarto-cv
+```
+
+Cuando introduzcamos el código anterior, seguimos las instrucciones (introducir Yes, Yes, No). Sí lo hemos hecho bien, la Terminal nos debe de aparecer lo siguiente:
+
+``` {.bash filename="Terminal"}
+Quarto extensions may execute code when documents are rendered. If you do not 
+trust the authors of the extension, we recommend that you do not install or 
+use the extension.
+ ? Do you trust the authors of this extension (Y/n) › Yes
+[✓] Downloading
+[✓] Unzipping
+    Found 1 extension.
+
+The following changes will be made:
+quarto-cv   [Install]   2.0.0 (format)
+ ? Would you like to continue (Y/n) › Yes
+
+[✓] Copying
+[✓] Extension installation complete
+
+ ? View documentation using default browser? (Y/n) › No
+```
+
+### Instalar `multibib`
+
+Aunque `quarto-cv` ya trae instalado `multibib`, no fuí capaz de modificar `quarto-cv` para que también me generar la versión en HTML. Por lo tanto, para intalar `multibib`, introducimos en la Terminal el siguiente comando:
+
+``` {.bash filename="Terminal"}
+quarto install extension pandoc-ext/multibib
+```
+
+Tras seguir las instrucciones (introducir Yes, Yes, No) que nos aparecen en la Terminal, esta se debe de ver así:
+
+``` {.bash filename="Terminal"}
+Quarto extensions may execute code when documents are rendered. If you do not 
+trust the authors of the extension, we recommend that you do not install or 
+use the extension.
+ ? Do you trust the authors of this extension (Y/n) › Yes
+[✓] Downloading
+[✓] Unzipping
+    Found 1 extension.
+
+The following changes will be made:
+pandoc-ext/multibib   [Install]   1.0.0 (filter)
+ ? Would you like to continue (Y/n) › Yes
+
+[✓] Copying
+[✓] Extension installation complete
+
+ ? View documentation using default browser? (Y/n) › No
+```
+
+### Crea un archivo .qmd
+
+En RStudio hay varias formas de crear un archivo .qmd[^3]. Yo creé un documento que se llama cv.qmd y en esté en donde agregaremos la información para generar nuestra versión HTML o PDF. En este documento irán las opciones del YAML así como nuestra información en formato Markdown. Primero miraremos que contiene el YAML.
+
+[^3]: [Creando documentos en RStudio.](https://quarto.org/docs/tools/rstudio.html#creating-documents)
+
+#### YALM
+
+``` {.yaml filename="cv.qmd" code-line-numbers="true"}
+---
+title: CV
+date: last-modified
+date-format: iso
+
+author: Álex Espinosa-Correa
+address: "Medellín, Colombia"
+# phone: your contact number
+email: alex.espinosa@udea.edu.co
+github: alexespinosaco
+orcid: 0000-0002-7353-1182
+# twitter: alexespinosaco
+# web: alexespinosaco.github.io/ 
+
+fontsize: 12pt
+#fontfamily: ebgaramond-maths # default font LaTeX package https://tug.org/FontCatalogue/about.html
+#mainfont: Ubuntu # if you want to use a different locally installed font
+#CJKmainfont: Noto Sans CJK JP # locally installed Asian character font, must use with xelatex
+fontawesome: yes
+
+# Use the multibib extension
+filters:
+  - multibib
+
+# Turn off YAML validation
+validate-yaml: false
+
+# Define list of separate bibliography files
+nocite: '@*'
+bibliography:
+  main: references.bib
+  appendix: appendix.bib
+csl: apa-cv.csl
+
+# Disable citeproc
+citeproc: false
+
+format:
+  html: 
+    toc: true
+  quarto-cv-pdf: default
+---
+```
+
+#### Markdown 
+
+Después del YALM, comenzamos a agregar nuestra información. Acá presento una versión resumida. La versión completa se puede ver acá.
+
+``` {.markdown filename="cv.qmd" code-line-numbers="true"}
+Biólogo y candidato a doctor de la Universidad de Antioquia, especializado en el campo de la botánica y la palinología.
+
+# Educación
+
+**Doctor en Biología - Universidad de Antioquia - Medellín, Colombia** \hfill 2019-actual\
+Estudio aerobiológico en la ciudad de Medellín (Colombia): una variable biológica de la calidad del aire en una ciudad altamente contaminada
+
+**Biólogo - Universidad de Antioquia - Medellín, Colombia** \hfill 2011-2018\
+Exploración de la utilidad de la región ITS en estudios filogeográficos de plantas de áreas de Páramo
+
+# Experiencia
+
+**Profesor de cátedra - Universidad de Antioquia** \hfill feb 2023 – jul 2023\
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas.
+
+**Estudiante instructor - Universidad de Antioquia** \hfill mar 2019 – nov 2022\
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas y biología general.
+
+# Publicaciones
+
+::: {#refs-main}
+:::
+
+# Reportes técnicos
+
+::: {#refs-appendix}
+:::
+```
+
+### Renderizar 
+
+### Modificando los `*.tex`
+
+## Posibles errores y soluciones
+
+Cuando intentaba renderizar ambos documentos a la vez o sólo el pdf para agregarlos a esta página me aparecía el siguiente error:
+
+``` {.bash filename="Background Jobs"}
+ERROR: 
+compilation failed- error
+Argument of \str_uppercase:n has an extra }.
+<inserted text> 
+\par 
+l.77   \setmainlanguage[]{}
+```
+
+Tras buscar y probar un poco, dí con que el error lo estaba generando el lenguaje que hayamos configurado en el YAML, ya sea en el `*.qmd` en que estemos trabajando o en el archivo de configuración `_quarto.yml` de nuestro proyecto. Intente configura `lang: en` en el archivo `cv.qmd` o en `_quarto.yml`, y no funcionó. Intente utilizando un archivo `_metadata.yml` con `lang: en` en la misma ubicación de `cv.qmd`, y tampoco funciono. La única solución que encontré a esto fue eliminar completamente la opción `lang: *` que tenía en el archivo `_quarto.yml`. Esto es un pequeño problema porque quería conservar la información que Quarto genera automáticamente en español. Una posible solución sea utilizar la opción de [idioma alternativo](https://quarto.org/docs/authoring/language.html#alternate-language) de Quarto, aunque, las más prácticas son agregar `lang: en` en los `*.qmd` (excepto `cv.qmd`) o agregarlo directamente a `_metadata.yml`, como hice con el blog. 
+
+
