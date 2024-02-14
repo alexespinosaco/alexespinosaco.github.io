@@ -1,0 +1,12 @@
+{
+  "hash": "8990ebf67ca258e5efb0477dfbf1197b",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Aerovagante\"\nlisting: \n  - id: post\n    contents: \"*/index.qmd\"\n    feed: true\n    type: default\n    sort: \"date desc\"\n    fields: [image, title, description, date, reading-time]\n    categories: true\n    date-format: iso\n    page-size: 9\ncomments: false\n---\n\n```{css, echo=FALSE}\n#title-block-header .description {\n    display: none;\n}\n```\n\n\n:::{#posts}\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
