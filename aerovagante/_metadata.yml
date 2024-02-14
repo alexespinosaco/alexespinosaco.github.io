@@ -4,10 +4,16 @@
 freeze: true
 
 # enable banner style title blocks (see https://quarto.org/docs/authoring/title-blocks.html)
-title-block-banner: true
+title-block-banner: "#0080FF"
+title-block-banner-color: "#FFFFFF"
 
 # Author name of all blog posts
-author: "Álex Espinosa-Correa"
+author:
+  - name: "Álex Espinosa-Correa"
+    url: http://alexespinosaco.github.io/aerovagante/
+
+# languaje format
+lang: es
 
 # date format
 date-format: iso
@@ -15,4 +21,4 @@ date-format: iso
 comments: 
   utterances: 
     repo: alexespinosaco/blog-comments
-    theme: photon-dark
+    theme: github-light
