@@ -1,0 +1,17 @@
+---
+title: "Aerovagante"
+pagetitle: "Aerovagante Blog"
+author: ""
+
+listing: 
+  - id: post
+    contents: "*/index.qmd"
+    feed: true
+    type: default
+    sort: "date desc"
+    fields: [image, title, description, date, reading-time]
+    categories: true
+    date-format: iso
+    page-size: 9
+comments: false
+---
