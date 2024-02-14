@@ -6,13 +6,13 @@
       version="2.0">
 <channel>
 <title>Álex Espinosa-Correa</title>
-<link>https://alexespinosaco.github.io/aerovagante.html</link>
-<atom:link href="https://alexespinosaco.github.io/aerovagante.xml" rel="self" type="application/rss+xml"/>
+<link>https://alexespinosaco.github.io/aerovagante/</link>
+<atom:link href="https://alexespinosaco.github.io/aerovagante/index.xml" rel="self" type="application/rss+xml"/>
 <description>website personal de Álex Espinosa-Correa</description>
 <image>
 <url>https://alexespinosaco.github.io/images/banner-AEC.png</url>
 <title>Álex Espinosa-Correa</title>
-<link>https://alexespinosaco.github.io/aerovagante.html</link>
+<link>https://alexespinosaco.github.io/aerovagante/</link>
 <height>65</height>
 <width>144</width>
 </image>

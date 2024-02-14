@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
@@ -39,6 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -53,17 +57,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Sin resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RN5H7WV1DJ"></script>
@@ -78,6 +82,13 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Álex Espinosa-Correa">
+<meta property="og:description" content="website personal de Álex Espinosa-Correa">
+<meta property="og:image" content="https://alexespinosaco.github.io/images/profile.png">
+<meta property="og:site_name" content="Álex Espinosa-Correa">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image:height" content="1134">
+<meta property="og:image:width" content="850">
 <meta name="twitter:title" content="Álex Espinosa-Correa">
 <meta name="twitter:description" content="website personal de Álex Espinosa-Correa">
 <meta name="twitter:image" content="https://alexespinosaco.github.io/images/profile.png">
@@ -101,18 +112,22 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
     <span class="navbar-title">Álex Espinosa-Correa</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./aerovagante.html"> 
+    <a class="nav-link" href="./cv/index.html"> 
+<span class="menu-text">Acerca</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./aerovagante/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -130,8 +145,12 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 </i> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa"> 
+<span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
+  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./aerovagante.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -165,13 +184,16 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
     <i class="bi bi-mastodon"></i>
      <span class="about-link-text">Mastodon</span>
   </a>
+  <a href="https://www.researchgate.net/profile/Alex-Espinosa-Correa" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="ai  ai-researchgate"></i> ResearchGate</span>
+  </a>
 </div>
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
 <section id="álex-espinosa-correa" class="level1">
 <h1>Álex Espinosa-Correa</h1>
 <p>¡Hola!</p>
-<p>Soy Álex. Soy biólogo y actualmente estoy terminando mi doctorado en biología en la <a href="http://udea.edu.co/">Universidad de Antioquia</a>. Mi investigación trata sobre el polen y esporas que se encuentran en la atmósfera (aerobiología) de la ciudad de Medellín, Colombia.</p>
+<p>Soy Álex. Soy biólogo y actualmente estoy terminando mi doctorado en biología en la <a href="http://udea.edu.co/">Universidad de Antioquia</a>. Mi investigación es sobre el polen y esporas que se encuentran en la atmósfera (aerobiología) de la ciudad de Medellín, Colombia.</p>
 <p>Soy un apasionado de la botánica, la palinología, la educación, GIS, R, Quarto, la visualización de datos y <em>Open and reproducible science</em>.</p>
 <p>Este sitio es para aprender y compartir lo aprendido.</p>
 <p>¡Bienvenidos!</p>
@@ -228,12 +250,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copiado");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiado");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -565,7 +587,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Álex Espinosa-Correa 2024, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+<p>Álex Espinosa-Correa © 2024. All content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i><i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i></a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
@@ -589,6 +611,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <i class="bi bi-mastodon" role="img">
 </i> 
     </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa">
+<p><i class="ai  ai-researchgate"></i></p>
+</a>
   </li>  
 </ul>
     </div>

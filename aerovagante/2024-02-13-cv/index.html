@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Álex Espinosa-Correa">
+<meta name="dcterms.date" content="2024-04-14">
+<meta name="description" content="Formas de hacer una hoja de vida o CV hay tantas como currículos pueda haber, acá se presenta como realizar un cv útlizando Quarto.">
+
+<title>Álex Espinosa-Correa - Cómo hacer un curriculum vitae en Quarto</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/icon-AEC.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RN5H7WV1DJ"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
+</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #FFFFFF;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: #FFFFFF;
+background: #0080FF;
+      }
+</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Álex Espinosa-Correa - Cómo hacer un curriculum vitae en Quarto">
+<meta property="og:description" content="Formas de hacer una hoja de vida o CV hay tantas como currículos pueda haber, acá se presenta como realizar un cv útlizando Quarto.">
+<meta property="og:image" content="https://alexespinosaco.github.io/aerovagante/2024-02-13-cv/preview.png">
+<meta property="og:site_name" content="Álex Espinosa-Correa">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="Álex Espinosa-Correa - Cómo hacer un curriculum vitae en Quarto">
+<meta name="twitter:description" content="Formas de hacer una hoja de vida o CV hay tantas como currículos pueda haber, acá se presenta como realizar un cv útlizando Quarto.">
+<meta name="twitter:image" content="https://alexespinosaco.github.io/aerovagante/2024-02-13-cv/preview.png">
+<meta name="twitter:creator" content="@alexespinosaco">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Álex Espinosa-Correa</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">Acerca</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../aerovagante/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/alexespinosaco"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexespinosaco/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mstdn.social/@alexespinosaco"> <i class="bi bi-mastodon" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa"> 
+<span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Cómo hacer un curriculum vitae en Quarto</h1>
+                  <div>
+        <div class="description">
+          Formas de hacer una hoja de vida o CV hay tantas como currículos pueda haber, acá se presenta como realizar un cv útlizando Quarto.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LaTeX</div>
+                <div class="quarto-category">personal</div>
+                <div class="quarto-category">quarto</div>
+                <div class="quarto-category">RStudio</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor/a</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="http://alexespinosaco.github.io/aerovagante/">Álex Espinosa-Correa</a> </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2024-04-14</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#tldr" id="toc-tldr" class="nav-link active" data-scroll-target="#tldr">TL;DR</a></li>
+  <li><a href="#proposito" id="toc-proposito" class="nav-link" data-scroll-target="#proposito">Proposito</a></li>
+  <li><a href="#opciones-disponibles" id="toc-opciones-disponibles" class="nav-link" data-scroll-target="#opciones-disponibles">Opciones disponibles</a></li>
+  <li><a href="#paso-a-paso" id="toc-paso-a-paso" class="nav-link" data-scroll-target="#paso-a-paso">Paso a paso</a>
+  <ul class="collapse">
+  <li><a href="#requisitos" id="toc-requisitos" class="nav-link" data-scroll-target="#requisitos">Requisitos</a></li>
+  <li><a href="#crear-un-proyecto" id="toc-crear-un-proyecto" class="nav-link" data-scroll-target="#crear-un-proyecto">Crear un proyecto</a></li>
+  <li><a href="#instalar-quarto-cv" id="toc-instalar-quarto-cv" class="nav-link" data-scroll-target="#instalar-quarto-cv">Instalar <code>quarto-cv</code></a></li>
+  <li><a href="#instalar-multibib" id="toc-instalar-multibib" class="nav-link" data-scroll-target="#instalar-multibib">Instalar <code>multibib</code></a></li>
+  <li><a href="#crea-un-archivo-.qmd" id="toc-crea-un-archivo-.qmd" class="nav-link" data-scroll-target="#crea-un-archivo-.qmd">Crea un archivo .qmd</a></li>
+  <li><a href="#renderizar" id="toc-renderizar" class="nav-link" data-scroll-target="#renderizar">Renderizar</a></li>
+  <li><a href="#modificando-los-.tex" id="toc-modificando-los-.tex" class="nav-link" data-scroll-target="#modificando-los-.tex">Modificando los <code>*.tex</code></a></li>
+  </ul></li>
+  <li><a href="#posibles-errores-y-soluciones" id="toc-posibles-errores-y-soluciones" class="nav-link" data-scroll-target="#posibles-errores-y-soluciones">Posibles errores y soluciones</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
+<p>Explicación de cómo hacer un CV en HTML y PDF utilizando Quarto y RStudio, más las plantilla <code>quarto-cv</code> de Quarto y la extensión <code>multibib</code> de Pandoc.</p>
+</section>
+<section id="proposito" class="level2">
+<h2 class="anchored" data-anchor-id="proposito">Proposito</h2>
+<p>Actualizar nuestro CV puede ser una actividad constante y que demanda cierta cantidad de tiempo. Quizá la mayoría de nosotros lo hacemos en un documento de Word o Docs. Yo la tenía en Pages, donde me sentía más cómodo y donde la había realizado por primera vez hace ya muchísimos años. Hace poco, en la última actualización, pensé «debería hacerla en Quarto», dicho y hecho… o bueno, más o menos. Desde ese momento, hasta tener una versión con la que me siento a gusto, que se puede ver acá mismo, ha pasado tiempo y varios aprendizajes de por medio para poderla hacer, desde por fin enfrentarme a aprender LaTeX hasta comenzar a entender cómo funcionan las plantillas y extensiones de Quarto.</p>
+</section>
+<section id="opciones-disponibles" class="level2">
+<h2 class="anchored" data-anchor-id="opciones-disponibles">Opciones disponibles</h2>
+</section>
+<section id="paso-a-paso" class="level2">
+<h2 class="anchored" data-anchor-id="paso-a-paso">Paso a paso</h2>
+<section id="requisitos" class="level3">
+<h3 class="anchored" data-anchor-id="requisitos">Requisitos</h3>
+<ul>
+<li><a href="https://posit.co/download/rstudio-desktop/">RStudio</a></li>
+<li><a href="http://quarto.org">Quarto</a> (versión 1.4 o superior)</li>
+</ul>
+</section>
+<section id="crear-un-proyecto" class="level3">
+<h3 class="anchored" data-anchor-id="crear-un-proyecto">Crear un proyecto</h3>
+<p>Antes de comenzar cualquier trabajo que implique Quarto o RStudio, es muy recomendable crear un proyecto de RStudio o de Quarto<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Yo creé mi proyecto con el muy original nombre de <strong>cv</strong>.</p>
+<p>Después de crear el proyecto y abrir nuestro proyecto, utilizaremos la Terminal integrada en RStudio<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> para instalar la plantilla <code>quarto-cv</code> y la extensión <code>multibib</code>.</p>
+</section>
+<section id="instalar-quarto-cv" class="level3">
+<h3 class="anchored" data-anchor-id="instalar-quarto-cv">Instalar <code>quarto-cv</code></h3>
+<p><code>quarto-cv</code> lo instalamos utilizando el siguiente comando:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension mps9506/quarto-cv</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Cuando introduzcamos el código anterior, seguimos las instrucciones (introducir Yes, Yes, No). Sí lo hemos hecho bien, la Terminal nos debe de aparecer lo siguiente:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb2" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">trust</span> the authors of the extension, we recommend that you do not install or </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">use</span> the extension.</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> Do you trust the authors of this extension <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> Yes</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Downloading</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Unzipping</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Found</span> 1 extension.</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ex">The</span> following changes will be made:</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto-cv</span>   <span class="pp">[</span><span class="ss">Install</span><span class="pp">]</span>   2.0.0 <span class="er">(</span><span class="ex">format</span><span class="kw">)</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> Would you like to continue <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> Yes</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Copying</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Extension installation complete</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> View documentation using default browser<span class="pp">?</span> <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> No</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="instalar-multibib" class="level3">
+<h3 class="anchored" data-anchor-id="instalar-multibib">Instalar <code>multibib</code></h3>
+<p>Aunque <code>quarto-cv</code> ya trae instalado <code>multibib</code>, no fuí capaz de modificar <code>quarto-cv</code> para que también me generar la versión en HTML. Por lo tanto, para intalar <code>multibib</code>, introducimos en la Terminal el siguiente comando:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb3" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension pandoc-ext/multibib</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Tras seguir las instrucciones (introducir Yes, Yes, No) que nos aparecen en la Terminal, esta se debe de ver así:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">trust</span> the authors of the extension, we recommend that you do not install or </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">use</span> the extension.</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> Do you trust the authors of this extension <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> Yes</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Downloading</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Unzipping</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Found</span> 1 extension.</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="ex">The</span> following changes will be made:</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc-ext/multibib</span>   <span class="pp">[</span><span class="ss">Install</span><span class="pp">]</span>   1.0.0 <span class="er">(</span><span class="ex">filter</span><span class="kw">)</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> Would you like to continue <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> Yes</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Copying</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Extension installation complete</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> View documentation using default browser<span class="pp">?</span> <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> No</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="crea-un-archivo-.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="crea-un-archivo-.qmd">Crea un archivo .qmd</h3>
+<p>En RStudio hay varias formas de crear un archivo .qmd<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Yo creé un documento que se llama cv.qmd y en esté en donde agregaremos la información para generar nuestra versión HTML o PDF. En este documento irán las opciones del YAML así como nuestra información en formato Markdown. Primero miraremos que contiene el YAML.</p>
+<section id="yalm" class="level4">
+<h4 class="anchored" data-anchor-id="yalm">YALM</h4>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>cv.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb5" data-filename="cv.qmd"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> CV</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> last-modified</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="fu">date-format</span><span class="kw">:</span><span class="at"> iso</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> Álex Espinosa-Correa</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="fu">address</span><span class="kw">:</span><span class="at"> </span><span class="st">"Medellín, Colombia"</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="co"># phone: your contact number</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> alex.espinosa@udea.edu.co</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="fu">github</span><span class="kw">:</span><span class="at"> alexespinosaco</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="fu">orcid</span><span class="kw">:</span><span class="at"> 0000-0002-7353-1182</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="co"># twitter: alexespinosaco</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="co"># web: alexespinosaco.github.io/ </span></span>
+<span id="cb5-14"><a href="#cb5-14"></a></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="fu">fontsize</span><span class="kw">:</span><span class="at"> 12pt</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a><span class="co">#fontfamily: ebgaramond-maths # default font LaTeX package https://tug.org/FontCatalogue/about.html</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a><span class="co">#mainfont: Ubuntu # if you want to use a different locally installed font</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a><span class="co">#CJKmainfont: Noto Sans CJK JP # locally installed Asian character font, must use with xelatex</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a><span class="fu">fontawesome</span><span class="kw">:</span><span class="at"> </span><span class="ch">yes</span></span>
+<span id="cb5-20"><a href="#cb5-20"></a></span>
+<span id="cb5-21"><a href="#cb5-21"></a><span class="co"># Use the multibib extension</span></span>
+<span id="cb5-22"><a href="#cb5-22"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb5-23"><a href="#cb5-23"></a><span class="at">  </span><span class="kw">-</span><span class="at"> multibib</span></span>
+<span id="cb5-24"><a href="#cb5-24"></a></span>
+<span id="cb5-25"><a href="#cb5-25"></a><span class="co"># Turn off YAML validation</span></span>
+<span id="cb5-26"><a href="#cb5-26"></a><span class="fu">validate-yaml</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb5-27"><a href="#cb5-27"></a></span>
+<span id="cb5-28"><a href="#cb5-28"></a><span class="co"># Define list of separate bibliography files</span></span>
+<span id="cb5-29"><a href="#cb5-29"></a><span class="fu">nocite</span><span class="kw">:</span><span class="at"> </span><span class="st">'@*'</span></span>
+<span id="cb5-30"><a href="#cb5-30"></a><span class="fu">bibliography</span><span class="kw">:</span></span>
+<span id="cb5-31"><a href="#cb5-31"></a><span class="at">  </span><span class="fu">main</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb5-32"><a href="#cb5-32"></a><span class="at">  </span><span class="fu">appendix</span><span class="kw">:</span><span class="at"> appendix.bib</span></span>
+<span id="cb5-33"><a href="#cb5-33"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa-cv.csl</span></span>
+<span id="cb5-34"><a href="#cb5-34"></a></span>
+<span id="cb5-35"><a href="#cb5-35"></a><span class="co"># Disable citeproc</span></span>
+<span id="cb5-36"><a href="#cb5-36"></a><span class="fu">citeproc</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb5-37"><a href="#cb5-37"></a></span>
+<span id="cb5-38"><a href="#cb5-38"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb5-39"><a href="#cb5-39"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb5-40"><a href="#cb5-40"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb5-41"><a href="#cb5-41"></a><span class="at">  </span><span class="fu">quarto-cv-pdf</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb5-42"><a href="#cb5-42"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="markdown" class="level4">
+<h4 class="anchored" data-anchor-id="markdown">Markdown</h4>
+<p>Después del YALM, comenzamos a agregar nuestra información. Acá presento una versión resumida. La versión completa se puede ver acá.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>cv.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb6" data-filename="cv.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a>Biólogo y candidato a doctor de la Universidad de Antioquia, especializado en el campo de la botánica y la palinología.</span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="fu"># Educación</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a>**Doctor en Biología - Universidad de Antioquia - Medellín, Colombia** \hfill 2019-actual\</span>
+<span id="cb6-6"><a href="#cb6-6"></a>Estudio aerobiológico en la ciudad de Medellín (Colombia): una variable biológica de la calidad del aire en una ciudad altamente contaminada</span>
+<span id="cb6-7"><a href="#cb6-7"></a></span>
+<span id="cb6-8"><a href="#cb6-8"></a>**Biólogo - Universidad de Antioquia - Medellín, Colombia** \hfill 2011-2018\</span>
+<span id="cb6-9"><a href="#cb6-9"></a>Exploración de la utilidad de la región ITS en estudios filogeográficos de plantas de áreas de Páramo</span>
+<span id="cb6-10"><a href="#cb6-10"></a></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="fu"># Experiencia</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a></span>
+<span id="cb6-13"><a href="#cb6-13"></a>**Profesor de cátedra - Universidad de Antioquia** \hfill feb 2023 – jul 2023\</span>
+<span id="cb6-14"><a href="#cb6-14"></a>Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas.</span>
+<span id="cb6-15"><a href="#cb6-15"></a></span>
+<span id="cb6-16"><a href="#cb6-16"></a>**Estudiante instructor - Universidad de Antioquia** \hfill mar 2019 – nov 2022\</span>
+<span id="cb6-17"><a href="#cb6-17"></a>Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas y biología general.</span>
+<span id="cb6-18"><a href="#cb6-18"></a></span>
+<span id="cb6-19"><a href="#cb6-19"></a><span class="fu"># Publicaciones</span></span>
+<span id="cb6-20"><a href="#cb6-20"></a></span>
+<span id="cb6-21"><a href="#cb6-21"></a>::: {#refs-main}</span>
+<span id="cb6-22"><a href="#cb6-22"></a>:::</span>
+<span id="cb6-23"><a href="#cb6-23"></a></span>
+<span id="cb6-24"><a href="#cb6-24"></a><span class="fu"># Reportes técnicos</span></span>
+<span id="cb6-25"><a href="#cb6-25"></a></span>
+<span id="cb6-26"><a href="#cb6-26"></a>::: {#refs-appendix}</span>
+<span id="cb6-27"><a href="#cb6-27"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="renderizar" class="level3">
+<h3 class="anchored" data-anchor-id="renderizar">Renderizar</h3>
+</section>
+<section id="modificando-los-.tex" class="level3">
+<h3 class="anchored" data-anchor-id="modificando-los-.tex">Modificando los <code>*.tex</code></h3>
+</section>
+</section>
+<section id="posibles-errores-y-soluciones" class="level2">
+<h2 class="anchored" data-anchor-id="posibles-errores-y-soluciones">Posibles errores y soluciones</h2>
+<p>Cuando intentaba renderizar ambos documentos a la vez o sólo el pdf para agregarlos a esta página me aparecía el siguiente error:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Background Jobs</strong></pre>
+</div>
+<div class="sourceCode" id="cb7" data-filename="Background Jobs"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ERROR:</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">compilation</span> failed- error</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Argument</span> of <span class="dt">\s</span>tr_uppercase:n has an extra }.</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>inserted <span class="ex">text</span><span class="op">&gt;</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">\par</span> </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="ex">l.77</span>   <span class="dt">\s</span>etmainlanguage[]{}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Tras buscar y probar un poco, dí con que el error lo estaba generando el lenguaje que hayamos configurado en el YAML, ya sea en el <code>*.qmd</code> en que estemos trabajando o en el archivo de configuración <code>_quarto.yml</code> de nuestro proyecto. Intente configura <code>lang: en</code> en el archivo <code>cv.qmd</code> o en <code>_quarto.yml</code>, y no funcionó. Intente utilizando un archivo <code>_metadata.yml</code> con <code>lang: en</code> en la misma ubicación de <code>cv.qmd</code>, y tampoco funciono. La única solución que encontré a esto fue eliminar completamente la opción <code>lang: *</code> que tenía en el archivo <code>_quarto.yml</code>. Esto es un pequeño problema porque quería conservar la información que Quarto genera automáticamente en español. Una posible solución sea utilizar la opción de <a href="https://quarto.org/docs/authoring/language.html#alternate-language">idioma alternativo</a> de Quarto, aunque, las más prácticas son agregar <code>lang: en</code> en los <code>*.qmd</code> (excepto <code>cv.qmd</code>) o agregarlo directamente a <code>_metadata.yml</code>, como hice con el blog.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://es.r4ds.hadley.nz/08-workflow-projects.html">Qué son los proyectos de RStudio y cómo crearlos.</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://support.posit.co/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE">Ubicación de la Terminal en RStudio.</a><br>
+También se puede utilizar la Terminal por defecto del sistema operativo, estando el la carpeta donde está nuestro proyecto.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://quarto.org/docs/tools/rstudio.html#creating-documents">Creando documentos en RStudio.</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
+  author = {Espinosa-Correa, Álex},
+  title = {Cómo hacer un curriculum vitae en Quarto},
+  date = {2024-04-14},
+  url = {http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/},
+  langid = {es}
+}
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Espinosa-Correa, Álex. 2024. <span>“Cómo hacer un curriculum vitae en
+Quarto.”</span> April 14, 2024. <a href="http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/">http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="alexespinosaco/blog-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Álex Espinosa-Correa © 2024. All content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i><i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i></a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/alexespinosaco">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexespinosaco/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://mstdn.social/@alexespinosaco">
+      <i class="bi bi-mastodon" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa">
+<p><i class="ai  ai-researchgate"></i></p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
