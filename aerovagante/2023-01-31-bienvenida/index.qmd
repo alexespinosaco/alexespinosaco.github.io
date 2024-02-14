@@ -1,18 +1,27 @@
 ---
 title: "Bienvenida: otro intento"
 description: "Bienvenida y razones de este blog"
+
 date: 2023-01-31
 image: preview.png
+
 categories:
   - aerobiología
   - personal
   - quarto
   - R
+
 citation: 
   url: http://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/
+
 execute: 
   message: false
   warning: false
+
+lang: es
+
+toc: false
+
 draft: false
 ---
 
