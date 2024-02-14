@@ -1,0 +1,164 @@
+---
+title: CV
+date: last-modified
+date-format: iso
+
+author: Álex Espinosa-Correa
+address: "Medellín, Colombia"
+# The following are optional
+# phone: your contact number
+email: alex.espinosa@udea.edu.co
+github: alexespinosaco
+orcid: 0000-0002-7353-1182
+# osf: five character osf id
+# twitter: alexespinosaco
+# web: alexespinosaco.github.io/ # web address (no `https://`)
+
+fontsize: 12pt
+#fontfamily: ebgaramond-maths # default font LaTeX package https://tug.org/FontCatalogue/about.html
+#mainfont: Ubuntu # if you want to use a different locally installed font
+#CJKmainfont: Noto Sans CJK JP # locally installed Asian character font, must use with xelatex
+fontawesome: yes
+
+# Use the multibib extension
+filters:
+  - multibib
+
+# Turn off YAML validation
+validate-yaml: false
+
+# Define list of separate bibliography files
+nocite: '@*'
+bibliography:
+  main: references.bib
+  appendix: appendix.bib
+csl: apa-cv.csl
+
+# Disable citeproc
+citeproc: false
+
+format:
+  html: 
+    toc: true
+  quarto-cv-pdf: default
+css: cv.css
+---
+
+Biólogo y candidato a doctor de la Universidad de Antioquia, especializado en el campo de la botánica y la palinología. Cuento con más de cuatro años de experiencia docente en botánica y biología general. Poseo habilidades en el manejo de diversos sistemas operativos, software de ofimática, herramientas bioinformáticas, sistemas de información geográfica (SIG), el lenguaje de programación R, así como en sistemas de publicación como Quarto y Markdown. Además, tengo dominio de técnicas y métodos botánicos, histológicos, palinológicos y de biología molecular.
+
+
+# Educación
+
+**Doctor en Biología - Universidad de Antioquia - Medellín, Colombia** \hfill [2019-actual]{.cvfloat}\
+Estudio aerobiológico en la ciudad de Medellín (Colombia): una variable biológica de la calidad del aire en una ciudad altamente contaminada
+
+**Biólogo - Universidad de Antioquia - Medellín, Colombia** \hfill [2011-2018]{.cvfloat}\
+Exploración de la utilidad de la región ITS en estudios filogeográficos de plantas de áreas de Páramo
+
+# Experiencia
+
+**Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2023 – jul 2023]{.cvfloat}\
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas.
+
+**Estudiante instructor - Universidad de Antioquia** \hfill [mar 2019 – nov 2022]{.cvfloat}\
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas y biología general.
+
+**Auxiliar en curatoría y manejo de colecciones - Universidad de Antioquia** \hfill [sep 2018 – oct 2018]{.cvfloat}\
+Curatoría y manejo de colecciones de especímenes botánicos de diferentes proyectos realizados a lo largo de varios años por el Grupo de Estudios Botánicos GEOBOTA del Instituto de Biología de la Universidad de Antioquia.
+
+**Monitor del curso Botánica - Universidad de Antioquia** \hfill [jul 2017 – jun 2018]{.cvfloat}\
+Asistencia en campo, asesoría a estudiantes, acompañamiento durante las prácticas de laboratorio, organización y limpieza del laboratorio.
+
+**Monitor del curso Fisiología - Universidad de Antioquia** \hfill [ene 2017 – jun 2017]{.cvfloat}\
+Asesoría a estudiantes, acompañamiento durante las prácticas de laboratorio, organización y limpieza del laboratorio.
+
+**Monitor del curso Fisiología vegetal - Universidad de Antioquia** \hfill [jun 2016 – dic 2016]{.cvfloat}\
+Asesoría a estudiantes, acompañamiento durante las prácticas de laboratorio, organización y limpieza del laboratorio.
+
+**Monitor del curso Anatomía vegetal - Universidad de Antioquia** \hfill [julio 2015 – junio 2016]{.cvfloat}\
+Recolecta de material vegetal, asesoría a estudiantes, acompañamiento durante las prácticas de laboratorio, organización y limpieza del laboratorio.
+
+**Auxiliar de investigación - Universidad de Antioquia** \hfill [ene 2015 – may 2016]{.cvfloat}\
+Preparación, procesamiento, obtención, observación y descripción de cortes histológico mediante técnicas histológicas en el proyecto Comparación de la anatomía caulinar de especies del género *Bomarea* Mirb.
+
+**Monitor del curso Biología celular y molecular - Universidad de Antioquia** \hfill [dic 2014 – jun 2015]{.cvfloat}\
+Asesoría a estudiantes, acompañamiento durante las prácticas de laboratorio, organización y limpieza del laboratorio.
+
+# Aptitudes
+
+**Campo**
+Experiencia en elaboración de colecciones vegetales y en la toma de datos en campo.
+
+**Informática**
+Experiencia y conocimiento en el manejo de Sistemas Operativos (iOS, Linux, macOS, Windows), software de ofimática (Google Docs Editors y Microsoft Office), Google Classroom, software bioinformáticos (moleculares y filogenéticos), en lenguaje de programación R, en sistemas de información geográfica (QGIS) y creación de contenido en Quarto y Markdown.
+
+**Laboratorio**
+Experiencia en técnicas y métodos palinológicos (obtención, identificación y análisis), de biología molecular (extracción, amplificación, edición y análisis de secuencias de ADN con fines de estudios filogenéticos y poblaciones) e histológicos (obtención, preparación, observación y descripción de tejidos animales y vegetales).
+
+**Otros**
+Experiencia en la organización y logística de eventos académicos. Experiencia en la elaboración de inventarios de materiales e insumo de laboratorio (SGA).
+
+# Encuentros académicos
+
+**I Simposio del Jardín Botánico de Medellín - Medellín, Colombia** \hfill [26 oct 2023]{.cvfloat}\
+**Asistencia**
+
+**XI Congreso Colombiano de Botánica - Villavicencio, Colombia** \hfill [6–10 nov 2022]{.cvfloat}\
+**Ponencia** Estudio aerobiológico en la ciudad de Medellín (2019 – 2022)
+
+**XI Congreso Colombiano de Botánica - Villavicencio, Colombia** \hfill [6–10 nov 2022]{.cvfloat}\
+**Ponencia** Palinología de sedimentos superficiales como herramienta para la reconstrucción de paleopaisajes en Cundinamarca
+
+**XI Congreso Colombiano de Botánica - Villavicencio, Colombia** \hfill [6–10 nov 2022]{.cvfloat}\
+**Poster** Atlas aeropalinológico de Colombia
+
+**XI Congreso Colombiano de Botánica - Villavicencio, Colombia** \hfill [6–10 nov 2022]{.cvfloat}\
+**Poster** Catálogo polínico de plantas ornamentales y espontáneas de la Universidad de Antioquia
+
+**X Congreso Colombiano de Botánica - Florencia, Colombia** \hfill [18–22 ago 2019]{.cvfloat}\
+**Poster** Utilidad de ITS en estudios filogeográficos de plantas de Páramo
+
+**II Simposio Colombiano en Sistemática y Evolución de Plantas - Medellín, Colombia** \hfill [2–3 ago 2018]{.cvfloat}\
+**Ponencia** Utilidad de ITS en estudios filogeográficos de plantas de Páramo
+
+**II Simposio Colombiano en Sistemática y Evolución de Plantas - Medellín, Colombia** \hfill [2–3 ago 2018]{.cvfloat}\
+**Logística**
+
+**V Simposio en Ciencias Exactas y Naturales, UdeA - Medellín, Colombia** \hfill [12–15 jun 2018]{.cvfloat}\
+**Ponencia** Exploración de la utilidad de la región ITS en estudios filogeográficos de plantas de áreas de Páramo
+
+**I Simposio Colombiano en Sistemática y Evolución de Plantas - Medellín, Colombia** \hfill [23–24 mar 2017]{.cvfloat}\
+**Logística**
+
+# Charlas
+
+**Curso de tratamientos taxonómicos y muestreo de plantas** \hfill [22 sep 2023]{.cvfloat}\
+Aerobiología: principios y técnicas de muestreo
+
+**Grupo de Alergología Clínica y Experimental GACE** \hfill [7 sep 2023]{.cvfloat}\
+Aerobiología de la ciudad de Medellín
+
+**Grupo de Alergología Clínica y Experimental GACE** \hfill [12 dic 2022]{.cvfloat}\
+Estudio aerobiológico en la ciudad de Medellín
+
+# Publicaciones
+
+::: {#refs-main}
+:::
+
+# Reportes técnicos
+
+::: {#refs-appendix}
+:::
+
+# Membresías
+
+**Grupo de Estudios Botánicos GEOBOTA. Universidad de Antioquia**\
+Estudiante de doctorado
+
+**Asociación Colombiana de Botánica**\
+Socio activo
+
+# Referencias
+
+Disponible bajo petición.
