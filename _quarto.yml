@@ -1,7 +1,6 @@
 project:
   type: website
 
-lang: es
 date-format: iso
 
 execute:
@@ -9,11 +8,17 @@ execute:
 
 website:
   title: "Álex Espinosa-Correa"
-  image: images/banner-AEC.png
   description: "website personal de Álex Espinosa-Correa"
-  favicon: images/icon-AEC.png
   site-url: https://alexespinosaco.github.io
-
+  repo-url: https://github.com/alexespinosaco/alexespinosaco.github.io
+  
+  image: images/banner-AEC.png
+  favicon: images/icon-AEC.png
+  
+  page-navigation: false
+  back-to-top-navigation: false
+  bread-crumbs: true
+  
   # cookie-consent: 
   #   type: express
   #   style: simple
@@ -23,6 +28,9 @@ website:
     tracking-id: "G-RN5H7WV1DJ"
     anonymize-ip: true
 
+  open-graph:
+    locale: es_ES
+
   twitter-card: 
     creator: "@alexespinosaco"
     card-style: summary_large_image
@@ -30,13 +38,13 @@ website:
   navbar:
     logo: images/icon-AEC.png
     search: true
-    # background: secondary
+
     right: 
       - href: index.qmd
-        text: Home
-      # - href: about.qmd
-      #   text: About
-      - href: aerovagante.qmd
+        text: Inicio
+      - href: cv/index.qmd
+        text: Acerca
+      - href: aerovagante/index.qmd
         text: Blog
       - href: https://github.com/alexespinosaco
         icon: github
@@ -44,12 +52,13 @@ website:
         icon: linkedin
       - href: https://mstdn.social/@alexespinosaco
         icon: mastodon
-      - href: aerovagante.xml
+      - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
+        text: "{{< ai researchgate >}}"
+      - href: index.xml
         icon: rss
 
   page-footer: 
-    # background: secondary
-    left: Álex Espinosa-Correa 2024, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+    left: Álex Espinosa-Correa © 2024. All content licensed  under [CC BY 4.0 {{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}](https://creativecommons.org/licenses/by/4.0/)
     right: 
       - href: https://github.com/alexespinosaco
         icon: github
@@ -57,6 +66,8 @@ website:
         icon: linkedin
       - href: https://mstdn.social/@alexespinosaco
         icon: mastodon
+      - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
+        text: "{{< ai researchgate >}}"
 
 format:
   html:
