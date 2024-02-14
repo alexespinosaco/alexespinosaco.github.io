@@ -54,7 +54,7 @@ website:
         icon: mastodon
       - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
         text: "{{< ai researchgate >}}"
-      - href: index.xml
+      - href: aerovagante/index.xml
         icon: rss
 
   page-footer: 
