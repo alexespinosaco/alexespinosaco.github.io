@@ -15,13 +15,15 @@ about:
     - href: https://mstdn.social/@alexespinosaco
       icon: mastodon
       text: Mastodon
+    - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
+      text: "{{< ai researchgate >}} ResearchGate"
 ---
 
 # Álex Espinosa-Correa
 
 ¡Hola!
 
-Soy Álex. Soy biólogo y actualmente estoy terminando mi doctorado en biología en la [Universidad de Antioquia](http://udea.edu.co/). Mi investigación trata sobre el polen y esporas que se encuentran en la atmósfera (aerobiología) de la ciudad de Medellín, Colombia.
+Soy Álex. Soy biólogo y actualmente estoy terminando mi doctorado en biología en la [Universidad de Antioquia](http://udea.edu.co/). Mi investigación es sobre el polen y esporas que se encuentran en la atmósfera (aerobiología) de la ciudad de Medellín, Colombia.
 
 Soy un apasionado de la botánica, la palinología, la educación, GIS, R, Quarto, la visualización de datos y *Open and reproducible science*.
 
