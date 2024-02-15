@@ -1,6 +1,6 @@
 ---
 title: "Cómo hacer un curriculum vitae en Quarto"
-description: "Formas de hacer una hoja de vida o CV hay tantas como currículos pueda haber, acá se presenta como realizar un cv útlizando Quarto."
+description: "Existen tantas formas de hacer una hoja de vida o CV como currículos puedan existir. ¿Qué tal si hacemos un CV utilizando Quarto?"
 
 date: 2024-04-14
 image: preview.png
@@ -28,13 +28,13 @@ draft: true
 
 ## TL;DR
 
-Explicación de cómo hacer un CV en HTML y PDF utilizando Quarto y RStudio, más las plantilla `quarto-cv` de Quarto y la extensión `multibib` de Pandoc.
+Explicación de cómo hacer un CV multiformato (HTML y PDF) utilizando Quarto y RStudio, además de la plantilla `quarto-cv` y la extensión `multibib` de Pandoc.
 
 ## Proposito
 
 Actualizar nuestro CV puede ser una actividad constante y que demanda cierta cantidad de tiempo. Quizá la mayoría de nosotros lo hacemos en un documento de Word o Docs. Yo la tenía en Pages, donde me sentía más cómodo y donde la había realizado por primera vez hace ya muchísimos años. Hace poco, en la última actualización, pensé «debería hacerla en Quarto», dicho y hecho... o bueno, más o menos. Desde ese momento, hasta tener una versión con la que me siento a gusto, que se puede ver acá mismo, ha pasado tiempo y varios aprendizajes de por medio para poderla hacer, desde por fin enfrentarme a aprender LaTeX hasta comenzar a entender cómo funcionan las plantillas y extensiones de Quarto.
 
-## Opciones disponibles
+## Opciones disponibles {#sec-intro}
 
 ## Paso a paso
 
@@ -112,13 +112,13 @@ pandoc-ext/multibib   [Install]   1.0.0 (filter)
  ? View documentation using default browser? (Y/n) › No
 ```
 
-### Crea un archivo .qmd
+### Crear un archivo `.qmd`
 
-En RStudio hay varias formas de crear un archivo .qmd[^3]. Yo creé un documento que se llama cv.qmd y en esté en donde agregaremos la información para generar nuestra versión HTML o PDF. En este documento irán las opciones del YAML así como nuestra información en formato Markdown. Primero miraremos que contiene el YAML.
+En RStudio hay varias formas de crear un archivo `.qmd`[^3]. Yo creé un archivo que se llama `cv.qmd`, en esté en donde agregaremos la información para generar nuestro CV en versión HTML o PDF. En este documento irán las opciones de la cabecera YAML así como nuestra información en formato Markdown. Primero agregaremos la información del YAML.
 
 [^3]: [Creando documentos en RStudio.](https://quarto.org/docs/tools/rstudio.html#creating-documents)
 
-#### YALM
+#### Configurando el YAML {#sec-yaml}
 
 ``` {.yaml filename="cv.qmd" code-line-numbers="true"}
 ---
@@ -161,23 +161,25 @@ format:
   html:                                      # <12>
     toc: true                                # <12>
   quarto-cv-pdf: default                     # <12>
+css: cv.css                                  # <13>
 ---
 ```
 
 1. Título en el HTML y parte del pie de página del PDF.
 2. Fecha de publicación en el HTML y parte del pie de página del PDF.
-3. Sólo afecta al HTML. Para el PDF hay que [modificar los `*.tex`](#sex-tex)
+3. Sólo afecta al HTML. Para el PDF hay que [modificar los `*.tex`](#sec-tex)
 4. Autor en el HTML. Parte de la cabecera y del pie de página del PDF.
 5. Datos personales, aparecen sólo en el PDF. Las opciones son las disponibles en `quarto-cv`, [hay algunas más](https://github.com/mps9506/quarto-cv?tab=readme-ov-file#contact-block), se pueden cambiar al [modificar los `*.tex`](#sex-tex)
 6. Referentes a la fuente y sus propiedades, se pueden [modificar](https://github.com/mps9506/quarto-cv?tab=readme-ov-file#fonts).
 7. En el PDF, aparecen iconos de [Font Awesome](https://fontawesome.com) junto a los datos personales. 
 8. Es necesario para que `multibib`[funcione correctamente en Quarto](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#quarto) y poder crear múltiples bibliografías[^4]. 
 9. Es necesario indicarle a Quarto que incluya toda la bibliografía que [no estamos citando](https://quarto.org/docs/authoring/footnotes-and-citations.html#including-uncited-items) que encuentre en los archivos .bib (u otros formatos).
-10. Podemos [incluir múltiples bibliografías](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) gracias a `multibib`. Sólo necesitamos asignar un nombre e indicar el archivo donde está la bibliografía[^5]. Estos nombres deben coincidir con los [divs](https://quarto.org/docs/authoring/footnotes-and-citations.html#bibliography-generation) que incluiremos [en el Markdown](#sec-markdown). 
-11. Podemos agregar el estilo de citación que queramos, agregando el [CSL](https://citationstyles.org/) correspondiente. Por defecto, Quarto utiliza [Chicago](https://quarto.org/docs/authoring/footnotes-and-citations.html#sec-citations-style). Mientras que `quarto-cv`utiliza una versión modificada de APA, aunque a mí no me ha funcionado, y la he tenido que [descargar](https://github.com/mps9506/quarto-cv/blob/main/apa-cv.csl). Se pueden descargar [más de 10000 estilos de citación](https://www.zotero.org/styles).
+10. Podemos [incluir múltiples bibliografías](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) gracias a `multibib`. Sólo necesitamos asignar un nombre e indicar el archivo donde está la bibliografía[^5]. Estos nombres (claves) deben coincidir con los [divs](https://quarto.org/docs/authoring/footnotes-and-citations.html#bibliography-generation) que incluiremos [en el Markdown](#sec-markdown). 
+11. Podemos agregar el estilo de citación que queramos, agregando el [CSL](https://citationstyles.org/) correspondiente. Por defecto, Quarto utiliza [Chicago](https://quarto.org/docs/authoring/footnotes-and-citations.html#sec-citations-style). Mientras que `quarto-cv`utiliza una versión modificada de APA, aunque a mí no me ha funcionado, y la he tenido que [descargar](https://github.com/mps9506/quarto-cv/blob/main/apa-cv.csl). Adicionalmente, se pueden descargar [más de 10000 estilos de citación](https://www.zotero.org/styles).
 12. Los formatos de salida serán HTLM con la tabla de contenido (`toc: true`) y `quarto-cv-pdf` nos genera el PDF. 
+13. Está opción nos servirá para estilizar el HTML resultante. Lo miraremos en la [sección sobre CSS](#sec-css).
 
-[^4]: No tengo tan claro sí `citeproc: false` es necesario, he probado con `citeproc: true` y obtengo igual resultado. Creería que en este escenario no es necesario desactivarlo ya que [la descripción de `multibib`](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) dice: "this filter allows to create multiple bibliographies using citeproc". Aunque puede [haber escenarios](https://www.andrewheiss.com/blog/2023/12/11/separate-bibliographies-quarto/#disable-citeproc) donde sea necesario desactivarlo. 
+[^4]: No tengo tan claro sí `citeproc: false` sea necesario, he probado con `citeproc: true` y obtengo igual resultado. Creería que en este escenario no es necesario desactivarlo ya que [la descripción de `multibib`](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) dice: "this filter allows to create multiple bibliographies using citeproc". Aunque puede [haber escenarios](https://www.andrewheiss.com/blog/2023/12/11/separate-bibliographies-quarto/#disable-citeproc) donde sea necesario desactivarlo. 
 
 [^5]: Algunos ejemplos:\
 ``` {.yaml}
@@ -189,57 +191,83 @@ bibliography:
 ```
 Tomado de [`quarto-cv`](https://github.com/mps9506/quarto-cv?tab=readme-ov-file#bibliographies).
 
-#### Markdown {#sec-markdown}
+Teniendo el YAML configurado, en el mismo archivo procederemos a escribir nuestra información personal.
 
-Después del YALM, agregaremos la información que consideremos pertinente y el estilo en que lo hagamos es a elección. Acá presento una versión resumida donde comento las principales apartados para obtener un CV similar, así como unos cuantos consejos o trucos. La versión completa de mi CV se puede ver [acá](../../cv/index.qmd).
+#### Escribiendo Markdown {#sec-markdown}
 
-``` {.markdown filename="cv.qmd" code-line-numbers="true"}
-Biólogo y candidato a doctor de la Universidad de Antioquia, especializado en el campo de la botánica y la palinología.                                                                        # <1>
+Después del YAML, agregaremos la información que consideremos pertinente y el estilo en que lo hagamos es a elección. Acá muestro una versión esquemática donde comento lo más importante. La versión completa de mi CV puede verse [acá](../../cv/index.qmd), mientras que el código puede descargarse de mi [GitHub](https://github.com/alexespinosaco/alexespinosaco.github.io/tree/main/cv).
 
-# Educación                                                                                                                                                                                    # <2>
+``` { filename="cv.qmd" code-line-numbers="true"}
+Una pequeña descripción.                                        # <1>
 
-**Doctor en Biología - Universidad de Antioquia - Medellín, Colombia** \hfill [2019-actual]{.cvfloat}\                                                                                         # <3>
-Estudio aerobiológico en la ciudad de Medellín (Colombia): una variable biológica de la calidad del aire en una ciudad altamente contaminada
+# Educación                                                     # <2>
 
-**Biólogo - Universidad de Antioquia - Medellín, Colombia** \hfill [2011-2018]{.cvfloat}\
-Exploración de la utilidad de la región ITS en estudios filogeográficos de plantas de áreas de Páramo
+**Título - Universidad - Lugar** \hfill [inicio-fin]{.cvfloat}\ # <3>
+Título trabajo de grado 
+
+**Título - Universidad - Lugar** \hfill [inicio-fin]{.cvfloat}\ # <3>
+Título trabajo de grado 
 
 # Experiencia
 
-**Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2023 – jul 2023]{.cvfloat}\
-Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas.
+**Título - Empresa ** \hfill [inicio-fin]{.cvfloat}\            # <3>
+Funciones
 
-**Estudiante instructor - Universidad de Antioquia** \hfill [mar 2019 – nov 2022]{.cvfloat}\
-Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas y biología general.
+**Título - Empresa ** \hfill [inicio-fin]{.cvfloat}\            # <3>
+Funciones
 
-# Publicaciones                                                                                                                                                                                # <4>
+# Artículos
 
-::: {#refs-main}                                                                                                                                                                               # <4>
-:::                                                                                                                                                                                            # <4>
+::: {#refs-main}                                                # <4>
+:::
 
-# Reportes técnicos                                                                                                                                                                            # <4>
+# Libros
 
-::: {#refs-appendix}                                                                                                                                                                           # <4>
-:::                                                                                                                                                                                            # <4>
+::: {#refs-appendix}                                            # <4>
+:::
 ```
 
-1. Una descripción personal, es sólo texto sin nada especial. 
+1. Una descripción personal, sólo texto. 
 2. Se puede usar [cabeceras](https://quarto.org/docs/authoring/markdown-basics.html#headings) de diferente nivel. Esto van a modificar la apariencia tanto en el HTML como en el PDF. Los cambios son más evidentes en el PDF. Las cabeceras de primer nivel (#) aparecen con mayúscula inicial, mientras que las de segundo nivel (##) son en mayúscula sostenida. 
-3. Para que las fechas (o lo que se quiera) aparezcan hacia el margen derecho se ha de agregar ``` \hfill ``` para que ocurra en el PDF, mientras que para el HTLM se ha de inlcuir la información como ``` [feb 2023 – jul 2023]{.cvfloat} ```.
+3. Para que las fechas (o lo que se quiera poner) aparezcan hacia el margen derecho se ha de agregar `\hfill` e `[inicio-fin]{.cvfloat}`. El primero afecta al PDF, mientras que el segundo afecta al HTML. `\hfill` es un [comando de LaTeX](https://www.overleaf.com/learn/latex/Line_breaks_and_blank_spaces#Horizontal_blank_spaces) que inserta un espacio en blanco que llena el espacio disponible entre dos elementos en una misma linea[^6]. De `[inicio-fin]{.cvfloat}` hablamos [más adelante](#sec-css).
+4. Acá es donde se generara las diferentes bibliografías. Lo más importante para tener diferentes bibliografías es crear divs para cada bibliografía. En Quarto, los divs se crean utilizando tres dos puntos seguidos (`:::`), como elementos de apertura y cierre del div. Los [divs para la bibliografía](https://quarto.org/docs/authoring/footnotes-and-citations.html#bibliography-generation) deben de ir acompañados de `{#refs-*}`, donde el `*` es el nombre (clave) que asignamos en la opción `bibliography` de nuestro ([YAML Anotación 10.](#sec-yaml)).
 
-#### CSS
+[^6]: El resultado sin `\hfill`:\
+![](images/sin_hfill.png)\
+El resultado con `\hfill`:\
+![](images/con_hfill.png)
 
-### Modificando los `*.tex` {#sex-tex}
+Ya tendríamos listo nuesto archivo `.qmd`, ya sólo nos faltaría tener dos archivos más para poder obtener nuestro CV en HTML y PDF. El primero de estos archivos es un `.css` que nos permitirá estilizar un poco la presentación del HTML. 
+
+### Crear el `*.css*` {#sec-css}
+
+Una de las cosas que quería cuando comencé a buscar cómo hacer mi CV en Quarto, es que la versión en HTML se viera tal que así:
+
+![Resultado obtenido agregando `[inicio-fin]{.cvfloat}`.](images/con_float.png){#fig-con-float fig-align="center"}
+
+Pero al renderizarlo siempre obtenida este horrible resultado:
+
+![Resultado obtenido sin agregar `[inicio-fin]{.cvfloat}`.](images/sin_float.png){#fig-sin-float fig-align="center"}
+
+Viendo entre las [posibles opciones](#sec-intro). La de [Cynthia Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/) y [Drew Dimmery](https://ddimmery.com/about) son las que muestran el resultado que yo quería.
+
+[float](https://www.w3schools.com/css/css_float.asp)
+
+### Crear los `*.bib`
 
 ### Renderizar 
 
-En Quarto, cuando se genera una página HTLM (sola o en un website), está automáticamente puede incluir los otros formatos especificados en el YAML[^6]. Sí  nuestro CV es parte de un proyecto de Quarto, sólo tendremos que renderizar el documento en cuestión o todo el proyecto para incluir los otros formatos automáticamente. Sí por el contraría, nuestro cv no hace parte de un proyecto de Quarto, tendremos que recurrir a la Terminal y utilizar el siguiente comando:
+En Quarto, cuando se genera una página HTLM (sola o en un website), está automáticamente puede incluir los otros formatos especificados en el YAML[^7]. Sí  nuestro CV es parte de un proyecto de Quarto, sólo tendremos que renderizar el documento en cuestión o todo el proyecto para incluir los otros formatos automáticamente. Sí por el contraría, nuestro cv no hace parte de un proyecto de Quarto, tendremos que recurrir a la Terminal y utilizar el siguiente comando:
 
-[^6]: [Incluyendo otros formatos en Quarto.](https://quarto.org/docs/output-formats/html-multi-format.html)
+[^7]: [Incluyendo otros formatos en Quarto.](https://quarto.org/docs/output-formats/html-multi-format.html)
 
 ``` {.bash filename="Terminal"}
 quarto render cv.qmd
 ```
+
+## Ir un poco más alla
+
+### Modificar los `*.tex` {#sec-tex}
 
 ## Posibles errores y soluciones
 
@@ -255,3 +283,5 @@ l.77   \setmainlanguage[]{}
 ```
 
 Tras buscar y probar un poco, dí con que el error lo estaba generando el lenguaje que hayamos configurado en el YAML, ya sea en el `*.qmd` en que estemos trabajando o en el archivo de configuración `_quarto.yml` de nuestro proyecto. Intente configura `lang: en` en el archivo `cv.qmd` o en `_quarto.yml`, y no funcionó. Intente utilizando un archivo `_metadata.yml` con `lang: en` en la misma ubicación de `cv.qmd`, y tampoco funciono. La única solución que encontré a esto fue eliminar completamente la opción `lang: *` que tenía en el archivo `_quarto.yml`. Esto es un pequeño problema porque quería conservar la información que Quarto genera automáticamente en español. Una posible solución sea utilizar la opción de [idioma alternativo](https://quarto.org/docs/authoring/language.html#alternate-language) de Quarto, aunque, las más prácticas son agregar `lang: en` en los `*.qmd` (excepto `cv.qmd`) o agregarlo directamente a `_metadata.yml`, como hice con el blog. 
+
+## Futuro
