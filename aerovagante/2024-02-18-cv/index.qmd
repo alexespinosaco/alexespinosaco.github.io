@@ -3,12 +3,12 @@ title: "Cómo hacer un curriculum vitae en Quarto"
 description: "Existen tantas formas de hacer una hoja de vida o CV como currículos puedan existir. ¿Qué tal si hacemos un CV utilizando Quarto?"
 
 date: 2024-02-18
-image: preview.png
+image: images/cv_01.png
 
 categories:
   - LaTeX
-  - personal
-  - quarto
+  - Personal
+  - Quarto
   - RStudio
 
 citation: 
@@ -22,6 +22,7 @@ execute:
 lang: es
 
 toc: true
+toc-depth: 4
 
 draft: false
 ---
@@ -290,7 +291,7 @@ Casi tenemos todo lo necesario para poder generar nuestro CV en HTML y PDF. Ahor
 
 Para poder generar los `*.bib*` necesarios para generar nuestro CV, utilizaremos Zotero en nuestro equipo. También se podrían usar las opciones online de [Zotero Web Library](https://www.zotero.org/mylibrary) o  [ZoteroBib](https://zbib.org). 
 
-#### Usando Zotero
+#### Usar Zotero
 
 Después de [descargar](https://www.zotero.org/download/), instalar, configurar y agregar la biliografía a Zotero. Seleccionar las referencias que queramos incluir en un archivo {{< fa arrow-right >}} clic derecho {{< fa arrow-right >}} Exportar elementos… {{< fa arrow-right >}} seleccionar BibTex en Formato y clic en `OK` {{< fa arrow-right >}} asignar un nombre y clic en `SAVE`.
 
