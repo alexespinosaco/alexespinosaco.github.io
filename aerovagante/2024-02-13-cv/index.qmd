@@ -23,7 +23,7 @@ lang: es
 
 toc: true
 
-draft: true
+draft: false
 ---
 
 ## TL;DR
@@ -32,7 +32,7 @@ Explicación de cómo hacer un CV multiformato (HTML y PDF) utilizando Quarto y 
 
 ## Proposito
 
-Actualizar nuestro CV puede ser una actividad constante y que demanda cierta cantidad de tiempo. Quizá la mayoría de nosotros lo hacemos en un documento de Word o Docs. Yo la tenía en Pages, donde me sentía más cómodo y donde la había realizado por primera vez hace ya muchísimos años. Hace poco, en la última actualización, pensé: «debería hacerla en Quarto», dicho y hecho… o bueno, más o menos. Desde ese momento, hasta tener una versión con la que [me siento a gusto](../../cv/index.qmd) y que cumple con tener versión HTML y PDF, ha pasado tiempo y varios aprendizajes de por medio para poderla hacer, desde por fin enfrentarme a aprender $\LaTeX$ hasta comenzar a entender cómo funcionan las extensiones y plantillas de Quarto.
+Actualizar nuestro CV puede ser una actividad tediosa y que demanda cierta cantidad de tiempo. Quizá la mayoría de nosotros lo hacemos en un procesador de texto (Word o Docs). Yo la tenía en Pages, donde me sentía más cómodo y donde la había realizado por primera vez hace ya muchísimos años. Hace poco, en la última actualización, pensé: «debería hacerla en Quarto», dicho y hecho… o bueno, más o menos. Desde ese momento, hasta tener una versión con la que [me siento a gusto](../../cv/index.qmd) y que tiene versión en HTML y PDF, ha pasado tiempo y varios aprendizajes de por medio para poderla hacer, desde por fin enfrentarme a aprender $\LaTeX$ hasta comenzar a entender cómo funcionan las extensiones y plantillas de Quarto.
 
 ::: {#fig-cv layout-ncol=2 layout-valign="center" fig-align="center"}
 ![HTML.](images/cv_01.png){group="cv"}
@@ -47,8 +47,8 @@ Versión en HTML y PDF de mi CV.
 [Quarto](http://quarto.org) es un sistema de publicación fantástico y las posibilidades son enormes. A pesar de contar con [múltiples formatos](https://quarto.org/docs/output-formats/all-formats.html) no tiene uno dedicado específicamente para realizar CVs, pero por fortuna cuenta con la posibilidad de crear [extensiones y plantillas](https://quarto.org/docs/extensions/), lo cual ha sido aprovechado por la muy buena comunidad que hay detrás, permitiendo el surgimiento de múltiples opciones para esto, cada una con sus ventajas y sus desventajas. Entre las posibles opciones podemos encontrar:
 
 -   Las [cuatro extensiones](https://github.com/schochastics/quarto-cv?tab=readme-ov-file) creadas por [David Schoch](http://archive.schochastics.net/post/create-a-cv-with-quarto/), las cuáles me parecen muy elegantes y sencillas de usar, aunque requiere agregar la información utilizando el paquete de R [`{tibble}`](https://tibble.tidyverse.org/index.html) y sólo genera la versión en PDF.
--   La extensión `quarto-cv` de [Michael Schramm](https://github.com/mps9506/quarto-cv), la cuál me parece sencilla y no requiere utilizar paquete alguno. Aunque sólo genera la versión en PDF.
--   La plantilla de [Alex Bass](https://alexbass.me/posts/resume/), similar a lo que yo tenía en Pages pero está hecha casi íntegramente en $\LaTeX$.
+-   La extensión `quarto-cv` de [Michael Schramm](https://github.com/mps9506/quarto-cv), la cuál me parece sencilla y no requiere utilizar paquete alguno. Sólo genera la versión en PDF.
+-   La plantilla de [Alex Bass](https://alexbass.me/posts/resume/), similar en aparaciencia a lo que yo tenía en Pages, pero está hecha casi íntegramente en $\LaTeX$.
 -   La plantilla de [Cynthia Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/), la cuál es multiformato, sencilla de usar, pero su versión en PDF no me gusta y tener que usar tanto CSS y `weasyprint` aún no me convence. 
 -   La plantilla de [Drew Dimmery](https://ddimmery.com/about) es sencilla de usar, aunque puede ser generada en HTML y PDF, hasta el mismo autor afirma que el PDF [es feo y espera mejorarlo](https://ddimmery.com/posts/quarto-website/#future-dreams). 
 -   El paquete [`{vitae}`](https://pkg.mitchelloharawild.com/vitae/) sus plantillas me parecen bonitas y permite generar tanto la versión en HTML y PDF, aunque no tiene integración con Quarto.
@@ -72,7 +72,7 @@ Antes de comenzar cualquier trabajo que implique Quarto o RStudio, es muy recome
 
 [^1]: [Qué son los proyectos de RStudio y cómo crearlos.](https://es.r4ds.hadley.nz/08-workflow-projects.html)
 
-Después de crear el proyecto y abrir nuestro proyecto, utilizaremos la Terminal integrada en RStudio[^2] para instalar la plantilla `quarto-cv` y la extensión `multibib`.
+Después de crear el proyecto y abrirlo, utilizaremos la Terminal integrada en RStudio[^2] para instalar la plantilla `quarto-cv` y la extensión `multibib`.
 
 [^2]: [Ubicación de la Terminal en RStudio.](https://support.posit.co/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE)\
 También se puede utilizar la Terminal por defecto del sistema operativo, estando el la carpeta donde está nuestro proyecto.
@@ -85,7 +85,7 @@ También se puede utilizar la Terminal por defecto del sistema operativo, estand
 quarto install extension mps9506/quarto-cv
 ```
 
-Cuando introduzcamos el anterior comando, seguimos las instrucciones (introducir Yes, Yes, No). Sí lo hemos hecho bien, la Terminal nos debe de aparecer lo siguiente:
+Cuando lo introduzcamos, seguimos las instrucciones (Yes, Yes, No). Sí lo hemos hecho bien, en la Terminal nos debe de aparecer lo siguiente:
 
 ``` {.bash filename="Terminal"}
 Quarto extensions may execute code when documents are rendered. If you do not 
@@ -108,13 +108,13 @@ quarto-cv   [Install]   2.0.0 (format)
 
 ### Instalar `multibib`
 
-Aunque `quarto-cv` ya trae instalado `multibib`, no fuí capaz de modificar `quarto-cv` para que también me generar la versión en HTML. Por lo tanto, para intalar `multibib`, introducimos en la Terminal el siguiente comando:
+Aunque `quarto-cv` ya trae instalado `multibib`, no fuí capaz de modificar `quarto-cv` para que también me generar la versión en HTML de las referencias. Por lo tanto, para instalar `multibib`, introducimos en la Terminal el siguiente comando:
 
 ``` {.bash filename="Terminal"}
 quarto install extension pandoc-ext/multibib
 ```
 
-Tras seguir las instrucciones (introducir Yes, Yes, No) que nos aparecen en la Terminal, esta se debe de ver así:
+Tras seguir las instrucciones (Yes, Yes, No) que nos aparecen en la Terminal, esta se debe de ver así:
 
 ``` {.bash filename="Terminal"}
 Quarto extensions may execute code when documents are rendered. If you do not 
@@ -137,7 +137,7 @@ pandoc-ext/multibib   [Install]   1.0.0 (filter)
 
 ### Crear un archivo `.qmd`
 
-En RStudio hay varias formas de crear un archivo `.qmd`[^3]. Yo creé un archivo que se llama `cv.qmd`, en esté en donde agregaremos la información para generar nuestro CV en versión HTML o PDF. En este documento irán las opciones de la cabecera YAML así como nuestra información en formato Markdown. Primero agregaremos la información del YAML.
+En RStudio hay varias maneras de crear un archivo `.qmd`[^3]. Yo creé un archivo que se llama `cv.qmd`, en esté agregaremos la información para generar nuestro CV en versión HTML o PDF. En este documento irán las opciones de la cabecera YAML así como nuestra información en formato Markdown. Primero agregaremos la información del YAML.
 
 [^3]: [Creando documentos en RStudio.](https://quarto.org/docs/tools/rstudio.html#creating-documents)
 
@@ -194,15 +194,15 @@ css: cv.css                                  # <13>
 4. Autor en el HTML. Parte de la cabecera y del pie de página del PDF.
 5. Datos personales, aparecen sólo en el PDF. Las opciones son las disponibles en `quarto-cv`, [hay algunas más](https://github.com/mps9506/quarto-cv?tab=readme-ov-file#contact-block), se pueden cambiar al [modificar los `*.tex`](#sex-tex)
 6. Referentes a la fuente y sus propiedades, se pueden [modificar](https://github.com/mps9506/quarto-cv?tab=readme-ov-file#fonts).
-7. En el PDF, aparecen iconos de [Font Awesome](https://fontawesome.com) junto a los datos personales. 
+7. Cuando `fontawesome: yes`, en el PDF aparecen iconos de [Font Awesome](https://fontawesome.com) junto a los datos personales. 
 8. Es necesario para que `multibib`[funcione correctamente en Quarto](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#quarto) y poder crear múltiples bibliografías[^4]. 
-9. Es necesario indicarle a Quarto que incluya toda la bibliografía que [no estamos citando](https://quarto.org/docs/authoring/footnotes-and-citations.html#including-uncited-items) que encuentre en los archivos .bib (u otros formatos).
-10. Podemos [incluir múltiples bibliografías](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) gracias a `multibib`. Sólo necesitamos asignar un nombre e indicar el archivo donde está la bibliografía[^5]. Estos nombres (claves) deben coincidir con los [Divs](https://quarto.org/docs/authoring/footnotes-and-citations.html#bibliography-generation) que incluiremos [en el Markdown](#sec-markdown). 
-11. Podemos agregar el estilo de citación que queramos, agregando el [CSL](https://citationstyles.org/) correspondiente. Por defecto, Quarto utiliza [Chicago](https://quarto.org/docs/authoring/footnotes-and-citations.html#sec-citations-style). Mientras que `quarto-cv`utiliza una versión modificada de APA, aunque a mí no me ha funcionado, y la he tenido que [descargar](https://github.com/mps9506/quarto-cv/blob/main/apa-cv.csl). Adicionalmente, se pueden descargar [más de 10000 estilos de citación](https://www.zotero.org/styles).
+9. Es necesario indicarle a Quarto que incluya toda la bibliografía que [no estamos citando](https://quarto.org/docs/authoring/footnotes-and-citations.html#including-uncited-items) que encuentre en los [archivos .bib (u otros formatos)](#sec-bib).
+10. Podemos [incluir múltiples bibliografías](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) gracias a `multibib`. Sólo necesitamos asignar un nombre e indicar [el archivo donde está la bibliografía](#sec-bib)[^5]. Estos nombres (claves) deben coincidir con los [Divs](https://quarto.org/docs/authoring/footnotes-and-citations.html#bibliography-generation) que [incluiremos en el Markdown](#sec-markdown). 
+11. Podemos agregar el estilo de citación ([CSL](https://citationstyles.org/)) que queramos. Por defecto, Quarto utiliza [Chicago](https://quarto.org/docs/authoring/footnotes-and-citations.html#sec-citations-style). Mientras que `quarto-cv`utiliza una versión modificada de APA, aunque a mí no me ha funcionado, y la he tenido que [descargar](https://github.com/mps9506/quarto-cv/blob/main/apa-cv.csl). Adicionalmente, se pueden descargar [más de 10000 estilos de citación](https://www.zotero.org/styles).
 12. Los formatos de salida serán HTLM con la tabla de contenido (`toc: true`) y `quarto-cv-pdf` nos genera el PDF. 
 13. Está opción nos servirá para estilizar el HTML resultante. Lo miraremos en la [sección sobre CSS](#sec-css).
 
-[^4]: No tengo tan claro sí `citeproc: false` sea necesario, he probado con `citeproc: true` y obtengo igual resultado. Creería que en este escenario no es necesario desactivarlo ya que [la descripción de `multibib`](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) dice: "this filter allows to create multiple bibliographies using citeproc". Aunque puede [haber escenarios](https://www.andrewheiss.com/blog/2023/12/11/separate-bibliographies-quarto/#disable-citeproc) donde sea necesario desactivarlo. 
+[^4]: No tengo tan claro sí `citeproc: false` sea necesario, he probado con `citeproc: true` y obtengo igual resultado. Creería que en este escenario no es necesario desactivarlo ya que [la descripción de `multibib`](https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib) dice: "this filter allows to create multiple bibliographies using citeproc". Aunque pueden [haber escenarios](https://www.andrewheiss.com/blog/2023/12/11/separate-bibliographies-quarto/#disable-citeproc) donde sea necesario desactivarlo. 
 
 [^5]: Algunos ejemplos:\
 ``` {.yaml}
@@ -218,7 +218,7 @@ Teniendo el YAML configurado, en el mismo archivo procederemos a escribir nuestr
 
 #### Escribir en Markdown {#sec-markdown}
 
-Después del YAML, agregaremos la información que consideremos pertinente y el estilo en que lo hagamos es a elección. Acá muestro una versión esquemática donde comento lo más importante. La versión completa de mi CV puede verse [acá](../../cv/index.qmd), mientras que el código puede descargarse de mi [GitHub](https://github.com/alexespinosaco/alexespinosaco.github.io/tree/main/cv).
+Después del YAML, agregaremos la información que consideremos pertinente, el estilo en que lo hagamos es a elección. Acá muestro una versión esquemática donde comento lo más importante. La versión completa de mi CV puede verse [acá](../../cv/index.qmd), mientras que el código puede descargarse de mi [GitHub](https://github.com/alexespinosaco/alexespinosaco.github.io/tree/main/cv).
 
 ``` { filename="cv.qmd" code-line-numbers="true"}
 Una pequeña descripción.                                        # <1>
@@ -253,14 +253,14 @@ Funciones
 1. Una descripción personal, sólo texto. 
 2. Se puede usar [cabeceras](https://quarto.org/docs/authoring/markdown-basics.html#headings) de diferente nivel. Esto van a modificar la apariencia tanto en el HTML como en el PDF. Los cambios son más evidentes en el PDF. Las cabeceras de primer nivel (#) aparecen con mayúscula inicial, mientras que las de segundo nivel (##) son en mayúscula sostenida. 
 3. Para que las fechas (o lo que se quiera poner) aparezcan hacia el margen derecho se ha de agregar `\hfill` e `[inicio-fin]{.cvfloat}`. El primero afecta al PDF, mientras que el segundo afecta al HTML. `\hfill` es un [comando de $\LaTeX$](https://www.overleaf.com/learn/latex/Line_breaks_and_blank_spaces#Horizontal_blank_spaces) que inserta un espacio en blanco que llena el espacio disponible entre dos elementos en una misma linea[^6]. De `[inicio-fin]{.cvfloat}` hablamos [más adelante](#sec-css).
-4. Acá es donde se generara las diferentes bibliografías. Lo más importante para tener diferentes bibliografías es crear Divs para cada bibliografía. En Quarto, los divs se crean utilizando tres dos puntos seguidos (`:::`), como elementos de apertura y cierre del div. Los [Divs para la bibliografía](https://quarto.org/docs/authoring/footnotes-and-citations.html#bibliography-generation) deben de ir acompañados de `{#refs-*}`, donde el `*` es el nombre (clave) que asignamos en la opción `bibliography` de nuestro ([YAML Anotación 10.](#sec-yaml)).
+4. Acá es donde se generara las diferentes bibliografías. Lo más importante para tener diferentes bibliografías es crear Divs para cada bibliografía. En Quarto, los divs se crean utilizando tres dos puntos seguidos (`:::`), como elementos de apertura y cierre del Div. Los [Divs para la bibliografía](https://quarto.org/docs/authoring/footnotes-and-citations.html#bibliography-generation) deben de ir acompañados de `{#refs-*}`, donde el `*` es el nombre (clave) que asignamos en la opción `bibliography` de nuestro ([YAML Anotación 10.](#sec-yaml)).
 
 [^6]: El resultado sin `\hfill`:\
 ![](images/sin_hfill.png)\
 El resultado con `\hfill`:\
 ![](images/con_hfill.png)
 
-Ya tendríamos listo nuestro archivo `.qmd`, ya sólo nos faltaría tener dos archivos más para poder obtener nuestro CV en HTML y PDF. El primero de estos archivos es un `.css` que nos permitirá estilizar un poco la presentación del HTML. 
+Ya tendríamos listo nuestro archivo `.qmd`, sólo nos faltaría tener dos archivos más para poder generar nuestro CV en HTML y PDF. El primero de estos archivos es un `.css` que nos permitirá estilizar un poco la presentación del HTML. El segundo son los archivos [`*.bib`](#sec-bib).
 
 ### Crear el `*.css*` {#sec-css}
 
@@ -272,7 +272,7 @@ Pero al renderizarlo siempre obtenida este resultado:
 
 ![Resultado obtenido sin agregar `[inicio-fin]{.cvfloat}`.](images/sin_float.png){#fig-sin-float fig-align="center"}
 
-Buscando entre las [posibles opciones](#sec-intro). La de [Cynthia Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/) y [Drew Dimmery](https://ddimmery.com/about) son las que muestran el resultado como yo quería. Ambas utilizan clases de CSS para lograrlo. [Dimmery utiliza](https://github.com/ddimmery/quarto-website/blob/main/about.qmd) Divs más `[.d-flex](https://getbootstrap.com/docs/4.0/utilities/flex/)` y `.justify-content-between`, el inconveniente que encontré es que la escritura de nuestro CV se vuelve un poco más enredada y el PDF resultante no es similar al HTML. Por otra parte, Huang utiliza Spans y `[float](https://www.w3schools.com/css/css_float.asp)`, esta opción es más sencilla de implementar mientras redactamos nuestro CV y permite, junto a `\hfill`, que el HTML y PDF sean similares. 
+Buscando entre las [posibles opciones](#sec-intro). La de [Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/) y [Dimmery](https://ddimmery.com/about) son las que muestran el resultado como yo quería. Ambas utilizan clases de CSS para lograrlo. [Dimmery utiliza](https://github.com/ddimmery/quarto-website/blob/main/about.qmd) Divs más `[.d-flex](https://getbootstrap.com/docs/4.0/utilities/flex/)` y `.justify-content-between`, el inconveniente que encontré es que la escritura de nuestro CV se vuelve un poco más enredada y el PDF resultante no es similar al HTML. Por otra parte, Huang utiliza Spans y `[float](https://www.w3schools.com/css/css_float.asp)`, esta opción es más sencilla de implementar mientras redactamos nuestro CV y permite, junto a `\hfill`, que el HTML y PDF sean similares. 
 
 Para implementar esta última opción, primero tendremos que crear un archivo `*.css` y guardarlo en el mismo directorio donde tengamos nuestros `*.qmd*`. El mío lo llame **cv.css**, se puede descargar desde [acá](../../cv/cv.css), este nombre debe ser igual al ingresado en la opción `css` de [nuestro YAML](#sec-yaml). Este archivo contendrá lo siguiente:
 
@@ -284,11 +284,11 @@ Para implementar esta última opción, primero tendremos que crear un archivo `*
 
 Con esto configurado, en [nuestro texto Markdwon](#sec-markdown) ya podremos utilizar`[inicio-fin]{.cvfloat}` para indicar que lo que se encuentra entre los corchetes `[]` se alinee a la derecha en el HTML. Sí tenemos más conocimientos en CSS, en este mismo archivo se pueden agregar más comandos para personalizar nuestro HTML, tal y como hace [Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/).
 
-### Crear los `*.bib`
+### Crear los `*.bib`{#sec-bib}
 
-Casi tenemos todo lo necesario para poder generar nuestro CV en HTML y PDF, ahora sólo faltan los archivos donde está nuestra bibliografía, en este caso, usaremos archivos `*.bib*`. Organizar bibliográfias siempre puede ser un proceso tedioso y que requiere tiempo. Por eso, creo que una de las herramientas más importantes que cualquier persona relacionada con la academia puede manejas es un [gestor de referencias bibliográficas](https://es.wikipedia.org/wiki/Gestor_de_referencias_bibliográficas), entre todas las alternativas existentes, [Zotero](https://www.zotero.org/) es la más útil y potente que he usado, además de ser Software Libre. 
+Casi tenemos todo lo necesario para poder generar nuestro CV en HTML y PDF. Ahora sólo faltan los archivos donde está nuestra bibliografía, en este caso, usaremos archivos `*.bib*`. Organizar bibliográfias siempre puede ser un proceso tedioso y que requiere tiempo. Por eso, creo que una de las herramientas más importantes que cualquier persona relacionada con la academia puede manejas es un [gestor de referencias bibliográficas](https://es.wikipedia.org/wiki/Gestor_de_referencias_bibliográficas), entre todas las alternativas existentes, [Zotero](https://www.zotero.org/) es la más útil y potente que he usado, además de ser Software Libre. 
 
-Para poder generar los `*.bib*` necesarios para generar nuestro CV, utilizaremos Zotero en nuestro equipo. También se podría usar las opciones online de [Zotero Web Library](https://www.zotero.org/mylibrary) o  [ZoteroBib](https://zbib.org). 
+Para poder generar los `*.bib*` necesarios para generar nuestro CV, utilizaremos Zotero en nuestro equipo. También se podrían usar las opciones online de [Zotero Web Library](https://www.zotero.org/mylibrary) o  [ZoteroBib](https://zbib.org). 
 
 #### Usando Zotero
 
@@ -304,7 +304,7 @@ Después de [descargar](https://www.zotero.org/download/), instalar, configurar 
 Pasos para exportar archivos `*.bib` en Zotero. 
 :::
 
-Ya tenemos todo listo para poder generar nuestro CV tanto eh HTML como en PDF, ahora sólo tenemos que renderizar.
+Ya tenemos todo lo neceasrio para poder generar nuestro CV tanto en HTML como en PDF, ahora sólo tenemos que renderizar.
 
 ### Renderizar {#sec-render}
 
@@ -325,7 +325,7 @@ Tras seguir los pasos anteriores, obtenemos un CV en formato HTML y PDF [similar
 Quizá queremos agregar un contenido que sólo es visible en la versión PDF de nuestro CV, pero no esté visible en la versión HTML, por fortuna, Quarto tiene la capacidad de que cierta información sólo se muestre en un formato pero no en otro. Esto es conocido como [contenido condicional](https://quarto.org/docs/authoring/conditional.html) y es relativamente fácil de implementar en nuestro CV. Para esto tenemos `.content-visible` y `.content-hidden`, la primera hace que el contenido sólo aparezca en el formato indicado, mientras que la segunda hace que el contenido no aparezca sólo en el formato indicado. Para hacer esto en nuestro CV, en el archivo `*.qmd` donde estamos redactando nuestros CV, tendríamos que agregar lo siguiente:
 
 ``` {.markdown filename="cv.qmd" code-line-numbers="false"}
-Este contenido que se mostraría en cualquier formato.
+Este contenido se mostraría en cualquier formato.
 
 ::: {.content-visible when-format="pdf"}
 
@@ -339,20 +339,20 @@ Este contenido no se mostraría en el HTML.
 
 :::
 
-Este contenido que se mostraría en cualquier formato.
+Este contenido se mostraría en cualquier formato.
 ```
 
 El comportamiento de `.content-visible` y `.content-hidden` se puede modificar si en lugar de usar `when-format` usamos `unless-format`.
 
 ### Modificar los `*.tex` {#sec-tex}
 
-Una de las cosas que no me gusto de la versión PDF es que la fecha que aparece en el pie de página se genera este horrible formato:
+Una de las cosas que no me gusto de la versión en PDF que genera `quarto-cv` es que la fecha que aparece en el pie de página se genera este horrible formato:
 
 ![Un pie de página con un formato de fecha sin ningún sentido.](images/footer_01.png){#fig-footer-01 fig-align="center"}
 
-A pesar que en el [YAML](#sec-yaml) estamos usando `date-format: iso`, esto sólo está afectando a la versión HTML. Esto es así porque `quarto-cv` está indicando como se genera el PDF. Por fortuna, las extensiones/plantillas de Quarto [se pueden modificar](https://quarto.org/docs/extensions/formats.html). En este caso, tendremos que modificar los archivos `*.tex` que `quarto-cv` está usando para generar el PDF. Estos archivos los encontrado en `_extensions/mps9506/quarto-cv/`. En esta carpeta encontramos `quarto-cv.tex`, el cual tiene casi todo el código que está generando el PDF (hay otros en la carpeta `partials`).
+A pesar de que en el [YAML](#sec-yaml) estamos usando `date-format: iso`, esto sólo está afectando a la versión HTML. Esto es así porque `quarto-cv` está indicando como se genera el PDF. Por fortuna, las extensiones/plantillas de Quarto [se pueden modificar](https://quarto.org/docs/extensions/formats.html). En este caso, tendremos que modificar los archivos `*.tex` que `quarto-cv` está usando para generar el PDF. Estos archivos los encontrado en `_extensions/mps9506/quarto-cv/`. En esta carpeta encontramos `quarto-cv.tex`, el cual tiene casi todo el código que está generando el PDF (hay otros en la carpeta `partials`).
 
-Para modificar el formato de las fechas del pie de página, abrimos `quarto-cv.tex`, vamos a la líneas 154-156 y nos encontramos con el código que está generando las fecha del pie de página en ese horrible formato.
+Para modificar el formato de las fechas del pie de página, abrimos `quarto-cv.tex`, vamos a la líneas 154-156 y nos encontramos con el código que está generando las fecha del pie de página en ese horrible formato:
 
 ``` {.tex filename="quarto-cv.tex"}
 154  \usepackage{datetime}
@@ -387,8 +387,8 @@ Argument of \str_uppercase:n has an extra }.
 l.77   \setmainlanguage[]{}
 ```
 
-Tras buscar y probar un poco, dí con que el error lo estaba generando el lenguaje que hayamos configurado en el YAML, ya sea en el `*.qmd` en que estemos trabajando o en el archivo de configuración `_quarto.yml` de nuestro proyecto. Intente configura `lang: en` en el archivo `cv.qmd` o en `_quarto.yml`, y no funcionó. Intente utilizando un archivo `_metadata.yml` con `lang: en` en la misma ubicación de `cv.qmd`, y tampoco funciono. La única solución que encontré a esto fue eliminar completamente la opción `lang: *` que tenía en el archivo `_quarto.yml`. Esto es un pequeño problema porque quería conservar la información que Quarto genera automáticamente en español. Una posible solución sea utilizar la opción de [idioma alternativo](https://quarto.org/docs/authoring/language.html#alternate-language) de Quarto, aunque, las más prácticas son agregar `lang: en` en los `*.qmd` (excepto `cv.qmd`) o agregarlo directamente a `_metadata.yml`, como hice con el blog. 
+Tras buscar y probar un poco, dí con que el error lo estaba generando el lenguaje que hayamos configurado en el YAML, ya sea en el `*.qmd` en que estemos trabajando o en el archivo de configuración `_quarto.yml` de nuestro proyecto. Intente configura `lang: en` en el archivo `cv.qmd` o en `_quarto.yml`, y no funcionó. Intente utilizando un archivo `_metadata.yml` con `lang: en` en la misma ubicación de `cv.qmd`, y tampoco funciono. La única solución que encontré a esto fue eliminar completamente la opción `lang: *` que tenía en el archivo `_quarto.yml`. Esto es un pequeño problema porque quería conservar la información que Quarto genera automáticamente en español. Una posible solución es utilizar la opción de [idioma alternativo](https://quarto.org/docs/authoring/language.html#alternate-language) de Quarto, aunque, las más prácticas es agregar `lang: en` en los `*.qmd` (excepto `cv.qmd`) o agregarlo directamente a `_metadata.yml`, como hice con el blog. 
 
 ## Futuro
 
-Al momento de terminar este paso a paso, me siento a gusto con el CV generado, igual con el cómo lo puedo actualizar cuando sea necesario. Aunque pensando en las posibilidades futuras, me gustaría generarlo como hace [Schramm](https://github.com/mps9506/CVR) utilizando los paquetes [`{datadrivencv}`](http://nickstrayer.me/datadrivencv/) y [`{vitae}`](https://pkg.mitchelloharawild.com/vitae/) aunque integrado con Quarto. 
+Al momento de terminar este paso a paso, me siento a gusto con el CV generado, igual con el cómo lo puedo actualizar cuando sea necesario. Aunque pensando en las posibilidades futuras, me gustaría generarlo como hace [Schramm](https://github.com/mps9506/CVR) utilizando los paquetes [`{datadrivencv}`](http://nickstrayer.me/datadrivencv/) y [`{vitae}`](https://pkg.mitchelloharawild.com/vitae/), pero integrado con Quarto. 
