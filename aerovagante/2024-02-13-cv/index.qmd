@@ -35,9 +35,9 @@ Explicación de cómo hacer un CV multiformato (HTML y PDF) utilizando Quarto y 
 Actualizar nuestro CV puede ser una actividad constante y que demanda cierta cantidad de tiempo. Quizá la mayoría de nosotros lo hacemos en un documento de Word o Docs. Yo la tenía en Pages, donde me sentía más cómodo y donde la había realizado por primera vez hace ya muchísimos años. Hace poco, en la última actualización, pensé: «debería hacerla en Quarto», dicho y hecho… o bueno, más o menos. Desde ese momento, hasta tener una versión con la que [me siento a gusto](../../cv/index.qmd) y que cumple con tener versión HTML y PDF, ha pasado tiempo y varios aprendizajes de por medio para poderla hacer, desde por fin enfrentarme a aprender $\LaTeX$ hasta comenzar a entender cómo funcionan las extensiones y plantillas de Quarto.
 
 ::: {#fig-cv layout-ncol=2 layout-valign="center" fig-align="center"}
-![HTML.](images/cv_01.png)
+![HTML.](images/cv_01.png){group="cv"}
 
-![PDF.](images/cv_02.png)
+![PDF.](images/cv_02.png){group="cv"}
 
 Versión en HTML y PDF de mi CV.
 :::
@@ -295,11 +295,11 @@ Para poder generar los `*.bib*` necesarios para generar nuestro CV, utilizaremos
 Después de [descargar](https://www.zotero.org/download/), instalar, configurar y agregar la biliografía a Zotero. Seleccionar las referencias que queramos incluir en un archivo {{< fa arrow-right >}} clic derecho {{< fa arrow-right >}} Exportar elementos… {{< fa arrow-right >}} seleccionar BibTex en Formato y clic en `OK` {{< fa arrow-right >}} asignar un nombre y clic en `SAVE`.
 
 ::: {#fig-zotero layout-ncol=3 layout-valign="center" fig-align="center"}
-![Exportar elementos.](images/zotero_01.png)
+![Exportar elementos.](images/zotero_01.png){group="zotero"}
 
-![Seleccionar BibTeX.](images/zotero_02.png)
+![Seleccionar BibTeX.](images/zotero_02.png){group="zotero"}
 
-![Gurdar archivo.](images/zotero_03.png)
+![Gurdar archivo.](images/zotero_03.png){group="zotero"}
 
 Pasos para exportar archivos `*.bib` en Zotero. 
 :::
