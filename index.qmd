@@ -7,14 +7,14 @@ about:
   image-shape: rounded
   links: 
     - href: https://github.com/alexespinosaco
-      icon: github
-      text: GitHub
+      # icon: github
+      text: "{{< fa brands github >}} GitHub"
     - href: https://www.linkedin.com/in/alexespinosaco/
-      icon: linkedin
-      text: LinkedIn
+      # icon: linkedin
+      text: "{{< fa brands linkedin >}} LinkedIn"
     - href: https://mstdn.social/@alexespinosaco
-      icon: mastodon
-      text: Mastodon
+      # icon: mastodon
+      text: "{{< fa brands mastodon >}} Mastodon"
     - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
       text: "{{< ai researchgate >}} ResearchGate"
 ---

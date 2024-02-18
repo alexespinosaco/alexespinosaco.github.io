@@ -49,27 +49,37 @@ website:
       - href: aerovagante/index.qmd
         text: Blog
       - href: https://github.com/alexespinosaco
-        icon: github
+        text: "{{< fa brands github >}}"
+        # icon: github
       - href: https://www.linkedin.com/in/alexespinosaco/
-        icon: linkedin
+        text: "{{< fa brands linkedin >}}"
+        # icon: linkedin
       - href: https://mstdn.social/@alexespinosaco
-        icon: mastodon
+        text: "{{< fa brands mastodon >}}"
+        # icon: mastodon
       - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
         text: "{{< ai researchgate >}}"
       - href: aerovagante/index.xml
-        icon: rss
+        text: "{{< fa rss >}}"
+        # icon: rss
 
   page-footer: 
     left: Álex Espinosa-Correa © 2024. All content licensed  under [CC BY 4.0 {{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}](https://creativecommons.org/licenses/by/4.0/)
     right: 
       - href: https://github.com/alexespinosaco
-        icon: github
+        text: "{{< fa brands github >}}"
+        # icon: github
       - href: https://www.linkedin.com/in/alexespinosaco/
-        icon: linkedin
+        text: "{{< fa brands linkedin >}}"
+        # icon: linkedin
       - href: https://mstdn.social/@alexespinosaco
-        icon: mastodon
+        text: "{{< fa brands mastodon >}}"
+        # icon: mastodon
       - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
         text: "{{< ai researchgate >}}"
+      - href: aerovagante/index.xml
+        text: "{{< fa rss >}}"
+        # icon: rss
 
 format:
   html:
