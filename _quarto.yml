@@ -6,6 +6,8 @@ date-format: iso
 execute:
     freeze: auto
 
+lightbox: true
+
 website:
   title: "Álex Espinosa-Correa"
   description: "website personal de Álex Espinosa-Correa"
