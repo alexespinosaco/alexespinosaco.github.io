@@ -16,8 +16,43 @@
 <height>65</height>
 <width>144</width>
 </image>
-<generator>quarto-1.4.549</generator>
-<lastBuildDate>Sun, 18 Feb 2024 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.4.553</generator>
+<lastBuildDate>Sat, 22 Jun 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>¡Mira mamá, salí en la radio!</title>
+  <dc:creator>Álex Espinosa-Correa</dc:creator>
+  <link>https://alexespinosaco.github.io/aerovagante/2024-06-22_verde-clarito/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Hace un mes, el profesor y director del <a href="https://www.uco.edu.co/herbariouco/Paginas/home_herbario.aspx">Herbario de la Universidad Católica de Oriente</a> (UCO), Mario Alberto Quijano Ábril, me invitó a participar en el programa radial «<em>Verde Clarito: Diálogos Ambientales</em>». En este programa, llamado: «Que estamos respirando en nuestras ciudades, calidad del aire más allá de lo evidente», también participaron la doctora Rosa María Valencia Barrera de la Universidad de León y el magíster James Londoño Valencia de la UCO. Juntos abordamos temas relacionados con la aerobiología y la calidad del aire, explorando el panorama en nuestras ciudades.</p>
+<p>Aquí tienes el vídeo del programa. ¡Espero que lo disfruten! Si no carga correctamente, pueden verlo en <a href="https://www.youtube.com/live/yp59FZ6_B8U">YouTube</a>.</p>
+<p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/yp59FZ6_B8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
+  author = {Espinosa-Correa, Álex},
+  title = {¡Mira mamá, salí en la radio!},
+  date = {2024-06-22},
+  url = {http://alexespinosaco.github.io/aerovagante/2024-02-13_verde-clarito/},
+  langid = {es}
+}
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas">
+Espinosa-Correa, Álex. 2024. <span>“¡Mira mamá, salí en la
+radio!”</span> June 22, 2024. <a href="http://alexespinosaco.github.io/aerovagante/2024-02-13_verde-clarito/">http://alexespinosaco.github.io/aerovagante/2024-02-13_verde-clarito/</a>.
+</div></div></section></div> ]]></description>
+  <category>Aerobiología</category>
+  <category>Calidad del aire</category>
+  <category>Personal</category>
+  <category>Podcast</category>
+  <guid>https://alexespinosaco.github.io/aerovagante/2024-06-22_verde-clarito/</guid>
+  <pubDate>Sat, 22 Jun 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://alexespinosaco.github.io/aerovagante/2024-06-22_verde-clarito/preview.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Cómo hacer un curriculum vitae en Quarto</title>
   <dc:creator>Álex Espinosa-Correa</dc:creator>
@@ -42,7 +77,7 @@
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/cv_01.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="cv" title="HTML."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/cv_01.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/cv_01.png" class="lightbox" data-gallery="cv" data-glightbox="description: .lightbox-desc-1" title="HTML."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/cv_01.png" class="img-fluid figure-img"></a></p>
 <figcaption>HTML.</figcaption>
 </figure>
 </div>
@@ -50,7 +85,7 @@
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/cv_02.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="cv" title="PDF."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/cv_02.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/cv_02.png" class="lightbox" data-gallery="cv" data-glightbox="description: .lightbox-desc-2" title="PDF."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/cv_02.png" class="img-fluid figure-img"></a></p>
 <figcaption>PDF.</figcaption>
 </figure>
 </div>
@@ -637,7 +672,7 @@ font-style: inherit;">---</span></span><div class="code-annotation-gutter-bg"></
 <div id="fig-con-float" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-con-float-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/con_float.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/con_float.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<a href="images/con_float.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/con_float.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-con-float-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;2: Resultado obtenido agregando <code>[inicio-fin]{.cvfloat}</code>.
@@ -648,7 +683,7 @@ Figura&nbsp;2: Resultado obtenido agregando <code>[inicio-fin]{.cvfloat}</code>.
 <div id="fig-sin-float" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sin-float-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/sin_float.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/sin_float.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<a href="images/sin_float.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/sin_float.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sin-float-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;3: Resultado obtenido sin agregar <code>[inicio-fin]{.cvfloat}</code>.
@@ -689,7 +724,7 @@ font-style: inherit;">right</span></span>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/zotero_01.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="zotero" title="Exportar elementos."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/zotero_01.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/zotero_01.png" class="lightbox" data-gallery="zotero" data-glightbox="description: .lightbox-desc-5" title="Exportar elementos."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/zotero_01.png" class="img-fluid figure-img"></a></p>
 <figcaption>Exportar elementos.</figcaption>
 </figure>
 </div>
@@ -697,7 +732,7 @@ font-style: inherit;">right</span></span>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/zotero_02.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="zotero" title="Seleccionar BibTeX."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/zotero_02.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/zotero_02.png" class="lightbox" data-gallery="zotero" data-glightbox="description: .lightbox-desc-6" title="Seleccionar BibTeX."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/zotero_02.png" class="img-fluid figure-img"></a></p>
 <figcaption>Seleccionar BibTeX.</figcaption>
 </figure>
 </div>
@@ -705,7 +740,7 @@ font-style: inherit;">right</span></span>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/zotero_03.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="zotero" title="Gurdar archivo."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/zotero_03.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/zotero_03.png" class="lightbox" data-gallery="zotero" data-glightbox="description: .lightbox-desc-7" title="Gurdar archivo."><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/zotero_03.png" class="img-fluid figure-img"></a></p>
 <figcaption>Gurdar archivo.</figcaption>
 </figure>
 </div>
@@ -767,7 +802,7 @@ font-style: inherit;">quarto</span> render cv.qmd</span></code></pre></div>
 <div id="fig-footer-01" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-footer-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/footer_01.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/footer_01.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<a href="images/footer_01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/footer_01.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-footer-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;5: Un pie de página con un formato de fecha sin ningún sentido.
@@ -831,7 +866,7 @@ font-style: inherit;">\THEDAY</span>}}</span></code></pre></div>
 <div id="fig-footer-01" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-footer-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/footer_02.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/footer_02.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<a href="images/footer_02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9"><img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/footer_02.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-footer-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;6: Un pie de página con un formato de fecha como tiene que ser.
