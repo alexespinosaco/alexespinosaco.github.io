@@ -4,7 +4,7 @@
 freeze: true
 
 # enable banner style title blocks (see https://quarto.org/docs/authoring/title-blocks.html)
-title-block-banner: "#0080FF"
+title-block-banner: "#0072B2"
 title-block-banner-color: "#FFFFFF"
 
 # Author name of all blog posts
