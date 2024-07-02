@@ -3,7 +3,10 @@ title: CV
 date: last-modified
 date-format: iso
 
-author: Álex Espinosa-Correa
+author: 
+  - name: Álex Espinosa-Correa
+    email: alex.espinosa@udea.edu.co 
+    orcid: 0000-0002-7353-1182
 address: "Medellín, Colombia"
 # The following are optional
 # phone: your contact number
@@ -155,10 +158,10 @@ Estudio aerobiológico en la ciudad de Medellín
 
 # Membresías
 
-**Grupo de Estudios Botánicos GEOBOTA. Universidad de Antioquia**\
+**[Grupo de Estudios Botánicos GEOBOTA de la Universidad de Antioquia](https://geobota.github.io)**\
 Estudiante de doctorado
 
-**Asociación Colombiana de Botánica**\
+**[Asociación Colombiana de Botánica (ACB)](https://asociacioncolombianadebotanica.com)**\
 Socio activo
 
 # Referencias
