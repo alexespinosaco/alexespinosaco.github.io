@@ -42,12 +42,14 @@ website:
     search: true
 
     right: 
-      - text: Inicio
+      - text: "Inicio"
         href: index.qmd
-      - text: Acerca (CV)
+      - text: "Acerca (CV)"
         href: cv/index.qmd
-      - text: Blog
+      - text: "Blog"
         href: aerovagante/index.qmd
+      - text: "Proyectos"
+        href: projects/index.qmd
       - text: "{{< fa brands github >}}"
         # icon: github
         href: https://github.com/alexespinosaco
