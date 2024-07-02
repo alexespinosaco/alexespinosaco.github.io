@@ -10,7 +10,7 @@ lightbox: true
 
 website:
   title: "Álex Espinosa-Correa"
-  description: "website personal de Álex Espinosa-Correa"
+  description: "Website personal de Álex Espinosa-Correa"
   site-url: https://alexespinosaco.github.io
   repo-url: https://github.com/alexespinosaco/alexespinosaco.github.io
   
@@ -42,44 +42,47 @@ website:
     search: true
 
     right: 
-      - href: index.qmd
-        text: Inicio
-      - href: cv/index.qmd
-        text: Acerca
-      - href: aerovagante/index.qmd
-        text: Blog
-      - href: https://github.com/alexespinosaco
-        text: "{{< fa brands github >}}"
+      - text: Inicio
+        href: index.qmd
+      - text: Acerca (CV)
+        href: cv/index.qmd
+      - text: Blog
+        href: aerovagante/index.qmd
+      - text: "{{< fa brands github >}}"
         # icon: github
-      - href: https://www.linkedin.com/in/alexespinosaco/
-        text: "{{< fa brands linkedin >}}"
+        href: https://github.com/alexespinosaco
+      - text: "{{< fa brands linkedin >}}"
         # icon: linkedin
-      - href: https://mstdn.social/@alexespinosaco
-        text: "{{< fa brands mastodon >}}"
+        href: https://www.linkedin.com/in/alexespinosaco/
+      - text: "{{< fa brands mastodon >}}"
         # icon: mastodon
-      - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
-        text: "{{< ai researchgate >}}"
-      - href: aerovagante/index.xml
-        text: "{{< fa rss >}}"
+        href: https://mstdn.social/@alexespinosaco
+      - text: "{{< ai researchgate >}}"
+        href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
+      - text: "{{< fa rss >}}"
         # icon: rss
+        href: aerovagante/index.xml
 
   page-footer: 
-    left: Álex Espinosa-Correa © 2024. All content licensed  under [CC BY 4.0 {{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}](https://creativecommons.org/licenses/by/4.0/)
-    right: 
-      - href: https://github.com/alexespinosaco
-        text: "{{< fa brands github >}}"
+    left: |
+      Álex Espinosa-Correa © 2024. All content licensed under [CC BY 4.0 {{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}](https://creativecommons.org/licenses/by/4.0/)
+    center: 
+      - text: "{{< fa brands github >}}"
         # icon: github
-      - href: https://www.linkedin.com/in/alexespinosaco/
-        text: "{{< fa brands linkedin >}}"
+        href: https://github.com/alexespinosaco
+      - text: "{{< fa brands linkedin >}}"
         # icon: linkedin
-      - href: https://mstdn.social/@alexespinosaco
-        text: "{{< fa brands mastodon >}}"
+        href: https://www.linkedin.com/in/alexespinosaco/
+      - text: "{{< fa brands mastodon >}}"
         # icon: mastodon
-      - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
-        text: "{{< ai researchgate >}}"
-      - href: aerovagante/index.xml
-        text: "{{< fa rss >}}"
+        href: https://mstdn.social/@alexespinosaco
+      - text: "{{< ai researchgate >}}"
+        href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
+      - text: "{{< fa rss >}}"
         # icon: rss
+        href: aerovagante/index.xml
+    right: |
+      Made with {{< fa brands r-project >}} and [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)
 
 format:
   html:
