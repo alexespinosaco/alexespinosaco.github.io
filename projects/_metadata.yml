@@ -1,9 +1,15 @@
 freeze: true
 
+author:
+  - name: "Álex Espinosa-Correa"
+    url: http://alexespinosaco.github.io/projects/
+
 lang: es
 
 date-format: iso
 
-comments: false
+comments: 
+  utterances: 
+    repo: alexespinosaco/blog-comments
+    theme: github-light
 
-toc: false

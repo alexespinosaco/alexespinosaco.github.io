@@ -1,0 +1,38 @@
+---
+pagetitle: "Biología de las plantas: manual de laboratorio"
+title: "Biología de las plantas: manual de laboratorio"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2023-03-02
+year: 2023
+
+image: https://github.com/alexespinosaco/biologia-plantas-manual/blob/main/images/cover.png?raw=true
+
+citation: 
+  url: http://alexespinosaco.github.io/projects/2023-03-02_biologia-plantas-manual
+
+categories: 
+  - Libro
+  - Botánica
+  - Quarto
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/biologia-plantas-manual/
+    - text: "{{< fa link >}} Sitio web"
+      href: http://alexespinosaco.github.io/biologia-plantas-manual/
+---
+
+:::{ #project}
+:::
+
+Una de las primeras cosas que me impactó cuando conocí [Quarto](https://quarto.org/) fue su facilidad y capacidad para crear [sitios web y libros](https://quarto.org/docs/gallery/) con una presentación tan elegante y profesional, sin necesidad de tener muchos conocimientos previos. En ese momento (segundo semestre de 2022), yo estaba dictando el laboratorio de Biología de las Plantas en el Instituto de Biología de la [Universidad de Antioquia](https://udea.edu.co/). Las guías que teníamos eran unos PDF sueltos escritos hace casi una década, que solo habían recibido pequeñas actualizaciones, contenían poca información, estaban desactualizadas y era un incordio compartirlas con los estudiantes. Ante este panorama, vi la posibilidad de mejorar la situación, actualizando (en muchos casos escribiendo desde cero), agregando más material multimedia y facilitando su compartición y mantenimiento. El resultado es una guía más adaptada a las necesidades actuales y que está disponible (bajo una licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) para quien quiera darle uso.
+
+Como este fue uno de mis primeros proyectos en Quarto, hacerlo me permitió aprender y aplicar conocimientos al mismo tiempo, lo cual ayudó a consolidar muchas de las habilidades que he aplicado en [futuros proyectos](/projects/index.qmd), como las tesis de doctorado o la [página del grupo de investigación](http://geobota.github.io).
