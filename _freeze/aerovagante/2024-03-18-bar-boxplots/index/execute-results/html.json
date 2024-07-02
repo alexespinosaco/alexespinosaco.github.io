@@ -1,0 +1,15 @@
+{
+  "hash": "a1629fcc9955b2d8c1ddddc803e03378",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Más allá de las barras y las cajas\"\ndescription: \"\"\n\ndate: 2024-03-18\n# image: images/cv_01.png\n\ncategories:\n  - R\n\n\ncitation: \n  url: http://alexespinosaco.github.io/aerovagante/2024-03-18-bar-boxplots/\n\nexecute: \n  message: false\n  warning: false\n  eval: false\n\nlang: es\n\ntoc: true\ntoc-depth: 4\n\ndraft: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nif (!require(\"tidyverse\")) install.packages(\"tidyverse\")\nif (!require(\"ggthemes\")) install.packages(\"ggthemes\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\niris |> \n  ggplot2::ggplot(\n    ggplot2::aes(\n      x = Species,\n      y = Petal.Length\n    )\n  ) + \n  ggplot2::geom_bar()\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
