@@ -1,0 +1,23 @@
+---
+title: "Proyectos"
+pagetitle: "Proyectos"
+author: ""
+
+listing: 
+  - id: projects
+    contents: "*/index.qmd"
+    sort: "title"
+    type: grid
+    image-height: 225px
+    image-placeholder: /images/logo/placeholder.png
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    fields: [image, title, description]
+    grid-columns: 3
+    # page-size: 3
+    # max-items: 3
+    feed: false
+
+comments: false
+---

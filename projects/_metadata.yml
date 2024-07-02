@@ -1,0 +1,9 @@
+freeze: true
+
+lang: es
+
+date-format: iso
+
+comments: false
+
+toc: false
