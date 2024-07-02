@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.52">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-06-22">
 <meta name="description" content="Grabación de mi participación en el programa radial «Verde Clarito: Diálogos Ambientales» de la Universidad Católica de Oriente">
 
-<title>Álex Espinosa-Correa - ¡Mira mamá, salí en la radio!</title>
+<title>¡Mira mamá, salí en la radio! – Álex Espinosa-Correa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,12 +103,12 @@ background: #0072B2;
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Álex Espinosa-Correa - ¡Mira mamá, salí en la radio!">
+<meta property="og:title" content="¡Mira mamá, salí en la radio! – Álex Espinosa-Correa">
 <meta property="og:description" content="Grabación de mi participación en el programa radial «Verde Clarito: Diálogos Ambientales» de la Universidad Católica de Oriente">
 <meta property="og:image" content="https://alexespinosaco.github.io/aerovagante/2024-06-22_verde-clarito/preview.jpg">
 <meta property="og:site_name" content="Álex Espinosa-Correa">
 <meta property="og:locale" content="es_ES">
-<meta name="twitter:title" content="Álex Espinosa-Correa - ¡Mira mamá, salí en la radio!">
+<meta name="twitter:title" content="¡Mira mamá, salí en la radio! – Álex Espinosa-Correa">
 <meta name="twitter:description" content="Grabación de mi participación en el programa radial «Verde Clarito: Diálogos Ambientales» de la Universidad Católica de Oriente">
 <meta name="twitter:image" content="https://alexespinosaco.github.io/aerovagante/2024-06-22_verde-clarito/preview.jpg">
 <meta name="twitter:creator" content="@alexespinosaco">
@@ -130,7 +130,7 @@ background: #0072B2;
     </a>
   </div>
             <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -141,7 +141,7 @@ background: #0072B2;
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../cv/index.html"> 
-<span class="menu-text">Acerca</span></a>
+<span class="menu-text">Acerca (CV)</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../aerovagante/index.html"> 
@@ -169,7 +169,7 @@ background: #0072B2;
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -217,7 +217,7 @@ background: #0072B2;
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
@@ -279,18 +279,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -322,7 +311,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io");
@@ -330,7 +341,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -662,9 +673,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p>Álex Espinosa-Correa © 2024. All content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i><i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i></a></p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link" href="https://github.com/alexespinosaco">
@@ -693,6 +701,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </li>  
 </ul>
     </div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto" width="65"></a></p>
+</div>
   </div>
 </footer>
 
