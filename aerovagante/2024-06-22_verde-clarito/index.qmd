@@ -9,7 +9,7 @@ categories:
   - Aerobiología
   - Calidad del aire
   - Personal
-  - Podcast
+  - Video
 
 citation: 
   url: http://alexespinosaco.github.io/aerovagante/2024-02-13_verde-clarito/
