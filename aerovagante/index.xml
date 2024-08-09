@@ -17,7 +17,48 @@
 <width>144</width>
 </image>
 <generator>quarto-1.5.52</generator>
-<lastBuildDate>Sat, 22 Jun 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 09 Aug 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>¡Celebrando los 20 años de OpenStreetMap!</title>
+  <dc:creator>Álex Espinosa-Correa</dc:creator>
+  <link>https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><a href="preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/preview.png" class="img-fluid"></a></p>
+<p><a href="https://openstreetmap.org">OpenStreetMap</a>, el mapa colaborativo y libre por excelencia. No recuerdo una fecha exacta en que lo conocí. Quizá fue por allá en el ya lejano 2007, cuando me obsesioné con GNU/Linux (¡<a href="https://es.wikipedia.org/wiki/Anexo:Versiones_de_Ubuntu#Ubuntu_8.04_LTS">Hardy Heron</a>, quien te recuerda!) y gran parte del entorno del Software Libre y de Código Abierto (FLOSS). O quizás fue en 2016, cuando en el pregrado tomé una materia sobre Sistemas de Información Geográfica (SIG). Lo cierto es que ese recuerdo es borroso, pero lo que sí tengo claro es cuando me volví a encontrar con OpenStreetMap, esta vez con mucha más fuerza.</p>
+<p>Fue este año, principalmente en conversaciones con <a href="https://mstdn.social/@nesper94@biologists.social">Juan Camilo Arboleda</a> del <a href="https://biologia-computacional.github.io">Grupo de Biología Computacional</a>, y mientras creaba un par de mapas para la página del <a href="https://geobota.github.io">Grupo de Estudios Botánicos GEOBOTA</a>. Fue como reencontrarse con un viejo amigo, pero esta vez, uno siendo más maduro y reconociendo el valor que tiene el otro. Todo el recorrido que he tenido desde esos recuerdos difusos (el pregrado, el doctorado, <a href="https://quarto.org">Quarto</a>, R, los SIG, la ciencia abierta y reproducible) ha servido para que esta vez vea el potencial y la utilidad que me puede brindar OSM, y lo que yo le puedo aportar.</p>
+<p>Según <a href="https://www.openstreetmap.org/user/alexespinosaco">mi perfil en OSM</a>, me registré el 30 de mayo de 2024 (mayo, siempre mayo) y desde entonces han pasado varias cosas. He comenzado a usar OSM en todas las situaciones en las que antes hubiera utilizado Google Maps y a promocionarlo a quienes creo que les puede ser útil. Me he obsesionado hasta el punto de intentar colaborar casi a diario, acumulando, hasta hoy (2024-08-09), 224 ediciones, centradas principalmente en mapear los <a href="https://www.openstreetmap.org/relation/17863554">campus en Medellín de la Universidad de Antioquia</a>, las zonas cercanas a estos y este Cielo Roto de mis amores (<a href="https://www.openstreetmap.org/relation/1307283#map=13/6.0513/-75.6277">Caldas, Antioquia</a>). Incluso he comenzado un proyecto para <a href="https://alexespinosaco.github.io/cecropia-medellin/">mapear los yarumos de la ciudad de Medellín</a>.</p>
+<p>Entre esas cosas que han pasado, ha sido encontrar una comunidad maravillosa alrededor de OSM, particularmente la <a href="https://www.openstreetmap.org/user/Comunidad%20OpenStreetMap%20Colombia">Comunidad OpenStreetMap Colombia</a> (especialmente <a href="https://www.openstreetmap.org/user/AngocA">Andrés Gómez Casanova</a>), donde me he animado a participar más de lo que lo hice en el pasado en otras comunidades (y espero hacerlo más). Han sido tan geniales que incluso incluyeron a un neófito como yo en <a href="https://www.youtube.com/playlist?list=PLI7a5sSUigMSKO5gNIeKhfA4whLtTMyrK">las entrevistas que han realizado a diversos mapeadores</a> con motivo de la celebración de los 20 años de OSM.</p>
+<p>Les dejo la entrevista. ¡Espero que la disfruten! Les invito a verlas todas, están fantásticas y muy ilustrativas, porque <a href="https://blog.openstreetmap.org/2024/08/09/openstreetmap-at-20/">el mapa es importante, pero lo son más las personas</a> que hay detrás.</p>
+<p><a href="https://birthday20.openstreetmap.org">¡Feliz cumpleaños, OpenStreetMap!</a> ¡Feliz celebración, comunidad!</p>
+<p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/k7rq4YvRRWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
+<p>Vídeo de la entrevista, que no se noten los nervios. Si no carga correctamente, pueden verlo en <a href="https://www.youtube.com/watch?v=k7rq4YvRRWQ">YouTube</a>.</p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
+  author = {Espinosa-Correa, Álex},
+  title = {¡Celebrando los 20 años de OpenStreetMap!},
+  date = {2024-08-09},
+  url = {http://alexespinosaco.github.io/aerovagante/2024-08-09_osm/},
+  langid = {es}
+}
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas">
+Espinosa-Correa, Álex. 2024. <span>“¡Celebrando los 20 años de
+OpenStreetMap!”</span> August 9, 2024. <a href="http://alexespinosaco.github.io/aerovagante/2024-08-09_osm/">http://alexespinosaco.github.io/aerovagante/2024-08-09_osm/</a>.
+</div></div></section></div> ]]></description>
+  <category>OpenStreetMap</category>
+  <category>Personal</category>
+  <category>SIG</category>
+  <category>Video</category>
+  <guid>https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/</guid>
+  <pubDate>Fri, 09 Aug 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/preview.png" medium="image" type="image/png" height="63" width="144"/>
+</item>
 <item>
   <title>¡Mira mamá, salí en la radio!</title>
   <dc:creator>Álex Espinosa-Correa</dc:creator>
@@ -48,7 +89,7 @@ radio!”</span> June 22, 2024. <a href="http://alexespinosaco.github.io/aerovag
   <category>Aerobiología</category>
   <category>Calidad del aire</category>
   <category>Personal</category>
-  <category>Podcast</category>
+  <category>Video</category>
   <guid>https://alexespinosaco.github.io/aerovagante/2024-06-22_verde-clarito/</guid>
   <pubDate>Sat, 22 Jun 2024 05:00:00 GMT</pubDate>
   <media:content url="https://alexespinosaco.github.io/aerovagante/2024-06-22_verde-clarito/preview.jpg" medium="image" type="image/jpeg"/>

@@ -1,17 +1,19 @@
 [
   {
-    "listing": "/aerovagante/index.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/aerovagante/2024-06-22_verde-clarito/index.html",
-      "/aerovagante/2024-02-18-cv/index.html",
-      "/aerovagante/2023-01-31-bienvenida/index.html"
+      "/projects/2024-07-07_cecropia-medellin/index.html",
+      "/projects/2024-02-07_geobota-website/index.html",
+      "/projects/2023-03-02_biologia-plantas-manual/index.html"
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/aerovagante/index.html",
     "items": [
-      "/projects/2024-02-07_geobota-website/index.html",
-      "/projects/2023-03-02_biologia-plantas-manual/index.html"
+      "/aerovagante/2024-08-09_osm/index.html",
+      "/aerovagante/2024-06-22_verde-clarito/index.html",
+      "/aerovagante/2024-02-18-cv/index.html",
+      "/aerovagante/2023-01-31-bienvenida/index.html"
     ]
   }
 ]
