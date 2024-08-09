@@ -1,0 +1,40 @@
+---
+pagetitle: "Mapeando los yarumos de Medellín"
+title: "Sitio web del proyecto #CecropiaMedellín2024"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2024-07-07
+year: 2024
+
+image: https://github.com/alexespinosaco/cecropia-medellin/blob/main/imagenes/imagen_cecropia-medellin.png?raw=true
+
+citation: 
+  url: http://alexespinosaco.github.io/projects/2024-07-07_cecropia-medellin
+
+categories: 
+  - Botánica
+  - Quarto
+  - Sito web
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/cecropia-medellin/
+    - text: "{{< fa link >}} Sitio web"
+      href: https://alexespinosaco.github.io/cecropia-medellin/
+---
+
+:::{ #project}
+:::
+
+Uno de los resultados inesperados de mi tesis doctoral fue descubrir que el tipo polínico más abundante en la atmósfera de Medellín es *Cecropia*. Este tipo polínico representa casi la mitad de toda la carga polínica registrada durante más de 1000 días de muestreo. *Cecropia* pertenece al género de plantas con flores dentro de la familia Urticaceae, comúnmente conocidas como yarumos. Estas son plantas características de la flora neotropical, con más de 63 especies reconocidas. En Medellín, se pueden encontrar tres especies: *Cecropia angustifolia* Trécul (yarumo negro), *Cecropia peltata* L. (yarumo), y *Cecropia telenitida* Cuatrec. (yarumo blanco).
+
+A pesar de ser especies relativamente comunes en nuestro entorno, han recibido poca atención y, como resultado, hay un subregistro de estas en el Sistema de Árbol Urbano (SAU), con apenas poco más de 1400 registros. Por lo tanto, su identificación y localización son esenciales para mejorar los datos aerobiológicos disponibles para la ciudad. Con este objetivo en mente, hemos creado un proyecto colaborativo y abierto para mapear los yarumos de Medellín utilizando OpenStreetMap, una plataforma colaborativa para crear mapas editables y libres. Este proyecto, que está en ejecución, permanece abierto a la colaboración de todos.
+
+Toda la información relacionada con el mapeo de los yarumos de Medellín se puede encontrar en el [sitio web del proyecto](https://alexespinosaco.github.io/cecropia-medellin/).
