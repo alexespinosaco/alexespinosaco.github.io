@@ -1,0 +1,46 @@
+---
+title: "¡Celebrando los 20 años de OpenStreetMap!"
+description: "OpenStreetMap está de cumpleaños y en esta casa también lo celebramos"
+
+date: 2024-08-09
+image: preview.png
+
+categories:
+  - OpenStreetMap
+  - Personal
+  - SIG
+  - Video
+
+citation: 
+  url: http://alexespinosaco.github.io/aerovagante/2024-08-09_osm/
+
+execute: 
+  message: false
+  warning: false
+  eval: false
+
+lang: es
+
+toc: true
+toc-depth: 4
+
+draft: false
+---
+
+![](preview.png)
+
+[OpenStreetMap](https://openstreetmap.org), el mapa colaborativo y libre por excelencia. No recuerdo una fecha exacta en que lo conocí. Quizá fue por allá en el ya lejano 2007, cuando me obsesioné con GNU/Linux (¡[Hardy Heron](https://es.wikipedia.org/wiki/Anexo:Versiones_de_Ubuntu#Ubuntu_8.04_LTS), quien te recuerda!) y gran parte del entorno del Software Libre y de Código Abierto (FLOSS). O quizás fue en 2016, cuando en el pregrado tomé una materia sobre Sistemas de Información Geográfica (SIG). Lo cierto es que ese recuerdo es borroso, pero lo que sí tengo claro es cuando me volví a encontrar con OpenStreetMap, esta vez con mucha más fuerza.
+
+Fue este año, principalmente en conversaciones con [Juan Camilo Arboleda](https://mstdn.social/@nesper94@biologists.social) del [Grupo de Biología Computacional](https://biologia-computacional.github.io), y mientras creaba un par de mapas para la página del [Grupo de Estudios Botánicos GEOBOTA](https://geobota.github.io). Fue como reencontrarse con un viejo amigo, pero esta vez, uno siendo más maduro y reconociendo el valor que tiene el otro. Todo el recorrido que he tenido desde esos recuerdos difusos (el pregrado, el doctorado, [Quarto](https://quarto.org), R, los SIG, la ciencia abierta y reproducible) ha servido para que esta vez vea el potencial y la utilidad que me puede brindar OSM, y lo que yo le puedo aportar.
+
+Según [mi perfil en OSM](https://www.openstreetmap.org/user/alexespinosaco), me registré el 30 de mayo de 2024 (mayo, siempre mayo) y desde entonces han pasado varias cosas. He comenzado a usar OSM en todas las situaciones en las que antes hubiera utilizado Google Maps y a promocionarlo a quienes creo que les puede ser útil. Me he obsesionado hasta el punto de intentar colaborar casi a diario, acumulando, hasta hoy (2024-08-09), 224 ediciones, centradas principalmente en mapear los [campus en Medellín de la Universidad de Antioquia](https://www.openstreetmap.org/relation/17863554), las zonas cercanas a estos y este Cielo Roto de mis amores ([Caldas, Antioquia](https://www.openstreetmap.org/relation/1307283#map=13/6.0513/-75.6277)). Incluso he comenzado un proyecto para [mapear los yarumos de la ciudad de Medellín](https://alexespinosaco.github.io/cecropia-medellin/).
+
+Entre esas cosas que han pasado, ha sido encontrar una comunidad maravillosa alrededor de OSM, particularmente la [Comunidad OpenStreetMap Colombia](https://www.openstreetmap.org/user/Comunidad%20OpenStreetMap%20Colombia) (especialmente [Andrés Gómez Casanova](https://www.openstreetmap.org/user/AngocA)), donde me he animado a participar más de lo que lo hice en el pasado en otras comunidades (y espero hacerlo más). Han sido tan geniales que incluso incluyeron a un neófito como yo en [las entrevistas que han realizado a diversos mapeadores](https://www.youtube.com/playlist?list=PLI7a5sSUigMSKO5gNIeKhfA4whLtTMyrK) con motivo de la celebración de los 20 años de OSM.
+
+Les dejo la entrevista. ¡Espero que la disfruten! Les invito a verlas todas, están fantásticas y muy ilustrativas, porque [el mapa es importante, pero lo son más las personas](https://blog.openstreetmap.org/2024/08/09/openstreetmap-at-20/) que hay detrás. 
+
+[¡Feliz cumpleaños, OpenStreetMap!](https://birthday20.openstreetmap.org) ¡Feliz celebración, comunidad!
+
+{{< youtube k7rq4YvRRWQ >}}
+
+Vídeo de la entrevista, que no se noten los nervios. Si no carga correctamente, pueden verlo en [YouTube](https://www.youtube.com/watch?v=k7rq4YvRRWQ).
