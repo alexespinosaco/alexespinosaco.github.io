@@ -7,9 +7,9 @@ image: images/cv_01.png
 
 categories:
   - LaTeX
-  - Personal
   - Quarto
   - RStudio
+  - Tutorial
 
 citation: 
   url: http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/
