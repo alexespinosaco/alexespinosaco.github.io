@@ -12,7 +12,7 @@ categories:
   - Video
 
 citation: 
-  url: http://alexespinosaco.github.io/aerovagante/2024-02-13_verde-clarito/
+  url: https://alexespinosaco.github.io/aerovagante/2024-02-13_verde-clarito/
 
 execute: 
   message: false

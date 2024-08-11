@@ -10,7 +10,7 @@ categories:
   - Tutorial
 
 citation: 
-  url: https://alexespinosaco.github.io/2024-08-10_quarto-referencias-cruzadas/
+  url: https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/
 
 execute: 
   message: false

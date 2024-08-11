@@ -12,7 +12,7 @@ categories:
   - Video
 
 citation: 
-  url: http://alexespinosaco.github.io/aerovagante/2024-08-09_osm/
+  url: https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/
 
 execute: 
   message: false

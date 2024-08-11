@@ -12,7 +12,7 @@ categories:
   - Tutorial
 
 citation: 
-  url: http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/
+  url: https://alexespinosaco.github.io/aerovagante/2024-02-13-cv/
 
 execute: 
   message: false
