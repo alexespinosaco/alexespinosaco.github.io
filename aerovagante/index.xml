@@ -16,8 +16,313 @@
 <height>65</height>
 <width>144</width>
 </image>
-<generator>quarto-1.5.52</generator>
-<lastBuildDate>Fri, 09 Aug 2024 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.5.56</generator>
+<lastBuildDate>Sat, 10 Aug 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Las referencias cruzadas personalizadas de Quarto</title>
+  <dc:creator>Álex Espinosa-Correa</dc:creator>
+  <link>https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/</link>
+  <description><![CDATA[ <p>Mientras seguía una de esas horribles «guías para autores», ese caótico documento donde las revistas nos indican cómo debemos hacer el trabajo que ellos deberían realizar, me encontré con la necesidad de que Quarto interpretara algunas figuras y tablas como «Figura S1» o «Tabla S1». A pesar de que <a href="https://quarto.org/docs/guide/">la guía de Quarto</a> es una de las mejores que he leído y cuenta con secciones que explican <a href="https://quarto.org/docs/authoring/cross-references-custom.html#example-supplemental-figures">cómo hacerlo</a>, me encontré con algunas limitaciones que no están explícitamente detalladas. Aunque estas sí se mencionan en <a href="https://github.com/quarto-dev/quarto-cli/issues/7507">otros apartados</a>. Esta publicación sirve como un tutorial para usar las referencias cruzadas personalizadas de Quarto, como un recordatorio personal y como una solución/explicación para quienes se enfrenten al mismo problema y busquen una solución en español.</p>
+<section id="referencias-cruzadas-en-quarto" class="level2"><h2 class="anchored" data-anchor-id="referencias-cruzadas-en-quarto">Referencias cruzadas en Quarto</h2>
+<p>Entre las características más potentes de Quarto, las <a href="https://quarto.org/docs/authoring/cross-references.html">referencias cruzadas</a> destacan por su simplicidad y utilidad a la hora de escribir documentos académicos, como artículos científicos. Las referencias cruzadas pueden aplicarse a imágenes, tablas, ecuaciones, secciones, entre otros elementos. Además, pueden ser utilizadas tanto en elementos generados por código como en el mismo código. Para usarlas, es indispensable etiquetar cada elemento con un identificador único<sup>1</sup> adecuada. En este post, utilizaré una imagen como ejemplo, pero el proceso es aplicable a otros elementos con mínimas diferencias.</p>
+<section id="sec-ref-2" class="level3"><h3 class="anchored" data-anchor-id="sec-ref-2">Referenciando una imagen</h3>
+<p>Para <a href="https://quarto.org/docs/authoring/cross-references.html#figures">referenciar una imagen</a> en Quarto, se usa la sintaxis <code>#fig-element</code>, donde <code>element</code> es el identificador que asignamos. Por ejemplo, para hacer referenciable una imagen:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="al" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">![*Cecropia*.](Cecropia_01.jpg)</span>{#fig-cecropia}</span></code></pre></div>
+<div id="fig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde lejos.">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="Cecropia_01.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;1: Cecropia"><img src="https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/Cecropia_01.jpg" class="img-fluid figure-img" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde lejos."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: <em>Cecropia</em>
+</figcaption></figure>
+</div>
+<p>La presencia de <code>#fig-cecropia</code> permite referenciar esta imagen en cualquier momento usando <code>@fig-cecropia</code>. Por ejemplo:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">La @fig-cecropia es de un yarumo.</span></code></pre></div>
+<p>Obtendríamos: La Figura&nbsp;1 es de un yarumo<sup>2</sup>.</p>
+</section><section id="referenciando-una-imagen-generada-por-código" class="level3"><h3 class="anchored" data-anchor-id="referenciando-una-imagen-generada-por-código">Referenciando una imagen generada por código</h3>
+<p>Quarto también permite <a href="https://quarto.org/docs/authoring/cross-references.html#computations">referenciar imágenes generadas por código</a>. En este caso, las etiquetas se añaden usando las <a href="https://quarto.org/docs/reference/cells/cells-knitr.html">opciones del chunk de código</a>, <code>label</code> y <code>fig-cap</code>. Por ejemplo, generemos una figura con <a href="https://ggplot2.tidyverse.org"><code>{ggplot2}</code></a> y los datos de <a href="https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/iris"><code>iris</code></a>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```{r}</span></span>
+<span id="cb3-2"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| label: fig-iris</span></span>
+<span id="cb3-3"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| fig-cap: Un gráfico de dispersión.</span></span>
+<span id="cb3-4"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| fig-alt: Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables.</span></span>
+<span id="cb3-5"></span>
+<span id="cb3-6"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">iris |&gt; </span></span>
+<span id="cb3-7"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  ggplot2::ggplot(</span></span>
+<span id="cb3-8"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    ggplot2::aes(</span></span>
+<span id="cb3-9"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">      Petal.Length,</span></span>
+<span id="cb3-10"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">      Petal.Width,</span></span>
+<span id="cb3-11"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">      shape = Species</span></span>
+<span id="cb3-12"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    )</span></span>
+<span id="cb3-13"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  ) + </span></span>
+<span id="cb3-14"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  ggplot2::geom_point()</span></span>
+<span id="cb3-15"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<div id="fig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables.">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-iris-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figura&nbsp;2: Un gráfico de dispersión."><img src="https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/index_files/figure-html/fig-iris-1.png" class="img-fluid figure-img" alt="Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables." width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Un gráfico de dispersión.
+</figcaption></figure>
+</div>
+</div>
+</div>
+<p>En la opción <code>fig-cap</code> tenemos la descripción de nuestra imagen, mientras que en <code>label</code> usamos <code>fig-iris</code>, que utilizaremos para referirnos a esta imagen. Si escribimos <code>@fig-iris</code>, obtendremos: Figura&nbsp;2.</p>
+</section></section><section id="referencias-personalizadas-en-quarto" class="level2"><h2 class="anchored" data-anchor-id="referencias-personalizadas-en-quarto">Referencias personalizadas en Quarto</h2>
+<p>Con <code>#fig-element</code> y <code>#tbl-element</code> cubrimos la mayoría de las necesidades para referenciar elementos en un trabajo académico. Sin embargo, si necesitamos incluir material suplementario, estos métodos no funcionan correctamente, ya que seguirán la numeración del texto principal. Afortunadamente, desde la <a href="https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/">versión 1.4 de Quarto</a>, es posible crear <a href="https://quarto.org/docs/authoring/cross-references-custom.html">referencias cruzadas personalizadas</a>.</p>
+<p>Como ejemplo, crearemos una referencia cruzada para que las figuras suplementarias aparezcan en el texto como «Figura S1», «Figura S2», etc. Para ello, añadimos el siguiente código en el YAML del documento o proyecto de Quarto:</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">crossref</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb4-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">custom</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb4-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">kind</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> float</span></span>
+<span id="cb4-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">key</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> suppfig</span></span>
+<span id="cb4-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">reference-prefix</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Figure S</span></span>
+<span id="cb4-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">space-before-numbering</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">false</span></span></code></pre></div>
+<p>Las tres primeras opciones <code>crossref</code>, <code>custom</code>, <code>kind</code> son obligatorias. <code>crossref</code> se utiliza para personalizar las referencias cruzadas; <code>custom</code>, para indicar que será un tipo de referencia cruzada personalizado; y <code>kind</code>, para especificar el tipo de referencia (actualmente solo se admite <code>float</code>). Además, <code>key</code> es la clave que usaremos para referenciar el elemento (en este ejemplo, <code>#suppfig-element</code>); <code>reference-prefix</code> es el prefijo que aparecerá en la referencia (en este caso, <code>Figura S</code>). Finalmente, <code>space-before-numbering</code> define si se añade o no un espacio entre el prefijo y la numeración de la imagen (si es <code>false</code>, no se añade espacio). Con esto configurado<sup>3</sup>, probaremos con otras imágenes.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Al crear una referencia cruzada personalizada, es importante tener cuidado con los prefijos elegidos, ya que Quarto tiene algunos prefijos reservados: <code>fig</code>, <code>tbl</code>, <code>lst</code>, <code>tip</code>, <code>nte</code>, <code>wrn</code>, <code>imp</code>, <code>cau</code>, <code>thm</code>, <code>lem</code>, <code>cor</code>, <code>prp</code>, <code>cnj</code>, <code>def</code>, <code>exm</code>, <code>exr</code>, <code>sol</code>, <code>rem</code>, <code>eq</code>, y <code>sec</code>. También es recomendable evitar el uso de guiones bajos (<code>_</code>), ya que esto puede causar problemas al renderizar un PDF usando LaTeX. <a href="https://quarto.org/docs/authoring/cross-references.html">Más información</a>.</p>
+</div>
+</div>
+<section id="referenciando-una-imagen-suplementaria" class="level3"><h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria">Referenciando una imagen suplementaria</h3>
+<p>Haremos algo similar a lo mostrado más arriba, pero cambiaremos <code>fig</code> por <code>suppfig</code>:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><span class="al" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">![*Cecropia*.](Cecropia_03.jpg)</span>{#fig-cecropia}</span></code></pre></div>
+<div id="suppfig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde el suelo.">
+<figure class="quarto-float quarto-float-suppfig figure"><div aria-describedby="suppfig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="cecropia_03.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figura S1: Cecropia"><img src="https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/cecropia_03.jpg" class="img-fluid figure-img" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde el suelo."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura S1: <em>Cecropia</em>
+</figcaption></figure>
+</div>
+<p>Ahora podemos referenciar esta imagen en cualquier momento usando <code>@suppfig-cecropia</code>. Si escribimos:</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1">La @suppfig-cecropia es de otro yarumo.</span></code></pre></div>
+<p>Obtenemos: La Figura S1 es de otro yarumo<sup>4</sup>.</p>
+</section><section id="referenciando-una-imagen-suplementaria-generada-por-código" class="level3"><h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria-generada-por-código">Referenciando una imagen suplementaria generada por código</h3>
+<p>Si quisiéramos hacer lo mismo para una imagen generada por código, podríamos intentar lo siguiente:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```{r}</span></span>
+<span id="cb7-2"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| label: suppfig-iris</span></span>
+<span id="cb7-3"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| fig-cap: Un boxplot.</span></span>
+<span id="cb7-4"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#| fig-alt: Un boxplot de la variable petal length de las espcies del conjuto de datos Iris.</span></span>
+<span id="cb7-5"></span>
+<span id="cb7-6"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">iris |&gt; </span></span>
+<span id="cb7-7"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  ggplot2::ggplot(</span></span>
+<span id="cb7-8"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    ggplot2::aes(</span></span>
+<span id="cb7-9"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">      Species,</span></span>
+<span id="cb7-10"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">      Petal.Length</span></span>
+<span id="cb7-11"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    )</span></span>
+<span id="cb7-12"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  ) + </span></span>
+<span id="cb7-13"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">  ggplot2::geom_boxplot()</span></span>
+<span id="cb7-14"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="index_files/figure-html/suppfig-iris-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Un boxplot."><img src="https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/index_files/figure-html/suppfig-iris-1.png" class="img-fluid figure-img" alt="Un boxplot de la variable petal length de las espcies del conjuto de datos Iris." width="672"></a></p>
+<figcaption>Un boxplot.</figcaption></figure>
+</div>
+</div>
+</div>
+<p>Sin embargo, esto no genera el prefijo en la descripción de la imagen. Además, si intentamos referenciarla usando <code>@suppfig-iris</code>, veremos que aparece el error <strong>?@suppfig-iris</strong>. Esto se debe a cómo está configurado actualmente Quarto. Para que Quarto interprete correctamente esta imagen utilizando referencias cruzadas personalizadas, debemos usar la sintaxis de <a href="https://quarto.org/docs/authoring/cross-references-divs.html">Divs</a>, que consiste en encerrar el código entre dos grupos de <code>:::</code> y realizar algunos pequeños cambios:</p>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1">::: {#suppfig-iris fig-alt="fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.""}</span>
+<span id="cb8-2"></span>
+<span id="cb8-3"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```r</span></span>
+<span id="cb8-4">iris <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb8-5">  ggplot2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(</span>
+<span id="cb8-6">    ggplot2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(</span>
+<span id="cb8-7">      Species,</span>
+<span id="cb8-8">      Petal.Length</span>
+<span id="cb8-9">    )</span>
+<span id="cb8-10">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb8-11">  ggplot2<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_boxplot</span>()</span>
+<span id="cb8-12"><span class="in" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">```</span></span>
+<span id="cb8-13"></span>
+<span id="cb8-14">Gráfico de dispersión.</span>
+<span id="cb8-15"></span>
+<span id="cb8-16">:::</span></code></pre></div>
+<div id="suppfig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.">
+<figure class="quarto-float quarto-float-suppfig figure"><div aria-describedby="suppfig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figura S2: Un boxplot."><img src="https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura S2: Un boxplot.
+</figcaption></figure>
+</div>
+<p>Ahora sí podemos usar <code>@suppfig-iris</code> sin problema, como se muestra en Figura S2.</p>
+</section></section><section id="conclusiones" class="level2"><h2 class="anchored" data-anchor-id="conclusiones">Conclusiones</h2>
+<p>Como hemos visto, Quarto es muy potente y sumamente <a href="https://quarto.org/docs/authoring/cross-references.html">útil para realizar referencias cruzadas</a>, una tarea tediosa cuando escribimos un artículo científico o un trabajo académico. Aunque referenciar material suplementario puede resultar confuso al principio, sobre todo cuando son elementos generados por código, con un poco de práctica se vuelve sencillo y se ahorra mucho tiempo al evitar problemas con las referencias. Solo nos queda esperar que sigan apareciendo más <a href="https://quarto.org/docs/extensions/listing-journals.html">plantillas de Quarto para revistas académicas</a>, y estaremos un paso más cerca de decir <a href="https://geobota.github.io/xii-ccb-quarto/">¡adiós, maldito .doc!</a></p>
+
+
+</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+<ol>
+<li id="fn1"><p>Identificador único para cada tipo de referencia cruzada.↩︎</p></li>
+<li id="fn2"><p><a href="https://commons.wikimedia.org/wiki/File:Cecropia_peltata_01.jpg">Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>,↩︎</p></li>
+<li id="fn3"><p>Hay <a href="https://quarto.org/docs/reference/metadata/crossref.html#custom">muchísimas</a> más opciones.↩︎</p></li>
+<li id="fn4"><p><a href="https://commons.wikimedia.org/wiki/File:Cecropia_peltata_03.jpg">Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>,↩︎</p></li>
+</ol></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
+  author = {Espinosa-Correa, Álex},
+  title = {Las referencias cruzadas personalizadas de Quarto},
+  date = {2024-08-10},
+  url = {https://alexespinosaco.github.io/2024-08-10_quarto-referencias-cruzadas/},
+  langid = {es}
+}
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas">
+Espinosa-Correa, Álex. 2024. <span>“Las referencias cruzadas
+personalizadas de Quarto.”</span> August 10, 2024. <a href="https://alexespinosaco.github.io/2024-08-10_quarto-referencias-cruzadas/">https://alexespinosaco.github.io/2024-08-10_quarto-referencias-cruzadas/</a>.
+</div></div></section></div> ]]></description>
+  <category>Quarto</category>
+  <category>Tutorial</category>
+  <guid>https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/</guid>
+  <pubDate>Sat, 10 Aug 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/preview.svg" medium="image" type="image/svg+xml"/>
+</item>
 <item>
   <title>¡Celebrando los 20 años de OpenStreetMap!</title>
   <dc:creator>Álex Espinosa-Correa</dc:creator>
@@ -1070,9 +1375,9 @@ Espinosa-Correa, Álex. 2024. <span>“Cómo hacer un curriculum vitae en
 Quarto.”</span> February 18, 2024. <a href="http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/">http://alexespinosaco.github.io/aerovagante/2024-02-13-cv/</a>.
 </div></div></section></div> ]]></description>
   <category>LaTeX</category>
-  <category>Personal</category>
   <category>Quarto</category>
   <category>RStudio</category>
+  <category>Tutorial</category>
   <guid>https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/</guid>
   <pubDate>Sun, 18 Feb 2024 05:00:00 GMT</pubDate>
   <media:content url="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/cv_01.png" medium="image" type="image/png" height="137" width="144"/>
