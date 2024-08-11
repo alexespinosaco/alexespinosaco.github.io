@@ -1,0 +1,198 @@
+---
+title: "Referencias cruzadas personalizadas en Quarto"
+description: "Cómo utilizar apropiadamente las refencias cruzadas personalizadas de Quarto"
+
+date: 2024-08-10
+image: preview.svg
+
+categories:
+  - Quarto
+  - Tutorial
+
+citation: 
+  url: http://alexespinosaco.github.io/2024-08-10_quarto-referencias-cruzadas/
+
+execute: 
+  message: false
+  warning: false
+  # eval: false
+
+lang: es
+
+toc: true
+toc-depth: 4
+
+draft: false
+
+crossref:
+  custom:
+    - kind: float
+      key: suppfig
+      reference-prefix: Figura S
+      space-before-numbering: false
+---
+
+```{r}
+#| label: setup
+#| output: false
+#| echo: false
+
+if (!require("ggplot2")) install.packages("ggplot2")
+```
+
+Mientras seguía una de esas horribles «guías para autores», ese caótico documento donde las revistas nos indican cómo debemos hacer el trabajo que ellos deberían realizar, me encontré con la necesidad de que Quarto interpretara algunas figuras y tablas como «Figura S1» o «Tabla S1». A pesar de que [la guía de Quarto](https://quarto.org/docs/guide/) es una de las mejores que he leído y cuenta con secciones que explican [cómo hacerlo](https://quarto.org/docs/authoring/cross-references-custom.html#example-supplemental-figures), me encontré con algunas limitaciones que no están explícitamente detalladas. Aunque estas sí se mencionan en [otros apartados](https://github.com/quarto-dev/quarto-cli/issues/7507). Esta publicación sirve como un tutorial para usar las referencias cruzadas personalizadas en Quarto, como un recordatorio personal y como una solución/explicación para quienes se enfrenten al mismo problema y busquen una solución en español.
+
+## Referencias cruzadas en Quarto
+
+Entre las características más potentes de Quarto, las [referencias cruzadas](https://quarto.org/docs/authoring/cross-references.html) destacan por su simplicidad y utilidad a la hora de escribir documentos académicos, como artículos científicos. Las referencias cruzadas pueden aplicarse a imágenes, tablas, ecuaciones, secciones, entre otros elementos. Además, pueden ser utilizadas tanto en elementos generados por código como en el mismo código. Para usarlas, es indispensable etiquetar cada elemento con un identificador único[^1] adecuada. En este post, utilizaré una imagen como ejemplo, pero el proceso es aplicable a otros elementos con mínimas diferencias. 
+
+[^1]: Identificador único para cada tipo de referencia cruzada.
+
+### Referenciando una imagen {#sec-ref-2}
+
+Para [referenciar una imagen](https://quarto.org/docs/authoring/cross-references.html#figures) en Quarto, se usa la sintaxis `#fig-element`, donde `element` es el identificador que asignamos. Por ejemplo, para hacer referenciable una imagen:
+
+``` markdown
+![*Cecropia*.](Cecropia_01.jpg){#fig-cecropia}
+```
+
+![*Cecropia*](Cecropia_01.jpg){#fig-cecropia}
+
+La presencia de `#fig-cecropia` permite referenciar esta imagen en cualquier momento usando `@fig-cecropia`. Por ejemplo:
+
+``` markdown
+La @fig-cecropia es de un yarumo.
+```
+
+Obtendríamos: La @fig-cecropia es de un yarumo[^2].
+
+[^2]: <a href="https://commons.wikimedia.org/wiki/File:Cecropia_peltata_01.jpg">Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, 
+
+### Referenciando una imagen generada por código
+
+Quarto también permite [referenciar imágenes generadas por código](https://quarto.org/docs/authoring/cross-references.html#computations). En este caso, las etiquetas se añaden usando las [opciones del chunk de código](https://quarto.org/docs/reference/cells/cells-knitr.html), `label` y `fig-cap`. Por ejemplo, generemos una figura con [`{ggplot2}`](https://ggplot2.tidyverse.org) y los datos de [`iris`](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/iris):
+
+```{r}
+#| echo: fenced
+#| label: fig-iris
+#| fig-cap: Un gráfico de dispersión.
+
+iris |> 
+  ggplot2::ggplot(
+    ggplot2::aes(
+      Petal.Length,
+      Petal.Width,
+      shape = Species
+    )
+  ) + 
+  ggplot2::geom_point()
+```
+
+En la opción `fig-cap` tenemos la descripción de nuestra imagen, mientras que en `label` usamos `fig-iris`, que utilizaremos para referirnos a esta imagen. Si escribimos `@fig-iris`, obtendremos: @fig-iris.
+
+## Referencias personalizadas en Quarto
+
+Con `#fig-element` y `#tbl-element` cubrimos la mayoría de las necesidades para referenciar elementos en un trabajo académico. Sin embargo, si necesitamos incluir material suplementario, estos métodos no funcionan correctamente, ya que seguirán la numeración del texto principal. Afortunadamente, desde la [versión 1.4 de Quarto](https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/), es posible crear [referencias cruzadas personalizadas](https://quarto.org/docs/authoring/cross-references-custom.html).
+
+Como ejemplo, crearemos una referencia cruzada para que las figuras suplementarias aparezcan en el texto como «Figura S1», «Figura S2», etc. Para ello, añadimos el siguiente código en el YAML del documento o proyecto de Quarto:
+
+```yaml
+crossref:
+  custom:
+    - kind: float
+      key: suppfig
+      reference-prefix: Figure S
+      space-before-numbering: false
+```
+
+Las tres primeras opciones `crossref`, `custom`, `kind` son obligatorias. `crossref` se utiliza para personalizar las referencias cruzadas; `custom`, para indicar que será un tipo de referencia cruzada personalizado; y `kind`, para especificar el tipo de referencia (actualmente solo se admite `float`). Además, `key` es la clave que usaremos para referenciar el elemento (en este ejemplo, `#suppfig-element`); `reference-prefix` es el prefijo que aparecerá en la referencia (en este caso, `Figura S`). Finalmente, `space-before-numbering` define si se añade o no un espacio entre el prefijo y la numeración de la imagen (si es `false`, no se añade espacio). Con esto configurado[^4], probaremos con otras imágenes.
+
+[^4]: Hay [muchísimas](https://quarto.org/docs/reference/metadata/crossref.html#custom) más opciones.
+
+::: {.callout-warning}
+Al crear una referencia cruzada personalizada, es importante tener cuidado con los prefijos elegidos, ya que Quarto tiene algunos prefijos reservados: `fig`, `tbl`, `lst`, `tip`, `nte`, `wrn`, `imp`, `cau`, `thm`, `lem`, `cor`, `prp`, `cnj`, `def`, `exm`, `exr`, `sol`, `rem`, `eq`, y `sec`. También es recomendable evitar el uso de guiones bajos (`_`), ya que esto puede causar problemas al renderizar un PDF usando LaTeX. [Más información](https://quarto.org/docs/authoring/cross-references.html).
+:::
+
+### Referenciando una imagen suplementaria
+
+Haremos algo similar a lo mostrado más [arriba](#sec-ref-2), pero cambiaremos `fig` por `suppfig`:
+
+``` markdown
+![*Cecropia*.](Cecropia_03.jpg){#fig-cecropia}
+```
+
+![*Cecropia*](cecropia_03.jpg){#suppfig-cecropia}
+
+Ahora podemos referenciar esta imagen en cualquier momento usando `@suppfig-cecropia`. Si escribimos:
+
+``` markdown
+La @suppfig-cecropia es de otro yarumo.
+```
+
+Obtenemos: La @suppfig-cecropia es de otro yarumo[^3].
+
+[^3]: <a href="https://commons.wikimedia.org/wiki/File:Cecropia_peltata_03.jpg">Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, 
+
+### Referenciando una imagen suplementaria generada por código
+
+Si quisiéramos hacer lo mismo para una imagen generada por código, podríamos intentar lo siguiente:
+
+```{r}
+#| echo: fenced
+#| label: suppfig-iris
+#| fig-cap: Gráfico de dispersión.
+
+iris |> 
+  ggplot2::ggplot(
+    ggplot2::aes(
+      Species,
+      Petal.Length
+    )
+  ) + 
+  ggplot2::geom_boxplot()
+```
+
+Sin embargo, esto no genera el prefijo en la descripción de la imagen. Además, si intentamos referenciarla usando `@suppfig-iris`, veremos que aparece el error **\?\@suppfig-iris**. Esto se debe a cómo está configurado actualmente Quarto. Para que Quarto interprete correctamente esta imagen utilizando referencias cruzadas personalizadas, debemos usar la sintaxis de [Divs](https://quarto.org/docs/authoring/cross-references-divs.html), que consiste en encerrar el código entre dos grupos de `:::` y realizar algunos pequeños cambios:
+
+````markdown
+::: {#suppfig-iris}
+
+```r
+iris |> 
+  ggplot2::ggplot(
+    ggplot2::aes(
+      Species,
+      Petal.Length
+    )
+  ) + 
+  ggplot2::geom_boxplot()
+```
+
+Gráfico de dispersión.
+
+:::
+````
+
+::: {#suppfig-iris}
+
+```{r}
+#| echo: false
+iris |> 
+  ggplot2::ggplot(
+    ggplot2::aes(
+      Species,
+      Petal.Length
+    )
+  ) + 
+  ggplot2::geom_boxplot()
+```
+
+Un boxplot.
+
+:::
+
+Ahora sí podemos usar `@suppfig-iris` sin problema, como se muestra en @suppfig-iris.
+
+## Conclusiones
+
+Como hemos visto, Quarto es muy potente y sumamente [útil para realizar referencias cruzadas](https://quarto.org/docs/authoring/cross-references.html), una tarea tediosa cuando escribimos un artículo científico o un trabajo académico. Aunque referenciar material suplementario puede resultar confuso al principio, sobre todo cuando son elementos generados por código, con un poco de práctica se vuelve sencillo y se ahorra mucho tiempo al evitar problemas con las referencias. Solo nos queda esperar que sigan apareciendo más [plantillas de Quarto para revistas académicas](https://quarto.org/docs/extensions/listing-journals.html), y estaremos un paso más cerca de decir [¡adiós, maldito .doc!](https://geobota.github.io/xii-ccb-quarto/)
