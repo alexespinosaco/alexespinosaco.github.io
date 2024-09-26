@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.56">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 <meta name="author" content="Álex Espinosa-Correa">
 <meta name="dcterms.date" content="2024-08-10">
 <meta name="description" content="Cómo utilizar apropiadamente las referencias cruzadas personalizadas de Quarto">
+
 <title>Las referencias cruzadas personalizadas de Quarto – Álex Espinosa-Correa</title>
 <style>
 code{white-space: pre-wrap;}
@@ -56,6 +59,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
+
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
@@ -79,7 +83,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -105,13 +110,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Enviar",
     "search-label": "Buscar"
   }
-}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RN5H7WV1DJ"></script><script type="text/javascript">
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RN5H7WV1DJ"></script>
+
+<script type="text/javascript">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
-</script><style>
+</script>
+<style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -128,6 +137,8 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 background: #0072B2;
       }
 </style>
+
+
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Las referencias cruzadas personalizadas de Quarto – Álex Espinosa-Correa">
 <meta property="og:description" content="Cómo utilizar apropiadamente las referencias cruzadas personalizadas de Quarto">
@@ -140,13 +151,17 @@ background: #0072B2;
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
 </head>
+
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo"></a>
+    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Álex Espinosa-Correa</span>
     </a>
@@ -157,7 +172,7 @@ background: #0072B2;
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
@@ -194,11 +209,15 @@ background: #0072B2;
 <span class="menu-text"><i class="fa-solid fa-rss" aria-label="rss"></i></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Las referencias cruzadas personalizadas de Quarto</h1>
                   <div>
@@ -238,45 +257,55 @@ background: #0072B2;
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">En esta página</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
    
   <ul>
-<li>
-<a href="#referencias-cruzadas-en-quarto" id="toc-referencias-cruzadas-en-quarto" class="nav-link active" data-scroll-target="#referencias-cruzadas-en-quarto">Referencias cruzadas en Quarto</a>
+  <li><a href="#referencias-cruzadas-en-quarto" id="toc-referencias-cruzadas-en-quarto" class="nav-link active" data-scroll-target="#referencias-cruzadas-en-quarto">Referencias cruzadas en Quarto</a>
   <ul>
-<li><a href="#sec-ref-2" id="toc-sec-ref-2" class="nav-link" data-scroll-target="#sec-ref-2">Referenciando una imagen</a></li>
-  <li><a href="#referenciando-una-imagen-generada-por-c%C3%B3digo" id="toc-referenciando-una-imagen-generada-por-código" class="nav-link" data-scroll-target="#referenciando-una-imagen-generada-por-c%C3%B3digo">Referenciando una imagen generada por código</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#referencias-personalizadas-en-quarto" id="toc-referencias-personalizadas-en-quarto" class="nav-link" data-scroll-target="#referencias-personalizadas-en-quarto">Referencias personalizadas en Quarto</a>
+  <li><a href="#sec-ref-2" id="toc-sec-ref-2" class="nav-link" data-scroll-target="#sec-ref-2">Referenciando una imagen</a></li>
+  <li><a href="#referenciando-una-imagen-generada-por-código" id="toc-referenciando-una-imagen-generada-por-código" class="nav-link" data-scroll-target="#referenciando-una-imagen-generada-por-código">Referenciando una imagen generada por código</a></li>
+  </ul></li>
+  <li><a href="#referencias-personalizadas-en-quarto" id="toc-referencias-personalizadas-en-quarto" class="nav-link" data-scroll-target="#referencias-personalizadas-en-quarto">Referencias personalizadas en Quarto</a>
   <ul>
-<li><a href="#referenciando-una-imagen-suplementaria" id="toc-referenciando-una-imagen-suplementaria" class="nav-link" data-scroll-target="#referenciando-una-imagen-suplementaria">Referenciando una imagen suplementaria</a></li>
-  <li><a href="#referenciando-una-imagen-suplementaria-generada-por-c%C3%B3digo" id="toc-referenciando-una-imagen-suplementaria-generada-por-código" class="nav-link" data-scroll-target="#referenciando-una-imagen-suplementaria-generada-por-c%C3%B3digo">Referenciando una imagen suplementaria generada por código</a></li>
-  </ul>
-</li>
+  <li><a href="#referenciando-una-imagen-suplementaria" id="toc-referenciando-una-imagen-suplementaria" class="nav-link" data-scroll-target="#referenciando-una-imagen-suplementaria">Referenciando una imagen suplementaria</a></li>
+  <li><a href="#referenciando-una-imagen-suplementaria-generada-por-código" id="toc-referenciando-una-imagen-suplementaria-generada-por-código" class="nav-link" data-scroll-target="#referenciando-una-imagen-suplementaria-generada-por-código">Referenciando una imagen suplementaria generada por código</a></li>
+  </ul></li>
   <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones">Conclusiones</a></li>
-  </ul></nav>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><p>Mientras seguía una de esas horribles «guías para autores», ese caótico documento donde las revistas nos indican cómo debemos hacer el trabajo que ellos deberían realizar, me encontré con la necesidad de que Quarto interpretara algunas figuras y tablas como «Figura S1» o «Tabla S1». A pesar de que <a href="https://quarto.org/docs/guide/">la guía de Quarto</a> es una de las mejores que he leído y cuenta con secciones que explican <a href="https://quarto.org/docs/authoring/cross-references-custom.html#example-supplemental-figures">cómo hacerlo</a>, me encontré con algunas limitaciones que no están explícitamente detalladas. Aunque estas sí se mencionan en <a href="https://github.com/quarto-dev/quarto-cli/issues/7507">otros apartados</a>. Esta publicación sirve como un tutorial para usar las referencias cruzadas personalizadas de Quarto, como un recordatorio personal y como una solución/explicación para quienes se enfrenten al mismo problema y busquen una solución en español.</p>
-<section id="referencias-cruzadas-en-quarto" class="level2"><h2 class="anchored" data-anchor-id="referencias-cruzadas-en-quarto">Referencias cruzadas en Quarto</h2>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>Mientras seguía una de esas horribles «guías para autores», ese caótico documento donde las revistas nos indican cómo debemos hacer el trabajo que ellos deberían realizar, me encontré con la necesidad de que Quarto interpretara algunas figuras y tablas como «Figura S1» o «Tabla S1». A pesar de que <a href="https://quarto.org/docs/guide/">la guía de Quarto</a> es una de las mejores que he leído y cuenta con secciones que explican <a href="https://quarto.org/docs/authoring/cross-references-custom.html#example-supplemental-figures">cómo hacerlo</a>, me encontré con algunas limitaciones que no están explícitamente detalladas. Aunque estas sí se mencionan en <a href="https://github.com/quarto-dev/quarto-cli/issues/7507">otros apartados</a>. Esta publicación sirve como un tutorial para usar las referencias cruzadas personalizadas de Quarto, como un recordatorio personal y como una solución/explicación para quienes se enfrenten al mismo problema y busquen una solución en español.</p>
+<section id="referencias-cruzadas-en-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="referencias-cruzadas-en-quarto">Referencias cruzadas en Quarto</h2>
 <p>Entre las características más potentes de Quarto, las <a href="https://quarto.org/docs/authoring/cross-references.html">referencias cruzadas</a> destacan por su simplicidad y utilidad a la hora de escribir documentos académicos, como artículos científicos. Las referencias cruzadas pueden aplicarse a imágenes, tablas, ecuaciones, secciones, entre otros elementos. Además, pueden ser utilizadas tanto en elementos generados por código como en el mismo código. Para usarlas, es indispensable etiquetar cada elemento con un identificador único<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> adecuada. En este post, utilizaré una imagen como ejemplo, pero el proceso es aplicable a otros elementos con mínimas diferencias.</p>
-<section id="sec-ref-2" class="level3"><h3 class="anchored" data-anchor-id="sec-ref-2">Referenciando una imagen</h3>
+<section id="sec-ref-2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-ref-2">Referenciando una imagen</h3>
 <p>Para <a href="https://quarto.org/docs/authoring/cross-references.html#figures">referenciar una imagen</a> en Quarto, se usa la sintaxis <code>#fig-element</code>, donde <code>element</code> es el identificador que asignamos. Por ejemplo, para hacer referenciable una imagen:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![*Cecropia*.](Cecropia_01.jpg)</span>{#fig-cecropia}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde lejos.">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <a href="Cecropia_01.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figura&nbsp;1: Cecropia"><img src="Cecropia_01.jpg" class="img-fluid figure-img" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde lejos."></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;1: <em>Cecropia</em>
-</figcaption></figure>
+</figcaption>
+</figure>
 </div>
 <p>La presencia de <code>#fig-cecropia</code> permite referenciar esta imagen en cualquier momento usando <code>@fig-cecropia</code>. Por ejemplo:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>La @fig-cecropia es de un yarumo.</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Obtendríamos: La <a href="#fig-cecropia" class="quarto-xref">Figura&nbsp;1</a> es de un yarumo<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
-</section><section id="referenciando-una-imagen-generada-por-código" class="level3"><h3 class="anchored" data-anchor-id="referenciando-una-imagen-generada-por-código">Referenciando una imagen generada por código</h3>
+</section>
+<section id="referenciando-una-imagen-generada-por-código" class="level3">
+<h3 class="anchored" data-anchor-id="referenciando-una-imagen-generada-por-código">Referenciando una imagen generada por código</h3>
 <p>Quarto también permite <a href="https://quarto.org/docs/authoring/cross-references.html#computations">referenciar imágenes generadas por código</a>. En este caso, las etiquetas se añaden usando las <a href="https://quarto.org/docs/reference/cells/cells-knitr.html">opciones del chunk de código</a>, <code>label</code> y <code>fig-cap</code>. Por ejemplo, generemos una figura con <a href="https://ggplot2.tidyverse.org"><code>{ggplot2}</code></a> y los datos de <a href="https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/iris"><code>iris</code></a>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
@@ -296,17 +325,22 @@ Figura&nbsp;1: <em>Cecropia</em>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables.">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <a href="index_files/figure-html/fig-iris-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figura&nbsp;2: Un gráfico de dispersión."><img src="index_files/figure-html/fig-iris-1.png" class="img-fluid figure-img" alt="Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables." width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;2: Un gráfico de dispersión.
-</figcaption></figure>
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
 <p>En la opción <code>fig-cap</code> tenemos la descripción de nuestra imagen, mientras que en <code>label</code> usamos <code>fig-iris</code>, que utilizaremos para referirnos a esta imagen. Si escribimos <code>@fig-iris</code>, obtendremos: <a href="#fig-iris" class="quarto-xref">Figura&nbsp;2</a>.</p>
-</section></section><section id="referencias-personalizadas-en-quarto" class="level2"><h2 class="anchored" data-anchor-id="referencias-personalizadas-en-quarto">Referencias personalizadas en Quarto</h2>
+</section>
+</section>
+<section id="referencias-personalizadas-en-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="referencias-personalizadas-en-quarto">Referencias personalizadas en Quarto</h2>
 <p>Con <code>#fig-element</code> y <code>#tbl-element</code> cubrimos la mayoría de las necesidades para referenciar elementos en un trabajo académico. Sin embargo, si necesitamos incluir material suplementario, estos métodos no funcionan correctamente, ya que seguirán la numeración del texto principal. Afortunadamente, desde la <a href="https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/">versión 1.4 de Quarto</a>, es posible crear <a href="https://quarto.org/docs/authoring/cross-references-custom.html">referencias cruzadas personalizadas</a>.</p>
 <p>Como ejemplo, crearemos una referencia cruzada para que las figuras suplementarias aparezcan en el texto como «Figura S1», «Figura S2», etc. Para ello, añadimos el siguiente código en el YAML del documento o proyecto de Quarto:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">crossref</span><span class="kw">:</span></span>
@@ -329,21 +363,26 @@ Advertencia
 <p>Al crear una referencia cruzada personalizada, es importante tener cuidado con los prefijos elegidos, ya que Quarto tiene algunos prefijos reservados: <code>fig</code>, <code>tbl</code>, <code>lst</code>, <code>tip</code>, <code>nte</code>, <code>wrn</code>, <code>imp</code>, <code>cau</code>, <code>thm</code>, <code>lem</code>, <code>cor</code>, <code>prp</code>, <code>cnj</code>, <code>def</code>, <code>exm</code>, <code>exr</code>, <code>sol</code>, <code>rem</code>, <code>eq</code>, y <code>sec</code>. También es recomendable evitar el uso de guiones bajos (<code>_</code>), ya que esto puede causar problemas al renderizar un PDF usando LaTeX. <a href="https://quarto.org/docs/authoring/cross-references.html">Más información</a>.</p>
 </div>
 </div>
-<section id="referenciando-una-imagen-suplementaria" class="level3"><h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria">Referenciando una imagen suplementaria</h3>
+<section id="referenciando-una-imagen-suplementaria" class="level3">
+<h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria">Referenciando una imagen suplementaria</h3>
 <p>Haremos algo similar a lo mostrado más <a href="#sec-ref-2">arriba</a>, pero cambiaremos <code>fig</code> por <code>suppfig</code>:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![*Cecropia*.](Cecropia_03.jpg)</span>{#fig-cecropia}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="suppfig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde el suelo.">
-<figure class="quarto-float quarto-float-suppfig figure"><div aria-describedby="suppfig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <a href="cecropia_03.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figura S1: Cecropia"><img src="cecropia_03.jpg" class="img-fluid figure-img" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde el suelo."></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura S1: <em>Cecropia</em>
-</figcaption></figure>
+</figcaption>
+</figure>
 </div>
 <p>Ahora podemos referenciar esta imagen en cualquier momento usando <code>@suppfig-cecropia</code>. Si escribimos:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>La @suppfig-cecropia es de otro yarumo.</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Obtenemos: La <a href="#suppfig-cecropia" class="quarto-xref">Figura S1</a> es de otro yarumo<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
-</section><section id="referenciando-una-imagen-suplementaria-generada-por-código" class="level3"><h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria-generada-por-código">Referenciando una imagen suplementaria generada por código</h3>
+</section>
+<section id="referenciando-una-imagen-suplementaria-generada-por-código" class="level3">
+<h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria-generada-por-código">Referenciando una imagen suplementaria generada por código</h3>
 <p>Si quisiéramos hacer lo mismo para una imagen generada por código, podríamos intentar lo siguiente:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
@@ -362,8 +401,10 @@ Figura S1: <em>Cecropia</em>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="index_files/figure-html/suppfig-iris-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Un boxplot."><img src="index_files/figure-html/suppfig-iris-1.png" class="img-fluid figure-img" alt="Un boxplot de la variable petal length de las espcies del conjuto de datos Iris." width="672"></a></p>
-<figcaption>Un boxplot.</figcaption></figure>
+<figure class="figure">
+<p><a href="index_files/figure-html/suppfig-iris-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Un boxplot."><img src="index_files/figure-html/suppfig-iris-1.png" class="img-fluid figure-img" alt="Un boxplot de la variable petal length de las espcies del conjuto de datos Iris." width="672"></a></p>
+<figcaption>Un boxplot.</figcaption>
+</figure>
 </div>
 </div>
 </div>
@@ -385,11 +426,13 @@ Figura S1: <em>Cecropia</em>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="suppfig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.">
-<figure class="quarto-float quarto-float-suppfig figure"><div aria-describedby="suppfig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figure class="quarto-float quarto-float-suppfig figure">
+<div aria-describedby="suppfig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figura S2: Un boxplot."><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></a></p>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figura S2: Un boxplot."><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
 </div>
@@ -397,20 +440,29 @@ Figura S1: <em>Cecropia</em>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-suppfig" id="suppfig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura S2: Un boxplot.
-</figcaption></figure>
+</figcaption>
+</figure>
 </div>
 <p>Ahora sí podemos usar <code>@suppfig-iris</code> sin problema, como se muestra en <a href="#suppfig-iris" class="quarto-xref">Figura S2</a>.</p>
-</section></section><section id="conclusiones" class="level2"><h2 class="anchored" data-anchor-id="conclusiones">Conclusiones</h2>
+</section>
+</section>
+<section id="conclusiones" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones">Conclusiones</h2>
 <p>Como hemos visto, Quarto es muy potente y sumamente <a href="https://quarto.org/docs/authoring/cross-references.html">útil para realizar referencias cruzadas</a>, una tarea tediosa cuando escribimos un artículo científico o un trabajo académico. Aunque referenciar material suplementario puede resultar confuso al principio, sobre todo cuando son elementos generados por código, con un poco de práctica se vuelve sencillo y se ahorra mucho tiempo al evitar problemas con las referencias. Solo nos queda esperar que sigan apareciendo más <a href="https://quarto.org/docs/extensions/listing-journals.html">plantillas de Quarto para revistas académicas</a>, y estaremos un paso más cerca de decir <a href="https://geobota.github.io/xii-ccb-quarto/">¡adiós, maldito .doc!</a></p>
 
 
-</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
 <ol>
 <li id="fn1"><p>Identificador único para cada tipo de referencia cruzada.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p><a href="https://commons.wikimedia.org/wiki/File:Cecropia_peltata_01.jpg">Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>,<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Hay <a href="https://quarto.org/docs/reference/metadata/crossref.html#custom">muchísimas</a> más opciones.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p><a href="https://commons.wikimedia.org/wiki/File:Cecropia_peltata_03.jpg">Alexespinosaco</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>,<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
   author = {Espinosa-Correa, Álex},
   title = {Las referencias cruzadas personalizadas de Quarto},
   date = {2024-08-10},
@@ -420,7 +472,8 @@ Figura S2: Un boxplot.
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Espinosa-Correa, Álex. 2024. <span>“Las referencias cruzadas
 personalizadas de Quarto.”</span> August 10, 2024. <a href="https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/">https://alexespinosaco.github.io/aerovagante/2024-08-10_quarto-referencias-cruzadas/</a>.
-</div></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -839,16 +892,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><script src="https://utteranc.es/client.js" repo="alexespinosaco/blog-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+<script src="https://utteranc.es/client.js" repo="alexespinosaco/blog-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
 <p>Álex Espinosa-Correa © 2024. All content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i><i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i></a></p>
 </div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
-<li class="nav-item">
+    <li class="nav-item">
     <a class="nav-link" href="https://github.com/alexespinosaco">
 <p><i class="fa-brands fa-github" aria-label="github"></i></p>
 </a>
@@ -874,12 +929,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-</div>
+    </div>
     <div class="nav-footer-right">
 <p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto" width="65"></a></p>
 </div>
   </div>
-</footer><script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox"});
+</footer>
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
@@ -911,6 +967,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   
 })();
           </script>
+
+
 
 
 </body></html>
