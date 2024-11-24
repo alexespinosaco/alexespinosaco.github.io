@@ -1,0 +1,28 @@
+---
+title: "Docencia"
+pagetitle: "Docencia"
+author: ""
+
+listing: 
+  - id: teaching
+    contents: "*/index.qmd"
+    sort: "date desc"
+    type: grid
+    image-height: 225px
+    image-placeholder: /images/logo/placeholder.png
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    fields: [image, title, categories, date]
+    grid-columns: 3
+    # page-size: 3
+    # max-items: 3
+    feed: false
+
+comments: false
+---
+
+Este portafolio incluye material educativo de libre acceso que he creado, junto con trabajos, software y herramientas a las que he contribuido o diseñado.
+
+::: {#teaching}
+:::

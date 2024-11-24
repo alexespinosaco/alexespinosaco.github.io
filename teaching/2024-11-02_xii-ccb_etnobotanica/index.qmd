@@ -1,0 +1,40 @@
+---
+# pagetitle: ""
+title: "XII CCB: Etnobotánica Cuantitativa en R"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2024-11-02
+
+image: https://raw.githubusercontent.com/geobota/xii-ccb-2024/refs/heads/main/images/xii-ccb_etnobotanica-curso_hexsticker_01.svg
+
+citation: true
+
+categories: 
+  - Curso
+  - Etnobotánica
+  - Quarto
+  - Sito web
+  - XII CCB
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/geobota/xii-ccb-etnobotanica/
+    - text: "{{< fa link >}} Sitio web"
+      href: https://geobota.github.io/xii-ccb-etnobotanica/
+---
+
+:::{ #project}
+:::
+
+Durante el XII Congreso Colombiano de Botánica, celebrado del 4 al 8 de noviembre de 2024 en la ciudad de Popayán, Colombia, tuve el placer de impartir, junto a Bladimir Vera-Marín, el curso «Etnobotánica Cuantitativa en R». Este curso marcó un primer acercamiento a la reproducibilidad en el ámbito de las investigaciones etnobotánicas, integrando un enfoque cuantitativo.
+
+En la botánica, existen áreas que históricamente se han desarrollado desde una perspectiva más cualitativa que cuantitativa, a pesar del enorme potencial que ofrece la integración de ambos enfoques para generar resultados más sólidos y enriquecedores. La etnobotánica es un claro ejemplo de ello. En los últimos años, se ha evidenciado un creciente esfuerzo por equilibrar estas perspectivas. La incorporación de herramientas como R y Quarto, junto con principios de reproducibilidad científica, tiene el potencial de transformar esta disciplina, aportando rigor y metodologías más robustas para destacar en el panorama científico.
+
+Toda la información relacionada con el curso está disponible en el [sitio web del curso](https://github.com/geobota/xii-ccb-etnobotanica/).  

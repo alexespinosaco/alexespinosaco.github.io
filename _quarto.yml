@@ -48,6 +48,8 @@ website:
         href: cv/index.qmd
       - text: "Blog"
         href: aerovagante/index.qmd
+      - text: "Docencia"
+        href: teaching/index.qmd
       - text: "Proyectos"
         href: projects/index.qmd
       - text: "{{< fa brands github >}}"

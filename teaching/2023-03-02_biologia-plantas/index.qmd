@@ -1,0 +1,42 @@
+---
+pagetitle: "UdeA: Laboratorio de biología de las plantas 2023-01"
+title: "Laboratorio: biología de las plantas 2023-01"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2023-03-02
+
+image: https://github.com/alexespinosaco/biologia-plantas/blob/main/images/bldp.png?raw=true
+
+citation: true
+
+categories: 
+  - Cátedra
+  - Botánica
+  - Quarto
+  - Sito web
+  - UdeA
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/biologia-plantas/
+    - text: "{{< fa link >}} Sitio web"
+      href: https://alexespinosaco.github.io/biologia-plantas/
+---
+
+:::{ #project}
+:::
+
+Una de las cosas que más me impactó al conocer [Quarto](https://quarto.org/) fue su facilidad y versatilidad para crear [sitios web y libros](https://quarto.org/docs/gallery/) con una presentación elegante y profesional, sin necesidad de contar con amplios conocimientos técnicos. En ese momento (segundo semestre de 2022), me encontraba dictando el laboratorio de Biología de las Plantas en el Instituto de Biología de la [Universidad de Antioquia](https://udea.edu.co/).  
+
+Para el primer semestre de 2023, retomé el curso y, mientras [redactaba el manual de laboratorio](/projects/2023-03-02_biologia-plantas-manual/), decidí que todo el material presentado durante el semestre debería desarrollarse en Quarto y estar disponible en Internet bajo una licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Este enfoque permitió centralizar y modernizar los recursos educativos, además de garantizar un acceso libre y abierto para cualquier persona interesada.  
+
+En el sitio web del curso se encuentran todas las presentaciones utilizadas a lo largo de su desarrollo.  
+
+Toda la información relacionada con el laboratorio de Biología de las Plantas 2023-01 está disponible en el [sitio web del curso](https://alexespinosaco.github.io/biologia-plantas/).  
