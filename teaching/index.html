@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Álex Espinosa-Correa">
-<meta name="dcterms.date" content="2024-02-07">
+<meta name="author" content="">
 
-<title>Sito web de GEOBOTA – Álex Espinosa-Correa</title>
+<title>Docencia – Álex Espinosa-Correa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,26 +24,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../images/icon-AEC.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d3556c63b0fb8d2fdafd90db0dea4fa1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/icon-AEC.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d3556c63b0fb8d2fdafd90db0dea4fa1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-teaching .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-teaching'] = new List('listing-teaching', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RN5H7WV1DJ"></script>
 
 <script type="text/javascript">
@@ -82,16 +113,45 @@ gtag('js', new Date());
 gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Sito web de GEOBOTA">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Docencia">
 <meta property="og:description" content="Website personal de Álex Espinosa-Correa">
-<meta property="og:image" content="https://github.com/geobota/geobota.github.io/blob/main/images/logo/geobota_logo.png?raw=true">
+<meta property="og:image" content="https://alexespinosaco.github.io/teaching/images/banner-AEC.png">
 <meta property="og:site_name" content="Álex Espinosa-Correa">
 <meta property="og:locale" content="es_ES">
-<meta name="twitter:title" content="Sito web de GEOBOTA">
+<meta name="twitter:title" content="Docencia">
 <meta name="twitter:description" content="Website personal de Álex Espinosa-Correa">
-<meta name="twitter:image" content="https://github.com/geobota/geobota.github.io/blob/main/images/logo/geobota_logo.png?raw=true">
+<meta name="twitter:image" content="https://alexespinosaco.github.io/teaching/images/banner-AEC.png">
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -103,10 +163,10 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/icon-AEC.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Álex Espinosa-Correa</span>
     </a>
   </div>
@@ -117,23 +177,23 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv/index.html"> 
+    <a class="nav-link" href="../cv/index.html"> 
 <span class="menu-text">Acerca (CV)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../aerovagante/index.html"> 
+    <a class="nav-link" href="../aerovagante/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching/index.html"> 
+    <a class="nav-link active" href="../teaching/index.html" aria-current="page"> 
 <span class="menu-text">Docencia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/index.html"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
@@ -153,7 +213,7 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 <span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../aerovagante/index.xml"> 
+    <a class="nav-link" href="../aerovagante/index.xml"> 
 <span class="menu-text"><i class="fa-solid fa-rss" aria-label="rss"></i></span></a>
   </li>  
 </ul>
@@ -171,72 +231,182 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-jolla">
-  <img src="https://github.com/geobota/geobota.github.io/blob/main/images/logo/geobota_logo.png?raw=true" class="about-image
-  rectangle " style="width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sitio web del Grupo de Estudios Botánicos GEOBOTA</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">GEOBOTA</div>
-    <div class="quarto-category">Quarto</div>
-    <div class="quarto-category">Sito web</div>
-  </div>
-  </div>
+<h1 class="title">Docencia</h1>
+</div>
+
+
+
 <div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Autor/a</div>
-    <div class="quarto-title-meta-contents">
-             <p><a href="http://alexespinosaco.github.io/projects/">Álex Espinosa-Correa</a> </p>
-          </div>
+
+    
+  
+    
   </div>
-    <div>
-    <div class="quarto-title-meta-heading">Fecha de publicación</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2024-02-07</p>
-    </div>
-  </div>
-  </div>
-</header><div id="project">
-</div> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://www.facebook.com/geobotaudea/" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="fa-brands fa-facebook" aria-label="facebook"></i> Facebook</span>
-  </a>
-  <a href="https://github.com/geobota/geobota.github.io/" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="fa-brands fa-github" aria-label="github"></i> GitHub</span>
-  </a>
-  <a href="https://www.instagram.com/geobotaudea/" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="fa-brands fa-instagram" aria-label="instagram"></i> Instragram</span>
-  </a>
-  <a href="https://geobota.github.io/" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="fa-solid fa-link" aria-label="link"></i> Sitio web</span>
-  </a>
+  
+
+
+</header>
+
+
+<p>Este portafolio incluye material educativo de libre acceso que he creado, junto con trabajos, software y herramientas a las que he contribuido o diseñado.</p>
+<div id="listing-teaching" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="QWVyb2Jpb2xvZ+1hLEN1cnNvLFF1YXJ0byxTaXRvIHdlYixYSUkgQ0NC" data-listing-date-sort="1730696400000" data-listing-file-modified-sort="1732471988691" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<a href="../teaching/2024-11-04_xii-ccb_aerobiologia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://raw.githubusercontent.com/geobota/xii-ccb-2024/refs/heads/main/images/xii-ccb_aerobiologia-curso_hexsticker.svg" class="thumbnail-image card-img" style="height: 225px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+XII CCB: Introducción a la Aerobiología
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('QWVyb2Jpb2xvZ+1h'); return false;">
+Aerobiología
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q3Vyc28='); return false;">
+Curso
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
+Quarto
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('U2l0byB3ZWI='); return false;">
+Sito web
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('WElJIENDQg=='); return false;">
+XII CCB
+</div>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2024-11-04
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Q3Vyc28sUXVhcnRvLFJlcHJvZHVjaWJpbGlkYWQsU2l0byB3ZWIsWElJIENDQg==" data-listing-date-sort="1730610000000" data-listing-file-modified-sort="1732472278572" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
+<a href="../teaching/2024-11-03_xii-ccb_quarto/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://raw.githubusercontent.com/geobota/xii-ccb-2024/refs/heads/main/images/xii-ccb_quarto-curso_hexsticker_02.svg" class="thumbnail-image card-img" style="height: 225px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+XII CCB: Investigación Reproducible con Quarto
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Q3Vyc28='); return false;">
+Curso
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
+Quarto
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmlsaWRhZA=='); return false;">
+Reproducibilidad
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('U2l0byB3ZWI='); return false;">
+Sito web
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('WElJIENDQg=='); return false;">
+XII CCB
+</div>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2024-11-03
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Q3Vyc28sRXRub2JvdOFuaWNhLFF1YXJ0byxTaXRvIHdlYixYSUkgQ0NC" data-listing-date-sort="1730523600000" data-listing-file-modified-sort="1732472277518" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
+<a href="../teaching/2024-11-02_xii-ccb_etnobotanica/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://raw.githubusercontent.com/geobota/xii-ccb-2024/refs/heads/main/images/xii-ccb_etnobotanica-curso_hexsticker_01.svg" class="thumbnail-image card-img" style="height: 225px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+XII CCB: Etnobotánica Cuantitativa en R
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Q3Vyc28='); return false;">
+Curso
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RXRub2JvdOFuaWNh'); return false;">
+Etnobotánica
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
+Quarto
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('U2l0byB3ZWI='); return false;">
+Sito web
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('WElJIENDQg=='); return false;">
+XII CCB
+</div>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2024-11-02
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Q+F0ZWRyYSxCb3ThbmljYSxRdWFydG8sU2l0byB3ZWIsVWRlQQ==" data-listing-date-sort="1677733200000" data-listing-file-modified-sort="1732472351867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<a href="../teaching/2023-03-02_biologia-plantas/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://github.com/alexespinosaco/biologia-plantas/blob/main/images/bldp.png?raw=true" class="thumbnail-image card-img" style="height: 225px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Laboratorio: biología de las plantas 2023-01
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Q+F0ZWRyYQ=='); return false;">
+Cátedra
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Qm904W5pY2E='); return false;">
+Botánica
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
+Quarto
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('U2l0byB3ZWI='); return false;">
+Sito web
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VWRlQQ=='); return false;">
+UdeA
+</div>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2023-03-02
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No hay resultados
 </div>
 </div>
 
-<p>Desde que conocí y aprendí a manejar <a href="https://quarto.org">Quarto</a>, he tenido el deseo de crear un sitio web para el grupo de investigación del que soy integrante desde 2015. Las páginas ofrecidas por la universidad están un poco desactualizadas, tanto en apariencia como en contenido, y actualizarlas es casi una odisea. Después de casi 15 meses de aprendizaje y uso de Quarto, en diciembre de 2023 decidí poner manos a la obra y construir el sitio web. Para ello, me valí del conocimiento adquirido, las excelentes <a href="https://quarto.org/docs/guide/">guías oficiales</a>, y algunos recursos indispensables como <a href="https://github.com/mcanouil/awesome-quarto">Awesome Quarto</a>. Además, utilicé varias páginas como referencia: <a href="https://affcom.ku.edu">AffCom Lab</a>, <a href="https://www.andrewheiss.com">Andrew Heiss</a>, <a href="https://ellakaye.co.uk">Ella Kaye</a>, <a href="https://faculty.washington.edu/masiello">Masiello Research Group</a>, <a href="https://openscapes.org">Openscapes</a>, <a href="https://www.quantumjitter.com">Quantum Jitter</a>, <a href="https://realworlddatascience.net">Real World Data Science</a>, <a href="https://silviacanelon.com">Silvia Canelón</a>.</p>
-<p>Uno de los aspectos destacados es que muchos de estos recursos tienen repositorios públicos en <a href="https://github.com/">GitHub</a> y licencias libres o <a href="https://creativecommons.org">Creative Commons</a>, lo que permite leerlos, aprender de ellos y usarlos o adaptarlos. De no ser así, gran parte del aprendizaje y el compartirlo sería más complicada o imposible. Por eso, tanto la página del grupo como esta cuentan con repositorios públicos y licencias <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, para que otros puedan leerlos, aprender de ellos y usarlos o adaptarlos.</p>
-<p>¿Y qué es GEOBOTA? Somos un grupo de investigación de la Facultad de Ciencias Exactas y Naturales de la Universidad de Antioquia, dedicado al estudio de la biología de las plantas, abarcando su diversidad, estructura, evolución y taxonomía.</p>
 
 
 
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
-  author = {Espinosa-Correa, Álex},
-  title = {Sitio web del Grupo de Estudios Botánicos GEOBOTA},
-  date = {2024-02-07},
-  url = {http://alexespinosaco.github.io/projects/2024-02-07_geobota-website},
-  langid = {es}
-}
-</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Espinosa-Correa, Álex. 2024. <span>“Sitio web del Grupo de Estudios
-Botánicos GEOBOTA.”</span> February 7, 2024. <a href="http://alexespinosaco.github.io/projects/2024-02-07_geobota-website">http://alexespinosaco.github.io/projects/2024-02-07_geobota-website</a>.
-</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -257,6 +427,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -650,8 +827,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://utteranc.es/client.js" repo="alexespinosaco/blog-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
-</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -681,7 +856,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../aerovagante/index.xml">
+    <a class="nav-link" href="../aerovagante/index.xml">
 <p><i class="fa-solid fa-rss" aria-label="rss"></i></p>
 </a>
   </li>  
