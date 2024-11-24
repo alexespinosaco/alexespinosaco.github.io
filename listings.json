@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/2024-11-07_xii-ccb_aerobiologia_01/index.html",
+      "/talks/2024-11-07_xii-ccb_aerobiologia_02/index.html",
+      "/talks/2024-11-07_xii-ccb_quarto/index.html",
+      "/talks/2024-11-06_xii-ccb_cecropia/index.html",
+      "/talks/2024-07-21_xx-ibc_aerobiologia/index.html"
+    ]
+  },
+  {
     "listing": "/projects/index.html",
     "items": [
       "/projects/2024-07-07_cecropia-medellin/index.html",

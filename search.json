@@ -84,6 +84,41 @@
     "text": "Álex Espinosa-Correa\n¡Hola!\nSoy Álex. Soy biólogo y actualmente estoy terminando mi doctorado en biología en la Universidad de Antioquia. Mi investigación es sobre el polen y esporas que se encuentran en la atmósfera (aerobiología) de la ciudad de Medellín, Colombia.\nSoy un apasionado de la botánica, la palinología, la educación, la Ciencia Abierta y Reproducible, R, Quarto, la visualización de datos, los SIG, y el software libre y de código abierto (FLOSS).\nEste sitio es para aprender y compartir lo aprendido.\n¡Bienvenidos!"
   },
   {
+    "objectID": "talks/2024-11-07_xii-ccb_quarto/index.html",
+    "href": "talks/2024-11-07_xii-ccb_quarto/index.html",
+    "title": "XII CCB: ¿Por qué no lo hiciste en Microsoft Word? Cómo hacer una tesis doctoral reproducible usando R y Quarto",
+    "section": "",
+    "text": "Diapositivas\n  \n  \n      GitHub\n  \n  \n      Información\nCharla presentada durante el XII Congreso Colombiano de Botánica, celebrado del 4 al 8 de noviembre de 2024 en la ciudad de Popayán, Colombia.\nMás información: GEOBOTA en el XII Congreso Colombiano de Botánica"
+  },
+  {
+    "objectID": "talks/2024-11-07_xii-ccb_quarto/index.html#presentación",
+    "href": "talks/2024-11-07_xii-ccb_quarto/index.html#presentación",
+    "title": "XII CCB: ¿Por qué no lo hiciste en Microsoft Word? Cómo hacer una tesis doctoral reproducible usando R y Quarto",
+    "section": "Presentación",
+    "text": "Presentación\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Charlas",
+    "section": "",
+    "text": "Este portafolio incluye material de charlas o pósters que he creado, presentado o participado.\n\n\n\n\n\n\n\n\n\n\nXII CCB: Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia\n\n\n\nAerobiología\n\n\nCharla\n\n\nDiapositivas\n\n\nQuarto\n\n\nXII CCB\n\n\n\n\n2024-11-07\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXII CCB: Influencia del cambio climático sobre las concentraciones de polen aerovagante en la ciudad de Medellín, Colombia\n\n\n\nAerobiología\n\n\nCharla\n\n\nDiapositivas\n\n\nXII CCB\n\n\n\n\n2024-11-07\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXII CCB: ¿Por qué no lo hiciste en Microsoft Word? Cómo hacer una tesis doctoral reproducible usando R y Quarto\n\n\n\nCharla\n\n\nDiapositivas\n\n\nQuarto\n\n\nReproducibilidad\n\n\nXII CCB\n\n\n\n\n2024-11-07\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXII CCB: Mapeando los yarumos de Medellín, un proyecto de ciencia ciudadana en mejora de la calidad del aire\n\n\n\nOpenStreetMap\n\n\nPóster\n\n\nXII CCB\n\n\n\n\n2024-11-06\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXX IBC: P.0077 How does aerobiology behave in a neotropical city?\n\n\n\nAerobiología\n\n\nPóster\n\n\nXX IBC\n\n\n\n\n2024-07-21\n\n\n\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "talks/2024-11-07_xii-ccb_aerobiologia_01/index.html",
+    "href": "talks/2024-11-07_xii-ccb_aerobiologia_01/index.html",
+    "title": "XII CCB: Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia",
+    "section": "",
+    "text": "Diapositivas\n  \n  \n      GitHub\n  \n  \n      Información\nCharla presentada durante el XII Congreso Colombiano de Botánica, celebrado del 4 al 8 de noviembre de 2024 en la ciudad de Popayán, Colombia.\nMás información: GEOBOTA en el XII Congreso Colombiano de Botánica"
+  },
+  {
+    "objectID": "talks/2024-11-07_xii-ccb_aerobiologia_01/index.html#presentación",
+    "href": "talks/2024-11-07_xii-ccb_aerobiologia_01/index.html#presentación",
+    "title": "XII CCB: Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia",
+    "section": "Presentación",
+    "text": "Presentación\n\nSi no puedes ver la presentación, mírala haciendo clic aquí."
+  },
+  {
     "objectID": "projects/2023-03-02_biologia-plantas-manual/index.html",
     "href": "projects/2023-03-02_biologia-plantas-manual/index.html",
     "title": "Biología de las plantas: manual de laboratorio",
@@ -110,6 +145,48 @@
     "title": "Sitio web del Grupo de Estudios Botánicos GEOBOTA",
     "section": "",
     "text": "Facebook\n  \n  \n      GitHub\n  \n  \n      Instragram\n  \n  \n      Sitio web\n  \n\n\n\nDesde que conocí y aprendí a manejar Quarto, he tenido el deseo de crear un sitio web para el grupo de investigación del que soy integrante desde 2015. Las páginas ofrecidas por la universidad están un poco desactualizadas, tanto en apariencia como en contenido, y actualizarlas es casi una odisea. Después de casi 15 meses de aprendizaje y uso de Quarto, en diciembre de 2023 decidí poner manos a la obra y construir el sitio web. Para ello, me valí del conocimiento adquirido, las excelentes guías oficiales, y algunos recursos indispensables como Awesome Quarto. Además, utilicé varias páginas como referencia: AffCom Lab, Andrew Heiss, Ella Kaye, Masiello Research Group, Openscapes, Quantum Jitter, Real World Data Science, Silvia Canelón.\nUno de los aspectos destacados es que muchos de estos recursos tienen repositorios públicos en GitHub y licencias libres o Creative Commons, lo que permite leerlos, aprender de ellos y usarlos o adaptarlos. De no ser así, gran parte del aprendizaje y el compartirlo sería más complicada o imposible. Por eso, tanto la página del grupo como esta cuentan con repositorios públicos y licencias CC BY 4.0, para que otros puedan leerlos, aprender de ellos y usarlos o adaptarlos.\n¿Y qué es GEOBOTA? Somos un grupo de investigación de la Facultad de Ciencias Exactas y Naturales de la Universidad de Antioquia, dedicado al estudio de la biología de las plantas, abarcando su diversidad, estructura, evolución y taxonomía.\n\n\n\n\nCómo citarBibTeX@online{espinosa-correa2024,\n  author = {Espinosa-Correa, Álex},\n  title = {Sitio web del Grupo de Estudios Botánicos GEOBOTA},\n  date = {2024-02-07},\n  url = {http://alexespinosaco.github.io/projects/2024-02-07_geobota-website},\n  langid = {es}\n}\nPor favor, cita este trabajo como:\nEspinosa-Correa, Álex. 2024. “Sitio web del Grupo de Estudios\nBotánicos GEOBOTA.” February 7, 2024. http://alexespinosaco.github.io/projects/2024-02-07_geobota-website."
+  },
+  {
+    "objectID": "talks/2024-11-06_xii-ccb_cecropia/index.html",
+    "href": "talks/2024-11-06_xii-ccb_cecropia/index.html",
+    "title": "XII CCB: Mapeando los yarumos de Medellín, un proyecto de ciencia ciudadana en mejora de la calidad del aire",
+    "section": "",
+    "text": "Información\n  \n  \n      Póster\nPóster presentado durante el XII Congreso Colombiano de Botánica, celebrado del 4 al 8 de noviembre de 2024 en la ciudad de Popayán, Colombia.\nMás información: GEOBOTA en el XII Congreso Colombiano de Botánica"
+  },
+  {
+    "objectID": "talks/2024-11-06_xii-ccb_cecropia/index.html#póster",
+    "href": "talks/2024-11-06_xii-ccb_cecropia/index.html#póster",
+    "title": "XII CCB: Mapeando los yarumos de Medellín, un proyecto de ciencia ciudadana en mejora de la calidad del aire",
+    "section": "Póster",
+    "text": "Póster\n\n    Parece que no tienes un plugin PDF para este navegador.\n    No pasa nada… puede hacer clic aquí\n    para descargar el archivo PDF."
+  },
+  {
+    "objectID": "talks/2024-11-07_xii-ccb_aerobiologia_02/index.html",
+    "href": "talks/2024-11-07_xii-ccb_aerobiologia_02/index.html",
+    "title": "XII CCB: Influencia del cambio climático sobre las concentraciones de polen aerovagante en la ciudad de Medellín, Colombia",
+    "section": "",
+    "text": "Diapositivas\n  \n  \n      Información\nCharla presentada durante el XII Congreso Colombiano de Botánica, celebrado del 4 al 8 de noviembre de 2024 en la ciudad de Popayán, Colombia.\nMás información: GEOBOTA en el XII Congreso Colombiano de Botánica"
+  },
+  {
+    "objectID": "talks/2024-11-07_xii-ccb_aerobiologia_02/index.html#presentación",
+    "href": "talks/2024-11-07_xii-ccb_aerobiologia_02/index.html#presentación",
+    "title": "XII CCB: Influencia del cambio climático sobre las concentraciones de polen aerovagante en la ciudad de Medellín, Colombia",
+    "section": "Presentación",
+    "text": "Presentación\n\n    Parece que no tienes un plugin PDF para este navegador.\n    No pasa nada… puede hacer clic aquí\n    para descargar el archivo PDF."
+  },
+  {
+    "objectID": "talks/2024-07-21_xx-ibc_aerobiologia/index.html",
+    "href": "talks/2024-07-21_xx-ibc_aerobiologia/index.html",
+    "title": "XX IBC: P.0077 How does aerobiology behave in a neotropical city?",
+    "section": "",
+    "text": "Información\n  \n  \n      Póster\nPóster presentado durante el XX Congreso Internacional de Botánica (XX International Botanical Congress), celebrado del 21 al 27 de julio de 2024 en la ciudad de Madrid, España.\nMás información: GEOBOTA at the XX International Botanical Congress"
+  },
+  {
+    "objectID": "talks/2024-07-21_xx-ibc_aerobiologia/index.html#póster",
+    "href": "talks/2024-07-21_xx-ibc_aerobiologia/index.html#póster",
+    "title": "XX IBC: P.0077 How does aerobiology behave in a neotropical city?",
+    "section": "Póster",
+    "text": "Póster\n\n    Parece que no tienes un plugin PDF para este navegador.\n    No pasa nada… puede hacer clic aquí\n    para descargar el archivo PDF."
   },
   {
     "objectID": "teaching/index.html",
