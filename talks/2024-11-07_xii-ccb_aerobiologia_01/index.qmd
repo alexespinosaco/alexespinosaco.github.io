@@ -1,0 +1,48 @@
+---
+# pagetitle: ""
+title: "XII CCB: Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2024-11-07
+
+image: image.png
+
+citation: false
+
+categories: 
+  - Aerobiología
+  - Charla
+  - Diapositivas
+  - Quarto
+  - XII CCB
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa person-chalkboard >}} Diapositivas"
+      href: https://alexespinosaco.github.io/xii-ccb-aerobiologia/
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/xii-ccb-aerobiologia
+    - text: "{{< fa circle-info >}} Información"
+      href: https://geobota.github.io/xii-ccb-2024/presentations/espinosa-correa_&_alzate-guarin/
+---
+
+:::{ #project}
+:::
+
+Charla presentada durante el XII Congreso Colombiano de Botánica, celebrado del 4 al 8 de noviembre de 2024 en la ciudad de Popayán, Colombia.
+
+Más información: [GEOBOTA en el XII Congreso Colombiano de Botánica](https://geobota.github.io/xii-ccb-2024/presentations/espinosa-correa_&_alzate-guarin/)
+
+## Presentación
+
+```{=html}
+<iframe width="800" height="475" src="https://alexespinosaco.github.io/xii-ccb-aerobiologia/" title="Presentación XII CCB"></iframe>
+```
+
+Si no puedes ver la presentación, mírala haciendo [clic aquí](https://alexespinosaco.github.io/xii-ccb-aerobiologia/). 

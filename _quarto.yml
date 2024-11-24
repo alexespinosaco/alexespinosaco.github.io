@@ -50,6 +50,8 @@ website:
         href: aerovagante/index.qmd
       - text: "Docencia"
         href: teaching/index.qmd
+      - text: "Ponencias"
+        href: talks/index.qmd
       - text: "Proyectos"
         href: projects/index.qmd
       - text: "{{< fa brands github >}}"

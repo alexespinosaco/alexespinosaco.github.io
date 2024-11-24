@@ -1,0 +1,46 @@
+---
+# pagetitle: ""
+title: "XX IBC: P.0077 How does aerobiology behave in a neotropical city?"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2024-07-21
+
+image: image.png
+
+citation: false
+
+categories: 
+  - Aerobiología
+  - Póster
+  - XX IBC
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa circle-info >}} Información"
+      href: https://geobota.github.io/xx-ibc-2024/espinosa-correa_&_alzate-guarin/
+    - text: "{{< fa person-chalkboard >}} Póster"
+      href: https://geobota.github.io/xii-ccb-2024/posters/aubad-lopera_etal/presentacion_xii-ccb.pdf/
+---
+
+:::{ #project}
+:::
+
+Póster presentado durante el XX Congreso Internacional de Botánica (XX International Botanical Congress), celebrado del 21 al 27 de julio de 2024 en la ciudad de Madrid, España.
+
+Más información: [GEOBOTA at the XX International Botanical Congress](https://geobota.github.io/xx-ibc-2024/espinosa-correa_&_alzate-guarin/)
+
+## Póster
+
+```{=html}
+<object data="https://geobota.github.io/xx-ibc-2024/espinosa-correa_&_alzate-guarin/poster_xx-ibc.pdf" type="application/pdf" width="800" height="1420">
+    <p>Parece que no tienes un plugin PDF para este navegador.
+    No pasa nada… puede hacer <a href="https://geobota.github.io/xx-ibc-2024/espinosa-correa_&_alzate-guarin/poster_xx-ibc.pdf">clic aquí
+    para descargar el archivo PDF.</a></p>
+</object>
+```

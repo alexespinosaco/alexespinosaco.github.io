@@ -1,0 +1,30 @@
+---
+title: "Charlas"
+pagetitle: "Charlas"
+author: ""
+
+listing: 
+  - id: talks
+    contents: "*/index.qmd"
+    sort: 
+      - "date desc"
+      - "title"
+    type: grid
+    image-height: 225px
+    image-placeholder: /images/logo/placeholder.png
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    fields: [image, title, categories, date]
+    grid-columns: 3
+    # page-size: 3
+    # max-items: 3
+    feed: false
+
+comments: false
+---
+
+Este portafolio incluye material de charlas o pósters que he creado, presentado o participado.
+
+::: {#talks}
+:::
