@@ -105,11 +105,23 @@ Experiencia en la organización y logística de eventos académicos. Experiencia
 
 # Encuentros 
 
+**XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4-8 nov 2024]{.cvfloat}\
+**Ponencia** Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia
+
+**XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4-8 nov 2024]{.cvfloat}\
+**Ponencia** Influencia del cambio climático sobre las concentraciones de polen aerovagante en la ciudad de Medellín, Colombia
+
+**XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4-8 nov 2024]{.cvfloat}\
+**Ponencia** ¿Por qué no lo hiciste en Microsoft Word? Cómo hacer una tesis doctoral reproducible usando R y Quarto
+
+**XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4-8 nov 2024]{.cvfloat}\
+**Póster** Mapeando los yarumos de Medellín, un proyecto de ciencia ciudadana en mejora de la calidad del aire
+
 **II Simposio del Jardín Botánico de Medellín - Medellín, Colombia** \hfill [19 sep 2024]{.cvfloat}\
 **Asistencia**
 
 **XX International Botanical Congress IBC - Madrid, España** \hfill [21–27 jul 2024]{.cvfloat}\
-**Poster** How does aerobiology behave in a neotropical city?
+**Póster** How does aerobiology behave in a neotropical city?
 
 **I Simposio del Jardín Botánico de Medellín - Medellín, Colombia** \hfill [26 oct 2023]{.cvfloat}\
 **Asistencia**
@@ -121,13 +133,13 @@ Experiencia en la organización y logística de eventos académicos. Experiencia
 **Ponencia** Palinología de sedimentos superficiales como herramienta para la reconstrucción de paleopaisajes en Cundinamarca
 
 **XI Congreso Colombiano de Botánica - Villavicencio, Colombia** \hfill [6–10 nov 2022]{.cvfloat}\
-**Poster** Atlas aeropalinológico de Colombia
+**Póster** Atlas aeropalinológico de Colombia
 
 **XI Congreso Colombiano de Botánica - Villavicencio, Colombia** \hfill [6–10 nov 2022]{.cvfloat}\
-**Poster** Catálogo polínico de plantas ornamentales y espontáneas de la Universidad de Antioquia
+**Póster** Catálogo polínico de plantas ornamentales y espontáneas de la Universidad de Antioquia
 
 **X Congreso Colombiano de Botánica - Florencia, Colombia** \hfill [18–22 ago 2019]{.cvfloat}\
-**Poster** Utilidad de ITS en estudios filogeográficos de plantas de Páramo
+**Póster** Utilidad de ITS en estudios filogeográficos de plantas de Páramo
 
 **II Simposio Colombiano en Sistemática y Evolución de Plantas - Medellín, Colombia** \hfill [2–3 ago 2018]{.cvfloat}\
 **Ponencia** Utilidad de ITS en estudios filogeográficos de plantas de Páramo
@@ -151,6 +163,15 @@ Aerobiología de la ciudad de Medellín
 
 **Grupo de Alergología Clínica y Experimental GACE** \hfill [12 dic 2022]{.cvfloat}\
 Estudio aerobiológico en la ciudad de Medellín
+
+# Cursos
+
+**Introducción a la Aerobiología - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4 nov 2023]{.cvfloat}\
+
+
+**Investigación Reproducible con Quarto - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [3 nov 2023]{.cvfloat}\
+
+**Etnobotánica Cuantitativa en R  - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [2-3 nov 2023]{.cvfloat}\
 
 # Publicaciones
 
