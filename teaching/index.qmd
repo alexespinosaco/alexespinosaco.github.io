@@ -22,7 +22,7 @@ listing:
 comments: false
 ---
 
-Este portafolio incluye material educativo de libre acceso que he creado, junto con trabajos, software y herramientas a las que he contribuido o diseñado.
+Este portafolio incluye material educativo de libre acceso que he creado, junto con trabajos, software y herramientas que he diseñado o a los que he contribuido.
 
 ::: {#teaching}
 :::

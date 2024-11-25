@@ -1,6 +1,6 @@
 ---
-title: "Charlas"
-pagetitle: "Charlas"
+title: "Ponencias"
+pagetitle: "Ponencias"
 author: ""
 
 listing: 
@@ -24,7 +24,7 @@ listing:
 comments: false
 ---
 
-Este portafolio incluye material de charlas o pósters que he creado, presentado o participado.
+Este portafolio incluye material de libre acceso de charlas y pósters en los que he participado, creado o presentado.
 
 ::: {#talks}
 :::
