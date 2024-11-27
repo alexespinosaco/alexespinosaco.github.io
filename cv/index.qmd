@@ -57,6 +57,17 @@ Estudio aerobiológico en la ciudad de Medellín (Colombia): una variable bioló
 **Biólogo - Universidad de Antioquia - Medellín, Colombia** \hfill [2011-2018]{.cvfloat}\
 Exploración de la utilidad de la región ITS en estudios filogeográficos de plantas de áreas de Páramo
 
+# Otros estudios
+
+**Módulo VII: Foro "Investigaciones en el campo de la etnobiología en Latinoamérica"** \hfill [27 sep 2024]{.cvfloat}\
+Comunidad Etnobiológica Guatemalteca, Sociedad Latinoamericana de Etnobiología y Facultad de Ciencias Químicas y Farmacia de la Universidad de San Carlos de Guatemala
+
+**Ciencia Abierta - nivel 2** \hfill [30 ago 2024 – 20 sep 2024]{.cvfloat}\
+Universidad de Antioquia
+
+**Ciencia Abierta - nivel 1** \hfill [13 feb 2024 – 09 abr 2024]{.cvfloat}\
+Universidad de Antioquia
+
 # Experiencia
 
 **Biólogo-Palinólogo - Universidad de Antioquia** \hfill [feb 2024 – abr 2024]{.cvfloat}\
@@ -64,6 +75,9 @@ Análisis palinológico de muestras de suelo provenientes del municipio de Envig
 
 **Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2023 – jul 2023]{.cvfloat}\
 Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas.
+
+**Pasante - Universidad del País Vasco** \hfill [sep 2022 – nov 2022]{.cvfloat}\
+Generación de extractos de las esporas de hongos y granos de polen autóctonos más comunes en la atmósfera de la ciudad de Medellín, Colombia, para realizar evaluaciones in-vitro.
 
 **Estudiante instructor - Universidad de Antioquia** \hfill [mar 2019 – nov 2022]{.cvfloat}\
 Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas y biología general.
@@ -166,12 +180,11 @@ Estudio aerobiológico en la ciudad de Medellín
 
 # Cursos
 
-**Introducción a la Aerobiología - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4 nov 2023]{.cvfloat}\
+**Introducción a la Aerobiología - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4 nov 2023]{.cvfloat}
 
+**Investigación Reproducible con Quarto - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [3 nov 2023]{.cvfloat}
 
-**Investigación Reproducible con Quarto - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [3 nov 2023]{.cvfloat}\
-
-**Etnobotánica Cuantitativa en R  - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [2-3 nov 2023]{.cvfloat}\
+**Etnobotánica Cuantitativa en R  - XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [2-3 nov 2023]{.cvfloat}
 
 # Publicaciones
 
