@@ -70,6 +70,9 @@ Universidad de Antioquia
 
 # Experiencia
 
+**Biólogo-Botánico - Universidad de Antioquia** \hfill [dic 2024 – ene 2025]{.cvfloat}\
+Implementación de estudios, monitoreo, seguimiento, estrategias de manejo y conservación sobre la biodiversidad en ecosistemas de interés para el negocio de generación de energía.
+
 **Biólogo-Palinólogo - Universidad de Antioquia** \hfill [feb 2024 – abr 2024]{.cvfloat}\
 Análisis palinológico de muestras de suelo provenientes del municipio de Envigado, evidenciando los morfotipos polínicos encontrados en estos suelos, con la finalidad de resolver la posible ocurrencia de actividades agrícolas en el área de estudio.
 
