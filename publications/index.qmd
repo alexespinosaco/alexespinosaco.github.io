@@ -1,0 +1,23 @@
+---
+title: "Publicaciones"
+pagetitle: "Publicaciones"
+author: ""
+
+listing: 
+  - id: publications
+    type: default
+    contents: "*/index.qmd"
+    feed: false
+    sort:
+      - "date desc"
+      - "author"
+      - "title"
+    fields: [title, categories, description, publication, date, author]
+    categories: false
+    sort-ui: false
+    page-size: 9
+comments: false
+---
+
+::: {#publications}
+:::

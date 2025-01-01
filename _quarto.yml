@@ -54,6 +54,8 @@ website:
         href: talks/index.qmd
       - text: "Proyectos"
         href: projects/index.qmd
+      - text: "Publicaciones"
+        href: publications/index.qmd
       - text: "{{< fa brands github >}}"
         # icon: github
         href: https://github.com/alexespinosaco
