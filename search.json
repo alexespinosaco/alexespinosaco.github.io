@@ -133,6 +133,34 @@
     "text": "GitHub\n  \n  \n      Sitio web\n  \n\n\n\nUno de los resultados inesperados de mi tesis doctoral fue descubrir que el tipo polínico más abundante en la atmósfera de Medellín es Cecropia. Este tipo polínico representa casi la mitad de toda la carga polínica registrada durante más de 1000 días de muestreo. Cecropia pertenece al género de plantas con flores dentro de la familia Urticaceae, comúnmente conocidas como yarumos. Estas son plantas características de la flora neotropical, con más de 63 especies reconocidas. En Medellín, se pueden encontrar tres especies: Cecropia angustifolia Trécul (yarumo negro), Cecropia peltata L. (yarumo), y Cecropia telenitida Cuatrec. (yarumo blanco).\nA pesar de ser especies relativamente comunes en nuestro entorno, han recibido poca atención y, como resultado, hay un subregistro de estas en el Sistema de Árbol Urbano (SAU), con apenas poco más de 1400 registros. Por lo tanto, su identificación y localización son esenciales para mejorar los datos aerobiológicos disponibles para la ciudad. Con este objetivo en mente, hemos creado un proyecto colaborativo y abierto para mapear los yarumos de Medellín utilizando OpenStreetMap, una plataforma colaborativa para crear mapas editables y libres. Este proyecto, que está en ejecución, permanece abierto a la colaboración de todos.\nToda la información relacionada con el mapeo de los yarumos de Medellín se puede encontrar en el sitio web del proyecto.\n\n\n\n\nCómo citarBibTeX@online{espinosa-correa2024,\n  author = {Espinosa-Correa, Álex},\n  title = {Sitio web del proyecto \\#CecropiaMedellín2024},\n  date = {2024-07-07},\n  url = {http://alexespinosaco.github.io/projects/2024-07-07_cecropia-medellin},\n  langid = {es}\n}\nPor favor, cita este trabajo como:\nEspinosa-Correa, Álex. 2024. “Sitio web del proyecto\n#CecropiaMedellín2024.” July 7, 2024. http://alexespinosaco.github.io/projects/2024-07-07_cecropia-medellin."
   },
   {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publicaciones",
+    "section": "",
+    "text": "Airborne pollen concentrations overpass expectations in the tropical city of Medellín, Colombia\n\n\n\n\n\n\nCircular statistics\n\n\nENSO-pollen interaction\n\n\nLand use-pollen\n\n\nPollen sources\n\n\nTropical aerobiology\n\n\n\n\n\n\n\n\n\n2025-01-01\n\n\nÁlex Espinosa-Correa, Jose María Maya-Manzano, Fernando Alveiro Alzate-Guarin\n\n\nScience of The Total Environment\n\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "publications/2025-01-01_espinosa-correa_etal/index.html",
+    "href": "publications/2025-01-01_espinosa-correa_etal/index.html",
+    "title": "Airborne pollen concentrations overpass expectations in the tropical city of Medellín, Colombia",
+    "section": "",
+    "text": "Aerobiology in the tropics is still a science in development, where very little about their dynamics is known. Airborne pollen concentrations in the city of Medellín (Colombia) were measured using a Hirst-type sampler and correlated with meteorological parameters (relative humidity, rainfall, temperature, wind speed, and wind direction, this last analyzed by using circular statistics). Sampling was conducted over three years (2019–2022), and pollen grains were detected on all days of sampling, at higher concentrations than expected for tropical conditions. The highest pollen concentrations were observed from December to January and July–August, corresponding to the months with the lowest rainfall, which sheds light about how La Niña phenomena influenced pollen concentrations during the sampling period. The Main Pollen Season (MPS) ranged in length from 277 to 342 days. The highest intra-diurnal peaks pollen concentrations occurred around noon, whilst something very different and rarely reported occurs with Cecropia, which is much more abundant at night, from 20:00 to 1:00 h. Circular statistics revealed statistically significant wind direction patterns from SW, matching the same intra-diurnal pollen variations. This work helps to complete the blurred situation of the Aerobiology in the Neotropics and the dynamics of particles in the tropical atmosphere, being a first step towards the construction of pollen calendars to help pollen sufferers to mitigate symptoms."
+  },
+  {
+    "objectID": "publications/2025-01-01_espinosa-correa_etal/index.html#abstract",
+    "href": "publications/2025-01-01_espinosa-correa_etal/index.html#abstract",
+    "title": "Airborne pollen concentrations overpass expectations in the tropical city of Medellín, Colombia",
+    "section": "",
+    "text": "Aerobiology in the tropics is still a science in development, where very little about their dynamics is known. Airborne pollen concentrations in the city of Medellín (Colombia) were measured using a Hirst-type sampler and correlated with meteorological parameters (relative humidity, rainfall, temperature, wind speed, and wind direction, this last analyzed by using circular statistics). Sampling was conducted over three years (2019–2022), and pollen grains were detected on all days of sampling, at higher concentrations than expected for tropical conditions. The highest pollen concentrations were observed from December to January and July–August, corresponding to the months with the lowest rainfall, which sheds light about how La Niña phenomena influenced pollen concentrations during the sampling period. The Main Pollen Season (MPS) ranged in length from 277 to 342 days. The highest intra-diurnal peaks pollen concentrations occurred around noon, whilst something very different and rarely reported occurs with Cecropia, which is much more abundant at night, from 20:00 to 1:00 h. Circular statistics revealed statistically significant wind direction patterns from SW, matching the same intra-diurnal pollen variations. This work helps to complete the blurred situation of the Aerobiology in the Neotropics and the dynamics of particles in the tropical atmosphere, being a first step towards the construction of pollen calendars to help pollen sufferers to mitigate symptoms."
+  },
+  {
+    "objectID": "publications/2025-01-01_espinosa-correa_etal/index.html#citation",
+    "href": "publications/2025-01-01_espinosa-correa_etal/index.html#citation",
+    "title": "Airborne pollen concentrations overpass expectations in the tropical city of Medellín, Colombia",
+    "section": "Citation",
+    "text": "Citation\n\nEspinosa-Correa, Á., Maya-Manzano, J. M., & Alzate-Guarín, F. A. (2025). Airborne pollen concentrations overpass expectations in the tropical city of Medellín, Colombia. Science of The Total Environment, 958, 178066. https://doi.org/10.1016/j.scitotenv.2024.178066"
+  },
+  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Proyectos",

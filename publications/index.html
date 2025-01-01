@@ -6,11 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Álex Espinosa-Correa">
-<meta name="dcterms.date" content="2024-08-09">
-<meta name="description" content="OpenStreetMap está de cumpleaños y en esta casa también lo celebramos">
+<meta name="author" content="">
 
-<title>¡Celebrando los 20 años de OpenStreetMap! – Álex Espinosa-Correa</title>
+<title>Publicaciones – Álex Espinosa-Correa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,30 +24,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../images/icon-AEC.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d045e70ebd9269c25e164ecdb4898f56.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/icon-AEC.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d045e70ebd9269c25e164ecdb4898f56.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publications .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-categories','listing-description','listing-publication','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RN5H7WV1DJ"></script>
 
 <script type="text/javascript">
@@ -86,53 +112,59 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 </script>
-<style>
 
-      .quarto-title-block .quarto-title-banner h1,
-      .quarto-title-block .quarto-title-banner h2,
-      .quarto-title-block .quarto-title-banner h3,
-      .quarto-title-block .quarto-title-banner h4,
-      .quarto-title-block .quarto-title-banner h5,
-      .quarto-title-block .quarto-title-banner h6
-      {
-        color: #FFFFFF;
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
       }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
-      .quarto-title-block .quarto-title-banner {
-        color: #FFFFFF;
-background: #0072B2;
-      }
-</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="¡Celebrando los 20 años de OpenStreetMap! – Álex Espinosa-Correa">
-<meta property="og:description" content="OpenStreetMap está de cumpleaños y en esta casa también lo celebramos">
-<meta property="og:image" content="https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/preview.png">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Publicaciones">
+<meta property="og:image" content="https://alexespinosaco.github.io/publications/images/banner-AEC.png">
 <meta property="og:site_name" content="Álex Espinosa-Correa">
 <meta property="og:locale" content="es_ES">
-<meta property="og:image:height" content="440">
-<meta property="og:image:width" content="1000">
-<meta name="twitter:title" content="¡Celebrando los 20 años de OpenStreetMap! – Álex Espinosa-Correa">
-<meta name="twitter:description" content="OpenStreetMap está de cumpleaños y en esta casa también lo celebramos">
-<meta name="twitter:image" content="https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/preview.png">
+<meta name="twitter:title" content="Publicaciones">
+<meta name="twitter:image" content="https://alexespinosaco.github.io/publications/images/banner-AEC.png">
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="440">
-<meta name="twitter:image-width" content="1000">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/icon-AEC.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Álex Espinosa-Correa</span>
     </a>
   </div>
@@ -143,31 +175,31 @@ background: #0072B2;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv/index.html"> 
+    <a class="nav-link" href="../cv/index.html"> 
 <span class="menu-text">Acerca (CV)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../aerovagante/index.html"> 
+    <a class="nav-link" href="../aerovagante/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching/index.html"> 
+    <a class="nav-link" href="../teaching/index.html"> 
 <span class="menu-text">Docencia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks/index.html"> 
+    <a class="nav-link" href="../talks/index.html"> 
 <span class="menu-text">Ponencias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/index.html"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
+    <a class="nav-link active" href="../publications/index.html" aria-current="page"> 
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
@@ -187,7 +219,7 @@ background: #0072B2;
 <span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../aerovagante/index.xml"> 
+    <a class="nav-link" href="../aerovagante/index.xml"> 
 <span class="menu-text"><i class="fa-solid fa-rss" aria-label="rss"></i></span></a>
   </li>  
 </ul>
@@ -198,81 +230,87 @@ background: #0072B2;
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">¡Celebrando los 20 años de OpenStreetMap!</h1>
-                  <div>
-        <div class="description">
-          OpenStreetMap está de cumpleaños y en esta casa también lo celebramos
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">OpenStreetMap</div>
-                <div class="quarto-category">Personal</div>
-                <div class="quarto-category">SIG</div>
-                <div class="quarto-category">Video</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Autor/a</div>
-      <div class="quarto-title-meta-contents">
-               <p><a href="http://alexespinosaco.github.io/aerovagante/">Álex Espinosa-Correa</a> </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Fecha de publicación</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">2024-08-09</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Publicaciones</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="listing-publications" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Q2lyY3VsYXIlMjBzdGF0aXN0aWNzJTJDRU5TTy1wb2xsZW4lMjBpbnRlcmFjdGlvbiUyQ0xhbmQlMjB1c2UtcG9sbGVuJTJDUG9sbGVuJTIwc291cmNlcyUyQ1Ryb3BpY2FsJTIwYWVyb2Jpb2xvZ3k=" data-listing-date-sort="1735707600000" data-listing-file-modified-sort="1735691634900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="245">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../publications/2025-01-01_espinosa-correa_etal/index.html" class="no-external">Airborne pollen concentrations overpass expectations in the tropical city of Medellín, Colombia</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../publications/2025-01-01_espinosa-correa_etal/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Q2lyY3VsYXIlMjBzdGF0aXN0aWNz'); return false;">
+Circular statistics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RU5TTy1wb2xsZW4lMjBpbnRlcmFjdGlvbg=='); return false;">
+ENSO-pollen interaction
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TGFuZCUyMHVzZS1wb2xsZW4='); return false;">
+Land use-pollen
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UG9sbGVuJTIwc291cmNlcw=='); return false;">
+Pollen sources
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJvcGljYWwlMjBhZXJvYmlvbG9neQ=='); return false;">
+Tropical aerobiology
+</div>
+</div>
+<div class="listing-description">
+<a href="../publications/2025-01-01_espinosa-correa_etal/index.html" class="no-external">Aerobiology in the tropics is still a science in development, where very little about their dynamics is known. Airborne pollen concentrations in the city of Medellín…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../publications/2025-01-01_espinosa-correa_etal/index.html" class="no-external">
+<div class="listing-date">
+2025-01-01
+</div>
+<div class="listing-author">
+<strong>Álex Espinosa-Correa</strong>, Jose María Maya-Manzano, Fernando Alveiro Alzate-Guarin
+</div>
+<div class="metadata-value listing-publication">
+Science of The Total Environment
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No hay resultados
+</div>
+</div>
 
 
 
 
-
-<p><a href="preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="preview.png" class="img-fluid"></a></p>
-<p><a href="https://openstreetmap.org">OpenStreetMap</a>, el mapa colaborativo y libre por excelencia. No recuerdo una fecha exacta en que lo conocí. Quizá fue por allá en el ya lejano 2007, cuando me obsesioné con GNU/Linux (¡<a href="https://es.wikipedia.org/wiki/Anexo:Versiones_de_Ubuntu#Ubuntu_8.04_LTS">Hardy Heron</a>, quien te recuerda!) y gran parte del entorno del Software Libre y de Código Abierto (FLOSS). O quizás fue en 2016, cuando en el pregrado tomé una materia sobre Sistemas de Información Geográfica (SIG). Lo cierto es que ese recuerdo es borroso, pero lo que sí tengo claro es cuando me volví a encontrar con OpenStreetMap, esta vez con mucha más fuerza.</p>
-<p>Fue este año, principalmente en conversaciones con <a href="https://mstdn.social/@nesper94@biologists.social">Juan Camilo Arboleda</a> del <a href="https://biologia-computacional.github.io">Grupo de Biología Computacional</a>, y mientras creaba un par de mapas para la página del <a href="https://geobota.github.io">Grupo de Estudios Botánicos GEOBOTA</a>. Fue como reencontrarse con un viejo amigo, pero esta vez, uno siendo más maduro y reconociendo el valor que tiene el otro. Todo el recorrido que he tenido desde esos recuerdos difusos (el pregrado, el doctorado, <a href="https://quarto.org">Quarto</a>, R, los SIG, la ciencia abierta y reproducible) ha servido para que esta vez vea el potencial y la utilidad que me puede brindar OSM, y lo que yo le puedo aportar.</p>
-<p>Según <a href="https://www.openstreetmap.org/user/alexespinosaco">mi perfil en OSM</a>, me registré el 30 de mayo de 2024 (mayo, siempre mayo) y desde entonces han pasado varias cosas. He comenzado a usar OSM en todas las situaciones en las que antes hubiera utilizado Google Maps y a promocionarlo a quienes creo que les puede ser útil. Me he obsesionado hasta el punto de intentar colaborar casi a diario, acumulando, hasta hoy (2024-08-09), 224 ediciones, centradas principalmente en mapear los <a href="https://www.openstreetmap.org/relation/17863554">campus en Medellín de la Universidad de Antioquia</a>, las zonas cercanas a estos y este Cielo Roto de mis amores (<a href="https://www.openstreetmap.org/relation/1307283#map=13/6.0513/-75.6277">Caldas, Antioquia</a>). Incluso he comenzado un proyecto para <a href="https://alexespinosaco.github.io/cecropia-medellin/">mapear los yarumos de la ciudad de Medellín</a>.</p>
-<p>Entre esas cosas que han pasado, ha sido encontrar una comunidad maravillosa alrededor de OSM, particularmente la <a href="https://www.openstreetmap.org/user/Comunidad%20OpenStreetMap%20Colombia">Comunidad OpenStreetMap Colombia</a> (especialmente <a href="https://www.openstreetmap.org/user/AngocA">Andrés Gómez Casanova</a>), donde me he animado a participar más de lo que lo hice en el pasado en otras comunidades (y espero hacerlo más). Han sido tan geniales que incluso incluyeron a un neófito como yo en <a href="https://www.youtube.com/playlist?list=PLI7a5sSUigMSKO5gNIeKhfA4whLtTMyrK">las entrevistas que han realizado a diversos mapeadores</a> con motivo de la celebración de los 20 años de OSM.</p>
-<p>Les dejo la entrevista. ¡Espero que la disfruten! Les invito a verlas todas, están fantásticas y muy ilustrativas, porque <a href="https://blog.openstreetmap.org/2024/08/09/openstreetmap-at-20/">el mapa es importante, pero lo son más las personas</a> que hay detrás.</p>
-<p><a href="https://birthday20.openstreetmap.org">¡Feliz cumpleaños, OpenStreetMap!</a> ¡Feliz celebración, comunidad!</p>
-<p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/k7rq4YvRRWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
-<p>Vídeo de la entrevista, que no se noten los nervios. Si no carga correctamente, pueden verlo en <a href="https://www.youtube.com/watch?v=k7rq4YvRRWQ">YouTube</a>.</p>
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
-  author = {Espinosa-Correa, Álex},
-  title = {¡Celebrando los 20 años de OpenStreetMap!},
-  date = {2024-08-09},
-  url = {https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/},
-  langid = {es}
-}
-</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Espinosa-Correa, Álex. 2024. <span>“¡Celebrando los 20 años de
-OpenStreetMap!”</span> August 9, 2024. <a href="https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/">https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/</a>.
-</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -690,8 +728,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://utteranc.es/client.js" repo="alexespinosaco/blog-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
-</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -721,7 +757,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../aerovagante/index.xml">
+    <a class="nav-link" href="../aerovagante/index.xml">
 <p><i class="fa-solid fa-rss" aria-label="rss"></i></p>
 </a>
   </li>  
@@ -732,38 +768,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
