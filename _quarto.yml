@@ -65,6 +65,7 @@ website:
       - text: "{{< fa brands mastodon >}}"
         # icon: mastodon
         href: https://mstdn.social/@alexespinosaco
+        rel : "me"
       - text: "{{< ai researchgate >}}"
         href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
       - text: "{{< fa rss >}}"
@@ -73,7 +74,7 @@ website:
 
   page-footer: 
     left: |
-      Álex Espinosa-Correa © 2024. All content licensed under [CC BY 4.0 {{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}](https://creativecommons.org/licenses/by/4.0/)
+      Álex Espinosa-Correa © 2024-2025. All content licensed under [CC BY 4.0 {{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}](https://creativecommons.org/licenses/by/4.0/)
     center: 
       - text: "{{< fa brands github >}}"
         # icon: github
@@ -94,7 +95,9 @@ website:
 
 format:
   html:
-    theme: litera
+    theme: 
+      light: cosmo
+      dark: solar
     css: styles.css
     toc: false
     code-link: true
