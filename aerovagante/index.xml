@@ -17,7 +17,178 @@
 <width>144</width>
 </image>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Sat, 10 Aug 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 21 Jan 2025 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Zotero: gestionar, renombrar y sincronizar archivos</title>
+  <dc:creator>Álex Espinosa-Correa</dc:creator>
+  <link>https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<meta name="fediverse:creator" content="@alexespinosaco@mstdn.social">
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>En el ámbito académico, una de las tareas más tediosas suele ser la organización de las referencias bibliográficas. Muchas personas complican aún más esta labor al gestionarlas manualmente o usando hojas de cálculo, lo que a menudo resulta en carpetas desordenadas con cientos de archivos PDF sin clasificar. Por fortuna, existen herramientas que simplifican esta tarea: los <a href="https://es.wikipedia.org/wiki/Gestor_de_referencias_bibliográficas">gestores de referencias bibliográficas</a>. Estas herramientas permiten crear, mantener, organizar, compartir y dar formato a referencias bibliográficas de manera eficiente. Entre la <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software">diversidad de opciones</a>, Zotero destaca como uno de los más populares y, en mi opinión, el mejor disponible.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/zotero_interaz.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Captura de pantalla de Zotero 7"><img src="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/zotero_interaz.png" class="img-fluid figure-img" alt="Captura de pantalla de Zotero 7."></a></p>
+<figcaption>Captura de pantalla de <a href="https://www.zotero.org">Zotero 7</a></figcaption>
+</figure>
+</div>
+<p>Zotero tiene <a href="https://www.zotero.org/support/">numerosas ventajas</a>: es software libre y de código abierto (<a href="https://es.wikipedia.org/wiki/Software_libre_y_de_código_abierto">FLOSS</a>), es <a href="https://www.zotero.org/support/installation">multiplataforma</a> (compatible con Android, GNU/Linux, iOS, macOS y Windows, entre otros), se <a href="https://www.zotero.org/support/word_processor_integration">integra</a> con los principales procesadores de texto (Google Docs, LibreOffice Writer, Microsoft Word), admite <a href="https://www.zotero.org/styles">más de 10000 estilos de citación</a>, permite la <a href="https://www.zotero.org/support/sync">sincronización</a> en la nube y cuenta con una sólida <a href="https://forums.zotero.org">comunidad</a> de usuarios. Además, Zotero tiene el compromiso explícito de permanecer gratuito para siempre, lo que lo convierte en una herramienta esencial para estudiantes, investigadores y académicos.</p>
+<p>La única “desventaja” que he encontrado en Zotero es el límite de 300 MB de almacenamiento gratuito en la nube (<a href="https://www.zotero.org/storage?id=storage">Zotero Storage</a>). Sin embargo, este inconveniente tiene una solución sencilla: utilizar Zotero Storage únicamente para sincronizar los metadatos de las referencias (lo que, en la práctica, consume muy poco espacio) y emplear un servicio de alojamiento de archivos de su elección (como Dropbox, Google Drive, iCloud Drive, Microsoft OneDrive, etc.) para sincronizar los archivos PDF de forma independiente.</p>
+<p>En esta publicación, se explica cómo configurar Zotero para sincronizar los PDF usando iCloud Drive.</p>
+</section>
+<section id="prerrequisitos" class="level2">
+<h2 class="anchored" data-anchor-id="prerrequisitos">Prerrequisitos</h2>
+<ol type="1">
+<li><p><a href="https://www.zotero.org">Descargar e instalar Zotero 7</a>: Si aún no lo tienes instalado, puedes seguir el paso a paso disponible en <a href="https://geobota.github.io/xii-ccb-quarto/preparacion/#instalar-zotero">este enlace</a> para instalar Zotero en Windows.</p></li>
+<li><p><a href="https://www.zotero.org/user/register/">Crear una cuenta en el sitio web de Zotero</a>. La cuenta será necesaria más adelante para sincronizar la base de datos de metadatos bibliográficos.</p></li>
+<li><p><a href="https://github.com/wileyyugioh/zotmoov/">Descargar ZotMoov</a>. Este plugin permitirá gestionar los archivos adjuntos (como PDFs) en Zotero 7<sup>1</sup>.</p></li>
+<li><p>Tener instalado y configurado un servicio de alojamiento de archivos (Dropbox, Google Drive, iCloud Drive, Microsoft OneDrive, etc.)</p></li>
+</ol>
+</section>
+<section id="instalar-zotmoov" class="level2">
+<h2 class="anchored" data-anchor-id="instalar-zotmoov">Instalar ZotMoov</h2>
+<p>Lo primero que haremos será instalar ZotMoov.</p>
+<ol type="1">
+<li><p>Abrir Zotero.</p></li>
+<li><p>Ir a <strong>Herramientas</strong> &gt; <strong>Extensiones</strong>.</p></li>
+<li><p>Hacer clic en el icono del engranaje (<img src="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/gear_icon.png" class="img-fluid" alt="Ícono del engranaje">) en la esquina superior derecha.</p></li>
+<li><p>Hacer clic en <strong>Install Plugin From File</strong>.</p></li>
+<li><p>Buscar y seleccionar el archivo <code>.xpi</code>. En este tutorial se utilizó <code>zotmoov-1.2.11-fx.xpi</code>.</p></li>
+<li><p>Hacer clic en <strong>Open</strong> para iniciar la instalación.</p></li>
+<li><p>Reiniciar Zotero.</p></li>
+<li><p>Ir a <strong>Preferencias</strong> y comprobar si ZotMoov se instaló correctamente.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/zotmoov_configuracion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="ZotMoov se encuentra instalado, podemos proceder a configurarlo. Esta es mi configuración."><img src="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/zotmoov_configuracion.png" class="img-fluid figure-img" alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de ZotMoov."></a></p>
+<figcaption>ZotMoov se encuentra instalado, podemos proceder a configurarlo. Esta es mi configuración.</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-zotmoov-configuracion" class="level2">
+<h2 class="anchored" data-anchor-id="sec-zotmoov-configuracion">Configurar ZotMoov</h2>
+<p>Ya que tenemos ZotMoov instalado, procederemos a configurarlo.</p>
+<ol type="1">
+<li><p>Ir a <strong>Preferencias</strong> &gt; <strong>ZotMoov</strong>. En la opción <strong>Directory to Move/Copy Files To</strong>, seleccionar la ruta donde se encuentra la carpeta en la que se guardarán y sincronizarán los archivos. En mi caso, utilizo una carpeta llamada <code>zotero</code> dentro de la carpeta <code>Documentos</code> de iCloud Drive: <code>/Users/alex/Documents/zotero</code>.</p></li>
+<li><p>Seleccionar <strong>Move</strong> en la opción <strong>File Behavior</strong>. Esto indica que los archivos serán movidos a la carpeta seleccionada.</p></li>
+<li><p>Activar la opción <strong>Automatically Move/Copy Files When Added</strong>. Esto permite que los archivos se muevan automáticamente al agregarlos. De lo contrario, habría que realizar esta acción de forma manual.</p></li>
+<li><p><strong>[Opcional]</strong> Activar la opción <strong>Automatically Move/Copy Files to Subdirectory</strong>. Esta función organiza los archivos dentro de subcarpetas. Por defecto, está configurada en <code>{%c}</code>, lo que guarda los archivos en carpetas con los nombres de las colecciones de Zotero. Yo prefiero usar <code>{%T}</code>, que organiza los archivos según el tipo de referencia (por ejemplo, artículo de revista académica, libro, etc.). Aunque no sea la configuración más eficiente, decidí mantenerla porque ya tenía esta estructura en Zotero 6, y reorganizar más de 8.6 GB no es viable en este momento. Para conocer más opciones de formato, puedes consultar la sección <a href="https://github.com/wileyyugioh/zotmoov/blob/master/docs/WILDCARD_INFO.md"><strong>Formatting</strong></a>.</p></li>
+</ol>
+</section>
+<section id="configurar-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="configurar-zotero">Configurar Zotero</h2>
+<p>Una vez que hemos instalado y configurado ZotMoov, procederemos con la configuración de Zotero. Comenzaremos con la sincronización con Zotero Storage y luego configuraremos la conexión con el servicio de alojamiento de archivos.</p>
+<section id="sincronizar" class="level3">
+<h3 class="anchored" data-anchor-id="sincronizar">Sincronizar</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/zotero_sincronizacion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Mi configuración en el menú Sincronizar."><img src="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/zotero_sincronizacion.png" class="img-fluid figure-img" alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de Sincronizar."></a></p>
+<figcaption>Mi configuración en el menú <strong>Sincronizar</strong>.</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><p>Ir a <strong>Preferencias</strong> &gt; <strong>Sincronizar</strong>. Ingrese a su cuenta de Zotero si aún no lo ha hecho.</p></li>
+<li><p>Asegúrese de activar únicamente la opción <strong>Sincronizar automáticamente</strong>.</p></li>
+</ol>
+</section>
+<section id="avanzadas" class="level3">
+<h3 class="anchored" data-anchor-id="avanzadas">Avanzadas</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/zotero_avanzadas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Mi configuración en el menú Avanzadas."><img src="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/zotero_avanzadas.png" class="img-fluid figure-img" alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de Avanzadas."></a></p>
+<figcaption>Mi configuración en el menú <strong>Avanzadas</strong>.</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><p>Ir a <strong>Preferencias</strong> &gt; <strong>Avanzadas</strong> &gt; <strong>Archivos y carpetas</strong>.</p></li>
+<li><p>En <strong>Directorio base</strong> de la opción <strong>Directorio base de adjuntos enlazados</strong>, seleccione la misma ruta que configuró en ZotMoov. En mi caso, sería <code>/Users/alex/Documents/zotero</code>.</p></li>
+</ol>
+<p>Con esta configuración, Zotero estará listo para sincronizar archivos utilizando el servicio de alojamiento que hayamos elegido. Sin embargo, si le interesa que los archivos PDF (o cualquier archivo que agregue) tengan un formato de nombre específico, esto se puede lograr mediante Zotero.</p>
+</section>
+</section>
+<section id="personalizar-el-formato-de-los-nombres" class="level2">
+<h2 class="anchored" data-anchor-id="personalizar-el-formato-de-los-nombres">Personalizar el formato de los nombres</h2>
+<p>En Zotero 6, los archivos se renombraban mediante ZotFile utilizando reglas de renombrado personalizadas con comodines (wildcards) que se sustituían por metadatos del elemento seleccionado. Sin embargo, esto <a href="https://www.zotero.org/support/file_renaming">ha cambiado en Zotero 7</a>. En mi caso, en Zotero 6, renombraba los archivos en minúsculas utilizando el apellido del primer y segundo autor (cuando había más de tres, solo el primer autor seguido de “et al.”), el año de publicación y el título. Por ejemplo: <code>doe_&amp;_smith_2018_example_title.pdf</code> o <code>doe_etal_2018_example_title.pdf</code>. A continuación, se muestran los pasos para configurar un formato personalizado en Zotero 7.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/zotero_general.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Mi configuración en el menún General."><img src="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/zotero_general.png" class="img-fluid figure-img" alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de General."></a></p>
+<figcaption>Mi configuración en el menún <strong>General</strong>.</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li><p>Ir a <strong>Preferencias</strong> &gt; <strong>General</strong>.</p></li>
+<li><p>Activar la opción <strong>Renombrar automáticamente los archivos añadidos localmente</strong>. Opcionalmente, puede activar <strong>Imagen</strong>, <strong>Sonido</strong> o <strong>Vídeo</strong>.</p></li>
+<li><p>Hacer clic en <strong>Personalizar el formato de nombre de archivo</strong>. Se abrirá la siguiente ventana:</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/zotero_filename_format.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Mi configuración para el formato de los nombres."><img src="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/zotero_filename_format.png" class="img-fluid figure-img" alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de General."></a></p>
+<figcaption>Mi configuración para el formato de los nombres.</figcaption>
+</figure>
+</div>
+<ol start="4" type="1">
+<li>En <strong>Filename Template</strong>, ingrese el formato personalizado. Hay una <a href="https://www.zotero.org/support/file_renaming">amplia variedad de variables</a> que se pueden incluir. Buscando un formato similar al que usaba en Zotero 6, encontré una opción en los foros de Zotero <a href="https://forums.zotero.org/discussion/comment/470491/#Comment_470491">muy parecida</a> que adapté a mis necesidades:</li>
+</ol>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">{{ if {{ authors match="<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">[^,]</span>+,<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">[^,]</span>+,<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">[^,]</span>+" }} }}</span>
+<span id="cb1-2">{{ authors max="1" suffix="_etal" case="snake" }}</span>
+<span id="cb1-3">{{ else }}</span>
+<span id="cb1-4">{{ authors join=" &amp; " case="snake" }}</span>
+<span id="cb1-5">{{ endif }}</span>
+<span id="cb1-6">{{ year prefix="_" }}</span>
+<span id="cb1-7">{{ title truncate="200" replaceFrom="(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\.</span>|:|\?)(.*?)$" prefix="_" case="snake" }}</span></code></pre></div>
+<p>Con esta configuración, cada vez que <a href="https://www.zotero.org/support/adding_items_to_zotero">agreguemos un elemento</a>, ya sea una referencia que tiene disponible el PDF o un PDF desde nuestro equipo, Zotero automáticamente renombrará el archivo y lo sincronizará con nuestro servicio de alojamiento.</p>
+</section>
+<section id="consejo" class="level2">
+<h2 class="anchored" data-anchor-id="consejo">Consejo</h2>
+<p>Zotero es una herramienta muy poderosa con múltiples posibilidades. Considero que lo fundamental para dominarla es tomarse el tiempo necesario para explorar sus funcionalidades; al final, se convierte en una herramienta imprescindible y uno termina pensando: «¿Cómo pude vivir tanto tiempo sin esto?». Uno de esos trucos que se aprenden con el tiempo o <a href="https://citationstyles.org/authors/#/using-styles---tips-and-tricks">por casualidad</a> es cómo agregar correctamente nombres científicos, superíndices o subíndices. Para lograr esto<sup>2</sup>, se utilizan pequeñas etiquetas (tags) que encierran el contenido que se desea presentar de esa forma:</p>
+<ul>
+<li><code>&lt;i&gt;</code>cursiva<code>&lt;/i&gt;</code> para <i>cursiva</i></li>
+<li><code>&lt;b&gt;</code>negrilla<code>&lt;/b&gt;</code> para <b>negrilla</b></li>
+<li><code>&lt;sub&gt;</code>subíndice<code>&lt;/sub&gt;</code> para <sub>subíndice</sub></li>
+<li><code>&lt;sup&gt;</code>superíndice<code>&lt;/sup&gt;</code> para <sup>superíndice</sup></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>En Zotero 6, se utilizaba <a href="https://zotfile.com">ZotFile</a> para este propósito. Sin embargo, con el lanzamiento de <a href="https://www.zotero.org/blog/zotero-7/">Zotero 7</a>, ZotFile dejó de ser compatible, y no parece que vaya a actualizarse próximamente (<a href="https://github.com/jlegewie/zotfile/issues/655#issuecomment-1595364307">ver discusión</a>). Por suerte, han surgido alternativas como ZotMoov y <a href="https://github.com/MuiseDestiny/zotero-attanger">Attanger</a>.↩︎</p></li>
+<li id="fn2"><p>Mientras escribía esta publicación, descubrí la existencia de <a href="https://github.com/northword/zotero-format-metadata">Linter for Zotero</a>, un complemento que facilita esta tarea a través de una interfaz intuitiva. <a href="https://citationstyler.com/en/knowledge/the-best-zotero-extensions/">Aquí puedes encontrar más información</a>.↩︎</p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2025,
+  author = {Espinosa-Correa, Álex},
+  title = {Zotero: gestionar, renombrar y sincronizar archivos},
+  date = {2025-01-21},
+  url = {https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/},
+  langid = {es}
+}
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2025" class="csl-entry quarto-appendix-citeas">
+Espinosa-Correa, Álex. 2025. <span>“Zotero: gestionar, renombrar y
+sincronizar archivos.”</span> January 21, 2025. <a href="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/">https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/</a>.
+</div></div></section></div> ]]></description>
+  <category>Zotero</category>
+  <category>Tutorial</category>
+  <guid>https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/</guid>
+  <pubDate>Tue, 21 Jan 2025 05:00:00 GMT</pubDate>
+  <media:content url="https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/images/z-logo.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Las referencias cruzadas personalizadas de Quarto</title>
   <dc:creator>Álex Espinosa-Correa</dc:creator>
@@ -1166,7 +1337,7 @@ Figura&nbsp;4: Pasos para exportar archivos <code>*.bib</code> en Zotero.
 </figcaption>
 </figure>
 </div>
-<p>Ya tenemos todo lo neceasrio para poder generar nuestro CV tanto en HTML como en PDF, ahora sólo tenemos que renderizar.</p>
+<p>Ya tenemos todo lo necesario para poder generar nuestro CV tanto en HTML como en PDF, ahora sólo tenemos que renderizar.</p>
 </section>
 </section>
 <section id="sec-render" class="level3">
