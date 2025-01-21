@@ -1,0 +1,138 @@
+---
+title: "Zotero: gestionar, renombrar y sincronizar archivos"
+description: |
+  Zotero es uno de los gestores de referencias más potentes y versátiles. Descubre cómo configurarlo para sincronizar tus archivos en la nube.
+
+date: 2025-01-21
+
+image: images/z-logo.png
+image-alt: "Logo de Zotero 7"
+  
+categories:
+  - Zotero
+  - Tutorial
+
+draft: false
+---
+
+<meta name="fediverse:creator" content="@alexespinosaco@mstdn.social">
+
+## Introducción
+
+En el ámbito académico, una de las tareas más tediosas suele ser la organización de las referencias bibliográficas. Muchas personas complican aún más esta labor al gestionarlas manualmente o usando hojas de cálculo, lo que a menudo resulta en carpetas desordenadas con cientos de archivos PDF sin clasificar. Por fortuna, existen herramientas que simplifican esta tarea: los [gestores de referencias bibliográficas](https://es.wikipedia.org/wiki/Gestor_de_referencias_bibliográficas).
+Estas herramientas permiten crear, mantener, organizar, compartir y dar formato a referencias bibliográficas de manera eficiente. Entre la [diversidad de opciones](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software), Zotero destaca como uno de los más populares y, en mi opinión, el mejor disponible.
+
+![Captura de pantalla de [Zotero 7](https://www.zotero.org)](images/zotero_interaz.png){fig-alt="Captura de pantalla de Zotero 7."}
+
+Zotero tiene [numerosas ventajas](https://www.zotero.org/support/): es software libre y de código abierto ([FLOSS](https://es.wikipedia.org/wiki/Software_libre_y_de_código_abierto)), es [multiplataforma](https://www.zotero.org/support/installation) (compatible con Android, GNU/Linux, iOS, macOS y Windows, entre otros), se [integra](https://www.zotero.org/support/word_processor_integration) con los principales procesadores de texto (Google Docs, LibreOffice Writer, Microsoft Word), admite [más de 10000 estilos de citación](https://www.zotero.org/styles), permite la [sincronización](https://www.zotero.org/support/sync) en la nube y cuenta con una sólida [comunidad](https://forums.zotero.org) de usuarios. Además, Zotero tiene el compromiso explícito de permanecer gratuito para siempre, lo que lo convierte en una herramienta esencial para estudiantes, investigadores y académicos.
+
+La única "desventaja" que he encontrado en Zotero es el límite de 300 MB de almacenamiento gratuito en la nube ([Zotero Storage](https://www.zotero.org/storage?id=storage)). Sin embargo, este inconveniente tiene una solución sencilla: utilizar Zotero Storage únicamente para sincronizar los metadatos de las referencias (lo que, en la práctica, consume muy poco espacio) y emplear un servicio de alojamiento de archivos de su elección (como Dropbox, Google Drive, iCloud Drive, Microsoft OneDrive, etc.) para sincronizar los archivos PDF de forma independiente.
+
+En esta publicación, se explica cómo configurar Zotero para sincronizar los PDF usando iCloud Drive.
+
+## Prerrequisitos
+
+1.  [Descargar e instalar Zotero 7](https://www.zotero.org): Si aún no lo tienes instalado, puedes seguir el paso a paso disponible en [este enlace](https://geobota.github.io/xii-ccb-quarto/preparacion/#instalar-zotero) para instalar Zotero en Windows.
+
+2.  [Crear una cuenta en el sitio web de Zotero](https://www.zotero.org/user/register/). La cuenta será necesaria más adelante para sincronizar la base de datos de metadatos bibliográficos.
+
+3.  [Descargar ZotMoov](https://github.com/wileyyugioh/zotmoov/). Este plugin permitirá gestionar los archivos adjuntos (como PDFs) en Zotero 7[^1].
+
+4. Tener instalado y configurado un servicio de alojamiento de archivos (Dropbox, Google Drive, iCloud Drive, Microsoft OneDrive, etc.)
+
+[^1]: En Zotero 6, se utilizaba [ZotFile](https://zotfile.com) para este propósito. Sin embargo, con el lanzamiento de [Zotero 7](https://www.zotero.org/blog/zotero-7/), ZotFile dejó de ser compatible, y no parece que vaya a actualizarse próximamente ([ver discusión](https://github.com/jlegewie/zotfile/issues/655#issuecomment-1595364307)). Por suerte, han surgido alternativas como ZotMoov y [Attanger](https://github.com/MuiseDestiny/zotero-attanger).
+
+## Instalar ZotMoov
+
+Lo primero que haremos será instalar ZotMoov.
+
+1.  Abrir Zotero.
+
+2.  Ir a **Herramientas** \> **Extensiones**.
+
+3.  Hacer clic en el icono del engranaje (![Ícono del engranaje](images/gear_icon.png)) en la esquina superior derecha.
+
+4.  Hacer clic en **Install Plugin From File**.
+
+5.  Buscar y seleccionar el archivo `.xpi`. En este tutorial se utilizó `zotmoov-1.2.11-fx.xpi`.
+
+6.  Hacer clic en **Open** para iniciar la instalación.
+
+7.  Reiniciar Zotero.
+
+8.  Ir a **Preferencias** y comprobar si ZotMoov se instaló correctamente.
+
+![ZotMoov se encuentra instalado, podemos proceder a configurarlo. Esta es mi configuración.](images/zotmoov_configuracion.png){#zootmov fig-alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de ZotMoov."}
+
+## Configurar ZotMoov {#sec-zotmoov-configuracion}
+
+Ya que tenemos ZotMoov instalado, procederemos a configurarlo.
+
+1.  Ir a **Preferencias** \> **ZotMoov**. En la opción **Directory to Move/Copy Files To**, seleccionar la ruta donde se encuentra la carpeta en la que se guardarán y sincronizarán los archivos. En mi caso, utilizo una carpeta llamada `zotero` dentro de la carpeta `Documentos` de iCloud Drive: `/Users/alex/Documents/zotero`.
+
+2.  Seleccionar **Move** en la opción **File Behavior**. Esto indica que los archivos serán movidos a la carpeta seleccionada.
+
+3.  Activar la opción **Automatically Move/Copy Files When Added**. Esto permite que los archivos se muevan automáticamente al agregarlos. De lo contrario, habría que realizar esta acción de forma manual.
+
+4.  **[Opcional]** Activar la opción **Automatically Move/Copy Files to Subdirectory**. Esta función organiza los archivos dentro de subcarpetas. Por defecto, está configurada en `{%c}`, lo que guarda los archivos en carpetas con los nombres de las colecciones de Zotero. Yo prefiero usar `{%T}`, que organiza los archivos según el tipo de referencia (por ejemplo, artículo de revista académica, libro, etc.). Aunque no sea la configuración más eficiente, decidí mantenerla porque ya tenía esta estructura en Zotero 6, y reorganizar más de 8.6 GB no es viable en este momento. Para conocer más opciones de formato, puedes consultar la sección [**Formatting**](https://github.com/wileyyugioh/zotmoov/blob/master/docs/WILDCARD_INFO.md).
+
+## Configurar Zotero
+
+Una vez que hemos instalado y configurado ZotMoov, procederemos con la configuración de Zotero. Comenzaremos con la sincronización con Zotero Storage y luego configuraremos la conexión con el servicio de alojamiento de archivos.
+
+### Sincronizar
+
+![Mi configuración en el menú **Sincronizar**.](images/zotero_sincronizacion.png){#zotero-sincronizacion fig-alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de Sincronizar."}
+
+1.  Ir a **Preferencias** \> **Sincronizar**. Ingrese a su cuenta de Zotero si aún no lo ha hecho.
+
+2.  Asegúrese de activar únicamente la opción **Sincronizar automáticamente**.
+
+### Avanzadas
+
+![Mi configuración en el menú **Avanzadas**.](images/zotero_avanzadas.png){#zotero-avanzadas fig-alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de Avanzadas."}
+
+1. Ir a **Preferencias** \> **Avanzadas** \> **Archivos y carpetas**.
+
+2. En **Directorio base** de la opción **Directorio base de adjuntos enlazados**, seleccione la misma ruta que configuró en [ZotMoov](#sec-zotmoov-configuracion). En mi caso, sería `/Users/alex/Documents/zotero`.
+
+Con esta configuración, Zotero estará listo para sincronizar archivos utilizando el servicio de alojamiento que hayamos elegido. Sin embargo, si le interesa que los archivos PDF (o cualquier archivo que agregue) tengan un formato de nombre específico, esto se puede lograr mediante Zotero.
+
+## Personalizar el formato de los nombres
+
+En Zotero 6, los archivos se renombraban mediante ZotFile utilizando reglas de renombrado personalizadas con comodines (wildcards) que se sustituían por metadatos del elemento seleccionado. Sin embargo, esto [ha cambiado en Zotero 7](https://www.zotero.org/support/file_renaming). En mi caso, en Zotero 6, renombraba los archivos en minúsculas utilizando el apellido del primer y segundo autor (cuando había más de tres, solo el primer autor seguido de "et al."), el año de publicación y el título. Por ejemplo: `doe_&_smith_2018_example_title.pdf` o `doe_etal_2018_example_title.pdf`. A continuación, se muestran los pasos para configurar un formato personalizado en Zotero 7.
+
+![Mi configuración en el menún **General**.](images/zotero_general.png){#zotero-general fig-alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de General."}
+
+1.  Ir a **Preferencias** > **General**.
+
+2.  Activar la opción **Renombrar automáticamente los archivos añadidos localmente**. Opcionalmente, puede activar **Imagen**, **Sonido** o **Vídeo**.
+
+3.  Hacer clic en **Personalizar el formato de nombre de archivo**. Se abrirá la siguiente ventana:
+
+![Mi configuración para el formato de los nombres.](images/zotero_filename_format.png){fig-alt="Captura de pantalla del menú Preferencias de Zotero. Se muestran las opciones de General."}
+
+4.  En **Filename Template**, ingrese el formato personalizado. Hay una [amplia variedad de variables](https://www.zotero.org/support/file_renaming) que se pueden incluir. Buscando un formato similar al que usaba en Zotero 6, encontré una opción en los foros de Zotero [muy parecida](https://forums.zotero.org/discussion/comment/470491/#Comment_470491) que adapté a mis necesidades:
+
+```markdown
+{{ if {{ authors match="[^,]+,[^,]+,[^,]+" }} }}
+{{ authors max="1" suffix="_etal" case="snake" }}
+{{ else }}
+{{ authors join=" & " case="snake" }}
+{{ endif }}
+{{ year prefix="_" }}
+{{ title truncate="200" replaceFrom="(\.|:|\?)(.*?)$" prefix="_" case="snake" }}
+```
+
+Con esta configuración, cada vez que [agreguemos un elemento](https://www.zotero.org/support/adding_items_to_zotero), ya sea una referencia que tiene disponible el PDF o un PDF desde nuestro equipo, Zotero automáticamente renombrará el archivo y lo sincronizará con nuestro servicio de alojamiento.
+
+## Consejo
+
+Zotero es una herramienta muy poderosa con múltiples posibilidades. Considero que lo fundamental para dominarla es tomarse el tiempo necesario para explorar sus funcionalidades; al final, se convierte en una herramienta imprescindible y uno termina pensando: «¿Cómo pude vivir tanto tiempo sin esto?». Uno de esos trucos que se aprenden con el tiempo o [por casualidad](https://citationstyles.org/authors/#/using-styles---tips-and-tricks) es cómo agregar correctamente nombres científicos, superíndices o subíndices. Para lograr esto[^2], se utilizan pequeñas etiquetas (tags) que encierran el contenido que se desea presentar de esa forma:
+
+-   `<i>`cursiva`</i>` para <i>cursiva</i>
+-   `<b>`negrilla`</b>` para <b>negrilla</b>
+-   `<sub>`subíndice`</sub>` para <sub>subíndice</sub>
+-   `<sup>`superíndice`</sup>` para <sup>superíndice</sup>
+
+[^2]: Mientras escribía esta publicación, descubrí la existencia de [Linter for Zotero](https://github.com/northword/zotero-format-metadata), un complemento que facilita esta tarea a través de una interfaz intuitiva. [Aquí puedes encontrar más información](https://citationstyler.com/en/knowledge/the-best-zotero-extensions/).
