@@ -3,6 +3,8 @@ title: "Aerovagante"
 pagetitle: "Aerovagante Blog"
 author: ""
 
+citation: false
+
 listing: 
   - id: post
     contents: "*/index.qmd"

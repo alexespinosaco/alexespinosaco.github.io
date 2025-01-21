@@ -10,7 +10,7 @@ title-block-banner-color: "#FFFFFF"
 # Author name of all blog posts
 author:
   - name: "Álex Espinosa-Correa"
-    url: http://alexespinosaco.github.io/aerovagante/
+    url: http://alexespinosaco.github.io
 
 # languaje format
 lang: es
@@ -18,6 +18,14 @@ lang: es
 # date format
 date-format: iso
 
+# toc
+toc: true
+toc-depth: 4
+
+# citation
+citation: true
+
+# comments
 comments: 
   utterances: 
     repo: alexespinosaco/blog-comments
