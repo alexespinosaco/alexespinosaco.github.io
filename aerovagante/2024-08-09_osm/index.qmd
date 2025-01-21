@@ -11,15 +11,12 @@ categories:
   - SIG
   - Video
 
-citation: 
-  url: https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/
+citation: true
 
 execute: 
   message: false
   warning: false
   eval: false
-
-lang: es
 
 toc: true
 toc-depth: 4

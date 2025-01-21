@@ -305,7 +305,7 @@ Después de [descargar](https://www.zotero.org/download/), instalar, configurar 
 Pasos para exportar archivos `*.bib` en Zotero. 
 :::
 
-Ya tenemos todo lo neceasrio para poder generar nuestro CV tanto en HTML como en PDF, ahora sólo tenemos que renderizar.
+Ya tenemos todo lo necesario para poder generar nuestro CV tanto en HTML como en PDF, ahora sólo tenemos que renderizar.
 
 ### Renderizar {#sec-render}
 
