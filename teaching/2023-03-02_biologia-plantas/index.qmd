@@ -25,9 +25,9 @@ about:
   image-shape: rectangle
   links:
     - text: "{{< fa brands github >}} GitHub"
-      href: https://github.com/alexespinosaco/biologia-plantas/
+      href: https://github.com/alexespinosaco/biologia-plantas-2023-1/
     - text: "{{< fa link >}} Sitio web"
-      href: https://alexespinosaco.github.io/biologia-plantas/
+      href: https://alexespinosaco.github.io/biologia-plantas-2023-1/
 ---
 
 :::{ #project}
@@ -39,4 +39,4 @@ Para el primer semestre de 2023, retomé el curso y, mientras [redactaba el manu
 
 En el sitio web del curso se encuentran todas las presentaciones utilizadas a lo largo de su desarrollo.  
 
-Toda la información relacionada con el laboratorio de Biología de las Plantas 2023-01 está disponible en el [sitio web del curso](https://alexespinosaco.github.io/biologia-plantas/).  
+Toda la información relacionada con el laboratorio de Biología de las Plantas 2023-01 está disponible en el [sitio web del curso](https://alexespinosaco.github.io/biologia-plantas-2023-1/).  
