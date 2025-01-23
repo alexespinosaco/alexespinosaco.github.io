@@ -1,0 +1,37 @@
+---
+pagetitle: "Plantilla de Quarto para el XII Congrego Colombiano de Botánica"
+title: "Plantilla de Quarto Revealjs para el XII CCB"
+# subtitle: ""
+# description: ""
+
+date: 2024-10-10
+year: 2024
+
+image: https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/blob/main/slide.png?raw=true
+
+citation: true
+
+categories: 
+  - Quarto
+  - Plantilla
+  - XII CCB
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/
+    - text: "{{< fa link >}} Demo"
+      href: https://alexespinosaco.github.io/quarto-revealjs-xii-ccb/
+---
+
+:::{ #project}
+:::
+
+Quarto ofrece diversas posibilidades para la creación de contenido académico y profesional, incluyendo [sitios web](/projects/2024-02-07_geobota-website/), [libros](/projects/2023-03-02_biologia-plantas-manual/) y [presentaciones](https://quarto.org/docs/presentations/). Estas últimas pueden generarse en formatos como MS PowerPoint, Beamer ($\LaTeX$/PDF) o Reveal.js (HTML), siendo este último el [más versátil y potente](https://quarto.org/docs/presentations/). Con motivo del [XII Congreso Colombiano de Botánica XII CCB](https://congresobotanica.org/), en el que participé dictando un [curso de Quarto](/teaching/2024-11-03_xii-ccb_quarto/) (entre otras actividades) y [presentando varios trabajos](/talks/) realizados con esta herramienta, decidí desarrollar una plantilla/extensión que reflejara la apariencia del formato oficial proporcionado por los organizadores del evento.
+
+La creación de plantillas/extensiones en Quarto es relativamente sencilla gracias a la [documentación](https://quarto.org/docs/extensions/revealjs.html) detallada que ofrece la herramienta. Además, ya había adquirido experiencia previa elaborando una [plantilla de Quarto para la creación de hojas de vida (CV)](/aerovagante/2024-02-18-cv). Esta nueva plantilla fue desarrollada en un tiempo corto, tomando como base el material proporcionado por los organizadores, e incorporando elementos propios de Quarto que la hacen más fácil de usar y visualmente atractiva, según mi perspectiva. Asimismo, incluye una breve demostración de sus capacidades y una guía práctica para su uso. La plantilla/extensión se encuentra bajo una [licencia MIT](https://github.com/alexespinosaco/quarto-revealjs-xii-ccb?tab=MIT-1-ov-file).
+
+Toda la información sobre esta plantilla está disponible en su [repositorio](https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/) y en la [demostración](https://alexespinosaco.github.io/quarto-revealjs-xii-ccb/).
