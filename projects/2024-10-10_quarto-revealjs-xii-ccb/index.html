@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
+<meta name="author" content="Álex Espinosa-Correa">
+<meta name="dcterms.date" content="2024-10-10">
 
-<title>Ponencias – Álex Espinosa-Correa</title>
+<title>Plantilla de Quarto para el XII Congrego Colombiano de Botánica – Álex Espinosa-Correa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,31 +25,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/icon-AEC.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-fc69c27516b785ffb5db61c6a6e66aa6.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/icon-AEC.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-fc69c27516b785ffb5db61c6a6e66aa6.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,35 +74,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-talks .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RN5H7WV1DJ"></script>
 
 <script type="text/javascript">
@@ -145,21 +114,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Ponencias">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Plantilla de Quarto para el XII Congrego Colombiano de Botánica">
 <meta property="og:description" content="Website personal de Álex Espinosa-Correa">
-<meta property="og:image" content="https://alexespinosaco.github.io/talks/2024-11-07_xii-ccb_aerobiologia_01/image.png">
+<meta property="og:image" content="https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/blob/main/slide.png?raw=true">
 <meta property="og:site_name" content="Álex Espinosa-Correa">
 <meta property="og:locale" content="es_ES">
-<meta property="og:image:height" content="1080">
-<meta property="og:image:width" content="1920">
-<meta name="twitter:title" content="Ponencias">
+<meta name="twitter:title" content="Plantilla de Quarto para el XII Congrego Colombiano de Botánica">
 <meta name="twitter:description" content="Website personal de Álex Espinosa-Correa">
-<meta name="twitter:image" content="https://alexespinosaco.github.io/talks/2024-11-07_xii-ccb_aerobiologia_01/image.png">
+<meta name="twitter:image" content="https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/blob/main/slide.png?raw=true">
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="1080">
-<meta name="twitter:image-width" content="1920">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -169,10 +134,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/icon-AEC.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Álex Espinosa-Correa</span>
     </a>
   </div>
@@ -183,31 +148,31 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv/index.html"> 
+    <a class="nav-link" href="../../cv/index.html"> 
 <span class="menu-text">Acerca (CV)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../aerovagante/index.html"> 
+    <a class="nav-link" href="../../aerovagante/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../teaching/index.html"> 
+    <a class="nav-link" href="../../teaching/index.html"> 
 <span class="menu-text">Docencia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../talks/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../talks/index.html"> 
 <span class="menu-text">Ponencias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
+    <a class="nav-link" href="../../projects/index.html"> 
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications/index.html"> 
+    <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
@@ -227,7 +192,7 @@ window.Quarto = {
 <span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../aerovagante/index.xml"> 
+    <a class="nav-link" href="../../aerovagante/index.xml"> 
 <span class="menu-text"><i class="fa-solid fa-rss" aria-label="rss"></i></span></a>
   </li>  
 </ul>
@@ -246,203 +211,66 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+
+
+
+<div class="quarto-about-jolla">
+  <img src="https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/blob/main/slide.png?raw=true" class="about-image
+  rectangle " style="width: 15em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ponencias</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
+<h1 class="title">Plantilla de Quarto Revealjs para el XII CCB</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">Plantilla</div>
+    <div class="quarto-category">XII CCB</div>
   </div>
-  
+  </div>
+<div class="quarto-title-meta">
+    <div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="http://alexespinosaco.github.io/projects/">Álex Espinosa-Correa</a> </p>
+          </div>
+  </div>
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2024-10-10</p>
+    </div>
+  </div>
+  </div>
+</header><div id="project">
+</div> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="fa-brands fa-github" aria-label="github"></i> GitHub</span>
+  </a>
+  <a href="https://alexespinosaco.github.io/quarto-revealjs-xii-ccb/" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="fa-solid fa-link" aria-label="link"></i> Demo</span>
+  </a>
+</div>
+</div>
 
-
-</header>
-
-
-<p>Este portafolio incluye material de libre acceso de charlas y pósters en los que he participado, creado o presentado.</p>
-<div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNDaGFybGElMkNEaWFwb3NpdGl2YXMlMkNRdWFydG8lMkNYSUklMjBDQ0I=" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1741204618304" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
-<a href="../talks/2024-11-07_xii-ccb_aerobiologia_01/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../talks/2024-11-07_xii-ccb_aerobiologia_01/image.png" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-XII CCB: Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWVyb2Jpb2xvZyVDMyVBRGE='); return false;">
-Aerobiología
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhcmxh'); return false;">
-Charla
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGlhcG9zaXRpdmFz'); return false;">
-Diapositivas
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
-Quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('WElJJTIwQ0NC'); return false;">
-XII CCB
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-2024-11-07
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNDaGFybGElMkNEaWFwb3NpdGl2YXMlMkNYSUklMjBDQ0I=" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1741204618308" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
-<a href="../talks/2024-11-07_xii-ccb_aerobiologia_02/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../talks/2024-11-07_xii-ccb_aerobiologia_02/image.png" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-XII CCB: Influencia del cambio climático sobre las concentraciones de polen aerovagante en la ciudad de Medellín, Colombia
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWVyb2Jpb2xvZyVDMyVBRGE='); return false;">
-Aerobiología
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhcmxh'); return false;">
-Charla
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGlhcG9zaXRpdmFz'); return false;">
-Diapositivas
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('WElJJTIwQ0NC'); return false;">
-XII CCB
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-2024-11-07
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Q2hhcmxhJTJDRGlhcG9zaXRpdmFzJTJDUXVhcnRvJTJDUmVwcm9kdWNpYmlsaWRhZCUyQ1hJSSUyMENDQg==" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1741204618310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
-<a href="../talks/2024-11-07_xii-ccb_quarto/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../talks/2024-11-07_xii-ccb_quarto/image.png" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-XII CCB: ¿Por qué no lo hiciste en Microsoft Word? Cómo hacer una tesis doctoral reproducible usando R y Quarto
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhcmxh'); return false;">
-Charla
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGlhcG9zaXRpdmFz'); return false;">
-Diapositivas
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
-Quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmlsaWRhZA=='); return false;">
-Reproducibilidad
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('WElJJTIwQ0NC'); return false;">
-XII CCB
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-2024-11-07
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="T3BlblN0cmVldE1hcCUyQ1AlQzMlQjNzdGVyJTJDWElJJTIwQ0NC" data-listing-date-sort="1730869200000" data-listing-file-modified-sort="1741204618302" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
-<a href="../talks/2024-11-06_xii-ccb_cecropia/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../talks/2024-11-06_xii-ccb_cecropia/image.jpg" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-XII CCB: Mapeando los yarumos de Medellín, un proyecto de ciencia ciudadana en mejora de la calidad del aire
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlblN0cmVldE1hcA=='); return false;">
-OpenStreetMap
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UCVDMyVCM3N0ZXI='); return false;">
-Póster
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('WElJJTIwQ0NC'); return false;">
-XII CCB
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-2024-11-06
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNQJUMzJUIzc3RlciUyQ1hYJTIwSUJD" data-listing-date-sort="1721538000000" data-listing-file-modified-sort="1741204618299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
-<a href="../talks/2024-07-21_xx-ibc_aerobiologia/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../talks/2024-07-21_xx-ibc_aerobiologia/image.png" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-XX IBC: P.0077 How does aerobiology behave in a neotropical city?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QWVyb2Jpb2xvZyVDMyVBRGE='); return false;">
-Aerobiología
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UCVDMyVCM3N0ZXI='); return false;">
-Póster
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('WFglMjBJQkM='); return false;">
-XX IBC
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-2024-07-21
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No hay resultados
-</div>
-</div>
+<p>Quarto ofrece diversas posibilidades para la creación de contenido académico y profesional, incluyendo <a href="../../projects/2024-02-07_geobota-website/">sitios web</a>, <a href="../../projects/2023-03-02_biologia-plantas-manual/">libros</a> y <a href="https://quarto.org/docs/presentations/">presentaciones</a>. Estas últimas pueden generarse en formatos como MS PowerPoint, Beamer (<span class="math inline">\(\LaTeX\)</span>/PDF) o Reveal.js (HTML), siendo este último el <a href="https://quarto.org/docs/presentations/">más versátil y potente</a>. Con motivo del <a href="https://congresobotanica.org/">XII Congreso Colombiano de Botánica XII CCB</a>, en el que participé dictando un <a href="../../teaching/2024-11-03_xii-ccb_quarto/">curso de Quarto</a> (entre otras actividades) y <a href="../../talks/">presentando varios trabajos</a> realizados con esta herramienta, decidí desarrollar una plantilla/extensión que reflejara la apariencia del formato oficial proporcionado por los organizadores del evento.</p>
+<p>La creación de plantillas/extensiones en Quarto es relativamente sencilla gracias a la <a href="https://quarto.org/docs/extensions/revealjs.html">documentación</a> detallada que ofrece la herramienta. Además, ya había adquirido experiencia previa elaborando una <a href="../../aerovagante/2024-02-18-cv">plantilla de Quarto para la creación de hojas de vida (CV)</a>. Esta nueva plantilla fue desarrollada en un tiempo corto, tomando como base el material proporcionado por los organizadores, e incorporando elementos propios de Quarto que la hacen más fácil de usar y visualmente atractiva, según mi perspectiva. Asimismo, incluye una breve demostración de sus capacidades y una guía práctica para su uso. La plantilla/extensión se encuentra bajo una <a href="https://github.com/alexespinosaco/quarto-revealjs-xii-ccb?tab=MIT-1-ov-file">licencia MIT</a>.</p>
+<p>Toda la información sobre esta plantilla está disponible en su <a href="https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/">repositorio</a> y en la <a href="https://alexespinosaco.github.io/quarto-revealjs-xii-ccb/">demostración</a>.</p>
 
 
 
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2024,
+  author = {Espinosa-Correa, Álex},
+  title = {Plantilla de Quarto Revealjs para el XII CCB},
+  date = {2024-10-10},
+  url = {https://alexespinosaco.github.io/projects/2024-10-10_quarto-revealjs-xii-ccb/},
+  langid = {es}
+}
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Espinosa-Correa, Álex. 2024. <span>“Plantilla de Quarto Revealjs para el
+XII CCB.”</span> October 10, 2024. <a href="https://alexespinosaco.github.io/projects/2024-10-10_quarto-revealjs-xii-ccb/">https://alexespinosaco.github.io/projects/2024-10-10_quarto-revealjs-xii-ccb/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -607,13 +435,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -1004,6 +825,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://utteranc.es/client.js" repo="alexespinosaco/blog-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1033,7 +856,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../aerovagante/index.xml">
+    <a class="nav-link" href="../../aerovagante/index.xml">
 <p><i class="fa-solid fa-rss" aria-label="rss"></i></p>
 </a>
   </li>  
