@@ -1,0 +1,8 @@
+---
+title: "Biología de las plantas: manual de laboratorio"
+---
+
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=https://geobota.github.io/biologia-plantas-manual/">
+<link rel="canonical" href="https://geobota.github.io/biologia-plantas-manual/">
+<p>Si no eres redirigido automáticamente, <a href="https://geobota.github.io/biologia-plantas-manual/">haz clic aquí</a>.</p>

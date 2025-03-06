@@ -25,9 +25,9 @@ about:
   image-shape: rectangle
   links:
     - text: "{{< fa brands github >}} GitHub"
-      href: https://github.com/alexespinosaco/biologia-plantas-manual/
+      href: https://github.com/geobota/biologia-plantas-manual/
     - text: "{{< fa link >}} Sitio web"
-      href: http://alexespinosaco.github.io/biologia-plantas-manual/
+      href: http://geobota.github.io/biologia-plantas-manual/
 ---
 
 :::{ #project}
