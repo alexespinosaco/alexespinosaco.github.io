@@ -4,6 +4,7 @@ description: |
   Zotero es uno de los gestores de referencias más potentes y versátiles. Descubre cómo configurarlo para sincronizar tus archivos en la nube.
 
 date: 2025-01-21
+last-modified: 2025-04-24
 
 image: images/z-logo.png
 image-alt: "Logo de Zotero 7"
@@ -114,9 +115,25 @@ En Zotero 6, los archivos se renombraban mediante ZotFile utilizando reglas de r
 
 4.  En **Filename Template**, ingrese el formato personalizado. Hay una [amplia variedad de variables](https://www.zotero.org/support/file_renaming) que se pueden incluir. Buscando un formato similar al que usaba en Zotero 6, encontré una opción en los foros de Zotero [muy parecida](https://forums.zotero.org/discussion/comment/470491/#Comment_470491) que adapté a mis necesidades:
 
+::: {.callout-caution collapse="true"}
+## Versión anterior
+
+Originalmente utilizaba este código, pero sólo funcionaba para algunos elementos de Zotero. La nueva versión funciona para muchos más elementos.
+
 ```markdown
 {{ if {{ authors match="[^,]+,[^,]+,[^,]+" }} }}
 {{ authors max="1" suffix="_etal" case="snake" }}
+{{ else }}
+{{ authors join=" & " case="snake" }}
+{{ endif }}
+{{ year prefix="_" }}
+{{ title truncate="200" replaceFrom="(\.|:|\?)(.*?)$" prefix="_" case="snake" }}
+```
+:::
+
+```markdown
+{{ if {{ creators match="[^,]+,[^,]+,[^,]+" }} }}
+{{ creators max="1" suffix="_etal" case="snake" }}
 {{ else }}
 {{ authors join=" & " case="snake" }}
 {{ endif }}

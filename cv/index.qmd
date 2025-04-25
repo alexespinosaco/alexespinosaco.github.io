@@ -70,6 +70,9 @@ Universidad de Antioquia
 
 # Experiencia
 
+**Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2025 – ]{.cvfloat}\
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las clases teóricas y prácticas de los laboratorios de biología de las plantas.
+
 **Biólogo-Botánico - Universidad de Antioquia** \hfill [dic 2024 – ene 2025]{.cvfloat}\
 Implementación de estudios, monitoreo, seguimiento, estrategias de manejo y conservación sobre la biodiversidad en ecosistemas de interés para el negocio de generación de energía.
 
