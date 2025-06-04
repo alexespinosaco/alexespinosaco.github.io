@@ -16,13 +16,14 @@
 <height>65</height>
 <width>144</width>
 </image>
-<generator>quarto-1.6.39</generator>
+<generator>quarto-1.7.31</generator>
 <lastBuildDate>Tue, 21 Jan 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Zotero: gestionar, renombrar y sincronizar archivos</title>
   <dc:creator>Álex Espinosa-Correa</dc:creator>
   <link>https://alexespinosaco.github.io/aerovagante/2025-01-21_zotero/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -230,6 +231,7 @@ sincronizar archivos.”</span> January 21, 2025. <a href="https://alexespinosac
 
 
 
+
 <p>Mientras seguía una de esas horribles «guías para autores», ese caótico documento donde las revistas nos indican cómo debemos hacer el trabajo que ellos deberían realizar, me encontré con la necesidad de que Quarto interpretara algunas figuras y tablas como «Figura S1» o «Tabla S1». A pesar de que <a href="https://quarto.org/docs/guide/">la guía de Quarto</a> es una de las mejores que he leído y cuenta con secciones que explican <a href="https://quarto.org/docs/authoring/cross-references-custom.html#example-supplemental-figures">cómo hacerlo</a>, me encontré con algunas limitaciones que no están explícitamente detalladas. Aunque estas sí se mencionan en <a href="https://github.com/quarto-dev/quarto-cli/issues/7507">otros apartados</a>. Esta publicación sirve como un tutorial para usar las referencias cruzadas personalizadas de Quarto, como un recordatorio personal y como una solución/explicación para quienes se enfrenten al mismo problema y busquen una solución en español.</p>
 <section id="referencias-cruzadas-en-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="referencias-cruzadas-en-quarto">Referencias cruzadas en Quarto</h2>
@@ -261,43 +263,43 @@ Figura&nbsp;1: <em>Cecropia</em>
 <div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{r}</span></span>
-<span id="cb3-2"><span class="in" style="color: #5E5E5E;
+<span id="cb3-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| label: fig-iris</span></span>
-<span id="cb3-3"><span class="in" style="color: #5E5E5E;
+<span id="cb3-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| fig-cap: Un gráfico de dispersión.</span></span>
-<span id="cb3-4"><span class="in" style="color: #5E5E5E;
+<span id="cb3-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| fig-alt: Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables.</span></span>
 <span id="cb3-5"></span>
-<span id="cb3-6"><span class="in" style="color: #5E5E5E;
+<span id="cb3-6">iris <span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">iris |&gt; </span></span>
-<span id="cb3-7"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb3-7">  ggplot2<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">  ggplot2::ggplot(</span></span>
-<span id="cb3-8"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">    ggplot2::aes(</span></span>
-<span id="cb3-9"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">ggplot</span>(</span>
+<span id="cb3-8">    ggplot2<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">      Petal.Length,</span></span>
-<span id="cb3-10"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">      Petal.Width,</span></span>
-<span id="cb3-11"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">aes</span>(</span>
+<span id="cb3-9">      Petal.Length,</span>
+<span id="cb3-10">      Petal.Width,</span>
+<span id="cb3-11">      <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">      shape = Species</span></span>
-<span id="cb3-12"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">shape =</span> Species</span>
+<span id="cb3-12">    )</span>
+<span id="cb3-13">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">    )</span></span>
-<span id="cb3-13"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">+</span> </span>
+<span id="cb3-14">  ggplot2<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">  ) + </span></span>
-<span id="cb3-14"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">  ggplot2::geom_point()</span></span>
+font-style: inherit;">geom_point</span>()</span>
 <span id="cb3-15"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```</span></span></code></pre></div>
@@ -423,40 +425,40 @@ Figura S1: <em>Cecropia</em>
 <div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{r}</span></span>
-<span id="cb7-2"><span class="in" style="color: #5E5E5E;
+<span id="cb7-2"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| label: suppfig-iris</span></span>
-<span id="cb7-3"><span class="in" style="color: #5E5E5E;
+<span id="cb7-3"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| fig-cap: Un boxplot.</span></span>
-<span id="cb7-4"><span class="in" style="color: #5E5E5E;
+<span id="cb7-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#| fig-alt: Un boxplot de la variable petal length de las espcies del conjuto de datos Iris.</span></span>
 <span id="cb7-5"></span>
-<span id="cb7-6"><span class="in" style="color: #5E5E5E;
+<span id="cb7-6">iris <span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">iris |&gt; </span></span>
-<span id="cb7-7"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb7-7">  ggplot2<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">  ggplot2::ggplot(</span></span>
-<span id="cb7-8"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">    ggplot2::aes(</span></span>
-<span id="cb7-9"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">ggplot</span>(</span>
+<span id="cb7-8">    ggplot2<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">      Species,</span></span>
-<span id="cb7-10"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">      Petal.Length</span></span>
-<span id="cb7-11"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">aes</span>(</span>
+<span id="cb7-9">      Species,</span>
+<span id="cb7-10">      Petal.Length</span>
+<span id="cb7-11">    )</span>
+<span id="cb7-12">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">    )</span></span>
-<span id="cb7-12"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">+</span> </span>
+<span id="cb7-13">  ggplot2<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">  ) + </span></span>
-<span id="cb7-13"><span class="in" style="color: #5E5E5E;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">  ggplot2::geom_boxplot()</span></span>
+font-style: inherit;">geom_boxplot</span>()</span>
 <span id="cb7-14"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```</span></span></code></pre></div>
@@ -570,6 +572,7 @@ personalizadas de Quarto.”</span> August 10, 2024. <a href="https://alexespino
 
 
 
+
 <p><a href="preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://alexespinosaco.github.io/aerovagante/2024-08-09_osm/preview.png" class="img-fluid"></a></p>
 <p><a href="https://openstreetmap.org">OpenStreetMap</a>, el mapa colaborativo y libre por excelencia. No recuerdo una fecha exacta en que lo conocí. Quizá fue por allá en el ya lejano 2007, cuando me obsesioné con GNU/Linux (¡<a href="https://es.wikipedia.org/wiki/Anexo:Versiones_de_Ubuntu#Ubuntu_8.04_LTS">Hardy Heron</a>, quien te recuerda!) y gran parte del entorno del Software Libre y de Código Abierto (FLOSS). O quizás fue en 2016, cuando en el pregrado tomé una materia sobre Sistemas de Información Geográfica (SIG). Lo cierto es que ese recuerdo es borroso, pero lo que sí tengo claro es cuando me volví a encontrar con OpenStreetMap, esta vez con mucha más fuerza.</p>
 <p>Fue este año, principalmente en conversaciones con <a href="https://mstdn.social/@nesper94@biologists.social">Juan Camilo Arboleda</a> del <a href="https://biologia-computacional.github.io">Grupo de Biología Computacional</a>, y mientras creaba un par de mapas para la página del <a href="https://geobota.github.io">Grupo de Estudios Botánicos GEOBOTA</a>. Fue como reencontrarse con un viejo amigo, pero esta vez, uno siendo más maduro y reconociendo el valor que tiene el otro. Todo el recorrido que he tenido desde esos recuerdos difusos (el pregrado, el doctorado, <a href="https://quarto.org">Quarto</a>, R, los SIG, la ciencia abierta y reproducible) ha servido para que esta vez vea el potencial y la utilidad que me puede brindar OSM, y lo que yo le puedo aportar.</p>
@@ -611,6 +614,7 @@ OpenStreetMap!”</span> August 9, 2024. <a href="https://alexespinosaco.github.
 
 
 
+
 <p>Hace un mes, el profesor y director del <a href="https://www.uco.edu.co/herbariouco/Paginas/home_herbario.aspx">Herbario de la Universidad Católica de Oriente</a> (UCO), Mario Alberto Quijano Ábril, me invitó a participar en el programa radial «<em>Verde Clarito: Diálogos Ambientales</em>». En este programa, llamado: «Que estamos respirando en nuestras ciudades, calidad del aire más allá de lo evidente», también participaron la doctora Rosa María Valencia Barrera de la Universidad de León y el magíster James Londoño Valencia de la UCO. Juntos abordamos temas relacionados con la aerobiología y la calidad del aire, explorando el panorama en nuestras ciudades.</p>
 <p>Aquí tienes el vídeo del programa. ¡Espero que lo disfruten! Si no carga correctamente, pueden verlo en <a href="https://www.youtube.com/live/yp59FZ6_B8U">YouTube</a>.</p>
 <p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/yp59FZ6_B8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
@@ -641,6 +645,7 @@ radio!”</span> June 22, 2024. <a href="https://alexespinosaco.github.io/aerova
   <dc:creator>Álex Espinosa-Correa</dc:creator>
   <link>https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1624,6 +1629,7 @@ Quarto.”</span> February 18, 2024. <a href="https://alexespinosaco.github.io/a
   <dc:creator>Álex Espinosa-Correa</dc:creator>
   <link>https://alexespinosaco.github.io/aerovagante/2023-01-31-bienvenida/</link>
   <description><![CDATA[ 
+
 
 
 
