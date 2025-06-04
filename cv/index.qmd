@@ -47,7 +47,7 @@ format:
 css: cv.css
 ---
 
-Biólogo y candidato a doctor de la Universidad de Antioquia, especializado en el campo de la botánica y la palinología. Cuento con más de cuatro años de experiencia docente en botánica y biología general. Poseo habilidades en el manejo de diversos sistemas operativos, software de ofimática, herramientas bioinformáticas, sistemas de información geográfica (SIG), el lenguaje de programación R, así como en sistemas de publicación como Quarto y Markdown. Además, tengo dominio de técnicas y métodos botánicos, histológicos, palinológicos y de biología molecular, así como conocimientos en Ciencia Abierta y Reproducible. 
+Biólogo y candidato a doctor de la Universidad de Antioquia, especializado en el campo de la aerobiología, la botánica y la palinología. Cuento con más de seis años de experiencia y cuatro años de experiencia docente en botánica y biología general. Poseo habilidades en el manejo de diversos sistemas operativos, software de ofimática, herramientas bioinformáticas, sistemas de información geográfica (SIG), el lenguaje de programación R, así como en sistemas de publicación como Quarto y Markdown. Además, tengo dominio de técnicas y métodos aerobiológicos, botánicos, histológicos, palinológicos y de biología molecular, así como conocimientos en Ciencia Abierta y Reproducible.
 
 # Educación
 
@@ -70,16 +70,22 @@ Universidad de Antioquia
 
 # Experiencia
 
+**Biólogo-Botánico - Universidad de Antioquia** \hfill [may 2025 – ]{.cvfloat}\
+Prestación de servicios personales por parte del contratista en el desarrollo del contrato CW317139 cuyo objeto es "La implementación de estudios, monitoreo, seguimiento, estrategias de manejo y conservación sobre la biodiversidad en ecosistemas de interés para el Negocio de Generación de Energía"
+
+**Biólogo-Botánico - Universidad de Antioquia** \hfill [abr 2025 – ]{.cvfloat}\
+Apoyar actividades de campo e informes asociados al proyecto: "diseñar, implementar y socializar estrategias de monitoreo, seguimiento, manejo, protección y conservación, de las aves de interés presentes en el área de influencia directa en el marco del Proyecto Hidroeléctrico Ituango" CW310067 celebrado entre la UdeA y EPM
+
 **Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2025 – ]{.cvfloat}\
 Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las clases teóricas y prácticas de los laboratorios de biología de las plantas.
 
 **Biólogo-Botánico - Universidad de Antioquia** \hfill [dic 2024 – ene 2025]{.cvfloat}\
-Implementación de estudios, monitoreo, seguimiento, estrategias de manejo y conservación sobre la biodiversidad en ecosistemas de interés para el negocio de generación de energía.
+Prestación de servicios personales por parte del contratista en el desarrollo del contrato CW317139 cuyo objeto es "La implementación de estudios, monitoreo, seguimiento, estrategias de manejo y conservación sobre la biodiversidad en ecosistemas de interés para el Negocio de Generación de Energía"
 
 **Biólogo-Palinólogo - Universidad de Antioquia** \hfill [feb 2024 – abr 2024]{.cvfloat}\
 Análisis palinológico de muestras de suelo provenientes del municipio de Envigado, evidenciando los morfotipos polínicos encontrados en estos suelos, con la finalidad de resolver la posible ocurrencia de actividades agrícolas en el área de estudio.
 
-**Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2023 – jul 2023]{.cvfloat}\
+**Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2023 – jun 2023]{.cvfloat}\
 Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas.
 
 **Pasante - Universidad del País Vasco** \hfill [sep 2022 – nov 2022]{.cvfloat}\
@@ -87,6 +93,9 @@ Generación de extractos de las esporas de hongos y granos de polen autóctonos 
 
 **Estudiante instructor - Universidad de Antioquia** \hfill [mar 2019 – nov 2022]{.cvfloat}\
 Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas y biología general.
+
+**Biólogo - Universidad de Antioquia** \hfill [nov 2018 – ene 2019]{.cvfloat}\
+Análisis de información y procesamiento de material vegetal colectado.
 
 **Auxiliar en curatoría y manejo de colecciones - Universidad de Antioquia** \hfill [sep 2018 – oct 2018]{.cvfloat}\
 Curatoría y manejo de colecciones de especímenes botánicos de diferentes proyectos realizados a lo largo de varios años por el Grupo de Estudios Botánicos GEOBOTA del Instituto de Biología de la Universidad de Antioquia.
@@ -111,19 +120,19 @@ Asesoría a estudiantes, acompañamiento durante las prácticas de laboratorio, 
 
 # Aptitudes
 
-**Campo**
-Experiencia en elaboración de colecciones vegetales y en la toma de datos en campo.
+**Informáticas**\
+Experiencia y conocimiento en el manejo de Sistemas Operativos (iOS, Linux, macOS, Windows), software de ofimática (Google Docs Editors y Microsoft Office), Google Classroom, software bioinformáticos (moleculares y filogenéticos), en sistemas de control de versiones (Git), en lenguaje de programación R, en sistemas de información geográfica (GIS) y creación y publicación de contenido (Quarto y Markdown).
 
-**Informática**
-Experiencia y conocimiento en el manejo de Sistemas Operativos (iOS, Linux, macOS, Windows), software de ofimática (Google Docs Editors y Microsoft Office), Google Classroom, software bioinformáticos (moleculares y filogenéticos), en lenguaje de programación R, en sistemas de información geográfica (QGIS) y creación de contenido en Quarto y Markdown.
+**Educativas**\
+Buena capacidad y habilidad para investigar, recopilar y organizar información de diferentes fuentes de manera crítica. Buena disciplina, organización y adaptabilidad para trabajar de manera independiente o en equipo. Capacidad de expresarse de forma oral y escrita.
 
-**Laboratorio**
-Experiencia en técnicas y métodos palinológicos (obtención, identificación y análisis), de biología molecular (extracción, amplificación, edición y análisis de secuencias de ADN con fines de estudios filogenéticos y poblaciones) e histológicos (obtención, preparación, observación y descripción de tejidos animales y vegetales).
+**Técnicas**\
+Experiencia en técnicas y métodos palinológicos (obtención, identificación y análisis), de biología molecular (extracción, amplificación, edición y análisis de secuencias de ADN con fines de estudios filogenéticos y poblaciones) e histológicos (obtención, preparación, observación y descripción de tejidos animales y vegetales). Además de contar con experiencia en elaboración de colecciones vegetales y en la toma de datos en campo.
 
-**Otros**
+**Otras**\
 Experiencia en la organización y logística de eventos académicos. Experiencia en la elaboración de inventarios de materiales e insumo de laboratorio (SGA).
 
-# Encuentros 
+# Encuentros académicos
 
 **XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4-8 nov 2024]{.cvfloat}\
 **Ponencia** Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia
@@ -174,6 +183,12 @@ Experiencia en la organización y logística de eventos académicos. Experiencia
 **Logística**
 
 # Charlas
+
+**Laboratorio de Paleoecología** \hfill [9 abr 2025]{.cvfloat}\
+Calidad del aire en Medellín: una mirada desde la biología
+
+**Grupo de Biología Computacional** \hfill [20 mar 2024]{.cvfloat}\
+Estudio aerobiológico en la ciudad de Medellín
 
 **Curso de tratamientos taxonómicos y muestreo de plantas** \hfill [22 sep 2023]{.cvfloat}\
 Aerobiología: principios y técnicas de muestreo
