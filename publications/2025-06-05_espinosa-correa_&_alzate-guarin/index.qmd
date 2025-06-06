@@ -1,0 +1,29 @@
+---
+title: "Aeropalinological atlas and the development of aerobiological studies in Colombia"
+type: "article"
+author:
+  - name: "**Álex Espinosa-Correa**"
+    orcid: 0000-0002-7353-1182
+    url: /index.qmd
+  - name: "Fernando Alveiro Alzate-Guarin"
+year: 2025
+date: 2025-06-05
+publication: "Grana"
+doi: https://doi.org/10.1080/00173134.2025.2500598
+materials: ""
+
+categories:
+  - Aerobiology
+  - Aeropalynology
+  - Airborne pollen
+  - Allergies
+  - Pollinosis
+---
+
+## Abstract
+
+Aerobiology studies bioparticles in the air, encompassing their identification, behaviour, movement, survival, and impacts. Pollen and spores are the most studied particles due to their impact on public health and the economy. The prevalence of pollen allergy is increasing globally, including in Colombia. Preventing its consequences requires identifying airborne pollen, for which atlases are essential. The objective of this study was to develop the first aeropalynological atlas for Colombia and provide a historical account of aeropalynology in the country that allows for the diagnosis of the scenarios in which aerobiology has been developed and with which the research needed for Colombia in this field can be diagnosed. Based on an exhaustive bibliographic review and our own sampling, the most abundant or allergenic pollen types were selected, defined, described, and photographed. In addition, a historical account of aeropalynology in Colombia was compiled. The history of aeropalynology in the country is divided into three stages characterised by the methods used. The first stage comprised pioneering studies, the second stage involved an attempt to revive aerobiological research, and the third stage covers contemporary studies conducted between 2008 and the present. Throughout all studies, 68 pollen types were reported. In this work, we selected, defined, described, and photographed the 32 most abundant or allergenic pollen types. The evident and abundant presence of allergenic pollen in the atmosphere of Colombian cities in the past 80 years, together with its limited research, highlights the need and usefulness of the first aeropalynological atlas for the country.
+
+## Citation
+
+> Espinosa-Correa, Á., & Alzate-Guarin, F. A. (2025). Aeropalinological atlas and the development of aerobiological studies in Colombia. *Grana*, 1–12. https://doi.org/10.1080/00173134.2025.2500598
