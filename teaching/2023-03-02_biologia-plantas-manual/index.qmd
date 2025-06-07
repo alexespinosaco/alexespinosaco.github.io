@@ -11,13 +11,13 @@ year: 2023
 
 image: https://github.com/alexespinosaco/biologia-plantas-manual/blob/main/images/cover.png?raw=true
 
-citation: 
-  url: http://alexespinosaco.github.io/projects/2023-03-02_biologia-plantas-manual
+citation: true
 
 categories: 
   - Libro
   - Botánica
   - Quarto
+  - UdeA
 
 about:
   id: project
