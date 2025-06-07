@@ -1,0 +1,47 @@
+---
+# pagetitle: ""
+title: "Calidad del aire en Medellín: una mirada desde la biología"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2025-04-09
+
+image: image.jpg
+
+citation: false
+
+categories: 
+  - Aerobiología
+  - Charla
+  - Diapositivas
+  - Quarto
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa person-chalkboard >}} Diapositivas"
+      href: https://alexespinosaco.github.io/palun-2025/
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/palun-2025/
+    - text: "{{< fa circle-info >}} Información"
+      href: https://geobota.github.io/xii-ccb-2024/presentations/espinosa-correa/
+---
+
+:::{ #project}
+:::
+
+Charla presentada el 9 de abril de 2025 en la Facultad de Ciencias de la Universidad Nacional, sede Medellín, por invitación del [Laboratorio de Paleoecología](https://direcciondelaboratorios.medellin.unal.edu.co/index.php/nuestros-laboratorios/facultad-de-ciencias/29#palinolog%C3%ADa) y la profesora [Paula Andrea Rodríguez Zorro](http://www.hermes.unal.edu.co/pages/Docentes/Docente.jsf?u=parodriguezz).
+
+Más información: [\@cienciasunmedellin](https://www.instagram.com/p/DH9jBczSDOY/)
+
+## Presentación
+
+```{=html}
+<iframe width="800" height="475" src="https://alexespinosaco.github.io/palun-2025/" title="Presentación XII CCB"></iframe>
+```
+
+Si no puedes ver la presentación, mírala haciendo [clic aquí](https://alexespinosaco.github.io/palun-2025/). 
