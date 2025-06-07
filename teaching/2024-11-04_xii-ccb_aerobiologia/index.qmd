@@ -8,7 +8,7 @@ lang: es
 
 date: 2024-11-04
 
-image: https://raw.githubusercontent.com/geobota/xii-ccb-2024/refs/heads/main/images/xii-ccb_aerobiologia-curso_hexsticker.svg
+image: image.svg
 
 citation: true
 

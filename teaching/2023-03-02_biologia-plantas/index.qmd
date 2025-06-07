@@ -8,7 +8,7 @@ lang: es
 
 date: 2023-03-02
 
-image: https://github.com/alexespinosaco/biologia-plantas/blob/main/images/bldp.png?raw=true
+image: image.png
 
 citation: true
 

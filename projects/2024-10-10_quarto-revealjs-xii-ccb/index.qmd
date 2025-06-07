@@ -7,7 +7,7 @@ title: "Plantilla de Quarto Revealjs para el XII CCB"
 date: 2024-10-10
 year: 2024
 
-image: https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/blob/main/slide.png?raw=true
+image: image.png
 
 citation: true
 

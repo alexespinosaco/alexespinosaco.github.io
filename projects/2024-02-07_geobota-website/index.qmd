@@ -9,10 +9,9 @@ lang: es
 date: 2024-02-07
 year: 2024
 
-image: https://github.com/geobota/geobota.github.io/blob/main/images/logo/geobota_logo.png?raw=true
+image: image.png
 
-citation: 
-  url: http://alexespinosaco.github.io/projects/2024-02-07_geobota-website
+citation: true
 
 categories: 
   - GEOBOTA

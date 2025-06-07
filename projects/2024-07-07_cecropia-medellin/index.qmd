@@ -9,10 +9,9 @@ lang: es
 date: 2024-07-07
 year: 2024
 
-image: https://github.com/alexespinosaco/cecropia-medellin/blob/main/imagenes/imagen_cecropia-medellin.png?raw=true
+image: image.png
 
-citation: 
-  url: http://alexespinosaco.github.io/projects/2024-07-07_cecropia-medellin
+citation: true
 
 categories: 
   - Botánica

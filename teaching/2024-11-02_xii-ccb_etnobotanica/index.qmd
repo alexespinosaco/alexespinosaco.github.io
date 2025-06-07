@@ -8,7 +8,7 @@ lang: es
 
 date: 2024-11-02
 
-image: https://raw.githubusercontent.com/geobota/xii-ccb-2024/refs/heads/main/images/xii-ccb_etnobotanica-curso_hexsticker_01.svg
+image: image.svg
 
 citation: true
 
