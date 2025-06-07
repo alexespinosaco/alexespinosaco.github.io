@@ -6,17 +6,16 @@ about:
   image-width: 16em
   image-shape: rounded
   links: 
-    - href: https://github.com/alexespinosaco
-      # icon: github
-      text: "{{< fa brands github >}} GitHub"
-    - href: https://www.linkedin.com/in/alexespinosaco/
-      # icon: linkedin
-      text: "{{< fa brands linkedin >}} LinkedIn"
-    - href: https://mstdn.social/@alexespinosaco
-      # icon: mastodon
-      text: "{{< fa brands mastodon >}} Mastodon"
-    - href: https://www.researchgate.net/profile/Alex-Espinosa-Correa
-      text: "{{< ai researchgate >}} ResearchGate"
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/
+    - text: "{{< fa brands linkedin >}} LinkedIn"
+      href: https://www.linkedin.com/in/alexespinosaco/
+    - text: "{{< fa brands mastodon >}} Mastodon"
+      href: https://mstdn.social/@alexespinosaco/
+    - text: "{{< fa brands orcid >}} ORCID"
+      href: https://orcid.org/0000-0002-7353-1182/
+    - text: "{{< ai researchgate >}} ResearchGate"
+      href: https://www.researchgate.net/profile/Alex-Espinosa-Correa/
 ---
 
 # Álex Espinosa-Correa
