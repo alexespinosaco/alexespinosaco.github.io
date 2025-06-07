@@ -1,0 +1,5 @@
+typography:
+  fonts:
+    - family: Atkinson Hyperlegible
+      source: google
+  base: Atkinson Hyperlegible
