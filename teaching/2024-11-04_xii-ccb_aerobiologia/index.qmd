@@ -1,5 +1,4 @@
 ---
-# pagetitle: ""
 title: "XII CCB: Introducción a la Aerobiología"
 # subtitle: ""
 # description: ""

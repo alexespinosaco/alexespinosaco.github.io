@@ -1,6 +1,5 @@
 ---
-pagetitle: "Biología de las plantas: manual de laboratorio"
-title: "Biología de las plantas: manual de laboratorio"
+title: "UdeA: Biología de las Plantas: manual de laboratorio"
 # subtitle: ""
 # description: ""
 
