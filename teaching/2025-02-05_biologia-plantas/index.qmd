@@ -1,0 +1,58 @@
+---
+title: "UdeA: Biología de las Plantas (2025-1)"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2025-02-05
+
+image: image.png
+
+citation: true
+
+categories: 
+  - Cátedra
+  - Botánica
+  - Quarto
+  - Sito web
+  - UdeA
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/biologia-plantas/2025-1/
+    - text: "{{< fa link >}} Sitio web"
+      href: https://biologia-plantas.github.io/2025-1/
+---
+
+:::{ #project}
+:::
+
+Durante el primer semestre del año 2025, volví a dictar el curso de
+Biología de las Plantas en dos sedes de la Universidad de Antioquia: el
+Campus Andes de la Seccional Suroeste y el Campus Medellín - Ciudad
+Universitaria. En Andes estuve a cargo tanto de la teoría como del
+laboratorio, mientras que en Medellín solo impartí el componente
+práctico.
+
+Teniendo en cuenta la [buena experiencia previa](/teaching/) con el uso
+de Quarto para la preparación y el desarrollo de cursos, así como la
+practicidad de contar con las [presentaciones centralizadas](/talks),
+decidí nuevamente utilizar esta herramienta. En esta ocasión,
+simplifiqué aún más la gestión del curso creando una [organización
+dedicada en GitHub](https://github.com/biologia-plantas).
+
+Gran parte del material utilizado en las presentaciones fue elaborado
+especialmente para este curso, a partir de una exhaustiva revisión
+bibliográfica. Con la intención de que estos recursos funcionen como
+material educativo abierto, se encuentran disponibles bajo una licencia
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+El [sitio web del
+curso](https://alexespinosaco.github.io/biologia-plantas-2023-1/)
+contiene todas las presentaciones utilizadas a lo largo del semestre,
+así como información general sobre su desarrollo.
