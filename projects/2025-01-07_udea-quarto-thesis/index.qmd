@@ -1,0 +1,83 @@
+---
+pagetitle: "Plantilla de Quarto para trabajos de grado de la Universidad de Antioquia"
+title: "Plantilla de Quarto para trabajos de grado de la Universidad de Antioquia"
+# subtitle: ""
+# description: ""
+
+date: 2025-01-07
+year: 2024
+
+image: image.png
+
+citation: true
+
+categories: 
+  - Quarto
+  - Plantilla
+  - UdeA
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa brands github >}} GitHub"
+      href: https://github.com/alexespinosaco/udea-quarto-thesis/
+    - text: "{{< fa link >}} Demo"
+      href: https://alexespinosaco.github.io/udea-quarto-thesis/
+---
+
+:::{ #project}
+:::
+
+Desde que conocí Quarto, tuve claro que quería desarrollar mi tesis
+doctoral utilizando esta herramienta. A lo largo del proceso hasta la
+entrega final (que pronto estará disponible en acceso abierto), he ido
+creando y perfeccionando diversos proyectos con Quarto:
+[libros](/teaching/2023-03-02_biologia-plantas-manual/),
+[cursos](/teaching/), [sitios
+web](/projects/2024-02-07_geobota-website/), [presentaciones](/talks/),
+[extensiones](/projects/2024-10-10_quarto-revealjs-xii-ccb/) e incluso
+mi propio [currículum vitae](/cv/).
+
+La Universidad de Antioquia no cuenta con una plantilla institucional
+única para la entrega de trabajos de grado. Hasta donde he podido
+averiguar, el formato depende de lo acordado con la dirección del
+trabajo o de los lineamientos específicos de cada dependencia. El único
+requisito general parece ser que el documento final [debe subirse en
+formato PDF o
+.docx](https://bibliotecadigital.udea.edu.co/entities/publication/e2463a7b-3286-44cf-92cf-4f35012aa2ac)
+al repositorio institucional, incluyendo una página con la citación
+sugerida y la licencia del trabajo.
+
+Teniendo esto en cuenta, y considerando que estaba escribiendo mi tesis
+en Quarto, una herramienta con un potencial enorme para la escritura
+académica y técnica, decidí desarrollar una plantilla específica para la
+entrega de trabajos de grado. Hasta donde sé, esta es la primera
+plantilla de Quarto diseñada específicamente para la entrega de trabajos
+de grado en una universidad colombiana. La creación de extensiones en
+Quarto es [relativamente
+sencilla](https://quarto.org/docs/extensions/revealjs.html), lo que
+facilitó esta tarea.
+
+La plantilla fue desarrollada tomando como base los formatos estilo APA
+[disponibles](https://bibliotecadigital.udea.edu.co/entities/publication/8d8b56ca-fc90-4bec-a240-6d6aa2979b7a)
+en el sistema de bibliotecas de la UdeA. También incorpora elementos de
+otras plantillas diseñadas para [universidades de todo el
+mundo](https://github.com/Jupyter4Science/awesome-quarto-thesis), así
+como recomendaciones encontradas en la documentación oficial de Quarto y
+discusiones en GitHub y otras plataformas especializadas.
+
+Está diseñada principalmente para generar una versión en PDF lista para
+entrega, y opcionalmente una versión en formato web. También se incluye
+una versión en .docx, pensada para facilitar el proceso de revisión,
+pero no como versión final del documento. La plantilla está disponible
+libremente, cuenta con una licencia
+[MIT](https://github.com/alexespinosaco/udea-quarto-thesis?tab=MIT-1-ov-file)
+e incluye una guía práctica en desarrollo, además de una demostración
+funcional.
+
+Toda la información sobre esta plantilla está disponible en su
+[repositorio](https://github.com/alexespinosaco/udea-quarto-thesis/) y
+en la [demostración en
+línea](https://alexespinosaco.github.io/udea-quarto-thesis/).
