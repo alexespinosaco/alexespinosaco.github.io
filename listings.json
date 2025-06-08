@@ -11,21 +11,14 @@
     ]
   },
   {
-    "listing": "/teaching/index.html",
+    "listing": "/talks/index.html",
     "items": [
-      "/teaching/2024-11-04_xii-ccb_aerobiologia/index.html",
-      "/teaching/2024-11-03_xii-ccb_quarto/index.html",
-      "/teaching/2024-11-02_xii-ccb_etnobotanica/index.html",
-      "/teaching/2023-03-02_biologia-plantas/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/2024-10-10_quarto-revealjs-xii-ccb/index.html",
-      "/projects/2024-07-07_cecropia-medellin/index.html",
-      "/projects/2024-02-07_geobota-website/index.html",
-      "/projects/2023-03-02_biologia-plantas-manual/index.html"
+      "/talks/2025-04-09_palun/index.html",
+      "/talks/2024-11-07_xii-ccb_aerobiologia_01/index.html",
+      "/talks/2024-11-07_xii-ccb_aerobiologia_02/index.html",
+      "/talks/2024-11-07_xii-ccb_quarto/index.html",
+      "/talks/2024-11-06_xii-ccb_cecropia/index.html",
+      "/talks/2024-07-21_xx-ibc_aerobiologia/index.html"
     ]
   },
   {
@@ -36,13 +29,23 @@
     ]
   },
   {
-    "listing": "/talks/index.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/talks/2024-11-07_xii-ccb_aerobiologia_01/index.html",
-      "/talks/2024-11-07_xii-ccb_aerobiologia_02/index.html",
-      "/talks/2024-11-07_xii-ccb_quarto/index.html",
-      "/talks/2024-11-06_xii-ccb_cecropia/index.html",
-      "/talks/2024-07-21_xx-ibc_aerobiologia/index.html"
+      "/projects/2025-01-07_udea-quarto-thesis/index.html",
+      "/projects/2024-10-10_quarto-revealjs-xii-ccb/index.html",
+      "/projects/2024-07-07_cecropia-medellin/index.html",
+      "/projects/2024-02-07_geobota-website/index.html"
+    ]
+  },
+  {
+    "listing": "/teaching/index.html",
+    "items": [
+      "/teaching/2025-02-05_biologia-plantas/index.html",
+      "/teaching/2024-11-04_xii-ccb_aerobiologia/index.html",
+      "/teaching/2024-11-03_xii-ccb_quarto/index.html",
+      "/teaching/2024-11-02_xii-ccb_etnobotanica/index.html",
+      "/teaching/2023-03-02_biologia-plantas-manual/index.html",
+      "/teaching/2023-03-02_biologia-plantas/index.html"
     ]
   }
 ]

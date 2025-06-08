@@ -9,7 +9,7 @@
 <meta name="author" content="Álex Espinosa-Correa">
 <meta name="dcterms.date" content="2023-03-02">
 
-<title>UdeA: Laboratorio de biología de las plantas 2023-01 – Álex Espinosa-Correa</title>
+<title>UdeA: Biología de las Plantas (2023-1) – Álex Espinosa-Correa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-508422c006262752e20ae841d8f41dd3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-86c881f592c124414c47b705a35b487a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -89,16 +89,20 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="UdeA: Laboratorio de biología de las plantas 2023-01">
+<meta property="og:title" content="UdeA: Biología de las Plantas (2023-1) – Álex Espinosa-Correa">
 <meta property="og:description" content="Website personal de Álex Espinosa-Correa">
-<meta property="og:image" content="https://github.com/alexespinosaco/biologia-plantas/blob/main/images/bldp.png?raw=true">
+<meta property="og:image" content="https://alexespinosaco.github.io/teaching/2023-03-02_biologia-plantas/image.png">
 <meta property="og:site_name" content="Álex Espinosa-Correa">
 <meta property="og:locale" content="es_ES">
-<meta name="twitter:title" content="UdeA: Laboratorio de biología de las plantas 2023-01">
+<meta property="og:image:height" content="600">
+<meta property="og:image:width" content="521">
+<meta name="twitter:title" content="UdeA: Biología de las Plantas (2023-1) – Álex Espinosa-Correa">
 <meta name="twitter:description" content="Website personal de Álex Espinosa-Correa">
-<meta name="twitter:image" content="https://github.com/alexespinosaco/biologia-plantas/blob/main/images/bldp.png?raw=true">
+<meta name="twitter:image" content="https://alexespinosaco.github.io/teaching/2023-03-02_biologia-plantas/image.png">
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="600">
+<meta name="twitter:image-width" content="521">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -244,7 +248,8 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -257,6 +262,14 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -312,7 +325,7 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco"> 
+    <a class="nav-link" href="https://github.com/alexespinosaco/"> 
 <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -324,7 +337,11 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 <span class="menu-text"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa"> 
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/"> 
+<span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/"> 
 <span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -352,11 +369,11 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 
 
 <div class="quarto-about-jolla">
-  <img src="https://github.com/alexespinosaco/biologia-plantas/blob/main/images/bldp.png?raw=true" class="about-image
+  <img src="image.png" class="about-image
   rectangle " style="width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Laboratorio: biología de las plantas 2023-01</h1>
+<h1 class="title">UdeA: Biología de las Plantas (2023-1)</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Cátedra</div>
     <div class="quarto-category">Botánica</div>
@@ -393,23 +410,23 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 </div>
 
 <p>Una de las cosas que más me impactó al conocer <a href="https://quarto.org/">Quarto</a> fue su facilidad y versatilidad para crear <a href="https://quarto.org/docs/gallery/">sitios web y libros</a> con una presentación elegante y profesional, sin necesidad de contar con amplios conocimientos técnicos. En ese momento (segundo semestre de 2022), me encontraba dictando el laboratorio de Biología de las Plantas en el Instituto de Biología de la <a href="https://udea.edu.co/">Universidad de Antioquia</a>.</p>
-<p>Para el primer semestre de 2023, retomé el curso y, mientras <a href="../../projects/2023-03-02_biologia-plantas-manual/">redactaba el manual de laboratorio</a>, decidí que todo el material presentado durante el semestre debería desarrollarse en Quarto y estar disponible en Internet bajo una licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Este enfoque permitió centralizar y modernizar los recursos educativos, además de garantizar un acceso libre y abierto para cualquier persona interesada.</p>
+<p>Para el primer semestre de 2023, retomé el curso y, mientras <a href="../../teaching/2023-03-02_biologia-plantas-manual/">redactaba el manual de laboratorio</a>, decidí que todo el material presentado durante el semestre debería desarrollarse en Quarto y estar disponible en Internet bajo una licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Este enfoque permitió centralizar y modernizar los recursos educativos, además de garantizar un acceso libre y abierto para cualquier persona interesada.</p>
 <p>En el sitio web del curso se encuentran todas las presentaciones utilizadas a lo largo de su desarrollo.</p>
-<p>Toda la información relacionada con el laboratorio de Biología de las Plantas 2023-01 está disponible en el <a href="https://alexespinosaco.github.io/biologia-plantas-2023-1/">sitio web del curso</a>.</p>
+<p>Toda la información relacionada con el laboratorio de Biología de las Plantas (2023-01) está disponible en el <a href="https://alexespinosaco.github.io/biologia-plantas-2023-1/">sitio web del curso</a>.</p>
 
 
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{espinosa-correa2023,
   author = {Espinosa-Correa, Álex},
-  title = {Laboratorio: biología de las plantas 2023-01},
+  title = {UdeA: Biología de las Plantas (2023-1)},
   date = {2023-03-02},
   url = {https://alexespinosaco.github.io/teaching/2023-03-02_biologia-plantas/},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-espinosa-correa2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Espinosa-Correa, Álex. 2023. <span>“Laboratorio: biología de las plantas
-2023-01.”</span> March 2, 2023. <a href="https://alexespinosaco.github.io/teaching/2023-03-02_biologia-plantas/">https://alexespinosaco.github.io/teaching/2023-03-02_biologia-plantas/</a>.
+Espinosa-Correa, Álex. 2023. <span>“UdeA: Biología de las Plantas
+(2023-1).”</span> March 2, 2023. <a href="https://alexespinosaco.github.io/teaching/2023-03-02_biologia-plantas/">https://alexespinosaco.github.io/teaching/2023-03-02_biologia-plantas/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -489,7 +506,7 @@ Espinosa-Correa, Álex. 2023. <span>“Laboratorio: biología de las plantas
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io");
+        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -827,7 +844,7 @@ Espinosa-Correa, Álex. 2023. <span>“Laboratorio: biología de las plantas
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco">
+    <a class="nav-link" href="https://github.com/alexespinosaco/">
 <p><i class="fa-brands fa-github" aria-label="github"></i></p>
 </a>
   </li>  
@@ -837,12 +854,17 @@ Espinosa-Correa, Álex. 2023. <span>“Laboratorio: biología de las plantas
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://mstdn.social/@alexespinosaco">
+    <a class="nav-link" href="https://mstdn.social/@alexespinosaco/">
 <p><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa">
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/">
+<p><i class="fa-brands fa-orcid" aria-label="orcid"></i></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/">
 <p><i class="ai  ai-researchgate"></i></p>
 </a>
   </li>  

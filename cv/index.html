@@ -64,9 +64,9 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a6acb037a7cb5e06dc3b68ea7c2859a4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-cc53614316b0f33586784b2899e63a03.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-a6acb037a7cb5e06dc3b68ea7c2859a4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d45663e567e99c407730ef58a5cbf8f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e58317d8806bc67a53e538c5f5aa180e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d45663e567e99c407730ef58a5cbf8f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -266,7 +266,8 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -279,6 +280,14 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -334,7 +343,7 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco"> 
+    <a class="nav-link" href="https://github.com/alexespinosaco/"> 
 <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -346,7 +355,11 @@ gtag('config', 'G-RN5H7WV1DJ', { 'anonymize_ip': true});
 <span class="menu-text"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa"> 
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/"> 
+<span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/"> 
 <span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -539,11 +552,11 @@ Estudio aerobiológico en la ciudad de Medellín</p>
 <section id="publicaciones" class="level1">
 <h1>Publicaciones</h1>
 <div id="refs-main" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-espinosa-correa2025b" class="csl-entry" role="listitem">
-Espinosa-Correa, Á., &amp; Alzate-Guarin, F. A. (n.d.). Aeropalinological atlas and the development of aerobiological studies in Colombia [In press]. <em>Grana</em>. <a href="https://doi.org/10.1080/00173134.2025.2500598">https://doi.org/10.1080/00173134.2025.2500598</a>
-</div>
 <div id="ref-sánchez-caraballo2025" class="csl-entry" role="listitem">
 Sánchez-Caraballo, J. M., Ramíirez-Giraldo, R. H., Alzate-Guarín, F. A., Espinosa-Correa, Á., &amp; Postigo-Resa, I. (n.d.). Evaluación de la capacidad alergénica de tres granos de polen en una región tropical (medellín, colombia) [en prensa]. <em>Revista Alergia México</em>.
+</div>
+<div id="ref-espinosa-correa2025b" class="csl-entry" role="listitem">
+Espinosa-Correa, Á., &amp; Alzate-Guarín, F. A. (2025). Aeropalinological atlas and the development of aerobiological studies in Colombia. <em>Grana</em>, 1–12. <a href="https://doi.org/10.1080/00173134.2025.2500598">https://doi.org/10.1080/00173134.2025.2500598</a>
 </div>
 <div id="ref-espinosa-correa2025a" class="csl-entry" role="listitem">
 Espinosa-Correa, Á., Maya-Manzano, J. M., &amp; Alzate-Guarín, F. A. (2025). Airborne pollen concentrations overpass expectations in the tropical city of medellín, colombia. <em>Science of The Total Environment</em>, <em>958</em>, 178066. <a href="https://doi.org/10.1016/j.scitotenv.2024.178066">https://doi.org/10.1016/j.scitotenv.2024.178066</a>
@@ -565,8 +578,8 @@ Espinosa-Correa, Á., Alzate-Guarin, F. A., &amp; Daza-Rojas, J. M. (2018). Util
 <section id="reportes-técnicos" class="level1">
 <h1>Reportes técnicos</h1>
 <div id="refs-appendix" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-cardona-naranjo2025" class="csl-entry" role="listitem">
-Cardona-Naranjo, F. A., Calderón-Arias, A. M., Martínez-Figueroa, Y. M., Espinosa-Correa, Á., Caro-Sánchez, A. V., &amp; Sepúlveda-Lenis, M. V. (2025). <em>Informe final caracterización de la flora terrestre en el predio San Luis del área de protección de las Centrales Porce II plan de inversión forzosa de no menos del 1</em> (p. 43).
+<div id="ref-cardona-naranjo2024" class="csl-entry" role="listitem">
+Cardona-Naranjo, F. A., Calderón-Arias, A. M., Martínez-Figueroa, Y. M., Espinosa-Correa, Á., Caro-Sánchez, A. V., &amp; Sepúlveda-Lenis, M. V. (2024). <em>Informe final caracterización de la flora terrestre en el predio San Luis del área de protección de las Centrales Porce II plan de inversión forzosa de no menos del 1</em> (p. 43).
 </div>
 <div id="ref-espinosa-correa2024" class="csl-entry" role="listitem">
 Espinosa-Correa, Á., &amp; Alzate-Guarin, F. A. (2024). <em>Composición palinológica de un perfil con 10 muestras provenientes de la Reserva Ambiental y Arqueológica La Morena, Envigado (Antioquia)</em> (p. 8).
@@ -676,7 +689,7 @@ Socio activo</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io");
+        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1012,7 +1025,7 @@ Socio activo</p>
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco">
+    <a class="nav-link" href="https://github.com/alexespinosaco/">
 <p><i class="fa-brands fa-github" aria-label="github"></i></p>
 </a>
   </li>  
@@ -1022,12 +1035,17 @@ Socio activo</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://mstdn.social/@alexespinosaco">
+    <a class="nav-link" href="https://mstdn.social/@alexespinosaco/">
 <p><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa">
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/">
+<p><i class="fa-brands fa-orcid" aria-label="orcid"></i></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/">
 <p><i class="ai  ai-researchgate"></i></p>
 </a>
   </li>  

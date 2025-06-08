@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-508422c006262752e20ae841d8f41dd3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-86c881f592c124414c47b705a35b487a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -151,18 +151,14 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Ponencias">
 <meta property="og:description" content="Website personal de Álex Espinosa-Correa">
-<meta property="og:image" content="https://alexespinosaco.github.io/talks/2024-11-07_xii-ccb_aerobiologia_01/image.png">
+<meta property="og:image" content="https://alexespinosaco.github.io/talks/2025-04-09_palun/image.jpg">
 <meta property="og:site_name" content="Álex Espinosa-Correa">
 <meta property="og:locale" content="es_ES">
-<meta property="og:image:height" content="1080">
-<meta property="og:image:width" content="1920">
 <meta name="twitter:title" content="Ponencias">
 <meta name="twitter:description" content="Website personal de Álex Espinosa-Correa">
-<meta name="twitter:image" content="https://alexespinosaco.github.io/talks/2024-11-07_xii-ccb_aerobiologia_01/image.png">
+<meta name="twitter:image" content="https://alexespinosaco.github.io/talks/2025-04-09_palun/image.jpg">
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="1080">
-<meta name="twitter:image-width" content="1920">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -308,7 +304,8 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -321,6 +318,14 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -376,7 +381,7 @@ window.Quarto = {
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco"> 
+    <a class="nav-link" href="https://github.com/alexespinosaco/"> 
 <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -388,7 +393,11 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa"> 
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/"> 
+<span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/"> 
 <span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -434,7 +443,36 @@ window.Quarto = {
 <p>Este portafolio incluye material de libre acceso de charlas y pósters en los que he participado, creado o presentado.</p>
 <div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNDaGFybGElMkNEaWFwb3NpdGl2YXMlMkNRdWFydG8lMkNYSUklMjBDQ0I=" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1732491101143" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="g-col-1" data-index="0" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNDaGFybGElMkNEaWFwb3NpdGl2YXMlMkNRdWFydG8=" data-listing-date-sort="1744174800000" data-listing-file-modified-sort="1749359061103" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<a href="../talks/2025-04-09_palun/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../talks/2025-04-09_palun/image.jpg" class="thumbnail-image card-img" style="height: 225px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+UNAL: Calidad del aire en Medellín: una mirada desde la biología
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWVyb2Jpb2xvZyVDMyVBRGE='); return false;">Aerobiología</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2hhcmxh'); return false;">Charla</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGlhcG9zaXRpdmFz'); return false;">Diapositivas</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2025-04-09
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNDaGFybGElMkNEaWFwb3NpdGl2YXMlMkNRdWFydG8lMkNYSUklMjBDQ0I=" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1732491101143" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <a href="../talks/2024-11-07_xii-ccb_aerobiologia_01/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -465,7 +503,7 @@ XII CCB: Influencia de las variables meteorológicas y de los contaminantes atmo
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNDaGFybGElMkNEaWFwb3NpdGl2YXMlMkNYSUklMjBDQ0I=" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1732491104499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+<div class="g-col-1" data-index="2" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNDaGFybGElMkNEaWFwb3NpdGl2YXMlMkNYSUklMjBDQ0I=" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1732491104499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
 <a href="../talks/2024-11-07_xii-ccb_aerobiologia_02/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -494,7 +532,7 @@ XII CCB: Influencia del cambio climático sobre las concentraciones de polen aer
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Q2hhcmxhJTJDRGlhcG9zaXRpdmFzJTJDUXVhcnRvJTJDUmVwcm9kdWNpYmlsaWRhZCUyQ1hJSSUyMENDQg==" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1732491107218" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="g-col-1" data-index="3" data-categories="Q2hhcmxhJTJDRGlhcG9zaXRpdmFzJTJDUXVhcnRvJTJDUmVwcm9kdWNpYmlsaWRhZCUyQ1hJSSUyMENDQg==" data-listing-date-sort="1730955600000" data-listing-file-modified-sort="1732491107218" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <a href="../talks/2024-11-07_xii-ccb_quarto/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -525,7 +563,7 @@ XII CCB: ¿Por qué no lo hiciste en Microsoft Word? Cómo hacer una tesis docto
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="T3BlblN0cmVldE1hcCUyQ1AlQzMlQjNzdGVyJTJDWElJJTIwQ0NC" data-listing-date-sort="1730869200000" data-listing-file-modified-sort="1732491099106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+<div class="g-col-1" data-index="4" data-categories="T3BlblN0cmVldE1hcCUyQ1AlQzMlQjNzdGVyJTJDWElJJTIwQ0NC" data-listing-date-sort="1730869200000" data-listing-file-modified-sort="1732491099106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
 <a href="../talks/2024-11-06_xii-ccb_cecropia/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -552,7 +590,7 @@ XII CCB: Mapeando los yarumos de Medellín, un proyecto de ciencia ciudadana en 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNQJUMzJUIzc3RlciUyQ1hYJTIwSUJD" data-listing-date-sort="1721538000000" data-listing-file-modified-sort="1732491166966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<div class="g-col-1" data-index="5" data-categories="QWVyb2Jpb2xvZyVDMyVBRGElMkNQJUMzJUIzc3RlciUyQ1hYJTIwSUJD" data-listing-date-sort="1721538000000" data-listing-file-modified-sort="1732491166966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
 <a href="../talks/2024-07-21_xx-ibc_aerobiologia/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -672,7 +710,7 @@ XX IBC: P.0077 How does aerobiology behave in a neotropical city?
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io");
+        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1008,7 +1046,7 @@ XX IBC: P.0077 How does aerobiology behave in a neotropical city?
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco">
+    <a class="nav-link" href="https://github.com/alexespinosaco/">
 <p><i class="fa-brands fa-github" aria-label="github"></i></p>
 </a>
   </li>  
@@ -1018,12 +1056,17 @@ XX IBC: P.0077 How does aerobiology behave in a neotropical city?
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://mstdn.social/@alexespinosaco">
+    <a class="nav-link" href="https://mstdn.social/@alexespinosaco/">
 <p><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa">
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/">
+<p><i class="fa-brands fa-orcid" aria-label="orcid"></i></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/">
 <p><i class="ai  ai-researchgate"></i></p>
 </a>
   </li>  

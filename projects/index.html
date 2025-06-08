@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-508422c006262752e20ae841d8f41dd3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-86c881f592c124414c47b705a35b487a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -151,14 +151,18 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Proyectos">
 <meta property="og:description" content="Website personal de Álex Espinosa-Correa">
-<meta property="og:image" content="https://github.com/alexespinosaco/biologia-plantas-manual/blob/main/images/cover.png?raw=true">
+<meta property="og:image" content="https://alexespinosaco.github.io/projects/2025-01-07_udea-quarto-thesis/image.png">
 <meta property="og:site_name" content="Álex Espinosa-Correa">
 <meta property="og:locale" content="es_ES">
+<meta property="og:image:height" content="1342">
+<meta property="og:image:width" content="1024">
 <meta name="twitter:title" content="Proyectos">
 <meta name="twitter:description" content="Website personal de Álex Espinosa-Correa">
-<meta name="twitter:image" content="https://github.com/alexespinosaco/biologia-plantas-manual/blob/main/images/cover.png?raw=true">
+<meta name="twitter:image" content="https://alexespinosaco.github.io/projects/2025-01-07_udea-quarto-thesis/image.png">
 <meta name="twitter:creator" content="@alexespinosaco">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="1342">
+<meta name="twitter:image-width" content="1024">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -304,7 +308,8 @@ window.Quarto = {
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -317,6 +322,14 @@ window.Quarto = {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -372,7 +385,7 @@ window.Quarto = {
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco"> 
+    <a class="nav-link" href="https://github.com/alexespinosaco/"> 
 <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -384,7 +397,11 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa"> 
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/"> 
+<span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/"> 
 <span class="menu-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
   <li class="nav-item">
@@ -430,11 +447,38 @@ window.Quarto = {
 <p>Este portafolio incluye material de libre acceso que he creado, así con trabajos, software y herramientas que he diseñado o a lo que contribuido.</p>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UXVhcnRvJTJDUGxhbnRpbGxhJTJDWElJJTIwQ0NC" data-listing-date-sort="1728536400000" data-listing-file-modified-sort="1737609969002" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
+<div class="g-col-1" data-index="0" data-categories="UXVhcnRvJTJDUGxhbnRpbGxhJTJDVWRlQQ==" data-listing-date-sort="1736226000000" data-listing-file-modified-sort="1749356488960" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../projects/2025-01-07_udea-quarto-thesis/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/2025-01-07_udea-quarto-thesis/image.png" class="thumbnail-image card-img" style="height: 225px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Plantilla de Quarto para trabajos de grado de la Universidad de Antioquia
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGxhbnRpbGxh'); return false;">Plantilla</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VWRlQQ=='); return false;">UdeA</div>
+
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+2025-01-07
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UXVhcnRvJTJDUGxhbnRpbGxhJTJDWElJJTIwQ0NC" data-listing-date-sort="1728536400000" data-listing-file-modified-sort="1749323562569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
 <a href="../projects/2024-10-10_quarto-revealjs-xii-ccb/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://github.com/alexespinosaco/quarto-revealjs-xii-ccb/blob/main/slide.png?raw=true" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="../projects/2024-10-10_quarto-revealjs-xii-ccb/image.png" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -457,11 +501,11 @@ Plantilla de Quarto Revealjs para el XII CCB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Qm90JUMzJUExbmljYSUyQ1F1YXJ0byUyQ1NpdG8lMjB3ZWI=" data-listing-date-sort="1720328400000" data-listing-file-modified-sort="1723216838741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
+<div class="g-col-1" data-index="2" data-categories="Qm90JUMzJUExbmljYSUyQ1F1YXJ0byUyQ1NpdG8lMjB3ZWI=" data-listing-date-sort="1720328400000" data-listing-file-modified-sort="1749325860569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
 <a href="../projects/2024-07-07_cecropia-medellin/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://github.com/alexespinosaco/cecropia-medellin/blob/main/imagenes/imagen_cecropia-medellin.png?raw=true" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="../projects/2024-07-07_cecropia-medellin/image.png" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -484,11 +528,11 @@ Sitio web del proyecto #CecropiaMedellín2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="R0VPQk9UQSUyQ1F1YXJ0byUyQ1NpdG8lMjB3ZWI=" data-listing-date-sort="1707282000000" data-listing-file-modified-sort="1719961212407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235">
+<div class="g-col-1" data-index="3" data-categories="R0VPQk9UQSUyQ1F1YXJ0byUyQ1NpdG8lMjB3ZWI=" data-listing-date-sort="1707282000000" data-listing-file-modified-sort="1749325850682" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235">
 <a href="../projects/2024-02-07_geobota-website/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://github.com/geobota/geobota.github.io/blob/main/images/logo/geobota_logo.png?raw=true" class="thumbnail-image card-img" style="height: 225px;">
+<img loading="lazy" src="../projects/2024-02-07_geobota-website/image.png" class="thumbnail-image card-img" style="height: 225px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -506,33 +550,6 @@ Sitio web del Grupo de Estudios Botánicos GEOBOTA
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
 2024-02-07
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="TGlicm8lMkNCb3QlQzMlQTFuaWNhJTJDUXVhcnRv" data-listing-date-sort="1677733200000" data-listing-file-modified-sort="1741294691679" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
-<a href="../projects/2023-03-02_biologia-plantas-manual/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://github.com/alexespinosaco/biologia-plantas-manual/blob/main/images/cover.png?raw=true" class="thumbnail-image card-img" style="height: 225px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Biología de las plantas: manual de laboratorio
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGlicm8='); return false;">Libro</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Qm90JUMzJUExbmljYQ=='); return false;">Botánica</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
-
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-2023-03-02
 </div>
 </div>
 </div>
@@ -631,7 +648,7 @@ Biología de las plantas: manual de laboratorio
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io");
+        var filterRegex = new RegExp("https:\/\/alexespinosaco\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -967,7 +984,7 @@ Biología de las plantas: manual de laboratorio
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://github.com/alexespinosaco">
+    <a class="nav-link" href="https://github.com/alexespinosaco/">
 <p><i class="fa-brands fa-github" aria-label="github"></i></p>
 </a>
   </li>  
@@ -977,12 +994,17 @@ Biología de las plantas: manual de laboratorio
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://mstdn.social/@alexespinosaco">
+    <a class="nav-link" href="https://mstdn.social/@alexespinosaco/">
 <p><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa">
+    <a class="nav-link" href="https://orcid.org/0000-0002-7353-1182/">
+<p><i class="fa-brands fa-orcid" aria-label="orcid"></i></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alex-Espinosa-Correa/">
 <p><i class="ai  ai-researchgate"></i></p>
 </a>
   </li>  
