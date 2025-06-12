@@ -47,11 +47,11 @@ format:
 css: cv.css
 ---
 
-Biólogo y candidato a doctor de la Universidad de Antioquia, especializado en el campo de la aerobiología, la botánica y la palinología. Cuento con más de seis años de experiencia y cuatro años de experiencia docente en botánica y biología general. Poseo habilidades en el manejo de diversos sistemas operativos, software de ofimática, herramientas bioinformáticas, sistemas de información geográfica (SIG), el lenguaje de programación R, así como en sistemas de publicación como Quarto y Markdown. Además, tengo dominio de técnicas y métodos aerobiológicos, botánicos, histológicos, palinológicos y de biología molecular, así como conocimientos en Ciencia Abierta y Reproducible.
+Biólogo y doctor en Biología de la Universidad de Antioquia, especializado en el campo de la aerobiología, la botánica y la palinología. Cuento con más de siete años de experiencia y seis años de experiencia docente en botánica y biología general. Poseo habilidades en el manejo de diversos sistemas operativos, software de ofimática, herramientas bioinformáticas, sistemas de información geográfica (SIG), el lenguaje de programación R, así como en sistemas de publicación como Quarto y Markdown. Además, tengo dominio de técnicas y métodos aerobiológicos, botánicos, histológicos, palinológicos y de biología molecular, así como conocimientos en Ciencia Abierta y Reproducible.
 
 # Educación
 
-**Doctor en Biología - Universidad de Antioquia - Medellín, Colombia** \hfill [2019-pendiente de ceremonia de grados]{.cvfloat}\
+**Doctor en Biología - Universidad de Antioquia - Medellín, Colombia** \hfill [2019-2025]{.cvfloat}\
 Estudio aerobiológico en la ciudad de Medellín (Colombia): una variable biológica de la calidad del aire en una ciudad altamente contaminada
 
 **Biólogo - Universidad de Antioquia - Medellín, Colombia** \hfill [2011-2018]{.cvfloat}\
