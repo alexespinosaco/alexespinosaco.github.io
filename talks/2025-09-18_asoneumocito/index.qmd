@@ -1,0 +1,46 @@
+---
+# pagetitle: ""
+title: "21º Congreso Asoneumocito: Aerobiología"
+# subtitle: ""
+# description: ""
+
+lang: es
+
+date: 2025-04-09
+
+image: image.jpg
+
+citation: false
+
+categories: 
+  - Aerobiología
+  - Charla
+  - Diapositivas
+
+about:
+  id: project
+  template: jolla
+  image-shape: rectangle
+  links:
+    - text: "{{< fa person-chalkboard >}} Diapositivas"
+      href: https://alexespinosaco.github.io/2025-09-18_asoneumocito/presentacion_asoneumocito.pdf
+    - text: "{{< fa circle-info >}} Información"
+      href: https://asoneumocito.apps.eventechvirtual.com/index.html#!/conferencista/10
+---
+
+:::{ #project}
+:::
+
+Charla presentada el 18 de septiembre de 2025 en el 21° Congreso Colombiano de Neumología y Cirugía de Tórax, celebrado del 17 al 20 de septiembre de 2025 en la ciudad de Medellín, Colombia.
+
+Más información: [ASONEUMOCITO](https://asoneumocito.eventechvirtual.com)
+
+## Presentación
+
+```{=html}
+<object data="presentacion_asoneumocito.pdf" type="application/pdf" width="800" height="460">
+    <p>Parece que no tienes un plugin PDF para este navegador.
+    No pasa nada… puede hacer <a href="presentacion_asoneumocito.pdf">clic aquí
+    para descargar el archivo PDF.</a></p>
+</object>
+```
