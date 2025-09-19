@@ -47,7 +47,7 @@ format:
 css: cv.css
 ---
 
-Biólogo y doctor en Biología de la Universidad de Antioquia, especializado en el campo de la aerobiología, la botánica y la palinología. Cuento con más de siete años de experiencia y seis años de experiencia docente en botánica y biología general. Poseo habilidades en el manejo de diversos sistemas operativos, software de ofimática, herramientas bioinformáticas, sistemas de información geográfica (SIG), el lenguaje de programación R, así como en sistemas de publicación como Quarto y Markdown. Además, tengo dominio de técnicas y métodos aerobiológicos, botánicos, histológicos, palinológicos y de biología molecular, así como conocimientos en Ciencia Abierta y Reproducible.
+Biólogo y doctor en Biología de la Universidad de Antioquia, especializado en el campo de la aerobiología, la botánica y la palinología. Cuento con más de siete años de experiencia y seis años de experiencia docente en Botánica y Biología General. Poseo habilidades en el manejo de diversos sistemas operativos, software de ofimática, herramientas bioinformáticas, sistemas de información geográfica (SIG), el lenguaje de programación R, así como en sistemas de publicación como Quarto y Markdown. Además, tengo dominio de técnicas y métodos aerobiológicos, botánicos, histológicos, palinológicos y de biología molecular, así como conocimientos en Ciencia Abierta y Reproducible.
 
 # Educación
 
@@ -58,6 +58,9 @@ Estudio aerobiológico en la ciudad de Medellín (Colombia): una variable bioló
 Exploración de la utilidad de la región ITS en estudios filogeográficos de plantas de áreas de Páramo
 
 # Otros estudios
+
+**Diplomado en docencia y didáctica universitaria** \hfill [26 jul 2025 – 29 ago 2025]{.cvfloat}\
+Politécnico Superior de Colombia
 
 **Módulo VII: Foro "Investigaciones en el campo de la etnobiología en Latinoamérica"** \hfill [27 sep 2024]{.cvfloat}\
 Comunidad Etnobiológica Guatemalteca, Sociedad Latinoamericana de Etnobiología y Facultad de Ciencias Químicas y Farmacia de la Universidad de San Carlos de Guatemala
@@ -70,6 +73,9 @@ Universidad de Antioquia
 
 # Experiencia
 
+**Profesor de cátedra - TdeA Institución Universitaria** \hfill [ago 2025 – ]{.cvfloat}\
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las clases teóricas y prácticas de los laboratorios de Botánica.
+
 **Biólogo-Botánico - Universidad de Antioquia** \hfill [may 2025 – ]{.cvfloat}\
 Prestación de servicios personales por parte del contratista en el desarrollo del contrato CW317139 cuyo objeto es "La implementación de estudios, monitoreo, seguimiento, estrategias de manejo y conservación sobre la biodiversidad en ecosistemas de interés para el Negocio de Generación de Energía"
 
@@ -77,7 +83,7 @@ Prestación de servicios personales por parte del contratista en el desarrollo d
 Apoyar actividades de campo e informes asociados al proyecto: "diseñar, implementar y socializar estrategias de monitoreo, seguimiento, manejo, protección y conservación, de las aves de interés presentes en el área de influencia directa en el marco del Proyecto Hidroeléctrico Ituango" CW310067 celebrado entre la UdeA y EPM
 
 **Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2025 – ]{.cvfloat}\
-Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las clases teóricas y prácticas de los laboratorios de biología de las plantas.
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las clases teóricas y prácticas de los laboratorios de Biología de las Plantas.
 
 **Biólogo-Botánico - Universidad de Antioquia** \hfill [dic 2024 – ene 2025]{.cvfloat}\
 Prestación de servicios personales por parte del contratista en el desarrollo del contrato CW317139 cuyo objeto es "La implementación de estudios, monitoreo, seguimiento, estrategias de manejo y conservación sobre la biodiversidad en ecosistemas de interés para el Negocio de Generación de Energía"
@@ -86,13 +92,13 @@ Prestación de servicios personales por parte del contratista en el desarrollo d
 Análisis palinológico de muestras de suelo provenientes del municipio de Envigado, evidenciando los morfotipos polínicos encontrados en estos suelos, con la finalidad de resolver la posible ocurrencia de actividades agrícolas en el área de estudio.
 
 **Profesor de cátedra - Universidad de Antioquia** \hfill [feb 2023 – jun 2023]{.cvfloat}\
-Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas.
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de Biología de las Plantas.
 
 **Pasante - Universidad del País Vasco** \hfill [sep 2022 – nov 2022]{.cvfloat}\
 Generación de extractos de las esporas de hongos y granos de polen autóctonos más comunes en la atmósfera de la ciudad de Medellín, Colombia, para realizar evaluaciones in-vitro.
 
 **Estudiante instructor - Universidad de Antioquia** \hfill [mar 2019 – nov 2022]{.cvfloat}\
-Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de biología de las plantas y biología general.
+Preparación de clases, calificación de exámenes e informes, atención y asesoría de estudiantes, desarrollo de las prácticas de los laboratorios de Biología de las Plantas y Biología General.
 
 **Biólogo - Universidad de Antioquia** \hfill [nov 2018 – ene 2019]{.cvfloat}\
 Análisis de información y procesamiento de material vegetal colectado.
@@ -133,6 +139,12 @@ Experiencia en técnicas y métodos palinológicos (obtención, identificación 
 Experiencia en la organización y logística de eventos académicos. Experiencia en la elaboración de inventarios de materiales e insumo de laboratorio (SGA).
 
 # Encuentros académicos
+
+**21° Congreso Colombiano de Neumología y Cirugía de Tórax - Medellín, Colombia** \hfill [17-20 sep 2025]{.cvfloat}\
+**Ponencia** Aerobiología
+
+**State of the Map Latam 2025 - Medellín, Colombia** \hfill [4-6 sep 2025]{.cvfloat}\
+**Asistencia**
 
 **XII Congreso Colombiano de Botánica - Popayán, Colombia** \hfill [4-8 nov 2024]{.cvfloat}\
 **Ponencia** Influencia de las variables meteorológicas y de los contaminantes atmosféricos sobre el polen aerovagante en Medellín, Colombia
