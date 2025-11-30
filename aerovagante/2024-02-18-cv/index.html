@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,18 +71,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../images/icon-AEC.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-86c881f592c124414c47b705a35b487a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d6841b85b7e01a66ff553b2b4e62b422.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1f0806dbbbd5d57963521ab5262e1e21.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d6841b85b7e01a66ff553b2b4e62b422.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -104,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Sin resultados",
+    "search-no-results-text": "No se han encontrado resultados",
     "search-matching-documents-text": "documentos encontrados",
     "search-copy-link-title": "Copiar el enlace en la búsqueda",
     "search-hide-matches-text": "Ocultar resultados adicionales",
@@ -158,7 +159,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -370,7 +371,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo">
+    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Álex Espinosa-Correa</span>
@@ -599,14 +601,14 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension mps9506/quarto-cv</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension mps9506/quarto-cv</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Cuando lo introduzcamos, seguimos las instrucciones (Yes, Yes, No). Sí lo hemos hecho bien, en la Terminal nos debe de aparecer lo siguiente:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb2" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">trust</span> the authors of the extension, we recommend that you do not install or </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">use</span> the extension.</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> Do you trust the authors of this extension <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> Yes</span>
@@ -621,7 +623,7 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Copying</span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Extension installation complete</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> View documentation using default browser<span class="pp">?</span> <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> No</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> View documentation using default browser<span class="pp">?</span> <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> No</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="instalar-multibib" class="level3">
@@ -631,14 +633,14 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb3" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension pandoc-ext/multibib</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension pandoc-ext/multibib</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Tras seguir las instrucciones (Yes, Yes, No) que nos aparecen en la Terminal, esta se debe de ver así:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">trust</span> the authors of the extension, we recommend that you do not install or </span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">use</span> the extension.</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> Do you trust the authors of this extension <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> Yes</span>
@@ -653,7 +655,7 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Copying</span>
 <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="ex">[✓]</span> Extension installation complete</span>
 <span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> View documentation using default browser<span class="pp">?</span> <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> No</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a> <span class="ex">?</span> View documentation using default browser<span class="pp">?</span> <span class="er">(</span><span class="ex">Y/n</span><span class="kw">)</span> <span class="ex">›</span> No</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="crear-un-archivo-.qmd" class="level3">
@@ -665,7 +667,7 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <div class="code-with-filename-file">
 <pre><strong>cv.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="annotated-cell-5" data-filename="cv.qmd"><pre class="sourceCode numberSource yaml code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode yaml"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1"></a><span class="pp">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-5" data-filename="cv.qmd"><pre class="sourceCode numberSource yaml code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode yaml"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1"></a><span class="pp">---</span></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-5-2" class="code-annotation-target"><a href="#annotated-cell-5-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> CV</span></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-5-3" class="code-annotation-target"><a href="#annotated-cell-5-3"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> last-modified</span></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-5-4" class="code-annotation-target"><a href="#annotated-cell-5-4"></a><span class="fu">date-format</span><span class="kw">:</span><span class="at"> iso</span></span>
@@ -706,7 +708,7 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <span id="annotated-cell-5-39"><a href="#annotated-cell-5-39"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="annotated-cell-5-40"><a href="#annotated-cell-5-40"></a><span class="at">  </span><span class="fu">quarto-cv-pdf</span><span class="kw">:</span><span class="at"> default</span></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="13" onclick="event.preventDefault();">13</a><span id="annotated-cell-5-41" class="code-annotation-target"><a href="#annotated-cell-5-41"></a><span class="fu">css</span><span class="kw">:</span><span class="at"> cv.css</span></span>
-<span id="annotated-cell-5-42"><a href="#annotated-cell-5-42"></a><span class="pp">---</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-5-42"><a href="#annotated-cell-5-42"></a><span class="pp">---</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
@@ -771,7 +773,7 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <div class="code-with-filename-file">
 <pre><strong>cv.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="annotated-cell-6" data-filename="cv.qmd"><pre class="sourceCode numberSource code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode"><a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-6-1" class="code-annotation-target"><a href="#annotated-cell-6-1"></a>Una pequeña descripción.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-6" data-filename="cv.qmd"><pre class="sourceCode numberSource code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode"><a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-6-1" class="code-annotation-target"><a href="#annotated-cell-6-1"></a>Una pequeña descripción.</span>
 <span id="annotated-cell-6-2"><a href="#annotated-cell-6-2"></a></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-6-3" class="code-annotation-target"><a href="#annotated-cell-6-3"></a># Educación</span>
 <span id="annotated-cell-6-4"><a href="#annotated-cell-6-4"></a></span>
@@ -797,7 +799,7 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <span id="annotated-cell-6-24"><a href="#annotated-cell-6-24"></a># Libros</span>
 <span id="annotated-cell-6-25"><a href="#annotated-cell-6-25"></a></span>
 <span id="annotated-cell-6-26"><a href="#annotated-cell-6-26"></a>::: {#refs-appendix}</span>
-<span id="annotated-cell-6-27"><a href="#annotated-cell-6-27"></a>:::</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-6-27"><a href="#annotated-cell-6-27"></a>:::</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
@@ -850,9 +852,9 @@ Figura&nbsp;3: Resultado obtenido sin agregar <code>[inicio-fin]{.cvfloat}</code
 <div class="code-with-filename-file">
 <pre><strong>cv.css</strong></pre>
 </div>
-<div class="sourceCode" id="cb6" data-filename="cv.css"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.cvfloat</span> {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-filename="cv.css"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.cvfloat</span> {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">float</span><span class="ch">:</span> <span class="dv">right</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Con esto configurado, en <a href="#sec-markdown">nuestro texto Markdwon</a> ya podremos utilizar<code>[inicio-fin]{.cvfloat}</code> para indicar que lo que se encuentra entre los corchetes <code>[]</code> se alinee a la derecha en el HTML. Sí tenemos más conocimientos en CSS, en este mismo archivo se pueden agregar más comandos para personalizar nuestro HTML, tal y como hace <a href="https://www.cynthiahqy.com/posts/cv-html-pdf/">Huang</a>.</p>
 </section>
@@ -908,7 +910,7 @@ Figura&nbsp;4: Pasos para exportar archivos <code>*.bib</code> en Zotero.
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb7" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render cv.qmd</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render cv.qmd</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
@@ -922,7 +924,7 @@ Figura&nbsp;4: Pasos para exportar archivos <code>*.bib</code> en Zotero.
 <div class="code-with-filename-file">
 <pre><strong>cv.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb8" data-filename="cv.qmd"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Este contenido se mostraría en cualquier formato.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-filename="cv.qmd"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Este contenido se mostraría en cualquier formato.</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>::: {.content-visible when-format="pdf"}</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -936,7 +938,7 @@ Figura&nbsp;4: Pasos para exportar archivos <code>*.bib</code> en Zotero.
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>Este contenido se mostraría en cualquier formato.</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>Este contenido se mostraría en cualquier formato.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>El comportamiento de <code>.content-visible</code> y <code>.content-hidden</code> se puede modificar si en lugar de usar <code>when-format</code> usamos <code>unless-format</code>.</p>
 </section>
@@ -959,18 +961,18 @@ Figura&nbsp;5: Un pie de página con un formato de fecha sin ningún sentido.
 <div class="code-with-filename-file">
 <pre><strong>quarto-cv.tex</strong></pre>
 </div>
-<div class="sourceCode" id="cb9" data-filename="quarto-cv.tex"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>154  <span class="bu">\usepackage</span>{<span class="ex">datetime</span>}</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-filename="quarto-cv.tex"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>154  <span class="bu">\usepackage</span>{<span class="ex">datetime</span>}</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>155  <span class="fu">\newdateformat</span>{apstylekinda}{<span class="co">%</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>156    <span class="fu">\shortmonthname</span>[<span class="fu">\THEMONTH</span>]. <span class="fu">\THEDAY</span>, <span class="fu">\THEYEAR</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>156    <span class="fu">\shortmonthname</span>[<span class="fu">\THEMONTH</span>]. <span class="fu">\THEDAY</span>, <span class="fu">\THEYEAR</span>}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Sólo tenemos que cambiar la línea 156 para que el nuevo formato de fecha sea <code>YYYY-MM-DD</code>:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>quarto-cv.tex</strong></pre>
 </div>
-<div class="sourceCode" id="cb10" data-filename="quarto-cv.tex"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>154  <span class="bu">\usepackage</span>{<span class="ex">datetime</span>}</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-filename="quarto-cv.tex"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>154  <span class="bu">\usepackage</span>{<span class="ex">datetime</span>}</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>155  <span class="fu">\newdateformat</span>{apstylekinda}{<span class="co">%</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>156    <span class="fu">\THEYEAR</span>-<span class="fu">\twodigit</span>{<span class="fu">\THEMONTH</span>}-<span class="fu">\twodigit</span>{<span class="fu">\THEDAY</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>156    <span class="fu">\THEYEAR</span>-<span class="fu">\twodigit</span>{<span class="fu">\THEMONTH</span>}-<span class="fu">\twodigit</span>{<span class="fu">\THEDAY</span>}}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Tras guardar los cambios y <a href="#sec-render">volver a renderizar</a>, ahora tenemos un pie de página con un formato de fecha mucho más decente:</p>
 <div id="fig-footer-01" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
@@ -993,12 +995,12 @@ Figura&nbsp;6: Un pie de página con un formato de fecha como tiene que ser.
 <div class="code-with-filename-file">
 <pre><strong>Background Jobs</strong></pre>
 </div>
-<div class="sourceCode" id="cb11" data-filename="Background Jobs"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ERROR:</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-filename="Background Jobs"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ERROR:</span> </span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">compilation</span> failed- error</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Argument</span> of <span class="dt">\s</span>tr_uppercase:n has an extra }.</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>inserted <span class="ex">text</span><span class="op">&gt;</span> </span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ex">\par</span> </span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="ex">l.77</span>   <span class="dt">\s</span>etmainlanguage[]{}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="ex">l.77</span>   <span class="dt">\s</span>etmainlanguage[]{}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Tras buscar y probar un poco, dí con que el error lo estaba generando el lenguaje que hayamos configurado en el YAML, ya sea en el <code>*.qmd</code> en que estemos trabajando o en el archivo de configuración <code>_quarto.yml</code> de nuestro proyecto. Intente configura <code>lang: en</code> en el archivo <code>cv.qmd</code> o en <code>_quarto.yml</code>, y no funcionó. Intente utilizando un archivo <code>_metadata.yml</code> con <code>lang: en</code> en la misma ubicación de <code>cv.qmd</code>, y tampoco funciono. La única solución que encontré a esto fue eliminar completamente la opción <code>lang: *</code> que tenía en el archivo <code>_quarto.yml</code>. Esto es un pequeño problema porque quería conservar la información que Quarto genera automáticamente en español. Una posible solución es utilizar la opción de <a href="https://quarto.org/docs/authoring/language.html#alternate-language">idioma alternativo</a> de Quarto, aunque, las más prácticas es agregar <code>lang: en</code> en los <code>*.qmd</code> (excepto <code>cv.qmd</code>) o agregarlo directamente a <code>_metadata.yml</code>, como hice con el blog.</p>
 </section>
@@ -1021,11 +1023,11 @@ También se puede utilizar la Terminal por defecto del sistema operativo, estand
 <li id="fn5"><p>No tengo tan claro sí <code>citeproc: false</code> sea necesario, he probado con <code>citeproc: true</code> y obtengo igual resultado. Creería que en este escenario no es necesario desactivarlo ya que <a href="https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib">la descripción de <code>multibib</code></a> dice: “this filter allows to create multiple bibliographies using citeproc”. Aunque pueden <a href="https://www.andrewheiss.com/blog/2023/12/11/separate-bibliographies-quarto/#disable-citeproc">haber escenarios</a> donde sea necesario desactivarlo.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6"><p>Algunos ejemplos:<br>
 </p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">peer</span><span class="kw">:</span><span class="at"> peer.bib</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">reports</span><span class="kw">:</span><span class="at"> reports.bib</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">books</span><span class="kw">:</span><span class="at"> books.bib</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">software</span><span class="kw">:</span><span class="at"> software.bib</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">software</span><span class="kw">:</span><span class="at"> software.bib</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Tomado de <a href="https://github.com/mps9506/quarto-cv?tab=readme-ov-file#bibliographies"><code>quarto-cv</code></a>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>El resultado sin <code>\hfill</code>:<br>
 <img src="images/sin_hfill.png" class="img-fluid"><br>
@@ -1108,13 +1110,14 @@ Quarto.”</span> February 18, 2024. <a href="https://alexespinosaco.github.io/a
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

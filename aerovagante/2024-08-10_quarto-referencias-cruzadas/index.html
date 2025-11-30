@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,18 +71,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../images/icon-AEC.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-86c881f592c124414c47b705a35b487a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-208b169a4d46461d033ca0978910fe94.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d6841b85b7e01a66ff553b2b4e62b422.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1f0806dbbbd5d57963521ab5262e1e21.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d6841b85b7e01a66ff553b2b4e62b422.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -104,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Sin resultados",
+    "search-no-results-text": "No se han encontrado resultados",
     "search-matching-documents-text": "documentos encontrados",
     "search-copy-link-title": "Copiar el enlace en la búsqueda",
     "search-hide-matches-text": "Ocultar resultados adicionales",
@@ -337,7 +338,8 @@ background: #0072B2;
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo">
+    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/icon-AEC.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Álex Espinosa-Correa</span>
@@ -484,7 +486,7 @@ background: #0072B2;
 <section id="sec-ref-2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-ref-2">Referenciando una imagen</h3>
 <p>Para <a href="https://quarto.org/docs/authoring/cross-references.html#figures">referenciar una imagen</a> en Quarto, se usa la sintaxis <code>#fig-element</code>, donde <code>element</code> es el identificador que asignamos. Por ejemplo, para hacer referenciable una imagen:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![*Cecropia*.](Cecropia_01.jpg)</span>{#fig-cecropia}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![*Cecropia*.](Cecropia_01.jpg)</span>{#fig-cecropia}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="fig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde lejos.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -496,14 +498,14 @@ Figura&nbsp;1: <em>Cecropia</em>
 </figure>
 </div>
 <p>La presencia de <code>#fig-cecropia</code> permite referenciar esta imagen en cualquier momento usando <code>@fig-cecropia</code>. Por ejemplo:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>La @fig-cecropia es de un yarumo.</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>La @fig-cecropia es de un yarumo.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Obtendríamos: La <a href="#fig-cecropia" class="quarto-xref">Figura&nbsp;1</a> es de un yarumo<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 </section>
 <section id="referenciando-una-imagen-generada-por-código" class="level3">
 <h3 class="anchored" data-anchor-id="referenciando-una-imagen-generada-por-código">Referenciando una imagen generada por código</h3>
 <p>Quarto también permite <a href="https://quarto.org/docs/authoring/cross-references.html#computations">referenciar imágenes generadas por código</a>. En este caso, las etiquetas se añaden usando las <a href="https://quarto.org/docs/reference/cells/cells-knitr.html">opciones del chunk de código</a>, <code>label</code> y <code>fig-cap</code>. Por ejemplo, generemos una figura con <a href="https://ggplot2.tidyverse.org"><code>{ggplot2}</code></a> y los datos de <a href="https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/iris"><code>iris</code></a>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-iris</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: Un gráfico de dispersión.</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-alt: Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables.</span></span>
@@ -517,7 +519,7 @@ Figura&nbsp;1: <em>Cecropia</em>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> </span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_point</span>()</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="fig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -538,12 +540,12 @@ Figura&nbsp;2: Un gráfico de dispersión.
 <h2 class="anchored" data-anchor-id="referencias-personalizadas-en-quarto">Referencias personalizadas en Quarto</h2>
 <p>Con <code>#fig-element</code> y <code>#tbl-element</code> cubrimos la mayoría de las necesidades para referenciar elementos en un trabajo académico. Sin embargo, si necesitamos incluir material suplementario, estos métodos no funcionan correctamente, ya que seguirán la numeración del texto principal. Afortunadamente, desde la <a href="https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/">versión 1.4 de Quarto</a>, es posible crear <a href="https://quarto.org/docs/authoring/cross-references-custom.html">referencias cruzadas personalizadas</a>.</p>
 <p>Como ejemplo, crearemos una referencia cruzada para que las figuras suplementarias aparezcan en el texto como «Figura S1», «Figura S2», etc. Para ello, añadimos el siguiente código en el YAML del documento o proyecto de Quarto:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">crossref</span><span class="kw">:</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">crossref</span><span class="kw">:</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">custom</span><span class="kw">:</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">kind</span><span class="kw">:</span><span class="at"> float</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">key</span><span class="kw">:</span><span class="at"> suppfig</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">reference-prefix</span><span class="kw">:</span><span class="at"> Figure S</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">space-before-numbering</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">space-before-numbering</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Las tres primeras opciones <code>crossref</code>, <code>custom</code>, <code>kind</code> son obligatorias. <code>crossref</code> se utiliza para personalizar las referencias cruzadas; <code>custom</code>, para indicar que será un tipo de referencia cruzada personalizado; y <code>kind</code>, para especificar el tipo de referencia (actualmente solo se admite <code>float</code>). Además, <code>key</code> es la clave que usaremos para referenciar el elemento (en este ejemplo, <code>#suppfig-element</code>); <code>reference-prefix</code> es el prefijo que aparecerá en la referencia (en este caso, <code>Figura S</code>). Finalmente, <code>space-before-numbering</code> define si se añade o no un espacio entre el prefijo y la numeración de la imagen (si es <code>false</code>, no se añade espacio). Con esto configurado<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, probaremos con otras imágenes.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -561,7 +563,7 @@ Advertencia
 <section id="referenciando-una-imagen-suplementaria" class="level3">
 <h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria">Referenciando una imagen suplementaria</h3>
 <p>Haremos algo similar a lo mostrado más <a href="#sec-ref-2">arriba</a>, pero cambiaremos <code>fig</code> por <code>suppfig</code>:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![*Cecropia*.](Cecropia_03.jpg)</span>{#fig-cecropia}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![*Cecropia*.](Cecropia_03.jpg)</span>{#fig-cecropia}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="suppfig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde el suelo.">
 <figure class="quarto-float quarto-float-suppfig figure">
 <div aria-describedby="suppfig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -573,14 +575,14 @@ Figura S1: <em>Cecropia</em>
 </figure>
 </div>
 <p>Ahora podemos referenciar esta imagen en cualquier momento usando <code>@suppfig-cecropia</code>. Si escribimos:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>La @suppfig-cecropia es de otro yarumo.</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>La @suppfig-cecropia es de otro yarumo.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Obtenemos: La <a href="#suppfig-cecropia" class="quarto-xref">Figura S1</a> es de otro yarumo<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
 </section>
 <section id="referenciando-una-imagen-suplementaria-generada-por-código" class="level3">
 <h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria-generada-por-código">Referenciando una imagen suplementaria generada por código</h3>
 <p>Si quisiéramos hacer lo mismo para una imagen generada por código, podríamos intentar lo siguiente:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: suppfig-iris</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: Un boxplot.</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-alt: Un boxplot de la variable petal length de las espcies del conjuto de datos Iris.</span></span>
@@ -593,7 +595,7 @@ Figura S1: <em>Cecropia</em>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> </span>
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  ggplot2<span class="sc">::</span><span class="fu">geom_boxplot</span>()</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -604,7 +606,7 @@ Figura S1: <em>Cecropia</em>
 </div>
 </div>
 <p>Sin embargo, esto no genera el prefijo en la descripción de la imagen. Además, si intentamos referenciarla usando <code>@suppfig-iris</code>, veremos que aparece el error <strong>?@suppfig-iris</strong>. Esto se debe a cómo está configurado actualmente Quarto. Para que Quarto interprete correctamente esta imagen utilizando referencias cruzadas personalizadas, debemos usar la sintaxis de <a href="https://quarto.org/docs/authoring/cross-references-divs.html">Divs</a>, que consiste en encerrar el código entre dos grupos de <code>:::</code> y realizar algunos pequeños cambios:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>::: {#suppfig-iris fig-alt="fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.""}</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>::: {#suppfig-iris fig-alt="fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.""}</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">|&gt;</span> </span>
@@ -619,7 +621,7 @@ Figura S1: <em>Cecropia</em>
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>Gráfico de dispersión.</span>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="suppfig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.">
 <figure class="quarto-float quarto-float-suppfig figure">
 <div aria-describedby="suppfig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -732,13 +734,14 @@ personalizadas de Quarto.”</span> August 10, 2024. <a href="https://alexespino
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

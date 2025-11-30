@@ -16,7 +16,7 @@
 <height>65</height>
 <width>144</width>
 </image>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Tue, 21 Jan 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Zotero: gestionar, renombrar y sincronizar archivos</title>
@@ -137,19 +137,19 @@
 <li>En <strong>Filename Template</strong>, ingrese el formato personalizado. Hay una <a href="https://www.zotero.org/support/file_renaming">amplia variedad de variables</a> que se pueden incluir. Buscando un formato similar al que usaba en Zotero 6, encontré una opción en los foros de Zotero <a href="https://forums.zotero.org/discussion/comment/470491/#Comment_470491">muy parecida</a> que adapté a mis necesidades:</li>
 </ol>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Versión anterior
+<span class="screen-reader-only">Precaución</span>Versión anterior
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Originalmente utilizaba este código, pero sólo funcionaba para algunos elementos de Zotero. La nueva versión funciona para muchos más elementos.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">{{ if {{ authors match="<span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">{{ if {{ authors match="<span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">[^,]</span>+,<span class="ot" style="color: #003B4F;
 background-color: null;
@@ -163,11 +163,11 @@ font-style: inherit;">[^,]</span>+" }} }}</span>
 <span id="cb1-6">{{ year prefix="_" }}</span>
 <span id="cb1-7">{{ title truncate="200" replaceFrom="(<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">\.</span>|:|\?)(.*?)$" prefix="_" case="snake" }}</span></code></pre></div>
+font-style: inherit;">\.</span>|:|\?)(.*?)$" prefix="_" case="snake" }}</span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">{{ if {{ creators match="<span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">{{ if {{ creators match="<span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">[^,]</span>+,<span class="ot" style="color: #003B4F;
 background-color: null;
@@ -181,7 +181,7 @@ font-style: inherit;">[^,]</span>+" }} }}</span>
 <span id="cb2-6">{{ year prefix="_" }}</span>
 <span id="cb2-7">{{ title truncate="200" replaceFrom="(<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">\.</span>|:|\?)(.*?)$" prefix="_" case="snake" }}</span></code></pre></div>
+font-style: inherit;">\.</span>|:|\?)(.*?)$" prefix="_" case="snake" }}</span></code></pre></div></div>
 <p>Con esta configuración, cada vez que <a href="https://www.zotero.org/support/adding_items_to_zotero">agreguemos un elemento</a>, ya sea una referencia que tiene disponible el PDF o un PDF desde nuestro equipo, Zotero automáticamente renombrará el archivo y lo sincronizará con nuestro servicio de alojamiento.</p>
 </section>
 <section id="consejo" class="level2">
@@ -239,9 +239,9 @@ sincronizar archivos.”</span> January 21, 2025. <a href="https://alexespinosac
 <section id="sec-ref-2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-ref-2">Referenciando una imagen</h3>
 <p>Para <a href="https://quarto.org/docs/authoring/cross-references.html#figures">referenciar una imagen</a> en Quarto, se usa la sintaxis <code>#fig-element</code>, donde <code>element</code> es el identificador que asignamos. Por ejemplo, para hacer referenciable una imagen:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="al" style="color: #AD0000;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="al" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">![*Cecropia*.](Cecropia_01.jpg)</span>{#fig-cecropia}</span></code></pre></div>
+font-style: inherit;">![*Cecropia*.](Cecropia_01.jpg)</span>{#fig-cecropia}</span></code></pre></div></div>
 <div id="fig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde lejos.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -253,14 +253,14 @@ Figura&nbsp;1: <em>Cecropia</em>
 </figure>
 </div>
 <p>La presencia de <code>#fig-cecropia</code> permite referenciar esta imagen en cualquier momento usando <code>@fig-cecropia</code>. Por ejemplo:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">La @fig-cecropia es de un yarumo.</span></code></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">La @fig-cecropia es de un yarumo.</span></code></pre></div></div>
 <p>Obtendríamos: La Figura&nbsp;1 es de un yarumo<sup>2</sup>.</p>
 </section>
 <section id="referenciando-una-imagen-generada-por-código" class="level3">
 <h3 class="anchored" data-anchor-id="referenciando-una-imagen-generada-por-código">Referenciando una imagen generada por código</h3>
 <p>Quarto también permite <a href="https://quarto.org/docs/authoring/cross-references.html#computations">referenciar imágenes generadas por código</a>. En este caso, las etiquetas se añaden usando las <a href="https://quarto.org/docs/reference/cells/cells-knitr.html">opciones del chunk de código</a>, <code>label</code> y <code>fig-cap</code>. Por ejemplo, generemos una figura con <a href="https://ggplot2.tidyverse.org"><code>{ggplot2}</code></a> y los datos de <a href="https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/iris"><code>iris</code></a>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{r}</span></span>
 <span id="cb3-2"><span class="co" style="color: #5E5E5E;
@@ -302,7 +302,7 @@ background-color: null;
 font-style: inherit;">geom_point</span>()</span>
 <span id="cb3-15"><span class="in" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">```</span></span></code></pre></div>
+font-style: inherit;">```</span></span></code></pre></div></div>
 <div class="cell-output-display">
 <div id="fig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico de dispersión de las variables petal width y petal length del conjunto de datos Iris, agrupado por especies. Se muestra una correación lineal entre ambas variables.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -323,7 +323,7 @@ Figura&nbsp;2: Un gráfico de dispersión.
 <h2 class="anchored" data-anchor-id="referencias-personalizadas-en-quarto">Referencias personalizadas en Quarto</h2>
 <p>Con <code>#fig-element</code> y <code>#tbl-element</code> cubrimos la mayoría de las necesidades para referenciar elementos en un trabajo académico. Sin embargo, si necesitamos incluir material suplementario, estos métodos no funcionan correctamente, ya que seguirán la numeración del texto principal. Afortunadamente, desde la <a href="https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/">versión 1.4 de Quarto</a>, es posible crear <a href="https://quarto.org/docs/authoring/cross-references-custom.html">referencias cruzadas personalizadas</a>.</p>
 <p>Como ejemplo, crearemos una referencia cruzada para que las figuras suplementarias aparezcan en el texto como «Figura S1», «Figura S2», etc. Para ello, añadimos el siguiente código en el YAML del documento o proyecto de Quarto:</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">crossref</span><span class="kw" style="color: #003B4F;
 background-color: null;
@@ -383,7 +383,7 @@ font-style: inherit;">:</span><span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;"> </span><span class="ch" style="color: #20794D;
 background-color: null;
-font-style: inherit;">false</span></span></code></pre></div>
+font-style: inherit;">false</span></span></code></pre></div></div>
 <p>Las tres primeras opciones <code>crossref</code>, <code>custom</code>, <code>kind</code> son obligatorias. <code>crossref</code> se utiliza para personalizar las referencias cruzadas; <code>custom</code>, para indicar que será un tipo de referencia cruzada personalizado; y <code>kind</code>, para especificar el tipo de referencia (actualmente solo se admite <code>float</code>). Además, <code>key</code> es la clave que usaremos para referenciar el elemento (en este ejemplo, <code>#suppfig-element</code>); <code>reference-prefix</code> es el prefijo que aparecerá en la referencia (en este caso, <code>Figura S</code>). Finalmente, <code>space-before-numbering</code> define si se añade o no un espacio entre el prefijo y la numeración de la imagen (si es <code>false</code>, no se añade espacio). Con esto configurado<sup>3</sup>, probaremos con otras imágenes.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -401,9 +401,9 @@ Advertencia
 <section id="referenciando-una-imagen-suplementaria" class="level3">
 <h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria">Referenciando una imagen suplementaria</h3>
 <p>Haremos algo similar a lo mostrado más arriba, pero cambiaremos <code>fig</code> por <code>suppfig</code>:</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><span class="al" style="color: #AD0000;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><span class="al" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">![*Cecropia*.](Cecropia_03.jpg)</span>{#fig-cecropia}</span></code></pre></div>
+font-style: inherit;">![*Cecropia*.](Cecropia_03.jpg)</span>{#fig-cecropia}</span></code></pre></div></div>
 <div id="suppfig-cecropia" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="Fotografía de un individuo de Cecropia peltata (Yarumo) en la Universidad de Antioquia visto desde el suelo.">
 <figure class="quarto-float quarto-float-suppfig figure">
 <div aria-describedby="suppfig-cecropia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -415,14 +415,14 @@ Figura S1: <em>Cecropia</em>
 </figure>
 </div>
 <p>Ahora podemos referenciar esta imagen en cualquier momento usando <code>@suppfig-cecropia</code>. Si escribimos:</p>
-<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1">La @suppfig-cecropia es de otro yarumo.</span></code></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1">La @suppfig-cecropia es de otro yarumo.</span></code></pre></div></div>
 <p>Obtenemos: La Figura S1 es de otro yarumo<sup>4</sup>.</p>
 </section>
 <section id="referenciando-una-imagen-suplementaria-generada-por-código" class="level3">
 <h3 class="anchored" data-anchor-id="referenciando-una-imagen-suplementaria-generada-por-código">Referenciando una imagen suplementaria generada por código</h3>
 <p>Si quisiéramos hacer lo mismo para una imagen generada por código, podríamos intentar lo siguiente:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><span class="in" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{r}</span></span>
 <span id="cb7-2"><span class="co" style="color: #5E5E5E;
@@ -461,7 +461,7 @@ background-color: null;
 font-style: inherit;">geom_boxplot</span>()</span>
 <span id="cb7-14"><span class="in" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">```</span></span></code></pre></div>
+font-style: inherit;">```</span></span></code></pre></div></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -472,7 +472,7 @@ font-style: inherit;">```</span></span></code></pre></div>
 </div>
 </div>
 <p>Sin embargo, esto no genera el prefijo en la descripción de la imagen. Además, si intentamos referenciarla usando <code>@suppfig-iris</code>, veremos que aparece el error <strong>?@suppfig-iris</strong>. Esto se debe a cómo está configurado actualmente Quarto. Para que Quarto interprete correctamente esta imagen utilizando referencias cruzadas personalizadas, debemos usar la sintaxis de <a href="https://quarto.org/docs/authoring/cross-references-divs.html">Divs</a>, que consiste en encerrar el código entre dos grupos de <code>:::</code> y realizar algunos pequeños cambios:</p>
-<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1">::: {#suppfig-iris fig-alt="fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.""}</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1">::: {#suppfig-iris fig-alt="fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.""}</span>
 <span id="cb8-2"></span>
 <span id="cb8-3"><span class="in" style="color: #5E5E5E;
 background-color: null;
@@ -507,7 +507,7 @@ font-style: inherit;">```</span></span>
 <span id="cb8-13"></span>
 <span id="cb8-14">Gráfico de dispersión.</span>
 <span id="cb8-15"></span>
-<span id="cb8-16">:::</span></code></pre></div>
+<span id="cb8-16">:::</span></code></pre></div></div>
 <div id="suppfig-iris" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-alt="n boxplot de la variable petal length de las espcies del conjuto de datos Iris.">
 <figure class="quarto-float quarto-float-suppfig figure">
 <div aria-describedby="suppfig-iris-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -721,16 +721,16 @@ Figura&nbsp;1: Versión en HTML y PDF de mi CV.
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb1" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">quarto</span> install extension mps9506/quarto-cv</span></code></pre></div>
+font-style: inherit;">quarto</span> install extension mps9506/quarto-cv</span></code></pre></div></div>
 </div>
 <p>Cuando lo introduzcamos, seguimos las instrucciones (Yes, Yes, No). Sí lo hemos hecho bien, en la Terminal nos debe de aparecer lo siguiente:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb2" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
 <span id="cb2-2"><span class="ex" style="color: null;
@@ -813,7 +813,7 @@ background-color: null;
 font-weight: bold;
 font-style: inherit;">)</span> <span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">›</span> No</span></code></pre></div>
+font-style: inherit;">›</span> No</span></code></pre></div></div>
 </div>
 </section>
 <section id="instalar-multibib" class="level3">
@@ -823,16 +823,16 @@ font-style: inherit;">›</span> No</span></code></pre></div>
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb3" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">quarto</span> install extension pandoc-ext/multibib</span></code></pre></div>
+font-style: inherit;">quarto</span> install extension pandoc-ext/multibib</span></code></pre></div></div>
 </div>
 <p>Tras seguir las instrucciones (Yes, Yes, No) que nos aparecen en la Terminal, esta se debe de ver así:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb4" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">Quarto</span> extensions may execute code when documents are rendered. If you do not </span>
 <span id="cb4-2"><span class="ex" style="color: null;
@@ -915,7 +915,7 @@ background-color: null;
 font-weight: bold;
 font-style: inherit;">)</span> <span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">›</span> No</span></code></pre></div>
+font-style: inherit;">›</span> No</span></code></pre></div></div>
 </div>
 </section>
 <section id="crear-un-archivo-.qmd" class="level3">
@@ -927,7 +927,7 @@ font-style: inherit;">›</span> No</span></code></pre></div>
 <div class="code-with-filename-file">
 <pre><strong>cv.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="annotated-cell-5" data-filename="cv.qmd" style="background: #f1f3f5;"><pre class="sourceCode numberSource yaml code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode yaml"><span id="annotated-cell-5-1"><span class="pp" style="color: #AD0000;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-5" data-filename="cv.qmd" style="background: #f1f3f5;"><pre class="sourceCode numberSource yaml code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode yaml"><span id="annotated-cell-5-1"><span class="pp" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">---</span></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-5-2" class="code-annotation-target"><span class="fu" style="color: #4758AB;
@@ -1172,7 +1172,7 @@ background-color: null;
 font-style: inherit;"> cv.css</span></span>
 <span id="annotated-cell-5-42"><span class="pp" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">---</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div>
+font-style: inherit;">---</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div></div>
 </div>
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
@@ -1237,7 +1237,7 @@ font-style: inherit;">---</span></span><div class="code-annotation-gutter-bg"></
 <div class="code-with-filename-file">
 <pre><strong>cv.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="annotated-cell-6" data-filename="cv.qmd" style="background: #f1f3f5;"><pre class="sourceCode numberSource code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode"><a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-6-1" class="code-annotation-target">Una pequeña descripción.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-6" data-filename="cv.qmd" style="background: #f1f3f5;"><pre class="sourceCode numberSource code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode"><a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-6-1" class="code-annotation-target">Una pequeña descripción.</span>
 <span id="annotated-cell-6-2"></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-6-3" class="code-annotation-target"># Educación</span>
 <span id="annotated-cell-6-4"></span>
@@ -1263,7 +1263,7 @@ font-style: inherit;">---</span></span><div class="code-annotation-gutter-bg"></
 <span id="annotated-cell-6-24"># Libros</span>
 <span id="annotated-cell-6-25"></span>
 <span id="annotated-cell-6-26">::: {#refs-appendix}</span>
-<span id="annotated-cell-6-27">:::</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div>
+<span id="annotated-cell-6-27">:::</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div></div>
 </div>
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
@@ -1316,7 +1316,7 @@ Figura&nbsp;3: Resultado obtenido sin agregar <code>[inicio-fin]{.cvfloat}</code
 <div class="code-with-filename-file">
 <pre><strong>cv.css</strong></pre>
 </div>
-<div class="sourceCode" id="cb6" data-filename="cv.css" style="background: #f1f3f5;"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-filename="cv.css" style="background: #f1f3f5;"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb6-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">.cvfloat</span> {</span>
 <span id="cb6-2">  <span class="kw" style="color: #003B4F;
@@ -1327,7 +1327,7 @@ background-color: null;
 font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">right</span></span>
-<span id="cb6-3">}</span></code></pre></div>
+<span id="cb6-3">}</span></code></pre></div></div>
 </div>
 <p>Con esto configurado, en nuestro texto Markdwon ya podremos utilizar<code>[inicio-fin]{.cvfloat}</code> para indicar que lo que se encuentra entre los corchetes <code>[]</code> se alinee a la derecha en el HTML. Sí tenemos más conocimientos en CSS, en este mismo archivo se pueden agregar más comandos para personalizar nuestro HTML, tal y como hace <a href="https://www.cynthiahqy.com/posts/cv-html-pdf/">Huang</a>.</p>
 </section>
@@ -1383,9 +1383,9 @@ Figura&nbsp;4: Pasos para exportar archivos <code>*.bib</code> en Zotero.
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb7" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-filename="Terminal" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">quarto</span> render cv.qmd</span></code></pre></div>
+font-style: inherit;">quarto</span> render cv.qmd</span></code></pre></div></div>
 </div>
 </section>
 </section>
@@ -1399,7 +1399,7 @@ font-style: inherit;">quarto</span> render cv.qmd</span></code></pre></div>
 <div class="code-with-filename-file">
 <pre><strong>cv.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb8" data-filename="cv.qmd" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1">Este contenido se mostraría en cualquier formato.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-filename="cv.qmd" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1">Este contenido se mostraría en cualquier formato.</span>
 <span id="cb8-2"></span>
 <span id="cb8-3">::: {.content-visible when-format="pdf"}</span>
 <span id="cb8-4"></span>
@@ -1413,7 +1413,7 @@ font-style: inherit;">quarto</span> render cv.qmd</span></code></pre></div>
 <span id="cb8-12"></span>
 <span id="cb8-13">:::</span>
 <span id="cb8-14"></span>
-<span id="cb8-15">Este contenido se mostraría en cualquier formato.</span></code></pre></div>
+<span id="cb8-15">Este contenido se mostraría en cualquier formato.</span></code></pre></div></div>
 </div>
 <p>El comportamiento de <code>.content-visible</code> y <code>.content-hidden</code> se puede modificar si en lugar de usar <code>when-format</code> usamos <code>unless-format</code>.</p>
 </section>
@@ -1436,7 +1436,7 @@ Figura&nbsp;5: Un pie de página con un formato de fecha sin ningún sentido.
 <div class="code-with-filename-file">
 <pre><strong>quarto-cv.tex</strong></pre>
 </div>
-<div class="sourceCode" id="cb9" data-filename="quarto-cv.tex" style="background: #f1f3f5;"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb9-1">154  <span class="bu" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-filename="quarto-cv.tex" style="background: #f1f3f5;"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb9-1">154  <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">\usepackage</span>{<span class="ex" style="color: null;
 background-color: null;
@@ -1454,14 +1454,14 @@ font-style: inherit;">\THEMONTH</span>]. <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">\THEDAY</span>, <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">\THEYEAR</span>}</span></code></pre></div>
+font-style: inherit;">\THEYEAR</span>}</span></code></pre></div></div>
 </div>
 <p>Sólo tenemos que cambiar la línea 156 para que el nuevo formato de fecha sea <code>YYYY-MM-DD</code>:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>quarto-cv.tex</strong></pre>
 </div>
-<div class="sourceCode" id="cb10" data-filename="quarto-cv.tex" style="background: #f1f3f5;"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb10-1">154  <span class="bu" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-filename="quarto-cv.tex" style="background: #f1f3f5;"><pre class="sourceCode tex code-with-copy"><code class="sourceCode latex"><span id="cb10-1">154  <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">\usepackage</span>{<span class="ex" style="color: null;
 background-color: null;
@@ -1481,7 +1481,7 @@ font-style: inherit;">\THEMONTH</span>}-<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">\twodigit</span>{<span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">\THEDAY</span>}}</span></code></pre></div>
+font-style: inherit;">\THEDAY</span>}}</span></code></pre></div></div>
 </div>
 <p>Tras guardar los cambios y volver a renderizar, ahora tenemos un pie de página con un formato de fecha mucho más decente:</p>
 <div id="fig-footer-01" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
@@ -1504,7 +1504,7 @@ Figura&nbsp;6: Un pie de página con un formato de fecha como tiene que ser.
 <div class="code-with-filename-file">
 <pre><strong>Background Jobs</strong></pre>
 </div>
-<div class="sourceCode" id="cb11" data-filename="Background Jobs" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><span class="ex" style="color: null;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-filename="Background Jobs" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">ERROR:</span> </span>
 <span id="cb11-2"><span class="ex" style="color: null;
@@ -1529,7 +1529,7 @@ font-style: inherit;">\par</span> </span>
 background-color: null;
 font-style: inherit;">l.77</span>   <span class="dt" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">\s</span>etmainlanguage[]{}</span></code></pre></div>
+font-style: inherit;">\s</span>etmainlanguage[]{}</span></code></pre></div></div>
 </div>
 <p>Tras buscar y probar un poco, dí con que el error lo estaba generando el lenguaje que hayamos configurado en el YAML, ya sea en el <code>*.qmd</code> en que estemos trabajando o en el archivo de configuración <code>_quarto.yml</code> de nuestro proyecto. Intente configura <code>lang: en</code> en el archivo <code>cv.qmd</code> o en <code>_quarto.yml</code>, y no funcionó. Intente utilizando un archivo <code>_metadata.yml</code> con <code>lang: en</code> en la misma ubicación de <code>cv.qmd</code>, y tampoco funciono. La única solución que encontré a esto fue eliminar completamente la opción <code>lang: *</code> que tenía en el archivo <code>_quarto.yml</code>. Esto es un pequeño problema porque quería conservar la información que Quarto genera automáticamente en español. Una posible solución es utilizar la opción de <a href="https://quarto.org/docs/authoring/language.html#alternate-language">idioma alternativo</a> de Quarto, aunque, las más prácticas es agregar <code>lang: en</code> en los <code>*.qmd</code> (excepto <code>cv.qmd</code>) o agregarlo directamente a <code>_metadata.yml</code>, como hice con el blog.</p>
 </section>
@@ -1552,7 +1552,7 @@ También se puede utilizar la Terminal por defecto del sistema operativo, estand
 <li id="fn5"><p>No tengo tan claro sí <code>citeproc: false</code> sea necesario, he probado con <code>citeproc: true</code> y obtengo igual resultado. Creería que en este escenario no es necesario desactivarlo ya que <a href="https://github.com/pandoc-ext/multibib?tab=readme-ov-file#multibib">la descripción de <code>multibib</code></a> dice: “this filter allows to create multiple bibliographies using citeproc”. Aunque pueden <a href="https://www.andrewheiss.com/blog/2023/12/11/separate-bibliographies-quarto/#disable-citeproc">haber escenarios</a> donde sea necesario desactivarlo.↩︎</p></li>
 <li id="fn6"><p>Algunos ejemplos:<br>
 </p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bibliography</span><span class="kw" style="color: #003B4F;
 background-color: null;
@@ -1597,7 +1597,7 @@ background-color: null;
 font-weight: bold;
 font-style: inherit;">:</span><span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;"> software.bib</span></span></code></pre></div>
+font-style: inherit;"> software.bib</span></span></code></pre></div></div>
 <p>Tomado de <a href="https://github.com/mps9506/quarto-cv?tab=readme-ov-file#bibliographies"><code>quarto-cv</code></a>.↩︎</p></li>
 <li id="fn7"><p>El resultado sin <code>\hfill</code>:<br>
 <img src="https://alexespinosaco.github.io/aerovagante/2024-02-18-cv/images/sin_hfill.png" class="img-fluid"><br>
