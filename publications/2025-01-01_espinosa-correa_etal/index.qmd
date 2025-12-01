@@ -23,8 +23,29 @@ categories:
 
 ## Abstract
 
-Aerobiology in the tropics is still a science in development, where very little about their dynamics is known. Airborne pollen concentrations in the city of Medellín (Colombia) were measured using a Hirst-type sampler and correlated with meteorological parameters (relative humidity, rainfall, temperature, wind speed, and wind direction, this last analyzed by using circular statistics). Sampling was conducted over three years (2019–2022), and pollen grains were detected on all days of sampling, at higher concentrations than expected for tropical conditions. The highest pollen concentrations were observed from December to January and July–August, corresponding to the months with the lowest rainfall, which sheds light about how La Niña phenomena influenced pollen concentrations during the sampling period. The Main Pollen Season (MPS) ranged in length from 277 to 342 days. The highest intra-diurnal peaks pollen concentrations occurred around noon, whilst something very different and rarely reported occurs with Cecropia, which is much more abundant at night, from 20:00 to 1:00 h. Circular statistics revealed statistically significant wind direction patterns from SW, matching the same intra-diurnal pollen variations. This work helps to complete the blurred situation of the Aerobiology in the Neotropics and the dynamics of particles in the tropical atmosphere, being a first step towards the construction of pollen calendars to help pollen sufferers to mitigate symptoms.
+Aerobiology in the tropics is still a science in development, where very little
+about their dynamics is known. Airborne pollen concentrations in the city of
+Medellín (Colombia) were measured using a Hirst-type sampler and correlated with
+meteorological parameters (relative humidity, rainfall, temperature, wind speed,
+and wind direction, this last analyzed by using circular statistics). Sampling
+was conducted over three years (2019–2022), and pollen grains were detected on
+all days of sampling, at higher concentrations than expected for tropical
+conditions. The highest pollen concentrations were observed from December to
+January and July–August, corresponding to the months with the lowest rainfall,
+which sheds light about how La Niña phenomena influenced pollen concentrations
+during the sampling period. The Main Pollen Season (MPS) ranged in length from
+277 to 342 days. The highest intra-diurnal peaks pollen concentrations occurred
+around noon, whilst something very different and rarely reported occurs with
+Cecropia, which is much more abundant at night, from 20:00 to 1:00 h. Circular
+statistics revealed statistically significant wind direction patterns from SW,
+matching the same intra-diurnal pollen variations. This work helps to complete
+the blurred situation of the Aerobiology in the Neotropics and the dynamics of
+particles in the tropical atmosphere, being a first step towards the
+construction of pollen calendars to help pollen sufferers to mitigate symptoms.
 
 ## Citation
 
-> Espinosa-Correa, Á., Maya-Manzano, J. M., & Alzate-Guarín, F. A. (2025). Airborne pollen concentrations overpass expectations in the tropical city of Medellín, Colombia. *Science of The Total Environment*, 958, 178066. https://doi.org/10.1016/j.scitotenv.2024.178066
+> Espinosa-Correa, Á., Maya-Manzano, J. M., & Alzate-Guarín, F. A. (2025).
+> Airborne pollen concentrations overpass expectations in the tropical city of
+> Medellín, Colombia. *Science of The Total Environment*, 958, 178066.
+> https://doi.org/10.1016/j.scitotenv.2024.178066
