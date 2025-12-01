@@ -1,0 +1,59 @@
+---
+title: "Evaluation of the allergenic capacity of three pollen grains in a tropical region (Medellín, Colombia)"
+type: "article"
+author:
+  - name: "Ruth Helena Ramírez-Giraldo"
+  - name: "Fernando Alveiro Alzate-Guarin"
+  - name: "**Álex Espinosa-Correa**"
+    orcid: 0000-0002-7353-1182
+    url: /index.qmd
+  - name: "Idoia Postigo-Resa"
+  - name: "Mario Alberto Quijano-Abril"
+year: 2025
+date: 2025-09-30
+publication: "Revista Alergia México"
+doi: https://doi.org/10.29262/ram.v72i3.1482
+materials: ""
+
+categories:
+  -   Allergenic capacity
+  -   Allergic rhinitis
+  -   Artocarpus communis
+  -   Cecropia peltata
+  -   Fraxinus uhdei
+  -   IgE
+  -   Pollen grains
+---
+
+## Abstract
+
+**Objective:** To evaluate the frequency of IgE sensitization and allergenic
+capacity of pollen grains of *Artocarpus communis*, *Cecropia peltata* and
+*Fraxinus uhdei* in allergic rhinitis patients.
+
+**Methods:** A cross-sectional study with comparative groups: a rhinitis group
+and a control group. The three pollen extracts were prepared, and IgE
+sensitization was assessed using the skin prick test and serum-specific IgE.
+Allergenicity and clinical relevance were subsequently evaluated using the
+basophil activation test (BAT) and the nasal challenge test (NCT).
+
+**Results:** A total of 60 people were included in the control group and 60 in
+the case group. None in the control group and a total of 8 (13.3%) from the
+rhinitis group were sensitized to one of the 3 pollen extracts: two (3.3%) to
+*A. communis*, two (3.3%) to *C. peltata* and four (6.6%) to *F. uhdei*. All
+three extracts were able to induce basophil activation in patients with IgE
+sensitization, but not in those without sensitization. NCT was performed in the
+eight patients with IgE sensitization, resulting positive for 1/2 patients with
+Artocarpus, 1/2 with Cecropia y 2/4 with Fraxinus.
+
+**Conclusion:** All three pollen sources tested induce IgE sensitization and
+clinical symptoms, highlighting the importance of evaluating the allergenicity
+of native plant sources for each region.
+
+## Citation
+
+> Ramírez-Giraldo, R. H., Alzate-Guarín, F. A., Espinosa-Correa, Á.,
+> Postigo-Resa, I., & Sánchez-Caraballo, J. M. (2025). Evaluation of the
+> allergenic capacity of three pollen grains in a tropical region (Medellín,
+> Colombia). *Revista Alergia México*, 72(3), 185–192.
+> https://doi.org/10.29262/ram.v72i3.1482
